@@ -1,12 +1,12 @@
 # Gaps and unknowns
 
-The state of the unified dataset (`data/fisher.db`) and tools as of commit `b4e6082`. Numbers come from the current data. Each item says why it matters and what would close it.
+The state of the unified dataset (`data/fisher.db`) and tools, updated after adding the force and torque methods. Numbers come from the current data. Each item says why it matters and what would close it.
 
 ## Most important first
 
 | # | Gap | Why it matters | To close it |
 |---|---|---|---|
-| 1 | **Catalog 14 force and torque methods (sections B, D) are tables only, not calculations** | 2,215 sliding-stem and 405 rotary configurations get no actuator answer from the pressure drop tables | Implement the B and D procedures, using the printed sample calculations as tests |
+| 1 | **Force and torque methods are only partly implemented.** Done: valve body forces A + B + C + D; 585C springless and 657/657R/667 actuator selection; torque equations; 7600 butterfly torque data (all tested against the catalog's sample calculations). Not done: 585C spring-biased, 685/685SE/685SR, 785C, 3025, 657C actuator tables; stem load check (B-99); piston-ring friction charts (figures 4/4A); typed torque data for valves other than the 7600; actuator torque output tables (1051, 1052, 1061, 1066, 2052, Bettis) | Rotary valves still need an actuator answer outside the pressure drop tables | Extract the remaining actuator tables and per-valve torque tables page by page, as done for the 7600 and 657 |
 | 2 | **No engineer has validated results against Fisher's own software** (Fisher Specification Manager / FIRST) | The tests reproduce the catalogs' own worked examples, which is not the same as matching the current product software | Run 10–20 real sizing cases through both and compare |
 | 3 | **Linear interpolation between catalog openings is our choice, not the catalog's** | Cv at an opening between listed points, and opening for a required Cv, can be off where curves bend sharply (quick opening, butterfly near 90°) | Ask Emerson or an engineer what interpolation Fisher uses; measure the error on curves with known intermediate points |
 | 4 | **About 4,400 rows in Catalog 14's as-printed tables aren't confirmed by the second reader** (364 of 695 tables), and 125 tables have unrecognised headers | The force and torque data (sections B and D) is not yet held to the same standard as the pressure-drop ratings | Give sections B and D the same per-layout treatment as sections A and C (typed values, key columns, row-order check) |
@@ -24,7 +24,8 @@ The state of the unified dataset (`data/fisher.db`) and tools as of commit `b4e6
 - The prose of the sizing procedures is not stored as text. The equations are code instead.
 
 **Catalog 14**
-- Force method (B) and torque method (D) procedures as code (see item 1). Their tables are stored as printed.
+- Force method (B): valve body forces, 585C springless and 657/657R/667 selection are implemented. Still only stored as printed: 585C spring-biased, 685, 685SE/SR, 785C, 3025 and 657C tables; Table 17 (safe spring loads); the stem load section (B-99 onward).
+- Torque method (D): equations and the 7600 butterfly data are implemented. Still only stored as printed: the A/B/C tables for every other valve (8532, 8560, 8580, A11, CV500, V150, V200, V300, V500, Control-Disk, 9500 and others), K factors for effective pressure drop, shaft material strength by temperature (Table 3), and all actuator torque output tables.
 - Air-spring-effect charts (B-88 onward) and other figures are not digitized.
 - Footnote text on Catalog 14 pages. Footnote numbers are kept on each value, but what they say is not (Catalog 12 has `page_note`; Catalog 14 does not).
 - Text pages: sample calculations (B-77 onward), Bettis actuator sizing notes (D-84 onward), three-way butterfly application notes (D-100).
@@ -34,6 +35,8 @@ The state of the unified dataset (`data/fisher.db`) and tools as of commit `b4e6
 - PS Sheet 51.1:E Series(A), D104737X012 (Large ED/EWD, Large ET/EWT coefficients).
 - PS Sheet 51.1:FB(A), D104710X012 (FB coefficients).
 - The product bulletins the catalogs refer to (e.g. 51.1:ED, 51.4:020) for pressure-temperature ratings, materials and construction details.
+
+- Catalog 14 Table 4 prints a second "TBX / Bore Seal" row (class IV, 80*PC) and an "EWND, 10.125" row; both are kept as printed, but which construction they mean is ambiguous.
 
 ## 2. Known limits of the extraction
 

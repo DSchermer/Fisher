@@ -157,6 +157,13 @@ Behavior worth knowing:
 python3 -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
 ```
 
+### Force and torque methods
+
+- **Force method (sliding-stem, section B):** `fisher.force` calculates the valve body force A + B + C + D. A is static unbalance (eight cases on pages B-2/B-3); B is seat load from the Table 4 rules and Table 5 factors; C is packing friction (Tables 6–6D); D is additional forces, supplied by you. `fisher.actuator_force` then selects a 585C (springless) or a 657, 657R or 667 spring-and-diaphragm actuator, either from the available-force tables or by the spring-rate calculation. The tests reproduce the catalog's sample calculations on pages B-77, B-80.1, B-80.3 and B-81.
+- **Torque method (rotary, section D):** `fisher.torque` calculates breakout torque TB = A·ΔPshutoff + B and dynamic torque TD = C·ΔPeff, and checks them against the shaft limit. Typed A, B and C data exists so far only for the 7600 butterfly. The test reproduces the example on page D-100.
+
+What isn't covered yet is listed in `docs/GAPS.md` (item 1).
+
 ### Linked to the Catalog 12 valve configurations
 
 Each Catalog 12 configuration id (e.g. `152-1-8`) links to the Catalog 14 ratings for that valve:

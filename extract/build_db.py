@@ -216,6 +216,82 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("x", "REAL", "Vr or C1"),
         ("y", "REAL", "Fm or dP/P1"),
     ]),
+    "force_port_data": ("Catalog 14 force method: port geometry (Tables 2, 2C-2H, pages B-4 to B-9).", [
+        ("source_table", "TEXT", "Catalog table: 2, 2C, 2D, 2E, 2F, 2G, '2H TBX & CVX', '2H NotchFlo DST'"),
+        ("scope", "TEXT", "Valves the table covers, where stated for the whole table"),
+        ("valve", "TEXT", "Valve rating/design the row applies to (per-valve tables)"),
+        ("nps", "TEXT", "Valve size as printed (per-valve tables)"),
+        ("port_in", "REAL", "Port diameter, inches"),
+        ("circumference_in", "REAL", "Port circumference, inches (PC in the seat load equations)"),
+        ("area_in2", "REAL", "Port area, square inches (Tables 2/2C)"),
+        ("unbalance_area_in2", "REAL", "Unbalance area, square inches (per-valve tables; Tables 2/2C use force_unbalance_area)"),
+        ("stem_in", "REAL", "Stem diameter, inches (TBX/CVX)"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "force_unbalance_area": ("Catalog 14 Tables 2/2C unbalance areas for balanced plugs, one row per construction listed.", [
+        ("source_table", "TEXT", "2 or 2C"),
+        ("port_in", "REAL", "Port diameter, inches"),
+        ("unbalance_area_in2", "REAL", "Unbalance area, square inches"),
+        ("applies_to", "TEXT", "Valves / constructions the area applies to, as printed"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "force_stem_area": ("Catalog 14 Table 3: valve stem area (page B-11).", [
+        ("stem_in", "REAL", "Stem diameter, inches"),
+        ("stem_text", "TEXT", "As printed, e.g. '1-1/4'"),
+        ("area_in2", "REAL", "Stem area, square inches"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "force_seat_load_rule": ("Catalog 14 Table 4: seat load equation by valve type, construction, port size and leak class (pages B-12/B-13).", [
+        ("valve_type", "TEXT", "Valve types the rule covers, as printed"),
+        ("construction", "TEXT", "Seat construction"),
+        ("port_size", "TEXT", "Port size range, as printed ('All', '4.375 or Less', ...)"),
+        ("class_standard", "TEXT", "Standard leak class"),
+        ("equation_standard", "TEXT", "Seat load equation (PC = port circumference, in; Pshutoff = dP at shutoff, psi; A, B from force_seat_factor)"),
+        ("class_optional", "TEXT", "Optional leak class"),
+        ("equation_optional", "TEXT", "Seat load equation for the optional class"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "force_seat_factor": ("Catalog 14 Table 5: A and B factors for composition seats (page B-14).", [
+        ("valves", "TEXT", "'EZ Valves' or 'All Other Valves'"),
+        ("port_in", "REAL", "Port diameter, inches"),
+        ("seat", "TEXT", "Seat material"),
+        ("flow", "TEXT", "Flow direction"),
+        ("a", "REAL", "A factor (seat load = A x dP shutoff + B, lb)"),
+        ("b", "REAL", "B factor, lb"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "force_packing_friction": ("Catalog 14 Tables 6, 6A-6D: packing friction (pages B-16 to B-18).", [
+        ("source_table", "TEXT", "6, 6A, 6B, 6C, 6D"),
+        ("packing", "TEXT", "Packing arrangement"),
+        ("stem_in", "REAL", "Stem diameter, inches"),
+        ("pressure_class", "TEXT", "Valve pressure class as printed ('All', '600', 'Up to CL600', ...)"),
+        ("pounds", "REAL", "Friction force, lb"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "diaphragm_actuator_force": ("Catalog 14 657, 657R, 667 'Available Actuator Force' pages (B-31 to B-72).", [
+        ("actuator", "TEXT", "657, 657R or 667"),
+        ("size", "TEXT", "Actuator size as printed"),
+        ("supply", "TEXT", "Diaphragm pressure range, psig ('0-18', '0-33', ...)"),
+        ("travel_in", "REAL", "Valve travel, inches"),
+        ("spring", "TEXT", "Spring part number"),
+        ("spring_rate_lb_in", "REAL", "Spring rate, lb/in"),
+        ("force_lb", "REAL", "Available actuator force, lb"),
+        ("bench_set", "TEXT", "Bench set, psig"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
+    "torque_characteristic": ("Catalog 14 torque method Table 1: A, B, C factors and shaft limit (so far the 7600 butterfly, pages D-5/D-6).", [
+        ("valve", "TEXT", "Valve"),
+        ("nps", "TEXT", "Valve size, NPS"),
+        ("shaft_in", "TEXT", "Shaft diameter, inches, as printed"),
+        ("shaft_class", "TEXT", "Shaft class"),
+        ("bearing", "TEXT", "Bearing material"),
+        ("a", "REAL", "A factor: TB = A x dP shutoff + B (lbf-in)"),
+        ("b", "REAL", "B factor, lbf-in"),
+        ("c_60", "REAL", "C factor at 60 deg maximum rotation: TD = C x dP eff"),
+        ("c_90", "REAL", "C factor at 90 deg maximum rotation"),
+        ("max_torque_lbf_in", "REAL", "Maximum allowable shaft torque, lbf-in (S17400 to 300 F)"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
 }
 
 VIEWS = {
@@ -408,6 +484,28 @@ def build(db_path: str, doc_path: str) -> None:
     ins("chart_point", [("two_phase_fm", float(r["vr"]), float(r["fm"])) for r in rows(ref / "two_phase_fm.csv")] +
         [("two_phase_critical_dp_ratio", float(r["c1"]), float(r["dp_over_p1"]))
          for r in rows(ref / "two_phase_critical_dp_ratio.csv")])
+
+    fd = DATA / "catalog14" / "force"
+    ins("force_port_data", [(r["table"], r["scope"], r["valve"], r["nps"], num(r["port_in"]), num(r["circumference_in"]),
+                             num(r["area_in2"]), num(r["unbalance_area_in2"]), num(r["stem_in"]), r["printed_label"])
+                            for r in rows(fd / "port_data.csv")])
+    ins("force_unbalance_area", [(r["table"], num(r["port_in"]), num(r["unbalance_area_in2"]), r["applies_to"],
+                                  r["printed_label"]) for r in rows(fd / "unbalance_area.csv")])
+    ins("force_stem_area", [(num(r["stem_in"]), r["stem_text"], num(r["area_in2"]), r["printed_label"])
+                            for r in rows(fd / "stem_area.csv")])
+    ins("force_seat_load_rule", [(r["type"], r["construction"], r["port_size"], r["class_standard"], r["equation_standard"],
+                                  r["class_optional"], r["equation_optional"], r["printed_label"])
+                                 for r in rows(fd / "seat_load_rules.csv")])
+    ins("force_seat_factor", [(r["valves"], num(r["port_in"]), r["seat"], r["flow"], num(r["A"]), num(r["B"]),
+                               r["printed_label"]) for r in rows(fd / "seat_factors.csv")])
+    ins("force_packing_friction", [(r["table"], r["packing"], num(r["stem_in"]), r["pressure_class"], num(r["pounds"]),
+                                    r["printed_label"]) for r in rows(fd / "packing_friction.csv")])
+    ins("diaphragm_actuator_force", [(r["actuator"], r["size"], r["supply"], num(r["travel_in"]), r["spring"],
+                                      num(r["spring_rate_lb_in"]), num(r["force_lb"]), r["bench_set"], r["printed_label"])
+                                     for r in rows(fd / "diaphragm_force.csv")])
+    ins("torque_characteristic", [(r["valve"], r["nps"], r["shaft_in"], r["shaft_class"], r["bearing"], num(r["A"]),
+                                   num(r["B"]), num(r["C_60"]), num(r["C_90"]), num(r["max_torque_lbf_in"]),
+                                   r["printed_label"]) for r in rows(DATA / "catalog14" / "torque" / "torque_characteristics.csv")])
 
     for name, (_, sql) in VIEWS.items():
         con.execute(f"CREATE VIEW {name} AS {sql}")

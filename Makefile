@@ -15,6 +15,7 @@ data: $(PDF) $(PDF14)  ## extract, validate and cross-check (needs pdfplumber an
 	python3 extract/catalog14_tables.py $(PDF14) data/catalog14
 	python3 extract/catalog14_dp.py $(PDF14) data/catalog14
 	python3 extract/catalog14_force.py $(PDF14) data/catalog14/force
+	python3 extract/catalog14_torque.py $(PDF14) data/catalog14/torque
 	python3 extract/link_catalogs.py data/links
 	python3 extract/build_db.py data/fisher.db docs/DATA_MODEL.md
 
