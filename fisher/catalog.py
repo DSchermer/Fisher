@@ -30,6 +30,11 @@ def _size_to_float(s: str) -> float | None:
     return float(s) if m else None
 
 
+# Interpolation between catalog openings: "linear" or "pchip" (monotone cubic). Linear is the default because
+# Fisher's own worked example reproduces with it (gas sample problem 1, page 2-14: 78% open; pchip gives 79%),
+# although pchip fits the catalog's curves better (docs/INTERPOLATION.md).
+DEFAULT_INTERP = "linear"
+
 STANDARD_NPS = [0.5, 0.75, 1, 1.5, 2, 2.5, 3, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 30, 36, 42, 48]
 
 
@@ -179,12 +184,13 @@ class Config:
         pts = self.curve(coefficient)
         return pts[-1][1] if pts else None
 
-    def value_at(self, opening: float, coefficient: str = "Cv", interp: str = "linear") -> float | None:
+    def value_at(self, opening: float, coefficient: str = "Cv", interp: str | None = None) -> float | None:
         """Value between catalog points. None outside the listed range.
 
-        interp="linear" (default) or "pchip" (monotone cubic, Fritsch-Carlson). Measured on the catalog's own
-        curves by leaving points out (docs/INTERPOLATION.md), pchip has about half the error of linear on
-        equal-percentage and rotary curves. Which one Fisher uses is not stated (docs/MORNING.md)."""
+        interp: "linear" (the default, DEFAULT_INTERP: Fisher's worked example reproduces with it) or "pchip"
+        (monotone cubic, Fritsch-Carlson), which has about half the error of linear on the catalog's own curves
+        (docs/INTERPOLATION.md)."""
+        interp = interp or DEFAULT_INTERP
         pts = self.curve(coefficient)
         if not pts or opening < pts[0][0] or opening > pts[-1][0]:
             return None
@@ -195,8 +201,9 @@ class Config:
                 return v0 if p1 == p0 else v0 + (v1 - v0) * (opening - p0) / (p1 - p0)
         return pts[-1][1] if opening == pts[-1][0] else None
 
-    def opening_for(self, value: float, coefficient: str = "Cv", interp: str = "linear") -> float | None:
+    def opening_for(self, value: float, coefficient: str = "Cv", interp: str | None = None) -> float | None:
         """Smallest opening at which the interpolated curve reaches `value`. None if never reached."""
+        interp = interp or DEFAULT_INTERP
         pts = self.curve(coefficient)
         if not pts:
             return None

@@ -4,7 +4,7 @@ Data and tools built from Emerson's **Fisher Catalog 12, ASME/ISA/IEC Valve Sizi
 
 ## The unified dataset
 
-**`data/fisher.db`** (SQLite) holds both catalogs in one schema. It is built from the same checked files the tools use, and tests check that the two agree. The purpose is a single, contextualized dataset that deterministic engineering tools can rely on:
+**`data/fisher.db`** (SQLite) holds both catalogs in one schema. It is built from the same checked CSV files the tools use, automatically the first time it is needed (about 15 seconds), and rebuilt whenever a CSV changes; it is not stored in git. The purpose is a single, contextualized dataset that deterministic engineering tools can rely on:
 
 - **One set of keys and units.** Configurations, sizes (NPS, inches), ports and travels (inches), angles (degrees) and pressure drops (psi unless a `unit` column says otherwise).
 - **Context on every record.** Valve family, characteristic, flow direction, actuator, size, supply, bench set, spring, leakage class, action, balanced or unbalanced construction.
@@ -80,6 +80,14 @@ The page 3-7 noise example comes out at 84.2 dBA against the printed 84.1. ΔSPL
 
 ## Use
 
+### Size a control valve, end to end
+
+```bash
+python3 -m fisher size --fluid liquid --q 800 --p1 314.7 --p2 289.7 --gf 0.5 --pipe 8 --family ES
+```
+
+Service conditions in; out come the Catalog 12 valves that pass the flow between 20% and 80% open, each with the required Cv and opening (FL or xT re-read at the opening, Fp for the pipe reducers), choked-flow and noise checks, any catalog corrections that touch it, and the Catalog 14 actuators rated for it (pressure drop method, or the torque method for rotary valves without one). Every number names its catalog page, and assumptions (e.g. shutoff ΔP = P1 gauge) are listed. In the browser it is the first tab, "Size a control valve".
+
 ### In a browser
 
 ```bash
@@ -143,7 +151,7 @@ print(valve.source, need, valve.opening_for(need))   # page ES-5, Cv 121.5 neede
 
 Behavior worth knowing:
 
-- Values between catalog points are **linearly interpolated** by default; `interp="pchip"` uses a monotone cubic, which `docs/INTERPOLATION.md` shows is about twice as accurate on the catalog's own curves. Outside the listed openings the result is `None`, never extrapolated.
+- Values between catalog points are **linearly interpolated** by default, as Fisher's own worked example does (gas sample problem 1 reproduces at 78% open only with linear); `interp="pchip"` uses a monotone cubic, which `docs/INTERPOLATION.md` shows is about twice as accurate on the catalog's own curves. Outside the listed openings the result is `None`, never extrapolated.
 - Catalog errors (Kv/Cv mismatches, typos such as "078" or "0..696") are corrected by default from the catalog's own evidence, with a confidence level; `Catalog.load(corrections=False)` gives every value as printed. See `docs/CORRECTIONS.md`.
 - `find(family="EDR")` follows the catalog's "identical to" and "also appropriate for" statements. Pass `include_aliases=False` to turn that off.
 - Characteristic is blank for 679 configurations and flow direction for 408, because the catalog doesn't state them for those tables (mostly butterfly and ball valves). They are left blank, not guessed.
@@ -214,7 +222,7 @@ python3 -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
 | `data/flags.csv` | Validation warnings |
 | `data/crosscheck.csv` | Second-reader result for every value row |
 | `data/reference/` | Section 2 and 3 reference tables as printed (`tables/`, `index.csv`), saturated steam, leakage classes, chart digitizations |
-| `data/fisher.db` | **The unified dataset** (SQLite); schema and column meanings in `docs/DATA_MODEL.md` |
+| `data/fisher.db` | **The unified dataset** (SQLite, built from the CSVs on first use, not in git); schema and column meanings in `docs/DATA_MODEL.md` |
 | `docs/GAPS.md` | Gaps, limits, assumptions and open questions |
 | `data/links/` | `catalog12_to_catalog14.csv`: every Catalog 12 configuration with its Catalog 14 match |
 | `data/catalog14/` | Catalog 14: `allowable_dp.csv` (sections A and C, one row per value) with `pages.csv` (page headings), every table as printed (`tables/`, `index.csv`) |

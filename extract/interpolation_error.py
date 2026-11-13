@@ -56,7 +56,8 @@ def main(out_path: str) -> None:
              "interpolation at the printed spacing (roughly by 4x, since the error from curvature grows with the "
              "square of the spacing).", "",
              "`Config.value_at(..., interp='pchip')` and `opening_for(..., interp='pchip')` use the monotone cubic. "
-             "The default stays linear until an engineer chooses (docs/MORNING.md).", "",
+             "The default stays linear: Fisher's own gas sample problem 1 (page 2-14) reaches 78% open with linear "
+             "interpolation and 79% with pchip, so linear is what the catalog's worked example uses.", "",
              "| motion | characteristic | opening | points | linear median / p95 | log-linear median / p95 | "
              "pchip median / p95 |", "|---|---|---|---|---|---|---|"]
     for k in sorted(errs, key=lambda k: (k[0], k[1], k[2] != "all", k[2])):

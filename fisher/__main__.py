@@ -9,6 +9,7 @@
     python -m fisher liquid-flow --cv 134.6 --p1 389.7 --p2 114.7 --gf 0.93 --fl 0.84 --pv 41.9 --ff 0.90
     python -m fisher size-valve 309-1-3 --q 6e6 --gg 0.6 --t1 520 --p1 214.7 --p2 64.7 --k 1.31
     python -m fisher steam --psia 40
+    python -m fisher size --fluid liquid --q 800 --p1 314.7 --p2 289.7 --gf 0.5 --pipe 8 --family ES
     python -m fisher noise --dp 175 --p1 250 --pv 11.5 --cv 70 --km 0.7 --nps 4 --schedule 40
 
   Catalog 14 (actuator sizing):
@@ -31,7 +32,7 @@ import dataclasses
 import json
 import sys
 
-from . import actuators, db, integrate, noise, reference, rotary_actuator, sizing, stem_load, torque
+from . import actuators, db, integrate, noise, reference, rotary_actuator, sizing, stem_load, torque, workflow
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -140,6 +141,21 @@ def parser() -> argparse.ArgumentParser:
     for a in ("flow", "pressure-class", "construction", "variant", "b-key", "mast-key"):
         p.add_argument(f"--{a}")
     sub.add_parser("torque-valves", help="rotary valves with typed torque factors")
+    p = sub.add_parser("size", help="end to end: service conditions -> Catalog 12 valves that fit -> Catalog 14 actuators")
+    p.add_argument("--fluid", choices=["liquid", "gas"], required=True)
+    p.add_argument("--p1", type=float, required=True, help="inlet pressure, psia")
+    p.add_argument("--p2", type=float, required=True, help="outlet pressure, psia")
+    for a in ("q", "w", "gf", "pv", "pc", "ff", "gg", "m", "k", "t1", "z", "gamma1", "dp-shutoff"):
+        p.add_argument(f"--{a}", type=float)
+    p.add_argument("--pipe", type=float, help="pipe size, inches (for Fp and noise)")
+    p.add_argument("--schedule", default="40")
+    for a in ("family", "characteristic"):
+        p.add_argument(f"--{a}")
+    p.add_argument("--motion", choices=["sliding-stem", "rotary"])
+    p.add_argument("--min-open", type=float, default=20)
+    p.add_argument("--max-open", type=float, default=80)
+    p.add_argument("--include-restricted", action="store_true")
+    p.add_argument("--candidates", type=int, default=5)
     p = sub.add_parser("stem-load", help="Catalog 14 maximum allowable valve stem load (pages B-99 to B-105)")
     p.add_argument("--stem", type=float, required=True, help="stem diameter, inches")
     p.add_argument("--temp-f", type=float, required=True)
@@ -236,6 +252,13 @@ def run(argv) -> object:
             out["within_limit"] = None if r.max_stem_load_lb is None else args.force <= r.max_stem_load_lb
         if args.design:
             out["usage_guide"] = stem_load.tables_for(args.design)
+    elif args.cmd == "size":
+        out = workflow.size_application(
+            fluid=args.fluid, p1=args.p1, p2=args.p2, q=args.q, w=args.w, gf=args.gf, pv=args.pv, pc=args.pc, ff=args.ff,
+            gg=args.gg, m=args.m, k=args.k, t1=args.t1, z=args.z, gamma1=args.gamma1, pipe_in=args.pipe,
+            schedule=args.schedule, family=args.family, characteristic=args.characteristic, motion=args.motion,
+            min_open=args.min_open, max_open=args.max_open, include_restricted=args.include_restricted,
+            dp_shutoff=args.dp_shutoff, candidates=args.candidates)
     elif args.cmd == "torque-valves":
         out = torque.valves()
     elif args.cmd == "valve-torque":

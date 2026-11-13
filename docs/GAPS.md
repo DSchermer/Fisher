@@ -94,12 +94,13 @@ check, or Emerson) are collected in `docs/MORNING.md`.
 
 - **Dataset version and drift:** `dataset_info` (version, build time, source SHA-256s), `build_input` (SHA-256 of every CSV), `docs/CHANGELOG.md`, and `extract/diff_dataset.py` to compare two builds (e.g. a new catalog edition).
 - **AI-assistant interface:** `fisher.mcp_server` (MCP over stdio) offers every command as a tool.
-- **`data/fisher.db` is 46.7 MB and committed to git.** Every rebuild adds a new copy to the history (MORNING).
-- **Single-user UI:** binds to localhost, with no authentication and no saved work. The new commands (valve torque, rotary actuator, stem load) are available from the CLI and MCP but have no UI form yet.
+- **`data/fisher.db` is not committed** (since 2026.11.13.2): it is built from the committed CSVs on first use and rebuilt when a CSV changes. Older copies remain in git history.
+- **Single-user UI:** binds to localhost, with no authentication and no saved work.
+- **End-to-end sizing** (`fisher size`, `workflow.size_application`, UI "Size a control valve"): covers liquids and gases with the pressure drop and torque methods. Sliding-stem valves outside Catalog 14's pressure drop tables (EH, HP, Baumann ...) get a pointer to the force method rather than an automatic answer, because the force method needs inputs the service conditions don't give (balance, seat construction, packing, stem). Gas noise (aerodynamic) is not in Catalog 12's method and is not checked.
 
 ## 8. Open questions for an engineer or Emerson
 
-1. Which interpolation between catalog openings should be the default?
+1. Does Fisher's software interpolate linearly between catalog openings, as the catalog's worked example does?
 2. Can a Catalog 14 rating listed at one travel be applied to the same port at a different travel?
 3. Which ΔSPL_Ar does Fisher use today: the page 3-1 equation or the page 3-10 chart?
 4. What does the CV500-3 row labelled "Kv" actually contain?

@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 # Emerson's copyrighted PDF: download it with scripts/get_source.sh
 data/source/*.pdf
+# Built from the CSVs on first use (fisher/db.py); not stored in git
+data/fisher.db
+data/tmp*.db

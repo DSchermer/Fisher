@@ -26,7 +26,7 @@ from fisher import Catalog, actuators, integrate, reference, sizing  # noqa: E40
 
 DATA = ROOT / "data"
 # Bump with each change to the data and record it in docs/CHANGELOG.md.
-DATASET_VERSION = "2026.11.13.1"
+DATASET_VERSION = "2026.11.13.2"
 
 # table -> (description, [(column, sqlite type, description)])
 SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {

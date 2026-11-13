@@ -4,6 +4,13 @@ The version is stored in `data/fisher.db` (`SELECT * FROM dataset_info`) and set
 (`DATASET_VERSION`). To see what a rebuild changed, keep the old database and run
 `python extract/diff_dataset.py old.db data/fisher.db`.
 
+## 2026.11.13.2
+
+- End-to-end sizing: `fisher size` / `workflow.size_application` / UI "Size a control valve".
+- `data/fisher.db` is no longer in git; `fisher/db.py` builds it from the CSVs on first use.
+- Linear interpolation confirmed as the default (it reproduces Fisher's gas sample problem 1; pchip does not).
+- UI forms for valve torque, rotary actuator by torque, and stem load.
+
 ## 2026.11.13.1
 
 - Catalog 12 errors: every flagged cell has an inferred correction with its evidence and confidence

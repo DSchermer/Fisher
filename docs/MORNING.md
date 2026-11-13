@@ -3,18 +3,17 @@
 Everything that could be done without you has been done (see `docs/GAPS.md` and `docs/CHANGELOG.md`). These need
 a decision, a hand check, or someone outside: none of them blocks using the tools.
 
-## Decisions (yours)
+## Decisions (made on your go-ahead to "make your own call")
 
-1. **Can the dataset be shared, and with whom?** It holds values typed from Emerson's copyrighted catalogs. I did
-   **not** store the catalogs' prose (procedures, sample-calculation text) in the database, because that is closer
-   to copying the documents; table footnotes are stored. Say if you want the prose too.
-2. **Interpolation default.** Linear is the default. `interp="pchip"` (monotone cubic) is about twice as accurate on
-   the catalog's own curves in 31 of 32 groups (`docs/INTERPOLATION.md`). Switching the default changes every
-   in-between result slightly. My recommendation: switch to pchip once an engineer agrees.
-3. **Stop committing `data/fisher.db`?** It is 46.7 MB and every rebuild adds a full copy to git history (about eight
-   copies were committed tonight). Options: keep committing (simplest), Git LFS, or build it with `make data` and
-   publish it as a release file. A history rewrite to remove old copies would need your explicit go-ahead.
-4. **Merge into `main`?** All of this work is on `claude/zealous-turing-s1b964`.
+1. **Sharing:** unchanged. The catalogs' prose is still not stored (closer to copying the documents); table
+   footnotes are. Who may use data derived from Emerson's catalogs is still yours to decide.
+2. **Interpolation: linear stays the default.** Fisher's own gas sample problem 1 (page 2-14) reaches 78% open with
+   linear interpolation and 79% with the monotone cubic, so linear is what the catalog's worked example uses.
+   `interp="pchip"` remains available; it fits the catalog's curves better (`docs/INTERPOLATION.md`).
+3. **`data/fisher.db` is no longer committed.** It is built from the committed CSVs the first time it is used (about
+   15 seconds, no PDFs needed) and rebuilt whenever a CSV changes (`fisher/db.py`). Old copies remain in git
+   history; removing them would need a history rewrite, which I have not done.
+4. **Merged into `main`.**
 
 ## Hand checks (about 15 minutes each)
 

@@ -82,6 +82,17 @@ const FILTERS = [
   {k: "flow_direction", label: "Flow direction"}, {k: "text", label: "Text in title", wide: 1},
   {k: "no_restricted", label: "Hide restricted trim", type: "check"}];
 const FORMS = [
+  {group: "Start here"},
+  {id: "size", title: "Size a control valve", hint: "Service conditions in; the Catalog 12 valves that pass the flow between the openings, each with checks (choked flow, noise) and the Catalog 14 actuators rated for it. Liquid: q (gpm), Gf, Pv. Gas: q (scfh) with Gg and T1, or w (lb/h), and k. Pressures psia.",
+   fields: [{k: "fluid", label: "Fluid", req: 1, type: "select", options: ["liquid", "gas"]},
+            {k: "p1", label: "P1 (psia)", req: 1}, {k: "p2", label: "P2 (psia)", req: 1},
+            {k: "q", label: "q (gpm or scfh)"}, {k: "w", label: "w (lb/h)"}, {k: "gf", label: "Gf (liquid)"},
+            {k: "pv", label: "Pv (psia)"}, {k: "pc", label: "Pc (psia)"}, {k: "gg", label: "Gg (gas)"}, {k: "m", label: "M"},
+            {k: "k", label: "k (gas)"}, {k: "t1", label: "T1 (°R)"}, {k: "pipe", label: "Pipe size (in)"},
+            {k: "dp_shutoff", label: "Shutoff ΔP (psi)"}, {k: "family", label: "Valve family", type: "family"},
+            {k: "motion", label: "Motion", type: "select", options: ["", "sliding-stem", "rotary"]},
+            {k: "min_open", label: "Min opening", value: "20"}, {k: "max_open", label: "Max opening", value: "80"},
+            {k: "include_restricted", label: "Include restricted trim", type: "check"}]},
   {group: "Catalog"},
   {id: "find", title: "Find valves", hint: "Filter the 3,593 catalog configurations. Click a config id for its full coefficient table.",
    fields: FILTERS},
@@ -123,6 +134,23 @@ const FORMS = [
             {k: "actuator", label: "Actuator", type: "select", opt: "rotary_actuators"},
             {k: "flow", label: "Flow", type: "select", options: ["", "Forward Flow", "Reverse Flow"]},
             {k: "shaft", label: "Shaft size (in)"}, {k: "text", label: "Text (seal, bearing ...)", wide: 1}]},
+  {id: "valve-torque", title: "Rotary valve torque", hint: "Section D torque method: breakout TB = A·ΔPshutoff + B and dynamic TD = C·ΔPeff at each angle, against the shaft limit, for every printed construction. Liquid ΔPeff = FL²(P1abs − FF·Pv); gas K·P1abs.",
+   fields: [{k: "valve", label: "Valve", req: 1, value: "8532"}, {k: "nps", label: "NPS", req: 1, value: "14"},
+            {k: "dp_shutoff", label: "Shutoff ΔP (psi)", req: 1, value: "200"}, {k: "p1", label: "P1 (psig)", req: 1, value: "200"},
+            {k: "fluid", label: "Fluid", type: "select", options: ["liquid", "gas"]}, {k: "fl", label: "FL"}, {k: "ff", label: "FF"},
+            {k: "pv", label: "Pv (psia)"}, {k: "flow", label: "Flow", type: "select", options: ["", "forward", "reverse"]},
+            {k: "pressure_class", label: "Class (e.g. CL150)"}, {k: "construction", label: "Seal / bearing contains"}]},
+  {id: "rotary-actuator", title: "Rotary actuator by torque", hint: "Valve torque by the torque method, then the 1051, 1052, 1061, 1068 and 2052 configurations whose torque covers it at every angle.",
+   fields: [{k: "valve", label: "Valve", req: 1, value: "CV500"}, {k: "nps", label: "NPS", req: 1, value: "4"},
+            {k: "dp_shutoff", label: "Shutoff ΔP (psi)", req: 1, value: "150"}, {k: "p1", label: "P1 (psig)", req: 1, value: "150"},
+            {k: "fluid", label: "Fluid", type: "select", options: ["liquid", "gas"]}, {k: "fl", label: "FL", value: "0.6"},
+            {k: "ff", label: "FF", value: "0.94"}, {k: "pv", label: "Pv (psia)", value: "0.5"},
+            {k: "flow", label: "Flow", type: "select", options: ["", "forward", "reverse"]}, {k: "actuator", label: "Actuator"},
+            {k: "supply_psig", label: "Supply (psig, 1061/1068)"}]},
+  {id: "stem-load", title: "Valve stem load", hint: "Pages B-99 to B-105: maximum allowable stem load for the stem diameter, temperature and material; give the actuator force to check it.",
+   fields: [{k: "stem", label: "Stem diameter (in)", req: 1, value: "0.75"}, {k: "temp_f", label: "Temperature (°F)", req: 1, value: "400"},
+            {k: "table", label: "L/D table", type: "select", options: ["3", "5", "7"]}, {k: "material", label: "Material (blank = 316 SH)"},
+            {k: "force", label: "Actuator force (lb)"}, {k: "design", label: "Valve design (e.g. ED)"}]},
   {id: "c14-tables", title: "Catalog 14 tables", hint: "Every table in Catalog 14 as printed, including the force method (B) and torque method (D) data. Search page headings and titles; click an id to open the table.",
    fields: [{k: "text", label: "Heading or title contains", wide: 1, value: "Port Data"},
             {k: "section", label: "Section", type: "select", options: ["", "A", "B", "C", "D"]}]},
@@ -144,6 +172,7 @@ const FORMS = [
              options: ["standard", "cavitrol_iii_1_stage", "rotary_attenuator", "cavitrol_iii_2_stage", "cavitrol_iii_3_stage", "cavitrol_iv"]}]},
 ];
 const EXAMPLES = {
+  size: {fluid: "liquid", q: 800, p1: 314.7, p2: 289.7, gf: 0.5, pipe: 8, family: "ES"},
   liquid: {q: 2200, p1: 389.7, p2: 114.7, gf: 0.93, fl: 0.84, pv: 41.9, ff: 0.90},
   gas: {p1: 214.7, p2: 64.7, k: 1.31, xt: 0.137, q: 6e6, gg: 0.6, t1: 520},
   "size-valve": {p1: 214.7, p2: 64.7, k: 1.31, q: 6e6, gg: 0.6, t1: 520},
@@ -227,6 +256,22 @@ function renderResult(id, d) {
     h += `<h3>Matched on</h3>` + kv(d.matched_on);
     if (d.note) h += `<p class="note">${esc(d.note)}</p>`;
     if (d.ratings.length) h += `<h3>Catalog 14 ratings${d.ratings.length > 300 ? " (first 300)" : ""}</h3>` + table(d.ratings.slice(0, 300));
+    return h;
+  }
+  if (id === "size") {
+    let h = `<div class="big">${d.candidates.length ? `${d.found} configuration${d.found === 1 ? "" : "s"} fit` : "No valve fits"} · estimated Cv ${fmt(d.estimated_cv)}</div>`;
+    if (d.note) h += `<p class="note">${esc(d.note)}</p>`;
+    if (d.assumptions.length) h += `<p class="hint">Assumed: ${d.assumptions.map(esc).join("; ")}</p>`;
+    for (const c of d.candidates) {
+      h += `<h3><a class="cfg" data-id="${esc(c.config_id)}">${esc(c.family)} NPS ${esc(c.nps)}</a> · ${fmt(c.opening)}${c.position_basis === "deg_rotation" ? "°" : "%"} open · Cv ${fmt(c.required_cv)} of ${fmt(c.rated_cv)}</h3>
+        <p class="hint">${esc([c.characteristic, c.flow_direction, c.pressure_class].filter(Boolean).join(" · "))}<br>${esc(c.source)}</p>`;
+      for (const w of c.warnings) h += `<p class="note">${esc(w)}</p>`;
+      if (Object.values(c.checks).some(v => v !== null && v !== undefined)) h += kv(c.checks);
+      if (c.notes.length) h += `<p class="hint">${c.notes.map(esc).join("<br>")}</p>`;
+      const a = c.actuators;
+      h += `<p><b>Actuators</b> · ${esc(a.method)}${a.note ? ` · <span class="hint">${esc(a.note)}</span>` : ""}</p>`;
+      if (a.options.length) h += table(a.options.map(o => { const {conditions, ...rest} = o; return {...rest, ...(conditions || {})}; }));
+    }
     return h;
   }
   if (id === "sql") {
