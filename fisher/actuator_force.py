@@ -75,7 +75,30 @@ def select_585c(required_lb: float, supply_psig: float, *, opening_required_lb: 
 @lru_cache(maxsize=1)
 def diaphragm_table() -> list[dict]:
     with open(FORCE_DIR / "diaphragm_force.csv", encoding="utf-8", newline="") as fh:
-        return list(csv.DictReader(fh))
+        return list(csv.DictReader(fh)) + diaphragm_657c()
+
+
+# 657C available-force pages: the size is printed in each page's heading (B-46.2's on the right margin).
+SIZE_657C = {"B-46.1": "40i", "B-46.2": "46i", "B-46.3": "60i"}
+
+
+def diaphragm_657c() -> list[dict]:
+    """657C 'Available Actuator Force' pages B-46.1 to B-46.3, in the same form as diaphragm_force.csv."""
+    from .piston_actuators import c14  # typed Catalog 14 values
+    out = []
+    for label, size in SIZE_657C.items():
+        for r in c14(label, 1):
+            m = re.match(r"([\d.]+)", r["column"])
+            f = re.match(r"([\d.]+)\s*\(([^)]*)\)", r["value_raw"])
+            spring = next((v for k, v in r["keys"].items() if k.startswith("Spring Part")), "")
+            sm = re.match(r"(\S+)\s*\((\d+)\)", spring)
+            sup = re.match(r"([\d‐-]+) Psig", r["group"])
+            if not (m and f and sm and sup):
+                continue
+            out.append({"actuator": "657C", "size": size, "supply": sup.group(1).replace("‐", "-"),
+                        "travel_in": m.group(1), "spring": sm.group(1), "spring_rate_lb_in": sm.group(2),
+                        "force_lb": f.group(1), "bench_set": f.group(2), "printed_label": label})
+    return out
 
 
 def _size_key(size: str) -> str:

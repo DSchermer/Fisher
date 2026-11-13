@@ -15,6 +15,8 @@ data: $(PDF) $(PDF14)  ## extract, validate and cross-check (needs pdfplumber an
 	python3 extract/catalog14_tables.py $(PDF14) data/catalog14
 	python3 extract/catalog14_dp.py $(PDF14) data/catalog14
 	python3 extract/catalog14_force.py $(PDF14) data/catalog14/force
+	python3 extract/catalog14_stem_load.py $(PDF14) data/catalog14/force
+	python3 extract/catalog14_3025.py $(PDF14) data/catalog14/force
 	python3 extract/catalog14_torque.py $(PDF14) data/catalog14/torque
 	python3 extract/catalog14_values.py $(PDF14) data/catalog14
 	python3 extract/catalog14_torque_factors.py data/catalog14

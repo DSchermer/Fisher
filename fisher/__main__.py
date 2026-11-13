@@ -17,6 +17,7 @@
     python -m fisher actuators-for 152-1-8 --dp 300
     python -m fisher c14-tables --text "port data"
     python -m fisher rotary-actuator --valve CV500 --nps 4 --dp-shutoff 150 --p1 150 --fl 0.6 --ff 0.94 --pv 0.5 --flow forward
+    python -m fisher stem-load --stem 0.75 --temp-f 400 --force 9000 --design ED
     python -m fisher valve-torque --valve 8532 --nps 6 --dp-shutoff 200 --p1 200 --fluid liquid --fl 0.6 --ff 0.94 --pv 0.5
 
   Unified dataset (data/fisher.db, docs/DATA_MODEL.md):
@@ -30,7 +31,7 @@ import dataclasses
 import json
 import sys
 
-from . import actuators, db, integrate, noise, reference, rotary_actuator, sizing, torque
+from . import actuators, db, integrate, noise, reference, rotary_actuator, sizing, stem_load, torque
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -136,6 +137,13 @@ def parser() -> argparse.ArgumentParser:
     for a in ("flow", "pressure-class", "construction", "variant", "b-key", "mast-key"):
         p.add_argument(f"--{a}")
     sub.add_parser("torque-valves", help="rotary valves with typed torque factors")
+    p = sub.add_parser("stem-load", help="Catalog 14 maximum allowable valve stem load (pages B-99 to B-105)")
+    p.add_argument("--stem", type=float, required=True, help="stem diameter, inches")
+    p.add_argument("--temp-f", type=float, required=True)
+    p.add_argument("--table", type=int, default=3, choices=[3, 5, 7], help="3 (L/D to 12.5), 5 (15), 7 (20)")
+    p.add_argument("--material", help="stem material if not strain-hardened 316, e.g. 17-4PH")
+    p.add_argument("--force", type=float, help="actuator force to check, lb")
+    p.add_argument("--design", help="valve design, to show which tables apply (e.g. ED)")
     p = sub.add_parser("rotary-actuator", help="valve torque (torque method) and the actuators that cover it")
     p.add_argument("--valve", required=True)
     p.add_argument("--nps", required=True)
@@ -217,6 +225,14 @@ def run(argv) -> object:
     elif args.cmd == "noise":
         out = noise.hydrodynamic_noise(dp=args.dp, p1=args.p1, pv=args.pv, cv=args.cv, km=args.km, nps=args.nps,
                                        schedule=args.schedule, g=args.g, style=args.style).__dict__
+    elif args.cmd == "stem-load":
+        r = stem_load.max_stem_load(args.stem, args.temp_f, table=args.table, material=args.material)
+        out = dataclasses.asdict(r)
+        if args.force is not None:
+            out["actuator_force_lb"] = args.force
+            out["within_limit"] = None if r.max_stem_load_lb is None else args.force <= r.max_stem_load_lb
+        if args.design:
+            out["usage_guide"] = stem_load.tables_for(args.design)
     elif args.cmd == "torque-valves":
         out = torque.valves()
     elif args.cmd == "valve-torque":

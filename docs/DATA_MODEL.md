@@ -508,3 +508,92 @@ Catalog 14 torque method factors for every rotary valve (section D), classified 
 | `column_path` | TEXT | Column header path as printed |
 | `confirmed` | TEXT | Second-reader result for the row (see c14_table_value) |
 | `merged` | INTEGER | 1 = value repeated from a merged cell |
+
+## `stem_load_usage`
+
+Catalog 14 stem load Table 1 (page B-100): which stem load tables apply to a valve design. (40 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `design` | TEXT | Valve body designs as printed |
+| `nps` | TEXT | Size as printed ('- - -' = all) |
+| `rating` | TEXT | Pressure rating as printed |
+| `bonnet` | TEXT | Bonnet style |
+| `stem_in` | TEXT | Stem diameters as printed |
+| `tables` | TEXT | Table references: '3 & 4' (L/D to 12.5), '5 & 6' (to 15), '7 & 8' (to 20), '2', '9' |
+| `printed_label` | TEXT | Printed page label |
+
+## `stem_load_316`
+
+Catalog 14 stem load Tables 3, 5, 7: maximum allowable stem load for strain-hardened 316 stems. (112 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `table_no` | INTEGER | 3, 5 or 7 |
+| `ld_max` | REAL | Maximum L/D ratio the table covers (12.5, 15, 20) |
+| `unit_system` | TEXT | 'F' (inch stem, deg F, lb) or 'C' (mm stem, deg C, kN) block of the table |
+| `stem` | TEXT | Stem diameter as printed |
+| `stem_in` | REAL | Stem diameter, inches |
+| `temp` | REAL | Temperature column (F or C per unit_system); the first column means 'to' this value |
+| `load` | REAL | Maximum allowable stem load |
+| `load_unit` | TEXT | lb or kN |
+| `printed_label` | TEXT | Printed page label |
+
+## `stem_material_factor`
+
+Catalog 14 stem load Tables 4, 6, 8: material factors (stem load = reference load x factor). (350 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `table_no` | INTEGER | 4, 6 or 8 |
+| `material` | TEXT | Stem material as printed |
+| `temp_f` | REAL | Temperature, F (the first column means 'to' this value) |
+| `factor` | REAL | Material factor |
+| `footnote` | TEXT | Footnote number on the value |
+| `printed_label` | TEXT | Printed page label |
+
+## `stem_reference_load`
+
+Catalog 14 stem load Tables 4, 6, 8: reference load per stem diameter. (18 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `table_no` | INTEGER | 4, 6 or 8 |
+| `stem` | TEXT | Stem diameter as printed |
+| `stem_in` | REAL | Stem diameter, inches |
+| `reference_kn` | REAL | Reference load, kN |
+| `reference_lb` | REAL | Reference load, lb |
+| `printed_label` | TEXT | Printed page label |
+
+## `stem_load_valve`
+
+Catalog 14 stem load Tables 2 and 9: per-valve maximum allowable stem loads (ET-C, EWT-C, EZ-C; HPT-C, HPS-C). (32 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `table_no` | INTEGER | 2 or 9 |
+| `valve` | TEXT | Valve |
+| `nps` | TEXT | Size as printed |
+| `stem` | TEXT | Stem diameter as printed |
+| `stem_in` | REAL | Stem diameter, inches |
+| `unsupported_length_in` | REAL | Unsupported stem length L, inches |
+| `ld_ratio` | REAL | L/D ratio |
+| `max_stem_load_lb` | REAL | Maximum allowable stem load, lb |
+| `printed_label` | TEXT | Printed page label |
+
+## `actuator_3025`
+
+Catalog 14 3025 actuator available force (pages B-73 to B-76). (119 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `size` | TEXT | P460-200, P462, P900 |
+| `yoke_boss` | TEXT | Yoke boss as printed |
+| `action` | TEXT | air-to-open (spring closes) or air-to-close (spring opens) |
+| `travel` | TEXT | Valve travel as printed (inches, or '120 mm') |
+| `travel_in` | REAL | Valve travel, inches |
+| `spring_range_bar` | TEXT | Spring range, bar |
+| `spring_rate_lb_in` | REAL | Spring rate, lb/in |
+| `supply_bar` | REAL | Supply pressure, bar (air-to-close) |
+| `thrust_lb` | REAL | Thrust, lb |
+| `printed_label` | TEXT | Printed page label |
