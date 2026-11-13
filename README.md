@@ -134,6 +134,23 @@ Behavior worth knowing:
 python3 -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
 ```
 
+### Linked to the Catalog 12 valve configurations
+
+Each Catalog 12 configuration id (e.g. `152-1-8`) links to the Catalog 14 ratings for that valve:
+
+- **Sliding-stem:** matched on the port diameter and travel that Catalog 12 prints for the configuration, and on balanced or unbalanced construction from Catalog 14's own list on page A-2. Balanced: ED, EWD, ET, EWT. Unbalanced: D, ES, EWS, EZ. Rows Catalog 14 marks for one valve, e.g. "(ET, Class V Leakage)", only match that valve.
+- **Rotary:** matched on valve family and NPS, plus the opening angle if you give one.
+
+Of the 959 configurations in valve families that Catalog 14's pressure drop tables cover, 470 link to ratings. The rest are sizes, ports or travels Catalog 14 doesn't list (mostly ports of 14.75 inches and up). Every configuration's result is in `data/links/catalog12_to_catalog14.csv`, with a note explaining any that don't link.
+
+```bash
+python3 -m fisher actuators-for 152-1-8 --dp 300
+```
+
+In the UI, "Actuators for a valve" does the same, and every Valve details page links to it.
+
+Two fixes came out of this. Catalog 12 tables that print DN sizes (8580, Control-Disk, V200U, 84000, 89000) are now converted to NPS. Fractional dimensions such as a "1/4" inch port are now read as fractions.
+
 ```bash
 python3 -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
 ```
@@ -149,6 +166,7 @@ python3 -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
 | `data/flags.csv` | Validation warnings |
 | `data/crosscheck.csv` | Second-reader result for every value row |
 | `data/reference/` | Section 2 and 3 reference tables as printed (`tables/`, `index.csv`), saturated steam, leakage classes, chart digitizations |
+| `data/links/` | `catalog12_to_catalog14.csv`: every Catalog 12 configuration with its Catalog 14 match |
 | `data/catalog14/` | Catalog 14: `allowable_dp.csv` (sections A and C, one row per value) with `pages.csv` (page headings), every table as printed (`tables/`, `index.csv`) |
 | `fisher/` | `actuators.py` Catalog 14 actuator selection, `catalog.py` lookups, `sizing.py` equations, `select.py` sizing on a catalog valve, `reference.py` reference data, `noise.py` noise; standard library only |
 | `extract/` | Extraction, validation, cross-check and chart digitizing scripts |

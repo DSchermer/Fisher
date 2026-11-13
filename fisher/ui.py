@@ -19,7 +19,8 @@ from urllib.parse import parse_qsl, urlparse
 from .__main__ import run
 
 PAGE = Path(__file__).with_name("ui.html")
-POSITIONAL = {"show": "config_id", "size-valve": "config_id", "c14-table": "table_id"}  # first argument
+POSITIONAL = {"show": "config_id", "size-valve": "config_id", "c14-table": "table_id",
+              "actuators-for": "config_id"}  # first argument
 
 
 def to_argv(command: str, params: dict[str, str]) -> list[str]:

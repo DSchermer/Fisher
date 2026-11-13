@@ -107,6 +107,10 @@ const FORMS = [
             {k: "gf", label: "Gf", req: 1}, {k: "fl", label: "FL"}, {k: "pv", label: "Pv"}, {k: "ff", label: "FF"},
             {k: "pc", label: "Pc"}, {k: "nu", label: "ν (cSt)"}, {k: "d", label: "d (in)"}, {k: "fp", label: "Fp"}]},
   {group: "Actuators (Catalog 14)"},
+  {id: "actuators-for", title: "Actuators for a valve", hint: "Catalog 14 constructions rated for a Catalog 12 valve configuration: sliding-stem valves by port diameter and travel, rotary valves by valve and size. Leave ΔP at 0 to see every rating.",
+   fields: [{k: "config_id", label: "Config id", req: 1, value: "152-1-8"}, {k: "dp", label: "Required ΔP (psi)", value: "300"},
+            {k: "angle", label: "Angle (rotary, degrees)"},
+            {k: "leakage", label: "Leakage class", type: "select", options: ["", "Class II", "Class IV", "Class V"]}]},
   {id: "actuator-sliding", title: "Sliding-stem actuator", hint: "Section A pressure drop method: constructions whose maximum allowable shutoff ΔP is at least the required ΔP, smallest actuator first.",
    fields: [{k: "dp", label: "Required ΔP (psi)", req: 1, value: "500"}, {k: "port", label: "Port diameter (in)", req: 1, type: "select", opt: "sliding_stem_ports_in"},
             {k: "travel", label: "Travel (in)"}, {k: "actuator", label: "Actuator", type: "select", opt: "sliding_stem_actuators"},
@@ -188,7 +192,8 @@ function renderShow(d) {
   const curves = d.curves || {}, coeffs = Object.keys(curves);
   const positions = [...new Set(coeffs.flatMap(c => Object.keys(curves[c])))].sort((a, b) => a - b);
   let h = `<div class="big">${esc(d.family)} · NPS ${esc(d.nps || "—")}</div>
-    <p>${esc(d.title)}<br><span class="hint">${esc(d.source)}</span></p>`;
+    <p>${esc(d.title)}<br><span class="hint">${esc(d.source)}</span><br>
+    <a class="cfg" data-act="${esc(d.config_id)}">Actuators for this valve (Catalog 14) →</a></p>`;
   if (d.restricted_trim) h += `<p class="note">Restricted trim (${esc(d.restricted_source)})</p>`;
   h += kv({characteristic: d.characteristic, flow_direction: d.flow_direction, ...d.attributes});
   if (coeffs.length) {
@@ -210,6 +215,14 @@ function renderResult(id, d) {
     const head = `<div class="big">${esc(d.title || d.printed_label)}</div><p>${esc(d.heading)}<br><span class="hint">Fisher Catalog 14, page ${esc(d.printed_label)} (PDF page ${esc(d.page)}) · ${d.rows_confirmed} of ${d.rows} rows confirmed by a second PDF reader</span></p>`;
     return head + `<div class="scroll"><table><tr>${d.headers.map(h => `<th>${esc(h)}</th>`).join("")}</tr>` +
       d.data.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("") + `</table></div>`;
+  }
+  if (id === "actuators-for") {
+    let h = `<div class="big">${esc(d.valve.family)} · NPS ${esc(d.valve.nps)} → ${d.count} actuator rating${d.count === 1 ? "" : "s"}</div>
+      <p>${esc(d.valve.title)}<br><span class="hint">${esc(d.valve.source)} · <a class="cfg" data-id="${esc(d.config_id)}">valve details</a></span></p>`;
+    h += `<h3>Matched on</h3>` + kv(d.matched_on);
+    if (d.note) h += `<p class="note">${esc(d.note)}</p>`;
+    if (d.ratings.length) h += `<h3>Catalog 14 ratings${d.ratings.length > 300 ? " (first 300)" : ""}</h3>` + table(d.ratings.slice(0, 300));
+    return h;
   }
   if (id === "actuator-sliding" || id === "actuator-rotary" || id === "c14-tables") {
     if (!d.length) return `<p>Nothing in the catalog meets that.</p>`;
@@ -263,7 +276,8 @@ function show(id, preset) {
 }
 document.addEventListener("click", e => {
   const a = e.target.closest("a.cfg");
-  if (a && a.dataset.table) show("c14-table", {table_id: a.dataset.table});
+  if (a && a.dataset.act) show("actuators-for", {config_id: a.dataset.act, dp: "0"});
+  else if (a && a.dataset.table) show("c14-table", {table_id: a.dataset.table});
   else if (a) show("show", {config_id: a.dataset.id});
 });
 (async () => {

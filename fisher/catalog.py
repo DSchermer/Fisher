@@ -30,14 +30,23 @@ def _size_to_float(s: str) -> float | None:
     return float(s) if m else None
 
 
-def parse_nps(raw: str) -> list[float]:
+# Nominal metric size (DN, mm) to NPS (inches), for tables that print DN.
+DN_TO_NPS = {15: 0.5, 20: 0.75, 25: 1, 32: 1.25, 40: 1.5, 50: 2, 65: 2.5, 80: 3, 100: 4, 125: 5, 150: 6,
+             200: 8, 250: 10, 300: 12, 350: 14, 400: 16, 450: 18, 500: 20, 600: 24, 750: 30, 900: 36}
+
+
+def parse_nps(raw: str, dn: bool = False) -> list[float]:
     """Body sizes (NPS, inches) named in a catalog size cell.
 
     "1-1/2(2)" -> [1.5]; "2 & 3 x 2" -> [2.0, 3.0]; "DN25 / NPS 1" -> [1.0];
     "6.35 (1/4) 12.7 (1/2)" -> [0.25, 0.5]; "20x16" -> [20.0]; "1 & 1-1/4" -> [1.0, 1.25].
+    With dn=True (the column is labelled DN), "80" -> [3.0].
     """
     if not raw:
         return []
+    if dn and not re.search(r"\bNPS\b", raw, re.I):
+        return [float(DN_TO_NPS[int(v)]) for v in re.findall(r"\d+", re.sub(r"\(\d+\)", "", raw))
+                if int(v) in DN_TO_NPS]
     s = re.sub(r"\((\d+)\)", "", raw)          # footnote markers
     s = s.replace("‐", "-").replace("X", "x")
     paren = re.findall(r"\((\d+-\d+/\d+|\d+/\d+|\d+)\)", s)
@@ -156,11 +165,14 @@ class Catalog:
         d = Path(data_dir) if data_dir else DATA_DIR
         configs: dict[str, Config] = {}
         for r in _rows(d / "configs.csv"):
+            attrs = json.loads(r["attrs"])
+            size_key = next((k for k, v in attrs.items() if v == r["nps"] and re.search(r"size|nps|\bdn\b", k, re.I)), "")
+            dn = bool(re.search(r"\bDN\b", size_key)) and not re.search(r"\bNPS\b", size_key)
             configs[r["config_id"]] = Config(
                 config_id=r["config_id"], page=int(r["page"]), printed_label=r["printed_label"],
                 family=r["family"], page_title=r["page_title"], table_title=r["table_title"],
                 section=r["section"], characteristic=r["characteristic"], flow_direction=r["flow_direction"],
-                nps=r["nps"], sizes=parse_nps(r["nps"]), attrs=json.loads(r["attrs"]),
+                nps=r["nps"], sizes=parse_nps(r["nps"], dn=dn), attrs=attrs,
                 restricted=r["restricted_trim"] == "1", restricted_source=r["restricted_source"],
             )
         for v in _rows(d / "coefficients.csv"):

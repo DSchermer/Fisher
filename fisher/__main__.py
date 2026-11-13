@@ -14,6 +14,7 @@
   Catalog 14 (actuator sizing):
     python -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
     python -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
+    python -m fisher actuators-for 152-1-8 --dp 300
     python -m fisher c14-tables --text "port data"
     python -m fisher c14-table B_5_t1_table_2_port_data_for_single_port_valves
 """
@@ -23,7 +24,7 @@ import argparse
 import json
 import sys
 
-from . import actuators, noise, reference, sizing
+from . import actuators, integrate, noise, reference, sizing
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -100,6 +101,13 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--text", default="")
     p.add_argument("--section", choices=list("ABCD"))
     sub.add_parser("c14-options", help="actuators, valves and ports available in Catalog 14")
+    p = sub.add_parser("actuators-for", help="Catalog 14 actuators rated for a Catalog 12 valve configuration")
+    p.add_argument("config_id")
+    p.add_argument("--dp", type=float, default=0.0)
+    p.add_argument("--angle", type=float)
+    p.add_argument("--leakage")
+    p.add_argument("--valve-code")
+    p.add_argument("--limit", type=int)
     p = sub.add_parser("c14-table", help="one Catalog 14 table as printed")
     p.add_argument("table_id")
     p = sub.add_parser("noise", help="hydrodynamic noise, Section 3")
@@ -116,7 +124,7 @@ def run(argv) -> object:
     """Run one command and return its result (a JSON-serializable object). Used by the CLI and the UI."""
     args = parser().parse_args(argv)
 
-    cat = Catalog.load() if args.cmd in ("families", "find", "select", "show", "size-valve") else None
+    cat = Catalog.load() if args.cmd in ("families", "find", "select", "show", "size-valve", "actuators-for") else None
     if args.cmd == "families":
         out = cat.families()
     elif args.cmd in ("find", "select"):
@@ -158,6 +166,12 @@ def run(argv) -> object:
         out = [r.to_dict() for r in actuators.rotary(args.dp, args.valve, args.nps, angle_deg=args.angle,
                                                     actuator=args.actuator, text=args.text, flow=args.flow,
                                                     shaft_in=args.shaft)]
+    elif args.cmd == "actuators-for":
+        c = cat.get(args.config_id)
+        out = integrate.actuators_for_config(c, args.dp, angle_deg=args.angle, leakage=args.leakage,
+                                             valve_code=args.valve_code).to_dict(args.limit)
+        out["valve"] = {"family": c.family, "nps": c.nps, "source": c.source,
+                        "title": " | ".join(x for x in (c.page_title, c.table_title, c.section) if x)}
     elif args.cmd == "c14-options":
         out = actuators.options()
     elif args.cmd == "c14-tables":
