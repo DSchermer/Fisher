@@ -190,6 +190,7 @@ python3 -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
 | `data/crosscheck.csv` | Second-reader result for every value row |
 | `data/reference/` | Section 2 and 3 reference tables as printed (`tables/`, `index.csv`), saturated steam, leakage classes, chart digitizations |
 | `data/fisher.db` | **The unified dataset** (SQLite); schema and column meanings in `docs/DATA_MODEL.md` |
+| `docs/GAPS.md` | Gaps, limits, assumptions and open questions |
 | `data/links/` | `catalog12_to_catalog14.csv`: every Catalog 12 configuration with its Catalog 14 match |
 | `data/catalog14/` | Catalog 14: `allowable_dp.csv` (sections A and C, one row per value) with `pages.csv` (page headings), every table as printed (`tables/`, `index.csv`) |
 | `fisher/` | `actuators.py` Catalog 14 actuator selection, `catalog.py` lookups, `sizing.py` equations, `select.py` sizing on a catalog valve, `reference.py` reference data, `noise.py` noise; standard library only |
