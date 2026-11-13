@@ -144,6 +144,7 @@ print(valve.source, need, valve.opening_for(need))   # page ES-5, Cv 121.5 neede
 Behavior worth knowing:
 
 - Values between catalog points are **linearly interpolated** by default; `interp="pchip"` uses a monotone cubic, which `docs/INTERPOLATION.md` shows is about twice as accurate on the catalog's own curves. Outside the listed openings the result is `None`, never extrapolated.
+- Catalog errors (Kv/Cv mismatches, typos such as "078" or "0..696") are corrected by default from the catalog's own evidence, with a confidence level; `Catalog.load(corrections=False)` gives every value as printed. See `docs/CORRECTIONS.md`.
 - `find(family="EDR")` follows the catalog's "identical to" and "also appropriate for" statements. Pass `include_aliases=False` to turn that off.
 - Characteristic is blank for 679 configurations and flow direction for 408, because the catalog doesn't state them for those tables (mostly butterfly and ball valves). They are left blank, not guessed.
 - The Reynolds-number factor FR comes from Table 3 by linear interpolation, which the catalog says is satisfactory.

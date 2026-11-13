@@ -38,5 +38,6 @@ a decision, a hand check, or someone outside: none of them blocks using the tool
 11. ΔSPL_Ar: page 3-1 equation or page 3-10 chart?
 12. What does the CV500-3 row labelled "Kv" contain?
 13. Is the Catalog 12 V200U the Catalog 14 V200? Should A31D use the 8532's actuator data?
-14. The correct values behind the 243 flagged catalog cells.
+14. Confirm the inferred corrections with Emerson (`docs/CORRECTIONS.md`: 204 high, 5 medium, 10 estimates, 4 unresolved).
+    The 5 medium ones are worth a look first.
 15. The 785C spring-return sizing procedure (the catalog prints springs and preloads but no procedure).

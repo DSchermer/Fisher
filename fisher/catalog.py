@@ -142,6 +142,7 @@ class Config:
     raw: dict[tuple[str, str], str] = field(default_factory=dict)
     footnotes: dict[tuple[str, str], str] = field(default_factory=dict)
     flags: list[dict] = field(default_factory=list)
+    corrections: dict[tuple[str, str], dict] = field(default_factory=dict)
 
     @property
     def source(self) -> str:
@@ -225,6 +226,7 @@ class Config:
             "curves": {k: {f"{p:g}": v for p, v in sorted(c.items())} for k, c in self.curves.items()},
             "single_values": {f"{k} [{lbl}]": v for (k, lbl), v in self.singles.items()},
             "flags": self.flags,
+            "corrections": {f"{k} [{p}]": v for (k, p), v in self.corrections.items()},
         }
 
 
@@ -251,7 +253,13 @@ class Catalog:
 
     @classmethod
     @lru_cache(maxsize=4)
-    def load(cls, data_dir: str | Path | None = None) -> "Catalog":
+    def load(cls, data_dir: str | Path | None = None, corrections: bool | str = True) -> "Catalog":
+        """Load Catalog 12.
+
+        corrections: True (default) applies the high- and medium-confidence corrections of catalog errors
+        (data/corrections.csv, docs/CORRECTIONS.md); "all" also applies estimates; False keeps every value as
+        printed. Printed values stay in Config.raw, and Config.corrections records what was changed.
+        """
         d = Path(data_dir) if data_dir else DATA_DIR
         configs: dict[str, Config] = {}
         for r in _rows(d / "configs.csv"):
@@ -278,6 +286,20 @@ class Catalog:
                 c.position_basis = v["position_basis"]
             else:
                 c.singles[(v["coefficient"], v["position_label"])] = float(v["value"])
+        levels = {True: {"high", "medium"}, "all": {"high", "medium", "estimate"}}.get(corrections, set())
+        corr_path = d / "corrections.csv"
+        if levels and corr_path.exists():
+            for r in _rows(corr_path):
+                c = configs.get(r["config_id"])
+                if c is None or r["confidence"] not in levels or r["corrected"] == "":
+                    continue
+                value = float(r["corrected"])
+                if re.fullmatch(r"\d+(\.\d+)?", r["position"]):
+                    c.curves.setdefault(r["coefficient"], {})[float(r["position"])] = value
+                else:
+                    c.singles[(r["coefficient"], r["position"])] = value
+                c.corrections[(r["coefficient"], r["position"])] = {
+                    "printed": r["printed"], "corrected": value, "confidence": r["confidence"], "basis": r["basis"]}
         flags_path = d / "flags.csv"
         if flags_path.exists():
             for f in _rows(flags_path):

@@ -26,7 +26,7 @@ from fisher import Catalog, actuators, integrate, reference, sizing  # noqa: E40
 
 DATA = ROOT / "data"
 # Bump with each change to the data and record it in docs/CHANGELOG.md.
-DATASET_VERSION = "2026.11.13"
+DATASET_VERSION = "2026.11.13.1"
 
 # table -> (description, [(column, sqlite type, description)])
 SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
@@ -95,7 +95,17 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("value_raw", "TEXT", "Cell exactly as printed"),
         ("footnotes", "TEXT", "Footnote numbers on the cell, comma-separated (see page_note)"),
     ]),
-    "catalog_flag": ("Validation results on Catalog 12 values: catalog errors are flagged, never corrected.", [
+    "catalog_correction": ("Inferred correction for each flagged Catalog 12 cell (extract/corrections.py, docs/CORRECTIONS.md). flow_coefficient keeps the printed value; the tools apply high and medium corrections by default.", [
+        ("config_id", "TEXT", "valve_config.config_id"),
+        ("coefficient", "TEXT", "Coefficient corrected (may be the partner of the flagged one, e.g. Cv for a Kv/Cv mismatch)"),
+        ("position", "TEXT", "Opening or column label"),
+        ("check_name", "TEXT", "The flag it resolves"),
+        ("printed", "TEXT", "As printed"),
+        ("corrected", "REAL", "Inferred value; NULL where there is no basis"),
+        ("confidence", "TEXT", "high, medium, estimate (not applied by default), none (no correction)"),
+        ("basis", "TEXT", "The evidence"),
+    ]),
+    "catalog_flag": ("Validation results on Catalog 12 values: catalog errors are flagged; see catalog_correction for the inferred values.", [
         ("config_id", "TEXT", "valve_config.config_id"),
         ("coefficient", "TEXT", "Coefficient checked"),
         ("position", "TEXT", "Opening or column label"),
@@ -469,6 +479,16 @@ VIEWS = {
         SELECT f.config_id, c.family, c.nps_text, c.motion, f.position_basis, f.position, f.value AS cv
         FROM flow_coefficient f JOIN valve_config c ON c.config_id = f.config_id
         WHERE f.coefficient = 'Cv' AND f.position IS NOT NULL AND f.value IS NOT NULL"""),
+    "v_flow_coefficient_corrected": ("flow_coefficient with the high- and medium-confidence corrections applied (what the tools use); value_printed and correction_basis show what changed.", """
+        SELECT f.config_id, f.coefficient, f.position_basis, f.position, f.position_label,
+               COALESCE(k.corrected, f.value) AS value, f.value_raw AS value_printed,
+               k.confidence AS correction_confidence, k.basis AS correction_basis
+        FROM flow_coefficient f
+        LEFT JOIN catalog_correction k
+          ON k.config_id = f.config_id AND k.coefficient = f.coefficient
+         AND k.confidence IN ('high', 'medium') AND k.corrected IS NOT NULL AND k.printed = f.value_raw
+         AND (k.position = f.position_label
+              OR (f.position IS NOT NULL AND CAST(k.position AS REAL) = f.position AND k.position GLOB '[0-9]*'))"""),
 }
 
 
@@ -568,6 +588,8 @@ def build(db_path: str, doc_path: str) -> None:
     ins("flow_coefficient", [(v["config_id"], v["coefficient"], v["position_basis"], num(v["position"]),
                               v["position_label"], num(v["value"]), v["value_raw"], v["footnotes"])
                              for v in rows(DATA / "coefficients.csv")])
+    ins("catalog_correction", [(r["config_id"], r["coefficient"], r["position"], r["check"], r["printed"],
+                                num(r["corrected"]), r["confidence"], r["basis"]) for r in rows(DATA / "corrections.csv")])
     ins("catalog_flag", [(f["config_id"], f["coefficient"], f["position"], f["check"], f["severity"], f["detail"])
                          for f in rows(DATA / "flags.csv")])
     page_by_label = {r["printed_label"]: r["pdf_page"] for r in inv}

@@ -14,6 +14,7 @@ Start with the views:
 
 - `v_valve_actuator`: Catalog 12 configurations joined to the Catalog 14 ratings that apply to them.
 - `v_cv_curve`: Cv against opening for every configuration (non-null values only).
+- `v_flow_coefficient_corrected`: flow_coefficient with the high- and medium-confidence corrections applied (what the tools use); value_printed and correction_basis show what changed.
 
 ```sql
 -- Actuators rated for ES NPS 3 equal percentage (config 152-1-8) at 300 psi or more
@@ -116,9 +117,24 @@ Every printed flow coefficient value from Catalog 12. (92,949 rows)
 | `value_raw` | TEXT | Cell exactly as printed |
 | `footnotes` | TEXT | Footnote numbers on the cell, comma-separated (see page_note) |
 
+## `catalog_correction`
+
+Inferred correction for each flagged Catalog 12 cell (extract/corrections.py, docs/CORRECTIONS.md). flow_coefficient keeps the printed value; the tools apply high and medium corrections by default. (223 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `config_id` | TEXT | valve_config.config_id |
+| `coefficient` | TEXT | Coefficient corrected (may be the partner of the flagged one, e.g. Cv for a Kv/Cv mismatch) |
+| `position` | TEXT | Opening or column label |
+| `check_name` | TEXT | The flag it resolves |
+| `printed` | TEXT | As printed |
+| `corrected` | REAL | Inferred value; NULL where there is no basis |
+| `confidence` | TEXT | high, medium, estimate (not applied by default), none (no correction) |
+| `basis` | TEXT | The evidence |
+
 ## `catalog_flag`
 
-Validation results on Catalog 12 values: catalog errors are flagged, never corrected. (828 rows)
+Validation results on Catalog 12 values: catalog errors are flagged; see catalog_correction for the inferred values. (808 rows)
 
 | Column | Type | Meaning |
 |---|---|---|
@@ -524,7 +540,7 @@ Version and provenance of this build of the dataset. (4 rows)
 
 ## `build_input`
 
-Every intermediate CSV the database was built from, with its SHA-256: if a file under data/ changes without a rebuild, tests fail (tests/test_db.py). (766 rows)
+Every intermediate CSV the database was built from, with its SHA-256: if a file under data/ changes without a rebuild, tests fail (tests/test_db.py). (767 rows)
 
 | Column | Type | Meaning |
 |---|---|---|

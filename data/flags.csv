@@ -17,27 +17,7 @@ config_id,coefficient,position,check,severity,detail
 201-1-9,XT,Coeffs. for 6 mm (0.25 Inch ) Travel(2),out_of_range,warning,XT = 32.2
 201-1-10,XT,Coeffs. for 6 mm (0.25 Inch ) Travel(2),out_of_range,warning,XT = 68.2
 201-1-11,XT,Coeffs. for 6 mm (0.25 Inch ) Travel(2),out_of_range,warning,XT = 37.4
-219-1-1,XT,100,out_of_range,warning,XT = 0
-219-1-3,XT,100,out_of_range,warning,XT = 0
-219-1-5,XT,100,out_of_range,warning,XT = 0
-219-1-7,XT,100,out_of_range,warning,XT = 0
-219-1-9,XT,100,out_of_range,warning,XT = 0
-220-1-1,XT,100,out_of_range,warning,XT = 0
 220-1-2,XT,20,out_of_range,warning,XT = 1.005
-220-1-3,XT,100,out_of_range,warning,XT = 0
-220-1-5,XT,100,out_of_range,warning,XT = 0
-220-1-7,XT,100,out_of_range,warning,XT = 0
-220-1-9,XT,100,out_of_range,warning,XT = 0
-221-1-1,XT,100,out_of_range,warning,XT = 0
-221-1-3,XT,100,out_of_range,warning,XT = 0
-221-1-5,XT,100,out_of_range,warning,XT = 0
-221-1-7,XT,100,out_of_range,warning,XT = 0
-221-1-9,XT,100,out_of_range,warning,XT = 0
-222-1-1,XT,100,out_of_range,warning,XT = 0
-222-1-3,XT,100,out_of_range,warning,XT = 0
-222-1-5,XT,100,out_of_range,warning,XT = 0
-222-1-7,XT,100,out_of_range,warning,XT = 0
-222-1-9,XT,100,out_of_range,warning,XT = 0
 336-1-1,XT,20,out_of_range,warning,XT = 422
 11-1-1,Kv,10,kv_cv_mismatch,warning,"Cv 5.44 -> expected Kv 4.71, printed 2.78"
 11-1-1,Kv,20,kv_cv_mismatch,warning,"Cv 23.8 -> expected Kv 20.6, printed 18.0"

@@ -28,6 +28,9 @@ def main(data_dir: str) -> None:
     values = list(csv.DictReader(open(f"{data_dir}/coefficients.csv", encoding="utf-8")))
     curves: dict[tuple[str, str], dict[float, dict]] = defaultdict(dict)
     flags = []
+    # a position where Cv is 0 is a closed valve (some tables run from open to closed, e.g. GX at 100%)
+    zero_cv = {(v["config_id"], v["position"]) for v in values
+               if v["coefficient"] == "Cv" and v["position"] != "" and v["value"] != "" and float(v["value"]) == 0}
     for v in values:
         if v["parse_ok"] == "0":
             flags.append((v["config_id"], v["coefficient"], v["position"] or v["position_label"],
@@ -35,7 +38,7 @@ def main(data_dir: str) -> None:
         if v["value"] == "":
             continue
         x = float(v["value"])
-        closed = v["position"] != "" and float(v["position"]) == 0
+        closed = v["position"] != "" and (float(v["position"]) == 0 or (v["config_id"], v["position"]) in zero_cv)
         if v["coefficient"] in ("XT", "FL", "Fd") and not (0 < x <= 1.0) and not (closed and x == 0):
             flags.append((v["config_id"], v["coefficient"], v["position"] or v["position_label"],
                           "out_of_range", "warning", f"{v['coefficient']} = {v['value_raw']}"))

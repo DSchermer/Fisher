@@ -4,6 +4,13 @@ The version is stored in `data/fisher.db` (`SELECT * FROM dataset_info`) and set
 (`DATASET_VERSION`). To see what a rebuild changed, keep the old database and run
 `python extract/diff_dataset.py old.db data/fisher.db`.
 
+## 2026.11.13.1
+
+- Catalog 12 errors: every flagged cell has an inferred correction with its evidence and confidence
+  (`catalog_correction`, `v_flow_coefficient_corrected`, `docs/CORRECTIONS.md`). The tools apply high and medium
+  corrections by default; printed values are kept.
+- XT = 0 where Cv = 0 (valve closed, GX tables at 100%) is no longer flagged: 243 flags -> 223.
+
 ## 2026.11.13
 
 Source editions: Catalog 12 D103182X012 (SHA-256 c40ea5fe…), Catalog 14 D103428X012 (SHA-256 869ca15d…).

@@ -48,12 +48,13 @@ check, or Emerson) are collected in `docs/MORNING.md`.
 
 ## 3. Errors and inconsistencies in the catalogs themselves
 
-Kept as printed and flagged, never corrected.
-
-- **243 warnings on 39 Catalog 12 pages** (`catalog_flag`): 203 Kv/Cv inconsistencies and 35 out-of-range values. Examples: A11-6 prints Cv 178 as "078"; HP-49 prints every Kv as 0.00; EZ-1 prints "14.7" as XT; EH-5 has XT above 1.
-- **5 unreadable cells:** "0..696", "0..94", "0.6.6", ".9." (twice).
-- **CV500-3:** a row labelled "Kv" holds 0.2–0.45; what it is (likely Kc or Fd) is unknown.
-- **V200U-1 and V200U-2:** Kv rows don't track their Cv rows.
+**Catalog 12: 223 flagged cells, each with an inferred correction** (`docs/CORRECTIONS.md`, `catalog_correction`). The printed value is kept; the tools apply high and medium corrections by default (`Catalog.load(corrections=False)` gives the printed values).
+- 204 high: the evidence leaves one reading, e.g. A11-6 Cv "078" is 178 (0.865 x 178 = the printed Kv 154); "0..696" is 0.696; D3-1 Kv swapped between 30% and 40%; whole Kv rows inconsistent with their Cv rows (8540-1/2, 8560-1/2, V150-8, V200U-1/2, CV500-3, HP-49) recomputed as 0.865 x Cv.
+- 5 medium: the evidence points two ways (e.g. 8540-3: Cv 598 -> 698 reproduces the printed Kv exactly, but the Cv curve fits 598 better).
+- 10 estimates, not applied by default: EZ-1's "6 mm travel" XT cells repeat the Cv (XT read off the configuration's own XT-vs-Cv curve); EH-7 FL printed "0." (mean of the adjacent sizes).
+- 4 with no correction: ES-7 XT 1.222, 1.017, 1.109 and GX XT 1.005 may be genuine (XT above 1: no choking).
+- 20 earlier flags were not errors: XT = 0 where GX tables reach Cv = 0 (closed) at 100%; no longer flagged.
+- **CV500-3:** the row labelled "Kv" (0.13–0.45) is probably another coefficient (Kc or Fd?) under the wrong label; Kv is recomputed from Cv.
 - **Liquid sample problem 3** prints N4 = 7600; Table 2 says 76000. The code uses 76000.
 - **Catalog 14 D-114 Table 8** (sample actuator torques 12,130, 13,087, 13,488 ...) differs slightly from the catalog's own Table 5, which it cites (12,105, 13,081, 13,443 ...). The tools use Table 5.
 - **Catalog 14 B-99 example** interpolates 6,810 lb at 750 °F. Interpolating the printed pounds gives 6,805 (the catalog interpolated in kN).
@@ -103,6 +104,6 @@ Kept as printed and flagged, never corrected.
 3. Which ΔSPL_Ar does Fisher use today: the page 3-1 equation or the page 3-10 chart?
 4. What does the CV500-3 row labelled "Kv" actually contain?
 5. Is the Catalog 12 V200U the Catalog 14 V200?
-6. What are the correct values behind the 243 flagged cells? Are corrected editions available?
+6. Do Emerson's corrected values agree with the 223 inferred corrections (`docs/CORRECTIONS.md`)? Are corrected editions available?
 7. What is the 785C spring-return sizing procedure?
 8. Are we permitted to store and share data derived from Emerson's catalogs? Who will use the dataset?
