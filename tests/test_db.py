@@ -74,3 +74,23 @@ class Dataset(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Drift(unittest.TestCase):
+    """The database is built from the CSVs under data/; a CSV changed without `make data` (or
+    `python3 extract/build_db.py data/fisher.db docs/DATA_MODEL.md`) fails here."""
+
+    def test_csvs_match_the_build(self):
+        import hashlib
+        recorded = {r["path"]: r["sha256"] for r in db.query("SELECT path, sha256 FROM build_input")}
+        self.assertGreater(len(recorded), 30)
+        current = {str(f.relative_to(ROOT)): hashlib.sha256(f.read_bytes()).hexdigest()
+                   for f in sorted((ROOT / "data").rglob("*.csv")) if "source" not in f.parts}
+        self.assertEqual(sorted(current), sorted(recorded), "CSV files added or removed since the build")
+        changed = [p for p in current if current[p] != recorded[p]]
+        self.assertEqual(changed, [], "rebuild data/fisher.db: these CSVs changed since it was built")
+
+    def test_version(self):
+        info = {r["key"]: r["value"] for r in db.query("SELECT key, value FROM dataset_info")}
+        self.assertRegex(info["version"], r"^\d{4}\.\d{2}\.\d{2}")
+        self.assertEqual(len(info["catalog14_sha256"]), 64)

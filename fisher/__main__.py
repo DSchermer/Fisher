@@ -77,6 +77,9 @@ def parser() -> argparse.ArgumentParser:
         p.add_argument(f"--{a}", type=float, required=True)
     for a in ("q", "w", "gg", "m", "gamma1", "t1", "z", "fp"):
         p.add_argument(f"--{a}", type=float)
+    p.add_argument("--units", choices=["us", "kpa", "bar"], default="us",
+                   help="us: scfh, lb/h, psia, R; kpa/bar: m3/h, kg/h, kPa or bar abs, K")
+    p.add_argument("--base", choices=["15.5C", "0C"], default="15.5C", help="metric volumetric flow base")
     p = sub.add_parser("liquid-flow")
     for a in ("cv", "p1", "p2", "gf"):
         p.add_argument(f"--{a}", type=float, required=True)
@@ -260,7 +263,8 @@ def run(argv) -> object:
         out = reference.saturated_steam(psia=args.psia, temp_f=args.temp_f)
     else:
         r = sizing.gas_cv(args.p1, args.p2, args.k, args.xt, q=args.q, w=args.w, gg=args.gg, m=args.m,
-                          gamma1=args.gamma1, t1=args.t1, z=args.z or 1.0, fp_value=args.fp or 1.0)
+                          gamma1=args.gamma1, t1=args.t1, z=args.z or 1.0, fp_value=args.fp or 1.0,
+                          units=args.units, base=args.base)
         out = {"cv": r.cv, "kv": r.kv, "steps": r.steps}
     return out
 

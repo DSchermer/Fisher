@@ -124,3 +124,21 @@ class Factors(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MetricGas(unittest.TestCase):
+    """Catalog 12 Table 2 metric N6-N9 constants give the same Cv as US units (to constant rounding)."""
+
+    def test_units_agree(self):
+        from fisher import sizing
+        us = sizing.gas_cv(214.7, 64.7, 1.31, 0.137, q=6e6, gg=0.6, t1=520).cv
+        kpa = sizing.gas_cv(214.7 * 6.89476, 64.7 * 6.89476, 1.31, 0.137, q=6e6 * 0.0283168, gg=0.6, t1=520 / 1.8,
+                            units="kpa").cv
+        bar = sizing.gas_cv(214.7 * 0.0689476, 64.7 * 0.0689476, 1.31, 0.137, q=6e6 * 0.0283168, gg=0.6,
+                            t1=520 / 1.8, units="bar").cv
+        self.assertAlmostEqual(kpa / us, 1, delta=0.005)
+        self.assertAlmostEqual(bar, kpa, delta=1e-6)
+        w_us = sizing.gas_cv(214.7, 64.7, 1.31, 0.137, w=1000, gamma1=0.5).cv
+        w_m = sizing.gas_cv(214.7 * 6.89476, 64.7 * 6.89476, 1.31, 0.137, w=453.592, gamma1=0.5 * 16.0185,
+                            units="kpa").cv
+        self.assertAlmostEqual(w_m / w_us, 1, delta=0.005)

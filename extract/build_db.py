@@ -13,6 +13,7 @@ Usage:
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import re
 import sqlite3
@@ -24,6 +25,8 @@ sys.path.insert(0, str(ROOT))
 from fisher import Catalog, actuators, integrate, reference, sizing  # noqa: E402
 
 DATA = ROOT / "data"
+# Bump with each change to the data and record it in docs/CHANGELOG.md.
+DATASET_VERSION = "2026.11.13"
 
 # table -> (description, [(column, sqlite type, description)])
 SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
@@ -364,6 +367,15 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("confirmed", "TEXT", "Second-reader result for the row (see c14_table_value)"),
         ("merged", "INTEGER", "1 = value repeated from a merged cell"),
     ]),
+    "dataset_info": ("Version and provenance of this build of the dataset.", [
+        ("key", "TEXT PRIMARY KEY", "version, built_at_utc, catalog12_sha256, catalog14_sha256"),
+        ("value", "TEXT", "Value"),
+    ]),
+    "build_input": ("Every intermediate CSV the database was built from, with its SHA-256: if a file under data/ changes without a rebuild, tests fail (tests/test_db.py).", [
+        ("path", "TEXT PRIMARY KEY", "Path relative to the repository"),
+        ("sha256", "TEXT", "SHA-256 of the file at build time"),
+        ("bytes", "INTEGER", "Size in bytes"),
+    ]),
     "c14_page_note": ("Catalog 14 table footnotes (the text behind footnote numbers such as '1424(1)'), from the band under each table.", [
         ("pdf_page", "INTEGER", "PDF page"),
         ("printed_label", "TEXT", "Printed page label"),
@@ -701,6 +713,14 @@ def build(db_path: str, doc_path: str) -> None:
                  "CREATE INDEX ix_c14_value ON c14_table_value(printed_label, table_no)",
                  "CREATE INDEX ix_torque_factor ON torque_factor(valve, nps, factor)"):
         con.execute(stmt)
+    import datetime
+    pins = dict(re.findall(r"fetch (\S+) ([0-9a-f]{64})", (ROOT / "scripts" / "get_source.sh").read_text()))
+    ins("dataset_info", [("version", DATASET_VERSION),
+                         ("built_at_utc", datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")),
+                         ("catalog12_sha256", pins.get("d103182x012.pdf", "")),
+                         ("catalog14_sha256", pins.get("d103428x012.pdf", ""))])
+    ins("build_input", [(str(f.relative_to(ROOT)), hashlib.sha256(f.read_bytes()).hexdigest(), f.stat().st_size)
+                        for f in sorted(DATA.rglob("*.csv")) if "source" not in f.parts])
     con.commit()
     counts = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in SCHEMA}
     con.execute("VACUUM")

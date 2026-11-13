@@ -177,7 +177,8 @@ def expansion_factor(x: float, fk_value: float, xt: float) -> tuple[float, float
 
 def gas_cv(p1: float, p2: float, k: float, xt: float, *, q: float | None = None, w: float | None = None,
            gg: float | None = None, m: float | None = None, gamma1: float | None = None,
-           t1: float | None = None, z: float = 1.0, fp_value: float = 1.0, units: str = "us") -> Result:
+           t1: float | None = None, z: float = 1.0, fp_value: float = 1.0, units: str = "us",
+           base: str = "15.5C") -> Result:
     """Required Cv for a compressible fluid (page 2-13). Picks the equation from what is given:
 
       q + Gg      -> N7: Cv = q / (N7 Fp P1 Y sqrt(x / (Gg T1 Z)))
@@ -186,26 +187,36 @@ def gas_cv(p1: float, p2: float, k: float, xt: float, *, q: float | None = None,
       w + M       -> N8: Cv = w / (N8 Fp P1 Y sqrt(x M / (T1 Z)))
 
     `xt` is xT for a valve without fittings, or xTP (see `xtp`) with fittings.
-    units="us": scfh, lb/h, psia, deg R, lb/ft3.
+    units (Catalog 12 Table 2; every constant gives Cv):
+      "us":  scfh (60 F), lb/h, psia, deg R, lb/ft3
+      "kpa": m3/h, kg/h, kPa abs, K, kg/m3     "bar": the same with bar abs
+    base: for metric volumetric flow, "15.5C" (standard conditions) or "0C" (normal conditions).
     """
-    if units != "us":
-        raise ValueError("only US units are built in; use the equations with N[...] constants for others")
+    if units not in ("us", "kpa", "bar"):
+        raise ValueError("units must be 'us', 'kpa' or 'bar'")
+    if units == "us":
+        keys = {"N6": "lb/h,psia,lb/ft3", "N7": "scfh,psia,R,60F", "N8": "lb/h,psia,R", "N9": "scfh,psia,R,60F"}
+    else:
+        if base not in ("15.5C", "0C"):
+            raise ValueError("base must be '15.5C' or '0C'")
+        u = {"kpa": "kPa", "bar": "bar"}[units]
+        keys = {"N6": f"kg/h,{u},kg/m3", "N7": f"m3/h,{u},K,{base}", "N8": f"kg/h,{u},K", "N9": f"m3/h,{u},K,{base}"}
     x = (p1 - p2) / p1
     fk_value = fk(k)
     y, x_used, choked = expansion_factor(x, fk_value, xt)
     steps = {"x": x, "Fk": fk_value, "xT": xt, "x_sizing": x_used, "Y": y, "choked": choked, "Fp": fp_value}
     if q is not None and gg is not None:
-        cv = q / (N["N7"]["scfh,psia,R,60F"] * fp_value * p1 * y * math.sqrt(x_used / (gg * t1 * z)))
-        steps["equation"] = "N7"
+        cv = q / (N["N7"][keys["N7"]] * fp_value * p1 * y * math.sqrt(x_used / (gg * t1 * z)))
+        steps["equation"] = "N7 " + keys["N7"]
     elif q is not None and m is not None:
-        cv = q / (N["N9"]["scfh,psia,R,60F"] * fp_value * p1 * y * math.sqrt(x_used / (m * t1 * z)))
-        steps["equation"] = "N9"
+        cv = q / (N["N9"][keys["N9"]] * fp_value * p1 * y * math.sqrt(x_used / (m * t1 * z)))
+        steps["equation"] = "N9 " + keys["N9"]
     elif w is not None and gamma1 is not None:
-        cv = w / (N["N6"]["lb/h,psia,lb/ft3"] * fp_value * y * math.sqrt(x_used * p1 * gamma1))
-        steps["equation"] = "N6"
+        cv = w / (N["N6"][keys["N6"]] * fp_value * y * math.sqrt(x_used * p1 * gamma1))
+        steps["equation"] = "N6 " + keys["N6"]
     elif w is not None and m is not None:
-        cv = w / (N["N8"]["lb/h,psia,R"] * fp_value * p1 * y * math.sqrt(x_used * m / (t1 * z)))
-        steps["equation"] = "N8"
+        cv = w / (N["N8"][keys["N8"]] * fp_value * p1 * y * math.sqrt(x_used * m / (t1 * z)))
+        steps["equation"] = "N8 " + keys["N8"]
     else:
         raise ValueError("give q with gg or m, or w with gamma1 or m")
     return Result(cv, steps)

@@ -513,6 +513,25 @@ Catalog 14 torque method factors for every rotary valve (section D), classified 
 | `confirmed` | TEXT | Second-reader result for the row (see c14_table_value) |
 | `merged` | INTEGER | 1 = value repeated from a merged cell |
 
+## `dataset_info`
+
+Version and provenance of this build of the dataset. (4 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `key` | TEXT | version, built_at_utc, catalog12_sha256, catalog14_sha256 |
+| `value` | TEXT | Value |
+
+## `build_input`
+
+Every intermediate CSV the database was built from, with its SHA-256: if a file under data/ changes without a rebuild, tests fail (tests/test_db.py). (765 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `path` | TEXT | Path relative to the repository |
+| `sha256` | TEXT | SHA-256 of the file at build time |
+| `bytes` | INTEGER | Size in bytes |
+
 ## `c14_page_note`
 
 Catalog 14 table footnotes (the text behind footnote numbers such as '1424(1)'), from the band under each table. (719 rows)
