@@ -1,6 +1,6 @@
 # Gaps and unknowns
 
-The state of the unified dataset (`data/fisher.db`) and tools, updated after adding the force and torque methods. Numbers come from the current data. Each item says why it matters and what would close it.
+The state of the unified dataset (`data/fisher.db`) and tools, updated after adding the force and torque methods and typing sections B and D. Numbers come from the current data. Each item says why it matters and what would close it.
 
 ## Most important first
 
@@ -9,7 +9,7 @@ The state of the unified dataset (`data/fisher.db`) and tools, updated after add
 | 1 | **Force and torque methods are only partly implemented.** Done: valve body forces A + B + C + D; 585C springless and 657/657R/667 actuator selection; torque equations; 7600 butterfly torque data (all tested against the catalog's sample calculations). Not done: 585C spring-biased, 685/685SE/685SR, 785C, 3025, 657C actuator tables; stem load check (B-99); piston-ring friction charts (figures 4/4A); typed torque data for valves other than the 7600; actuator torque output tables (1051, 1052, 1061, 1066, 2052, Bettis) | Rotary valves still need an actuator answer outside the pressure drop tables | Extract the remaining actuator tables and per-valve torque tables page by page, as done for the 7600 and 657 |
 | 2 | **No engineer has validated results against Fisher's own software** (Fisher Specification Manager / FIRST) | The tests reproduce the catalogs' own worked examples, which is not the same as matching the current product software | Run 10–20 real sizing cases through both and compare |
 | 3 | **Linear interpolation between catalog openings is our choice, not the catalog's** | Cv at an opening between listed points, and opening for a required Cv, can be off where curves bend sharply (quick opening, butterfly near 90°) | Ask Emerson or an engineer what interpolation Fisher uses; measure the error on curves with known intermediate points |
-| 4 | **About 4,400 rows in Catalog 14's as-printed tables aren't confirmed by the second reader** (364 of 695 tables), and 125 tables have unrecognised headers | The force and torque data (sections B and D) is not yet held to the same standard as the pressure-drop ratings | Give sections B and D the same per-layout treatment as sections A and C (typed values, key columns, row-order check) |
+| 4 | **Sections B and D are typed by a general converter, not per table.** `c14_table_value` holds 33,306 numbers from 423 tables (B 7,746; D 25,560) with row keys and column header paths. The second reader confirms all but 5 (on B-84, where the spring adjustor columns aren't row-aligned), but 4,580 are confirmed only as "all present within four lines" rather than in order on one line. Key columns are chosen by rules (header names, text columns), so some key names are odd (e.g. D-29's "Torques": "Operating"/"MAST"). 50 tables have no numbers (shaft/actuator compatibility matrices, equations, terminology) and are listed in `table_values_text_only.csv` | Queries need to know each table's key names and column paths; a wrong key choice would attach a value to the wrong row label without failing the row-order check | Hand-check a sample per layout; where a table is used by a tool, give it a typed table as done for the 7600 and 657 |
 | 5 | **The tools read the CSV files; the database is built from them** | Two copies; tests keep them in agreement, but nothing structurally prevents drift | Point the tools at `fisher.db` and make the CSVs an intermediate build step |
 | 6 | **Motion is mislabelled for tables without an opening axis** (SIS, Z500 ball valves are labelled sliding-stem) | Filters by `motion` return them in the wrong group | Set motion from the valve type, not only from the position axis; add a family-level override |
 
@@ -24,8 +24,9 @@ The state of the unified dataset (`data/fisher.db`) and tools, updated after add
 - The prose of the sizing procedures is not stored as text. The equations are code instead.
 
 **Catalog 14**
-- Force method (B): valve body forces, 585C springless and 657/657R/667 selection are implemented. Still only stored as printed: 585C spring-biased, 685, 685SE/SR, 785C, 3025 and 657C tables; Table 17 (safe spring loads); the stem load section (B-99 onward).
-- Torque method (D): equations and the 7600 butterfly data are implemented. Still only stored as printed: the A/B/C tables for every other valve (8532, 8560, 8580, A11, CV500, V150, V200, V300, V500, Control-Disk, 9500 and others), K factors for effective pressure drop, shaft material strength by temperature (Table 3), and all actuator torque output tables.
+- Force method (B): valve body forces, 585C springless and 657/657R/667 selection are implemented. The 585C spring-biased, 685, 685SE/SR, 785C, 3025 and 657C tables, Table 17 (safe spring loads) and the stem load section (B-99 onward) are typed values in `c14_table_value`, but no tool uses them yet.
+- Torque method (D): equations and the 7600 butterfly data are implemented. The A/B/C tables for every other valve (8532, 8560, 8580, A11, CV500, V150, V200, V300, V500, Control-Disk, 9500 and others), K factors, shaft strength by temperature (Table 3) and the actuator torque output tables are typed values in `c14_table_value`, but no tool uses them yet.
+- Figures that pdfplumber reads as ruled tables (the 685 force charts on B-27) are skipped; the shaft/actuator compatibility matrices (D-123 onward) hold marks, not numbers, and are only stored as printed.
 - Air-spring-effect charts (B-88 onward) and other figures are not digitized.
 - Footnote text on Catalog 14 pages. Footnote numbers are kept on each value, but what they say is not (Catalog 12 has `page_note`; Catalog 14 does not).
 - Text pages: sample calculations (B-77 onward), Bettis actuator sizing notes (D-84 onward), three-way butterfly application notes (D-100).
@@ -93,7 +94,7 @@ Kept as printed and flagged in `catalog_flag`, never corrected. The true values 
 
 - **Catalog 12 coefficients:** checked by a second PDF reader, Kv/Cv and range checks, the worked examples, and your hand check of 20 tables.
 - **Catalog 14 pressure-drop ratings:** checked by the second PDF reader and spot tests against printed values only. **No human hand check yet.**
-- **Catalog 14 sections B and D:** only partly confirmed by the second reader (item 4 above). No hand check.
+- **Catalog 14 sections B and D:** all but 5 values confirmed by the second reader, 14% of them only loosely (item 4 above). No hand check.
 - **Chart digitizations:** checked only against the catalogs' own worked examples and by eye.
 - **Valve-to-actuator links:** unit-tested on a few configurations (e.g. ES NPS 3 → page A-3). Not reviewed by an engineer for correctness of the matching rules.
 - **Sizing functions:** reproduce every printed worked example. Not compared with Fisher Specification Manager.

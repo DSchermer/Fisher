@@ -425,3 +425,24 @@ Catalog 14 torque method Table 1: A, B, C factors and shaft limit (so far the 76
 | `c_90` | REAL | C factor at 90 deg maximum rotation |
 | `max_torque_lbf_in` | REAL | Maximum allowable shaft torque, lbf-in (S17400 to 300 F) |
 | `printed_label` | TEXT | Printed page label |
+
+## `c14_table_value`
+
+Every numeric (and placeholder) cell of the Catalog 14 force (B) and torque (D) method tables, typed, with its row keys and column header path. Built by extract/catalog14_values.py. (33,988 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `table_id` | TEXT | reference_table.table_id of the same table as printed |
+| `printed_label` | TEXT | Printed page label |
+| `pdf_page` | INTEGER | PDF page |
+| `section` | TEXT | 'B' (force method) or 'D' (torque method) |
+| `table_no` | INTEGER | Table position on the page, from 1 |
+| `heading` | TEXT | Page heading (actuator, valve, construction, as printed) |
+| `row_group` | TEXT | Row-group or table label above the row, e.g. '0-18 Psig to Diaphragm', 'Spline Shaft' |
+| `row_no` | INTEGER | Data row within the table, from 1 |
+| `keys` | TEXT | JSON object of the row's key columns (size, shaft, class, spring ...), merged cells carried down |
+| `column_path` | TEXT | Column header path, group headers joined with ' › ' |
+| `value` | REAL | Number; NULL for placeholders |
+| `value_raw` | TEXT | Cell as printed ('---', 'CF', '207 (3-15)', '1424(1)') |
+| `footnotes` | TEXT | Footnote numbers attached to the value |
+| `confirmed` | TEXT | Second reader: 'line' = row's numbers in order on one pdftotext line; 'window' = all within four consecutive lines (vertically centred or merged cells); '' = not found |

@@ -292,6 +292,22 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("max_torque_lbf_in", "REAL", "Maximum allowable shaft torque, lbf-in (S17400 to 300 F)"),
         ("printed_label", "TEXT", "Printed page label"),
     ]),
+    "c14_table_value": ("Every numeric (and placeholder) cell of the Catalog 14 force (B) and torque (D) method tables, typed, with its row keys and column header path. Built by extract/catalog14_values.py.", [
+        ("table_id", "TEXT", "reference_table.table_id of the same table as printed"),
+        ("printed_label", "TEXT", "Printed page label"),
+        ("pdf_page", "INTEGER", "PDF page"),
+        ("section", "TEXT", "'B' (force method) or 'D' (torque method)"),
+        ("table_no", "INTEGER", "Table position on the page, from 1"),
+        ("heading", "TEXT", "Page heading (actuator, valve, construction, as printed)"),
+        ("row_group", "TEXT", "Row-group or table label above the row, e.g. '0-18 Psig to Diaphragm', 'Spline Shaft'"),
+        ("row_no", "INTEGER", "Data row within the table, from 1"),
+        ("keys", "TEXT", "JSON object of the row's key columns (size, shaft, class, spring ...), merged cells carried down"),
+        ("column_path", "TEXT", "Column header path, group headers joined with ' › '"),
+        ("value", "REAL", "Number; NULL for placeholders"),
+        ("value_raw", "TEXT", "Cell as printed ('---', 'CF', '207 (3-15)', '1424(1)')"),
+        ("footnotes", "TEXT", "Footnote numbers attached to the value"),
+        ("confirmed", "TEXT", "Second reader: 'line' = row's numbers in order on one pdftotext line; 'window' = all within four consecutive lines (vertically centred or merged cells); '' = not found"),
+    ]),
 }
 
 VIEWS = {
@@ -507,6 +523,18 @@ def build(db_path: str, doc_path: str) -> None:
                                    num(r["B"]), num(r["C_60"]), num(r["C_90"]), num(r["max_torque_lbf_in"]),
                                    r["printed_label"]) for r in rows(DATA / "catalog14" / "torque" / "torque_characteristics.csv")])
 
+    c14_ids = {}
+    for t in rows(DATA / "catalog14" / "index.csv"):
+        m = re.match(r"(.+?_t\d+)(_|$)", t["id"])
+        c14_ids[(t["page"], m.group(1))] = t["id"]
+    tv = []
+    for r in rows(DATA / "catalog14" / "table_values.csv"):
+        prefix = f"{r['printed_label'].replace('-', '_').replace('.', '_')}_t{r['table']}"
+        tv.append((c14_ids.get((r["page"], prefix), ""), r["printed_label"], int(r["page"]), r["section"],
+                   int(r["table"]), r["heading"], r["group"], int(r["row"]), r["keys"], r["column"], num(r["value"]),
+                   r["value_raw"], r["footnotes"], r["confirmed"]))
+    ins("c14_table_value", tv)
+
     for name, (_, sql) in VIEWS.items():
         con.execute(f"CREATE VIEW {name} AS {sql}")
     for stmt in ("CREATE INDEX ix_fc_config ON flow_coefficient(config_id)",
@@ -516,7 +544,8 @@ def build(db_path: str, doc_path: str) -> None:
                  "CREATE INDEX ix_rating_port ON actuator_rating(section, port_in, travel_in)",
                  "CREATE INDEX ix_link_config ON valve_actuator_link(config_id)",
                  "CREATE INDEX ix_cell ON reference_cell(table_id)",
-                 "CREATE INDEX ix_flag ON catalog_flag(config_id)"):
+                 "CREATE INDEX ix_flag ON catalog_flag(config_id)",
+                 "CREATE INDEX ix_c14_value ON c14_table_value(printed_label, table_no)"):
         con.execute(stmt)
     con.commit()
     counts = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in SCHEMA}
