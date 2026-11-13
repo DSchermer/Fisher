@@ -1,0 +1,32 @@
+valve,uses,pages,condition,source_label,source_text
+A31D,8532,,,A31D-1,The Fisher A31D flow coefficients are identical to the 8532. For NPS 14 through 24 A31D flow coefficients refer to the 8532 information.
+EAS,EAD,103;104;105;107;111,,EAD-2,The coefficients shown on this page are also appropriate for Fisher EAS and EAT.
+EAT,EAD,103;104;105;107;108;111,,EAD-2,The coefficients shown on this page are also appropriate for Fisher EAS and EAT.
+EAS,EAD,,Flow Down,EAS-6,The EAS valve (Flow Down) has flow coefficients identical to the EAD valve.
+EAT,EAD,,Flow Down,EAT-1,The Fisher EAT valve (Flow Down) has flow coefficients identical to the EAD valve.
+EDR,ED,120;121;122;123;124;125;128;134,,ED-1,The coefficients shown on this page are also appropriate for Fisher EDR ET and ETR.
+ET,ED,120;121;122;123;124;125;128;134,,ED-1,The coefficients shown on this page are also appropriate for Fisher EDR ET and ETR.
+ETR,ED,120;121;122;123;124;125;128;134,,ED-1,The coefficients shown on this page are also appropriate for Fisher EDR ET and ETR.
+ES,ED,131;132,,ED-12,The coefficients shown on this page are also appropriate for Fisher ES and ET valves.
+ET,ED,131;132,,ED-12,The coefficients shown on this page are also appropriate for Fisher ES and ET valves.
+EDR,ED,,NPS 1 through 4 CL125-600,EDR-1,The Fisher EDR valve has flow coefficients identical to the NPS 1 through 4 CL125-600 ED valve.
+ETR,ED,,NPS 1 to 4 CL125-600,ET-3,The Fisher ETR valve has flow coefficients identical to the NPS 1 to 4 CL125-600 ED valve.
+ET-C,ED,,NPS 3 through 8 with full-sized port,ET-3,The Fisher ET-C valve has flow coefficients identical to the NPS 3 through 8 Fisher ED valve with full-sized port.
+EHT,EH,138;139;140;141;143,,EH-1,The coefficients on this page are also appropriate for the EHT valve.
+EHT,EH,,all other EHT coefficients (use EHD),EH-9,All other EHT flow coefficients are identical to EHD coefficients.
+EWT,EW,161;163;166;167,,EW-1,The coefficients shown on this page are also appropriate for the EWT.
+EWS,EW,166,NPS 4x2 and 6x4 only,EW-6,Coefficients for NPS 4x2 and 6x4 apply to Fisher EWS valves.
+EWT-1,EW,167;168,,EW-7,The coefficients shown on this page are also appropriate for the EWT and EWT-1.
+EWT,EW,,all other EWT coefficients (use EWD),EW-37,All other EWT flow coefficients are identical to the EWD.
+EWT-C,EW,,EWD NPS 6x4 through 12x6 CL150-600,EW-38,The EWT-C has flow coefficients identical to the NPS 6 x 4 through 12 x 6 CL150-600 EWD.
+EWT-1,EW,,use EWD-1,EW-38,The EWT-1 valve has flow coefficients identical to the EWD-1 valve.
+EWNT-2,EWN,199,CL300 CL600 and CL900,EWN-1,The coefficients shown on this page are also appropriate for CL300 600 and 900 Fisher EWNT-2 and CL900 EWNT-1.
+EWNT-1,EWN,199,CL900,EWN-1,The coefficients shown on this page are also appropriate for CL300 600 and 900 Fisher EWNT-2 and CL900 EWNT-1.
+EZ-C,EZ,,,EZ-6,The EZ-C has flow coefficients identical to the EZ.
+HPAT,HP,223;224;225;226,,HP-1,The coefficients on this page are also appropriate for the HPAT.
+HPT-C,HP,,NPS 4 through 12 HPD,HP-50,The Fisher HPT-C valve has flow coefficients identical to the NPS 4 through 12 Fisher HPD valve.
+HPS-C,HP,,NPS 1 through 3 HPS,HP-50,The Fisher HPS-C valve has flow coefficients identical to the NPS 1 through 3 Fisher HPS valve.
+V300,V150,,,V300-1,The Fisher V300 has flow coefficients identical to the V150.
+Large ED/EWD,external,,PS Sheet 51.1:E Series(A) D104737X012,ED-16,Large ED/EWD flow coefficients can be found in PS Sheet 51.1:E Series(A) - D104737X012.
+Large ET/EWT,external,,PS Sheet 51.1:E Series(A) D104737X012,ET-3,The Fisher Large ET/EWT flow coefficients can be found in PS Sheet 51.1:E Series (A) - D104737X012.
+FB,external,,PS Sheet 51.1:FB(A) D104710X012,FB-1,FB flow coefficients can be found in PS Sheet 51.1:FB(A) - D104710X012.

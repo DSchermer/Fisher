@@ -1,0 +1,93 @@
+"""Command-line access to the lookups and sizing equations. Output is JSON.
+
+    python -m fisher families
+    python -m fisher find --family ED --nps 2 --characteristic linear
+    python -m fisher show 122-1-8
+    python -m fisher select --cv 50 --family ED --min-open 20 --max-open 80
+    python -m fisher liquid --q 800 --p1 314.7 --p2 289.7 --gf 0.5 --fp 0.93
+    python -m fisher gas --q 6e6 --gg 0.6 --t1 520 --p1 214.7 --p2 64.7 --k 1.31 --xt 0.137
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+
+from . import sizing
+from .catalog import Catalog
+
+
+def summary(c, opening=None) -> dict:
+    d = {"config_id": c.config_id, "family": c.family, "nps": c.nps, "source": c.source,
+         "title": " | ".join(x for x in (c.page_title, c.table_title, c.section) if x),
+         "characteristic": c.characteristic, "flow_direction": c.flow_direction,
+         "restricted_trim": c.restricted, "rated_cv": c.rated("Cv"), "warnings": len(
+             [f for f in c.flags if f["severity"] != "info"])}
+    if opening is not None:
+        d["opening"] = opening
+        d["basis"] = c.position_basis
+    return d
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(prog="fisher", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("families")
+    for name in ("find", "select"):
+        p = sub.add_parser(name)
+        p.add_argument("--family")
+        p.add_argument("--nps")
+        p.add_argument("--characteristic")
+        p.add_argument("--flow-direction")
+        p.add_argument("--text")
+        p.add_argument("--no-restricted", action="store_true")
+        p.add_argument("--no-aliases", action="store_true")
+        if name == "select":
+            p.add_argument("--cv", type=float, required=True)
+            p.add_argument("--min-open", type=float, default=20)
+            p.add_argument("--max-open", type=float, default=80)
+    p = sub.add_parser("show")
+    p.add_argument("config_id")
+    p = sub.add_parser("liquid")
+    for a in ("q", "p1", "p2", "gf"):
+        p.add_argument(f"--{a}", type=float, required=True)
+    for a in ("fp", "fr", "fl", "pv", "ff", "pc", "n1"):
+        p.add_argument(f"--{a}", type=float)
+    p = sub.add_parser("gas")
+    for a in ("p1", "p2", "k", "xt"):
+        p.add_argument(f"--{a}", type=float, required=True)
+    for a in ("q", "w", "gg", "m", "gamma1", "t1", "z", "fp"):
+        p.add_argument(f"--{a}", type=float)
+    args = ap.parse_args(argv)
+
+    cat = Catalog.load() if args.cmd in ("families", "find", "select", "show") else None
+    if args.cmd == "families":
+        out = cat.families()
+    elif args.cmd in ("find", "select"):
+        filters = dict(family=args.family, nps=args.nps, characteristic=args.characteristic,
+                       flow_direction=args.flow_direction, text=args.text,
+                       include_restricted=not args.no_restricted, include_aliases=not args.no_aliases)
+        if args.cmd == "find":
+            out = [summary(c) for c in cat.find(**filters)]
+        else:
+            out = [summary(c, op) for c, op in cat.find_valves(args.cv, args.min_open, args.max_open, **filters)]
+    elif args.cmd == "show":
+        c = cat.get(args.config_id)
+        out = c.to_dict()
+        out["page_notes"] = [{"note": k, "text": t} for k, t in cat.notes(c.page)]
+    elif args.cmd == "liquid":
+        r = sizing.liquid_cv(args.q, args.p1, args.p2, args.gf, n1=args.n1 or sizing.N["N1"]["gpm,psia"],
+                             fp_value=args.fp or 1.0, fr=args.fr or 1.0, fl=args.fl, pv=args.pv,
+                             ff_value=args.ff, pc=args.pc)
+        out = {"cv": r.cv, "kv": r.kv, "steps": r.steps}
+    else:
+        r = sizing.gas_cv(args.p1, args.p2, args.k, args.xt, q=args.q, w=args.w, gg=args.gg, m=args.m,
+                          gamma1=args.gamma1, t1=args.t1, z=args.z or 1.0, fp_value=args.fp or 1.0)
+        out = {"cv": r.cv, "kv": r.kv, "steps": r.steps}
+    json.dump(out, sys.stdout, indent=1, default=str)
+    print()
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

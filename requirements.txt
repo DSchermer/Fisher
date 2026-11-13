@@ -1,0 +1,3 @@
+# Only needed to re-run the extraction (make data). The fisher package itself uses the standard library.
+pdfplumber==0.11.10
+# Also needs poppler-utils (pdftotext) for the cross-check.

@@ -1,0 +1,472 @@
+page,printed_label,note,text
+3,1-1,note,These values are typical only; actual values shall be stated by manufacturer.
+3,1-1,1,Limited P1 - P2 in flow to close direction.
+6,461-2,1,At 100% travel.
+6,461-2,2,Equal percentage characteristic (Micro Form).
+6,461-2,3,Modified parabolic characteristic.
+15,8560-1,1,"NPS 2 is multirated to CL150, 300 and 600."
+16,8560-2,1,"NPS 2 is multirated to CL150, 300 and 600."
+17,8560-3,1,"NPS 2 is multirated to CL150, 300 and 600."
+18,8560-4,1,"NPS 2 is multirated to CL150, 300 and 600."
+33,24000-1,1,Max travel is 0.5 inches.
+33,24000-1,2,At 100% travel.
+34,24000-2,1,Max travel is 0.5 inches.
+34,24000-2,2,At 100% travel.
+35,24000-3,1,Max travel is 0.5 inches.
+35,24000-3,2,At 100% travel.
+36,24000-4,1,Max travel is 0.75 inches.
+36,24000-4,2,At 100% travel.
+37,24000C-1,1,Max travel is 0.5 inches.
+37,24000C-1,2,At 100% travel.
+38,24000C-2,1,Max travel is 0.5 inches.
+38,24000C-2,2,At 100% travel.
+39,24000C-3,1,Max travel is 0.5 inches.
+39,24000C-3,2,At 100% travel.
+40,24000C-4,1,Max travel is 0.75 inches.
+40,24000C-4,2,At 100% travel.
+41,24000CVF/SVF-1,1,Max travel is 0.5 inches.
+41,24000CVF/SVF-1,2,At 100% travel.
+42,24000CVF/SVF-2,1,Max travel is 0.5 inches.
+42,24000CVF/SVF-2,2,At 100% travel.
+43,24000CVF/SVF-3,1,1. Max travel is 0.5 inches.
+43,24000CVF/SVF-3,2,At 100% travel.
+44,24000CVF/SVF-4,1,Max travel is 0.75 inches.
+44,24000CVF/SVF-4,2,At 100% travel.
+45,24000S-1,1,Max travel is 0.5 inches.
+45,24000S-1,2,At 100% travel.
+46,24000S-2,1,Max travel is 0.5 inches.
+46,24000S-2,2,At 100% travel.
+47,24000S-3,1,Max travel is 0.75 inches.
+47,24000S-3,2,At 100% travel.
+48,24000F-1,1,Max travel is 0.5 inches.
+48,24000F-1,2,At 100% travel.
+49,24000F-2,1,Max travel is 0.5 inches.
+49,24000F-2,2,At 100% travel.
+50,24000F-3,1,Max travel is 0.5 inches.
+50,24000F-3,2,At 100% travel.
+51,24000SB-1,1,Max travel is 0.5 inches.
+51,24000SB-1,2,At 100% travel.
+52,24000SB-2,1,Max travel is 0.5 inches.
+52,24000SB-2,2,At 100% travel.
+53,24000SB-3,1,Max travel is 0.5 inches.
+53,24000SB-3,2,At 100% travel.
+55,26000-1,1,At 100% travel.
+56,51000-1,1,At 100% travel.
+59,83000-1,1,At 100% travel.
+61,84000-1,1,At 100% travel.
+61,84000-1,1,Flow A to B is recommended for low discharge pressure. Low discharge pressure being defined as near or below atmospheric pressure.
+61,84000-1,1,Flow A to B is recommended for low discharge pressure. Low discharge pressure being defined as near or below atmospheric pressure.
+62,87000-1,1,At 100% travel.
+81,CAV4-1,1,The ability of Cavitrol IV trim to prevent cavitation noise and damage is diminished when throttling for long times at Cvs less than these minimums.
+81,CAV4-1,2,At 100% travel.
+92,D-1,1,At 100% travel.
+93,D-2,1,At 100% travel.
+94,DA-1,1,At 100% travel.
+95,DA-2,1,At 100% travel.
+96,DA-3,1,At 100% travel.
+100,D4-1,1,At 100% travel.
+102,EAD-1,1,"When using Fisher 655-EAD as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (3/4 inch)."
+102,EAD-1,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (1/4 inch) travel."
+102,EAD-1,3,At 100% travel.
+103,EAD-2,1,"When using Fisher 655-EAD as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (3/4 inch)."
+103,EAD-2,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (1/4 inch) travel."
+103,EAD-2,3,At 100% travel.
+103,EAD-2,4,"For NPS 8 values, please see the ED Catalog 12 pages."
+103,EAD-2,note,The coefficients shown on this page are also appropriate for Fisher EAS and EAT.
+104,EAD-3,1,At 100% travel.
+104,EAD-3,note,The coefficients shown on this page are also appropriate for Fisher EAS and EAT.
+105,EAD-4,1,At 100% travel.
+105,EAD-4,2,"For NPS 8 values, please see the ED Catalog 12 pages."
+105,EAD-4,note,The coefficients shown on this page are also appropriate for Fisher EAS and EAT.
+106,EAD-5,1,At 100% travel.
+107,EAD-6,1,At 100% travel.
+107,EAD-6,2,"For NPS 8 values, please see the ED Catalog 12 pages."
+107,EAD-6,note,The coefficients shown on this page are also appropriate for Fisher EAS and EAT.
+108,EAD-7,1,"For NPS 8 values, please see the ED Catalog 12 pages."
+108,EAD-7,note,The coefficients shown on this page are also appropriate for Fisher EAT.
+111,EAD-10,1,This column lists XT factors for Whisper Trim III calges at 100% travel.
+111,EAD-10,note,"The coefficients shown on this page are also appropriate for Fisher EAS, EAT valves."
+112,EAS-1,1,"When using 655-EAS as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (3/4 inch)."
+112,EAS-1,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (1/4 inch) travel."
+112,EAS-1,3,At 100% travel.
+113,EAS-2,1,At 100% travel.
+114,EAS-3,1,At 100% travel.
+116,EAS-5,1,Micro-flat Cavitation trims use a shutoff port diameter which is 0.125 inch larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+116,EAS-5,2,Clearance flow only
+116,EAS-5,3,At 100% travel
+118,EAT-1,1,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period of time. Erosion damage to the valve seats may result.
+118,EAT-1,2,At 100% travel.
+118,EAT-1,3,Clearance flow only.
+118,EAT-1,4,"For use with R31233 trim only, for additional capacities, contact your Emerson sales office."
+120,ED-1,1,"When using Fisher 655-ED or 655-ET as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (0.75 inch)."
+120,ED-1,2,"When using self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+120,ED-1,3,At 100% travel.
+120,ED-1,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR."
+121,ED-2,1,"When using Fisher 655-ED or 655-ET as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (0.75 inch)."
+121,ED-2,2,"When using self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+121,ED-2,3,At 100% travel.
+121,ED-2,4,NPS 8 EAD/EAT valves use the same Cv values for sizing as NPS 6 ED valves with 177.8 mm (7 inch) port.
+121,ED-2,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR."
+122,ED-3,1,At 100% travel.
+122,ED-3,2,"If coefficients listed above for the NPS 8 linear cage with 51 mm (2-inch) travel are not sufficient for your application, consider using the quick opening cage. The NPS 8 quick opening cage"
+122,ED-3,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR. The full-size port coefficients for NPS 3 through 8 also apply"
+123,ED-4,1,At 100% travel.
+123,ED-4,2,"If coefficients listed above for the NPS 8 linear cage with 51 mm (2-inch) travel are not sufficient for your application, consider using the quick opening cage. The NPS 8 quick opening cage"
+123,ED-4,3,NPS 8 EAD/EAT valves use the same Cv values for sizing as NPS 6 ED valves with 177.8 mm (7 inch) port.
+123,ED-4,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR. The full-size port coefficients for NPS 3 through 8 also apply"
+124,ED-5,1,At 100% travel.
+124,ED-5,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR. The full-size port coefficients for NPS 3 through 8 also apply"
+125,ED-6,1,At 100% travel.
+125,ED-6,2,NPS 8 EAD/EAT valves use the same Cv values for sizing as NPS 6 ED valves with 177.8 mm (7 inch) port.
+125,ED-6,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR. The full-size port coefficients for NPS 3 through 8 also apply"
+128,ED-9,1,NPS 6 easy-e with restricted Whisper Trim not available. Use EW valve body where this trim is desired.
+128,ED-9,2,These values are also used to size NPS 8 EAD/EAT valves.
+128,ED-9,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR. The full-size port coefficients for NPS 3 through 6 also apply"
+131,ED-12,note,"The coefficients shown on this page are also appropriate for Fisher ES, ET valves. The coefficients for NPS 3 through 8 also apply to Fisher ET-C"
+132,ED-13,1,This column lists XT factors for Whisper Trim III cages at 100% travel
+132,ED-13,2,"NPS 1-1/2 valves with 3/4""port diameter is for ES constructions only"
+132,ED-13,3,Not applicable for ET with Spring loaded seal ring or ED with Class IV multiple piston rings
+132,ED-13,4,Only applied for ET-C
+132,ED-13,note,"The coefficients shown on this page are also appropriate for Fisher ES, ET valves. The coefficients for NPS 3 through 8 also apply to Fisher ET-C"
+134,ED-15,1,These values are also used to size NPS 8 EAD/EAT valves.
+134,ED-15,note,"The coefficients shown on this page are also appropriate for Fisher EDR, ET, and ETR. The full-size port coefficients for NPS 4 through 8 also apply"
+138,EH-1,1,At 100% travel.
+138,EH-1,note,The coefficients in this table are also appropriate for the EHT Valve.
+138,EH-1,1,At 100% travel.
+138,EH-1,note,The coefficients in this table are also appropriate for the EHT Valve.
+139,EH-2,1,At maximum travel.
+139,EH-2,2,These cages are characterized for low flow in the first 40 percent of travel then exhibit in a linear characteristic.
+139,EH-2,3,These cages are characterized for low flow in the first 50 percent of travel then exhibit in a linear characteristic.
+139,EH-2,note,The coefficients on this page are also appropriate for the EHT Valve.
+140,EH-3,1,At 100% travel.
+140,EH-3,note,The coefficients on this page are also appropriate for the EHT Valve.
+141,EH-4,1,At 100% travel.
+141,EH-4,note,The coefficients on this page are also appropriate for the EHT Valve.
+143,EH-6,1,At 100% travel.
+143,EH-6,2,These cages are characterized for low flow in the first 40% of travel then exhibit a linear characteristic.
+143,EH-6,note,The coefficients in this table are also appropriate for the EHT Valve.
+144,EH-7,1,At 100% travel.
+145,EH-8,1,At 100% travel.
+145,EH-8,2,Travels identified with this superscript are modified equal percentage characteristic. All other travels are equal percentage.
+146,EH-9,1,"Cavitrol III trim in the CL2500, NPS 1, two-stage and in the CL2500, NPS 2, three-stage valve body sizes uses unbalanced valve plugs. These sizes and constructions are Fisher EHS valves; all"
+146,EH-9,2,Valves should not be required to throttle at a Cv less than the specified minimum of Cv for an extended period. Erosion damage to the valve seats might result.
+146,EH-9,3,At 100 percent travel.
+146,EH-9,note,
+146,EH-9,1,All other EHT flow coefficients are identical to EHD coefficients. Refer to EHD information using all flange ratings and cage styles.
+147,EH-10,1,At 100% travel
+147,EH-10,2,Cavitrol III Micro-Flat trims use a shutoff port diameter which is larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+147,EH-10,3,"Flowing port: 12.7 mm / 0.5 Inch, Unbalanced Area: 5.065 cm2 / 0.785 In2, ¾” stem"
+147,EH-10,4,"Flowing port: 19.1 mm / 0.75 Inch, Unbalanced Area: 5.065 cm2 / 0.785 In2, ¾” stem"
+148,ES-1,1,"When using Fisher 655-EC as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (0.75 inch),"
+148,ES-1,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+148,ES-1,3,At 100% travel.
+149,ES-2,1,"When using Fisher 655-EC as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (0.75 inch),"
+149,ES-2,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+149,ES-2,3,At 100% travel.
+150,ES-3,1,At 100% travel.
+150,ES-3,2,"If coefficients listed above for the NPS 8 linear cage with 51 mm (2 inch) travel are not sufficient for your application, consider using the quick opening cage. The NPS 8 quick opening cage"
+151,ES-4,1,At 100% travel.
+151,ES-4,2,"If coefficients listed above for the NPS 8 linear cage with 51 mm (2 inch) travel are not sufficient for your application, consider using the quick opening cage. The NPS 8 quick opening cage"
+152,ES-5,1,At 100% travel.
+153,ES-6,1,At 100% travel.
+154,ES-7,1,NPS 6 easy-e with restricted Whisper Trim not available. Use EW valve body where this trim is desired.
+156,ES-9,1,At 100% travel
+156,ES-9,2,Cavitrol III Micro-Flat trims use a shutoff port diameter which is larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+156,ES-9,3,"Flowing port: 12.7 mm / 0.5 Inch, Unbalanced Area: 3.869 cm2 / 0.601 In2, 3/8"" stem (optional 1/2"" stem)"
+156,ES-9,4,"Flowing port: 12.7 mm / 0.5 Inch, Unbalanced Area: 5.065 cm2 / 0.785 In2, 1/2"" stem"
+156,ES-9,5,"Flowing port: 19 mm / 0.75 Inch, Unbalanced Area: 5.065 cm2 / 0.785 In2, 1/2"" stem"
+156,ES-9,6,"Flowing port: 12.7 mm / 0.5 Inch, Unbalanced Area: 3.869 cm2 / 0.601 In2, 3/4"" stem"
+157,ES-10,1,"For additional capacities, contact GIS."
+157,ES-10,2,Micro-flat Cavitation trims use a shutoff port diameter which is 0.125 inch larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+157,ES-10,3,Clearance flow only
+157,ES-10,4,At 100% travel
+158,ET-1,1,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period of time. Erosion damage to the valve seats may result.
+158,ET-1,2,Less than fully available travel.
+158,ET-1,3,At 100% travel.
+158,ET-1,4,These values are also used to size NPS 8 EAT valves.
+159,ET-2,1,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period of time. Erosion damage to the valve seats may result.
+159,ET-2,2,At 100% travel.
+159,ET-2,3,Clearance flow only.
+159,ET-2,4,"For use with R31233 trim only, for additional capacities, contact your Emerson sales office."
+161,EW-1,1,The first number indicates both body inlet and outlet sizes. The second number indicates effective trim size.
+161,EW-1,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+161,EW-1,3,At 100% travel.
+161,EW-1,4,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+161,EW-1,note,The coefficients shown on this page are also appropriate for the EWT.
+162,EW-2,1,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+163,EW-3,1,The first number indicates both body inlet and outlet size. The second number indicates effective trim size.
+163,EW-3,2,At 100% travel.
+163,EW-3,3,Travel limited to 3.5 inches when optional multiple piston ring is used. Reduce printed capacities accordingly.
+163,EW-3,4,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+163,EW-3,note,The coefficients shown on this page are also appropriate for the EWT.
+166,EW-6,1,This column lists XT factors for Whisper Trim III cages at 100% travel
+166,EW-6,2,Not applicable for NPS 8x4 EWD with Class IV multiple piston ring
+166,EW-6,3,"Travel limited to 3.75"" for EWD valves with Class IV multiple piston rings and EWT with PEEK anti-extrusion seal ring"
+166,EW-6,note,The coefficients shown on this page are also appropriate for Fisher EWT valves and coefficients for NPS 4x2 and 6x4 apply to Fisher EWS Valves. The
+167,EW-7,1,The first number indicates both body inlet and outlet size. The second number indicates effective trim size.
+167,EW-7,2,At 100% travel.
+167,EW-7,note,The coefficients shown on this page are also appropriate for the EWT and EWT-1. EWD-1 and EWT-1 are available only in NPS 12 x 8 body size.
+168,EW-8,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+168,EW-8,2,Valve should not be required to throttle at less than the specified minimum coefficient for an extended period of time or erosion damage to the valve seat may result.
+168,EW-8,note,The coefficients shown on this page are also appropriate for the EWT-1.
+169,EW-9,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+169,EW-9,2,"Construction—SNC = short-neck, cast windows."
+169,EW-9,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+170,EW-10,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+170,EW-10,2,"Construction—LND - long neck, drilled windows; LN-SD = long neck with bonnet spacer, drilled windows."
+170,EW-10,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+171,EW-11,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+171,EW-11,2,"Construction—SNC = short-neck, cast windows."
+171,EW-11,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+172,EW-12,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+172,EW-12,2,"Construction—LND - long neck, drilled windows; LN-SD = long neck with bonnet spacer, drilled windows."
+172,EW-12,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+174,EW-14,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+174,EW-14,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+174,EW-14,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+176,EW-16,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+176,EW-16,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+176,EW-16,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+178,EW-18,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+178,EW-18,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+178,EW-18,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+180,EW-20,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+180,EW-20,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+180,EW-20,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+182,EW-22,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+182,EW-22,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+182,EW-22,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+184,EW-24,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+184,EW-24,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+184,EW-24,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+185,EW-25,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+185,EW-25,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+185,EW-25,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+186,EW-26,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+186,EW-26,2,Construction—SN = short-neck valve; LN = long-neck valve: LN-S = long-neck valve with bonnet spacer.
+186,EW-26,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might result."
+187,EW-27,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+187,EW-27,2,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+188,EW-28,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+189,EW-29,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+190,EW-30,1,The first number indicates both inlet and outlet size. The second number indicates effective trim size.
+190,EW-30,2,"Construction—SND = short-neck valve, drilled windows; LND - long-neck valve, drilled windows; LN-SD = long-neck valve with bonnet spacer, drilled windows."
+190,EW-30,3,"Do not allow the valve to throttle at less than the minimum coefficient shown for an extended time, or erosion damage to the valve seat might occur."
+191,EW-31,1,The first number indicates both inlet and outlet sizes. The second number indicates effective trim size.
+191,EW-31,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+191,EW-31,3,At 100% travel.
+191,EW-31,4,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+192,EW-32,1,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+193,EW-33,1,The first number indicates both body inlet and outlet size. The second number indicates effective trim size.
+193,EW-33,2,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+195,EW-35,1,The first number indicates both body inlet and outlet size. The second number indicates effective trim size.
+195,EW-35,2,At 100% travel.
+196,EW-36,1,NPS 10x6 has a valve outlet area identical to the NPS 8x6.
+197,EW-37,1,The first number indicates both body inlet and outlet size.The second number indicates effective trim size.
+197,EW-37,2,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period of time. Erosion damage to the valve seats may result.
+197,EW-37,3,At 100% travel.
+197,EW-37,4,This construction has an internal cage spacer and load ring.
+197,EW-37,5,This construction has a load ring.
+197,EW-37,note,"All other EWT flow coefficients are identical to the EWD. Refer to the EWD information. For additional EWT valve body, information refer to Bulletin 51.1:EW."
+199,EWN-1,1,The first number indicates both inlet and outlet size. The second number indicates nominal port size.
+199,EWN-1,2,Valves should not be required to throttle at less than the specified minimum coefficient for an extended period of time or erosion damage to the valve seat may result.
+199,EWN-1,3,"Levels B1, C1, and D1 are not available in CL900 NPS 8 x 6 EWND valve body."
+199,EWN-1,4,"Equal percentage for first 1.5 inch of travel, then linear."
+201,EZ-1,1,"When using 655-EZ as a control valve for on-off service, the maximum travel for sizing purposes is 19 mm (0.75 inch)."
+201,EZ-1,2,"When sizing self-operated regulators, use coefficients listed for 6 mm (0.25 inch) travel."
+201,EZ-1,3,At 100% travel.
+201,EZ-1,4,Restricted trim.
+202,EZ-2,1,At 100% travel.
+202,EZ-2,2,Restricted trim.
+202,EZ-2,note,The coefficients shown on this page are also appropriate for EZ-C valves.
+203,EZ-3,1,At 100% travel.
+203,EZ-3,2,Restricted trim.
+203,EZ-3,note,The coefficients shown on this page are appropriate for EZ-C valves.
+204,EZ-4,1,At 100% travel.
+204,EZ-4,note,The coefficients on this page are also appropriate for EZ-C valves.
+205,EZ-5,1,At 100% travel.
+205,EZ-5,1,At 100% travel.
+209,GX-1,1,At 100% travel.
+209,GX-1,2,Restricted trim.
+209,GX-1,3,Balanced trim.
+209,GX-1,4,"Balanced, restricted trim."
+210,GX-2,1,At 100% travel.
+210,GX-2,2,Restricted trim.
+210,GX-2,3,Balanced trim.
+210,GX-2,4,"Balanced, restricted trim."
+211,GX-3,1,At 100% travel.
+211,GX-3,2,Restricted trim.
+211,GX-3,3,Balanced trim.
+211,GX-3,4,"Balanced, restricted trim."
+212,GX-4,1,At 100% travel.
+212,GX-4,2,Restricted trim.
+212,GX-4,3,Balanced trim.
+212,GX-4,4,"Balanced, restricted trim."
+213,GX-5,1,At 100% travel.
+213,GX-5,2,Balanced trim.
+213,GX-5,3,"Balanced, restricted trim."
+213,GX-5,4,Micro-Flow trim.
+214,GX-6,1,At 100% travel.
+214,GX-6,2,Balanced trim.
+214,GX-6,3,"Balanced, restricted trim."
+214,GX-6,4,Micro-Flow trim.
+215,GX-7,1,At 100% travel.
+215,GX-7,2,Balanced trim.
+215,GX-7,3,"Balanced, restricted trim."
+215,GX-7,4,Micro-Flow trim.
+216,GX-8,1,At 100% travel.
+216,GX-8,2,Balanced trim.
+216,GX-8,3,Restricted trim.
+216,GX-8,4,Micro-Flow trim.
+216,GX-8,1,At 100% travel.
+216,GX-8,2,"Unbalanced, restricted trim."
+217,GX-9,1,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period. Erosion damage to the valve seats may result.
+217,GX-9,2,At 100% travel.
+219,GX,1,At maximum flow.
+220,GX,1,At maximum flow.
+221,GX,1,At maximum flow.
+222,GX,1,At maximum flow.
+223,HP-1,1,At 100% travel.
+223,HP-1,note,The coefficients on this page are also appropriate for the HPAT.
+224,HP-2,1,At 100% travel.
+224,HP-2,note,The coefficients on this page are also appropriate for the HPAT.
+225,HP-3,1,At 100% travel.
+225,HP-3,note,The coefficients on this page are also appropriate for the HPAT.
+226,HP-4,1,"Valve should not be required to throttle at less than the minimum coefficient for an extended time, or erosion damage to the valve seat may result."
+226,HP-4,2,Larger capacities may be available with level A1 cages depending on service conditions.
+226,HP-4,note,The coefficients in this table are also appropriate for the HPAT.
+227,HP-5,1,At 100% travel.
+228,HP-6,1,At 100% travel.
+228,HP-6,2,Characteristic is equal percentage through 75% of travel.
+229,HP-7,1,At 100% travel.
+229,HP-7,2,Characteristic is equal percentage through 75% of travel.
+230,HP-8,1,At 100% travel.
+230,HP-8,2,Characteristic is equal percentage through 75% of travel.
+231,HP-9,1,At 100% travel.
+231,HP-9,2,Characteristic is equal percentage through 75% of travel.
+232,HP-10,1,At 100% travel.
+232,HP-10,1,At 100% travel.
+232,HP-10,2,Micro-Flat Anti-Cavitation trims use a shutoff port diameter which is 0.125 inch larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+232,HP-10,note,"If P exceeds 1000 psig, the life span of the Micro-Flat trim may be shortened."
+233,HP-11,1,At 100% travel.
+233,HP-11,1,At 100% travel.
+234,HP-12,1,At 100% travel.
+234,HP-12,1,At 100% travel.
+236,HP-14,1,"Valve should not be required to throttle at less than the minimum coefficient for an extended time, or erosion damage to the valve seat may result."
+236,HP-14,2,Larger capacities may be available with level A1 cages depending on service conditions.
+236,HP-14,1,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period. Erosion damage to the valve seats may result.
+236,HP-14,2,At 100% travel.
+237,HP-15,1,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period. Erosion damage to the valve seats may result.
+237,HP-15,2,At 100% travel.
+239,HP-17,1,At 100% travel.
+239,HP-17,2,Data refer to CFD and calculation.
+240,HP-18,1,At 100% travel.
+240,HP-18,2,Data refer to CFD and calculation.
+241,HP-19,1,At 100% travel.
+241,HP-19,2,Characteristic is equal percentage through 75% of travel.
+243,HP-21,1,At 100% travel.
+243,HP-21,2,"CL3200 available with NPS 8, 10 and 12."
+248,HP-26,1,"Valve should not be required to throttle at less than the minimum coefficient for an extended time, or erosion damage to the valve seat may result."
+248,HP-26,2,Larger capacities may be available with level A1 cages depending on service conditions.
+248,HP-26,3,"CL3200 available with NPS 8, 10, and 12."
+255,HP-33,1,At 100% travel.
+257,HP-35,1,At 100% travel.
+257,HP-35,1,At 100% travel.
+258,HP-36,1,At 100% travel.
+258,HP-36,1,At 100% travel.
+259,HP-37,1,At 100% travel.
+260,HP-38,1,"Valve should not be required to throttle at less than the minimum coefficient for an extended time, or erosion damage to the valve seat may result."
+260,HP-38,2,Larger capacities may be available with level A1 cages depending on service conditions.
+262,HP-40,1,"Cavitrol III trim in the NPS 1, two stage and the NPS 2, three stage are unbalanced valve plugs. These sizes and constructions are HPS valves; all others in this table are HPT valves."
+262,HP-40,2,Valves should not be required to throttle at a Cv less than the specified minimum Cv for an extended period. Erosion damage to the valve seats may result.
+262,HP-40,3,At 100% travel.
+265,HP-43,1,Stage production notes in Fisher FIRST 2 Flow Coefficient Catalog calculated as follows:
+265,HP-43,2,Valve should not be required to throttle at less than the minimum coefficient for an extended time or erosion damage to the valve seat may result.
+267,HP-45,1,Stage production notes in Fisher FIRST 2 Flow Coefficient Catalog calculated as follows:
+267,HP-45,2,Valve should not be required to throttle at less than the minimum coefficient for an extended time or erosion damage to the valve seat may result.
+269,HP-47,1,Stage production notes in Fisher FIRST 2 Flow Coefficient Catalog calculated as follows:
+269,HP-47,2,Valve should not be required to throttle at less than the minimum coefficient for an extended time or erosion damage to the valve seat may result.
+270,HP-48,1,Also CL2500
+270,HP-48,1,At 100% travel
+270,HP-48,2,Cavitrol III Micro-Flat trims use a shutoff port diameter which is larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+270,HP-48,3,"Flowing port: 12.7 mm / 0.5 Inch, Unbalanced Area: 5.065 cm2 / 0.785 In2, 1/2"" stem"
+270,HP-48,4,"Flowing port: 19 mm / 0.75 Inch, Unbalanced Area: 5.065 cm2 / 0.785 In2, 3/4"" stem"
+271,HP-49,1,At 100% travel
+271,HP-49,2,Cavitrol III Micro-Flat trims use a shutoff port diameter which is larger than the flowing port diameter. Use the shutoff port diameter for actuator sizing.
+271,HP-49,3,"Flowing port: 9.5 mm / 0.375 Inch (Unbalanced Area: 1.96 cm2 / 0.307 In2, 3/4"" stem"
+271,HP-49,4,"Flowing port: 12.7 mm / 0.5 Inch (Unbalanced Area: 5.065 cm2 / 0.785 In2, 3/4"" stem"
+271,HP-49,5,"Flowing port: 19 mm / 0.75 Inch (Unbalanced Area: 5.065 cm2 / 0.785 In2, 3/4"" stem"
+273,IC2-1,1,At 100% travel.
+273,IC2-1,2,Restricted trim.
+274,IC-2,1,At 100% travel.
+274,IC-2,2,Restricted trim.
+275,IC2-3,1,At 100% travel.
+277,NotchFlo DST-1,1,At 100% travel.
+277,NotchFlo DST-1,2,Clearance flow only.
+277,NotchFlo DST-1,1,At 100% travel.
+277,NotchFlo DST-1,2,Clearance flow only.
+277,NotchFlo DST-1,3,NPS 6 and 8 are only available as angle valve bodies with Level C trim.
+278,NotchFlo DST-2,1,At 100% travel.
+278,NotchFlo DST-2,2,Clearance flow only.
+278,NotchFlo DST-2,1,At 100% travel.
+278,NotchFlo DST-2,2,Clearance flow only.
+278,NotchFlo DST-2,1,At 100% travel.
+278,NotchFlo DST-2,2,Clearance flow only.
+279,RSS-1,1,"Inch equivalents of these metric port diameters have been rounded to common fractional diameters. Actual diameter of the 15 millimeter port is 0.591 inches, of the 40 millimeter port is"
+283,TBX-1,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+283,TBX-1,2,"Values given are Inlet versus Outlet, i.e. 6x8 is an NPS 6 inlet and an NPS 8 outlet."
+283,TBX-1,3,At 100% travel.
+284,TBX-2,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+284,TBX-2,2,"Values given are Inlet versus Outlet, i.e. 6x12 is an NPS 6 inlet and an NPS 12 outlet."
+284,TBX-2,3,At 100% travel.
+285,TBX-3,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+285,TBX-3,2,"Values given are Inlet versus Outlet, i.e. 8x16 is an NPS 8 inlet and an NPS 16 outlet."
+285,TBX-3,3,At 100% travel.
+286,TBX-4,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+286,TBX-4,2,"Values given are Inlet versus Outlet, i.e. 10x18 is an NPS 10 inlet and an NPS 18 outlet."
+286,TBX-4,3,At 100% travel.
+287,TBX-5,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+287,TBX-5,2,"Values given are Inlet versus Outlet, i.e. 12x20 is an NPS 12 inlet and an NPS 20 outlet."
+287,TBX-5,3,At 100% travel.
+288,TBX-6,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+288,TBX-6,2,"Values given are Inlet versus Outlet, i.e. 16x24 is an NPS 16 inlet and an NPS 24 outlet."
+288,TBX-6,3,At 100% travel.
+289,TBX-7,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+289,TBX-7,2,"Values given are Inlet versus Outlet, i.e. 18x30 is an NPS 18 inlet and an NPS 30 outlet."
+289,TBX-7,3,At 100% travel.
+290,TBX-8,1,Reduction of standard inlet size may affect capacity. Consult your Emerson sales office for additional information.
+290,TBX-8,2,"Values given are Inlet versus Outlet, i.e. 22x36 is an NPS 22 inlet and an NPS 36 outlet."
+290,TBX-8,3,At 100% travel.
+291,V150-1,1,This coefficient was measured at 12 degrees of rotation.
+291,V150-1,2,NPS 1 through 2 are not available with Flat Metal Seals.
+292,V150-2,1,NPS 14 through 24 are not available with Flat Metal seals.
+293,V150-3,1,This coefficient was measured at 12 degrees of rotation.
+295,V150-5,1,This coefficient was measured at 12 degrees of rotation.
+297,V150-7,1,This coefficient was measured at 12 degrees of rotation.
+299,V150-9,1,This coefficient was measured at 12 degrees of rotation.
+311,V260-1,1,Window starts at about 60 degrees.
+311,V260-1,2,Valves should not be required to throttle at a Cv less than the specified minimum Cv.
+312,V260-2,1,Valves should not be required to throttle at a Cv less than the minimum throttling Cv.
+313,V260-3,1,Window starts at about 60 degrees.
+313,V260-3,2,Valves should not be required to throttle at a Cv less than the minimum throttling Cv.
+314,V260-4,1,Valves should not be required to throttle at a Cv less than the minimum throttling Cv.
+316,V260-6,1,Valves should not be required to throttle at a Cv less than the minimum throttling Cv.
+316,V260-6,2,"For a detailed explanation of Cvnet, FLnet, and XTnet please refer to Catalog 12, Section 2."
+317,V270-1,1,"For a detailed explanation of Cvnet, FLnet, and XTnet please refer to Catalog 12, Section 2."
+328,V500-3,1,Measured at 60% Port.
+328,V500-3,2,Measured at 40% Port.
+329,V500-4,1,Measured at 60% Port.
+329,V500-4,2,Measured at 40% Port.
+332,V500-7,1,Measured at 60% Port.
+332,V500-7,2,Measured at 40% Port.
+333,V500-8,1,Measured at 60% Port.
+333,V500-8,2,Measured at 40% Port.
+335,YD-2,1,The end connections are identified on the valve body.
+335,YD-2,2,At maximum flow.
+337,YD-4,1,The end connections are identified on the valve body.
+337,YD-4,2,At maximum flow.
+339,YS-2,1,The end connections are identified on the valve body.
+339,YS-2,2,At maximum flow.
+341,YS-4,1,The end connections are identified on the valve body.
+341,YS-4,2,At maximum flow.
+343,Z500-2,1,Values shown for SCH40 piping.

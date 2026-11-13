@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# Emerson's copyrighted PDF: download it with scripts/get_source.sh
+data/source/*.pdf

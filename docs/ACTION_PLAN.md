@@ -2,6 +2,7 @@
 
 **Source:** [Fisher Catalog 12 – Valve Sizing](https://www.emerson.com/is/content/emerson/en/final-control/flow-controls/documents/d103182x012.pdf) (398 pages)
 **Page list:** [`page_inventory.csv`](page_inventory.csv), which gives each page's section, valve family and type
+**Status:** done for Section 1 tables and the Section 2 sizing equations. See the [README](../README.md) for results.
 **Goal:** deterministic tools and lookups: the same input always gives the same answer, and every answer traces back to a catalog page.
 
 ## What's in it
@@ -40,5 +41,8 @@ Once checked, the data is frozen. The tools only read it; no AI is involved at r
 - `data/coefficients.csv`, `data/aliases.csv`
 - A small Python package with the lookup and sizing functions, plus tests
 
-## Open question
-Should it cover all 64 valve families, or start with a few?
+## Decisions made while running it
+- **Extraction method:** a deterministic parser reads the PDF's ruled table cells. No AI model reads the pages, so re-running gives identical output.
+- **Second reading:** every value row was re-read with a second PDF engine (poppler) and matched (8,592/8,596; the other 4 were checked by eye).
+- **Catalog errors are flagged, not fixed** (`data/flags.csv`).
+- **Families:** 60 of the 64 have tables. EDR and V300 use other valves' tables, FB points to an external document (all in `data/aliases.csv`), and Three-Way Butterfly is guidance and figures only.
