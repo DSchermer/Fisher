@@ -46,7 +46,7 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
     ]),
     "valve_family": ("Valve families in Catalog 12, with how Catalog 14 covers them.", [
         ("family", "TEXT PRIMARY KEY", "Family as used in Catalog 12 page labels, e.g. 'ED', 'V150', '8580'"),
-        ("motion", "TEXT", "'sliding-stem' or 'rotary' (from the coefficient tables: % travel or degrees)"),
+        ("motion", "TEXT", "'sliding-stem', 'rotary' or 'reference': from the coefficient tables (% travel or degrees), else from the valve type (SIS, Z500 are rotary ball valves)"),
         ("configurations", "INTEGER", "Number of configurations in valve_config"),
         ("c12_pages", "TEXT", "Printed labels of the family's coefficient pages"),
         ("c14_sliding_codes", "TEXT", "C14 section A valve codes this family maps to (ED, ET, ES, EZ, D, EWD, EWS, EWT)"),
@@ -56,13 +56,16 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
     "valve_config": ("One valve configuration: one block of a Catalog 12 coefficient table.", [
         ("config_id", "TEXT PRIMARY KEY", "Stable id '<pdf page>-<table>-<block>', e.g. '152-1-8'"),
         ("family", "TEXT", "Valve family (valve_family.family)"),
-        ("motion", "TEXT", "'sliding-stem' or 'rotary'"),
+        ("motion", "TEXT", "'sliding-stem', 'rotary' or 'reference' (see valve_family.motion)"),
         ("catalog", "TEXT", "'C12'"),
         ("pdf_page", "INTEGER", "PDF page"),
         ("printed_label", "TEXT", "Printed page label"),
         ("title", "TEXT", "Page title, table title and section, joined with ' | '"),
         ("characteristic", "TEXT", "Inherent characteristic as printed (Linear, Equal Percentage, ...); empty if not stated"),
         ("flow_direction", "TEXT", "Flow direction as printed (Flow Up, Flow Down, Forward Flow, ...); empty if not stated"),
+        ("pressure_class", "TEXT", "Pressure class as printed in the title (e.g. 'CL150 to CL300', 'PN 10'); empty if not stated"),
+        ("class_min", "INTEGER", "Lowest ASME class named in pressure_class"),
+        ("class_max", "INTEGER", "Highest ASME class named in pressure_class"),
         ("nps_text", "TEXT", "Size cell as printed, e.g. '1-1/2', '2 & 3 x 2', '80' (DN)"),
         ("port_in", "REAL", "Port diameter, inches (sliding-stem; from the table's inch column)"),
         ("travel_in", "REAL", "Maximum or total travel, inches (sliding-stem)"),
@@ -122,6 +125,7 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("actuator", "TEXT", "Actuator type: 585C, 657, 667, 1052, 1061, 2052, FieldQ"),
         ("actuator_size", "TEXT", "Actuator size as printed (row key in section A, column header in section C)"),
         ("valve", "TEXT", "Rotary: valve as printed in the heading, e.g. 'A11, CL600', 'V150, V200, V300'"),
+        ("valve_family", "TEXT", "Rotary: valve family codes from the heading, joined with '/' (e.g. 'A11', 'V150/V200/V300', 'Control-Disk'); matches valve_config.family"),
         ("valve_nps", "REAL", "Rotary: valve size, NPS"),
         ("shaft_in", "REAL", "Rotary tables listed by shaft size: shaft diameter, inches"),
         ("angle_deg", "REAL", "Rotary: angle of opening, degrees (0 = closed)"),
@@ -360,6 +364,13 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("confirmed", "TEXT", "Second-reader result for the row (see c14_table_value)"),
         ("merged", "INTEGER", "1 = value repeated from a merged cell"),
     ]),
+    "c14_page_note": ("Catalog 14 table footnotes (the text behind footnote numbers such as '1424(1)'), from the band under each table.", [
+        ("pdf_page", "INTEGER", "PDF page"),
+        ("printed_label", "TEXT", "Printed page label"),
+        ("table_no", "INTEGER", "Table position on the page (matches c14_table_value.table_no)"),
+        ("number", "INTEGER", "Footnote number"),
+        ("text", "TEXT", "Footnote text as printed"),
+    ]),
     "stem_load_usage": ("Catalog 14 stem load Table 1 (page B-100): which stem load tables apply to a valve design.", [
         ("design", "TEXT", "Valve body designs as printed"),
         ("nps", "TEXT", "Size as printed ('- - -' = all)"),
@@ -514,14 +525,15 @@ def build(db_path: str, doc_path: str) -> None:
     # Valve configurations
     cat = Catalog.load()
     configs = [c for c in cat.configs.values()]
-    motion = {c.config_id: ("rotary" if c.position_basis == "deg_rotation" else "sliding-stem") for c in configs}
+    motion = {c.config_id: c.motion for c in configs}
     cfg_rows, size_rows = [], []
     for c in configs:
         fl_single = next((v for (k, _), v in c.singles.items() if k == "FL"), None)
         cfg_rows.append((
             c.config_id, c.family, motion[c.config_id], "C12", c.page, c.printed_label,
             " | ".join(x for x in (c.page_title, c.table_title, c.section) if x), c.characteristic,
-            c.flow_direction, c.nps, integrate._inches(c, "port") if motion[c.config_id] == "sliding-stem" else None,
+            c.flow_direction, c.pressure_class, *(c.class_range or (None, None)),
+            c.nps, integrate._inches(c, "port") if motion[c.config_id] == "sliding-stem" else None,
             integrate._inches(c, "travel") if motion[c.config_id] == "sliding-stem" else None,
             c.position_basis, c.rated("Cv"), c.rated("XT"), fl_single, int(c.restricted), c.restricted_source,
             json.dumps(c.attrs, ensure_ascii=False), sum(1 for f in c.flags if f["severity"] != "info")))
@@ -550,7 +562,9 @@ def build(db_path: str, doc_path: str) -> None:
         size = r.actuator_size or size
         rat_rows.append((
             rid, "C14", r.section, "sliding-stem" if r.section == "A" else "rotary", r.page, r.printed_label,
-            r.actuator, size, r.valve, r.valve_nps, r.shaft_in, r.angle_deg, r.port_in, r.travel_in,
+            r.actuator, size, r.valve, "/".join(dict.fromkeys(t for t in integrate.ROTARY_TOKEN.findall(r.valve.replace("™", ""))
+                                                    if not re.match(r"(CL|PN|[SHN]\d)", t))),
+            r.valve_nps, r.shaft_in, r.angle_deg, r.port_in, r.travel_in,
             next((v for k, v in r.keys.items() if "yoke" in k.lower()), ""), r.balance, r.leakage, r.action, r.flow,
             supply, bench, spring, r.column, r.column_heading, r.group, json.dumps(r.keys, ensure_ascii=False),
             r.value, r.unit, r.footnotes, int(r.confirmed)))
@@ -573,7 +587,7 @@ def build(db_path: str, doc_path: str) -> None:
     fam_rows = []
     for fam in sorted({c.family for c in configs}):
         fc = [c for c in configs if c.family == fam]
-        mot = max({"rotary", "sliding-stem"}, key=lambda m: sum(motion[c.config_id] == m for c in fc))
+        mot = max(("rotary", "sliding-stem", "reference"), key=lambda m: sum(motion[c.config_id] == m for c in fc))
         codes = sorted({code for c in fc for code in integrate.sliding_valve_codes(c)})
         bal = sorted({integrate.SLIDING_COVERAGE[code][0] for code in codes})
         linked = sum(1 for r in cov_rows if r[3] and cat.get(r[0]).family == fam)
@@ -656,6 +670,8 @@ def build(db_path: str, doc_path: str) -> None:
                            r["other_keys"], num(r["value"]), r["value_raw"], r["table_title"], r["printed_label"],
                            int(r["page"]), int(r["table_no"]), int(r["row_no"]), r["column_path"], r["confirmed"],
                            int(r["merged"])) for r in rows(DATA / "catalog14" / "torque" / "torque_factors.csv")])
+    ins("c14_page_note", [(int(r["page"]), r["printed_label"], int(r["table"]), int(r["number"]), r["text"])
+                          for r in rows(DATA / "catalog14" / "page_notes.csv")])
     ins("stem_load_usage", [(r["design"], r["nps"], r["rating"], r["bonnet"], r["stem_in"], r["tables"],
                              r["printed_label"]) for r in rows(fd / "usage_guide.csv")])
     ins("stem_load_316", [(int(r["table"]), num(r["ld_max"]), r["unit_system"], r["stem"], num(r["stem_in"]),

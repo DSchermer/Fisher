@@ -19,6 +19,7 @@ data: $(PDF) $(PDF14)  ## extract, validate and cross-check (needs pdfplumber an
 	python3 extract/catalog14_3025.py $(PDF14) data/catalog14/force
 	python3 extract/catalog14_torque.py $(PDF14) data/catalog14/torque
 	python3 extract/catalog14_values.py $(PDF14) data/catalog14
+	python3 extract/catalog14_notes.py $(PDF14) data/catalog14
 	python3 extract/catalog14_torque_factors.py data/catalog14
 	python3 extract/catalog14_actuator_torque.py data/catalog14
 	python3 extract/link_catalogs.py data/links

@@ -55,7 +55,7 @@ Valve families in Catalog 12, with how Catalog 14 covers them. (61 rows)
 | Column | Type | Meaning |
 |---|---|---|
 | `family` | TEXT | Family as used in Catalog 12 page labels, e.g. 'ED', 'V150', '8580' |
-| `motion` | TEXT | 'sliding-stem' or 'rotary' (from the coefficient tables: % travel or degrees) |
+| `motion` | TEXT | 'sliding-stem', 'rotary' or 'reference': from the coefficient tables (% travel or degrees), else from the valve type (SIS, Z500 are rotary ball valves) |
 | `configurations` | INTEGER | Number of configurations in valve_config |
 | `c12_pages` | TEXT | Printed labels of the family's coefficient pages |
 | `c14_sliding_codes` | TEXT | C14 section A valve codes this family maps to (ED, ET, ES, EZ, D, EWD, EWS, EWT) |
@@ -70,13 +70,16 @@ One valve configuration: one block of a Catalog 12 coefficient table. (3,593 row
 |---|---|---|
 | `config_id` | TEXT | Stable id '<pdf page>-<table>-<block>', e.g. '152-1-8' |
 | `family` | TEXT | Valve family (valve_family.family) |
-| `motion` | TEXT | 'sliding-stem' or 'rotary' |
+| `motion` | TEXT | 'sliding-stem', 'rotary' or 'reference' (see valve_family.motion) |
 | `catalog` | TEXT | 'C12' |
 | `pdf_page` | INTEGER | PDF page |
 | `printed_label` | TEXT | Printed page label |
 | `title` | TEXT | Page title, table title and section, joined with ' | ' |
 | `characteristic` | TEXT | Inherent characteristic as printed (Linear, Equal Percentage, ...); empty if not stated |
 | `flow_direction` | TEXT | Flow direction as printed (Flow Up, Flow Down, Forward Flow, ...); empty if not stated |
+| `pressure_class` | TEXT | Pressure class as printed in the title (e.g. 'CL150 to CL300', 'PN 10'); empty if not stated |
+| `class_min` | INTEGER | Lowest ASME class named in pressure_class |
+| `class_max` | INTEGER | Highest ASME class named in pressure_class |
 | `nps_text` | TEXT | Size cell as printed, e.g. '1-1/2', '2 & 3 x 2', '80' (DN) |
 | `port_in` | REAL | Port diameter, inches (sliding-stem; from the table's inch column) |
 | `travel_in` | REAL | Maximum or total travel, inches (sliding-stem) |
@@ -91,7 +94,7 @@ One valve configuration: one block of a Catalog 12 coefficient table. (3,593 row
 
 ## `valve_config_size`
 
-Body sizes a configuration applies to (a size cell can name several, e.g. '2 & 3 x 2'). (3,680 rows)
+Body sizes a configuration applies to (a size cell can name several, e.g. '2 & 3 x 2'). (3,784 rows)
 
 | Column | Type | Meaning |
 |---|---|---|
@@ -166,6 +169,7 @@ Catalog 14 pressure drop method: one maximum allowable pressure drop for one val
 | `actuator` | TEXT | Actuator type: 585C, 657, 667, 1052, 1061, 2052, FieldQ |
 | `actuator_size` | TEXT | Actuator size as printed (row key in section A, column header in section C) |
 | `valve` | TEXT | Rotary: valve as printed in the heading, e.g. 'A11, CL600', 'V150, V200, V300' |
+| `valve_family` | TEXT | Rotary: valve family codes from the heading, joined with '/' (e.g. 'A11', 'V150/V200/V300', 'Control-Disk'); matches valve_config.family |
 | `valve_nps` | REAL | Rotary: valve size, NPS |
 | `shaft_in` | REAL | Rotary tables listed by shaft size: shaft diameter, inches |
 | `angle_deg` | REAL | Rotary: angle of opening, degrees (0 = closed) |
@@ -190,7 +194,7 @@ Catalog 14 pressure drop method: one maximum allowable pressure drop for one val
 
 ## `valve_actuator_link`
 
-Which Catalog 14 ratings apply to which Catalog 12 configuration (matching rules in fisher/integrate.py). (54,426 rows)
+Which Catalog 14 ratings apply to which Catalog 12 configuration (matching rules in fisher/integrate.py). (54,716 rows)
 
 | Column | Type | Meaning |
 |---|---|---|
@@ -508,6 +512,18 @@ Catalog 14 torque method factors for every rotary valve (section D), classified 
 | `column_path` | TEXT | Column header path as printed |
 | `confirmed` | TEXT | Second-reader result for the row (see c14_table_value) |
 | `merged` | INTEGER | 1 = value repeated from a merged cell |
+
+## `c14_page_note`
+
+Catalog 14 table footnotes (the text behind footnote numbers such as '1424(1)'), from the band under each table. (719 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `pdf_page` | INTEGER | PDF page |
+| `printed_label` | TEXT | Printed page label |
+| `table_no` | INTEGER | Table position on the page (matches c14_table_value.table_no) |
+| `number` | INTEGER | Footnote number |
+| `text` | TEXT | Footnote text as printed |
 
 ## `stem_load_usage`
 

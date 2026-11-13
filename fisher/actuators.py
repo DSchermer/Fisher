@@ -198,3 +198,74 @@ def search_tables(text: str, section: str | None = None) -> list[dict]:
     t = text.lower()
     return [i for i in tables() if (not section or i["section"] == section.upper())
             and (t in i["heading"].lower() or t in i["title"].lower() or t in i["printed_label"].lower())]
+
+
+# ------------------------------------------------------------------ pressure drop method rules (pages C-5 to C-7)
+
+# Table 2, page C-5: angles of rotation at which the dP eff calculation is required (1052 and 1066 actuators).
+REQUIRED_ANGLES = {("9500", 60): [60], ("9500", 90): [90], ("V150", 60): [60], ("V150", 90): [70],
+                   ("V500", 60): [60], ("V500", 90): [60, 90]}
+
+# Table 3, page C-5: dP eff = factor x P1 abs for the 9500 (gas, liquid) by maximum rotation and disk style.
+DP_EFF_9500 = {(60, "fishtail"): (0.18, 0.60), (60, "conventional"): (0.20, 0.45),
+               (90, "fishtail"): (0.09, 0.45), (90, "conventional"): (0.14, 0.35)}
+
+
+def required_angles(valve: str, max_rotation: int) -> list[int] | None:
+    """Page C-5 table 2: angles at which to check the pressure drop for the 9500, V150 and V500."""
+    return REQUIRED_ANGLES.get((valve.upper().replace("V200", "V150").replace("V300", "V150"), int(max_rotation)))
+
+
+def k_values_c14(valve: str, nps: float | str) -> dict:
+    """K values for gas dP eff = K x P1 abs: table 4 (8532, V150; page C-6) and table 5 (V500; page C-7)."""
+    want = _size(str(nps))
+    out: dict = {}
+    if valve.upper().startswith("V500"):
+        tid = next(t["id"] for t in tables() if t["printed_label"] == "C-7")
+        headers, rows = table(tid)
+        for r in rows:
+            if _size(r[0]) == want:
+                for h, v in zip(headers[1:], r[1:]):
+                    if v:
+                        m = re.search(r"(Full|Reduced) Port Rotation (\d+)", h)
+                        out.setdefault(f"{m.group(1).lower()} port", {})[int(m.group(2))] = float(v)
+        return out
+    tid = next(t["id"] for t in tables() if t["printed_label"] == "C-6")
+    headers, rows = table(tid)
+    angles = [int(re.search(r"(\d+)$", h).group(1)) for h in headers[1:]]
+    block = ""
+    for r in rows:
+        if r[0].endswith("Valves") or r[0].startswith(("8532", "V150")):
+            block = r[0]
+            continue
+        hit = (block.startswith("8532") or "8532" in headers[0]) and valve.startswith("8532") and r[0] == "All Sizes"
+        hit = hit or (block.startswith("V150") and valve.upper()[:4] in ("V150", "V200", "V300") and _size(r[0]) == want)
+        if hit:
+            out["table 4"] = {a: float(v) for a, v in zip(angles, r[1:]) if v}
+    return out
+
+
+def effective_dp_c14(valve: str, max_rotation: int, service: str, p1_psig: float, *, disk: str | None = None,
+                     k: float | None = None, km: float | None = None, rc: float | None = None,
+                     pv_psia: float | None = None) -> tuple[float, str]:
+    """Page C-5 table 3. 9500: factor x P1 abs by disk style. 8532, V150, V500: gas K x P1 abs;
+    liquid Km (P1 abs - rc Pv) (Catalog 12 flashing and cavitating liquids procedure)."""
+    p1abs = p1_psig + 14.7
+    if valve.startswith("9500"):
+        g, liq = DP_EFF_9500[(int(max_rotation), (disk or "").lower())]
+        f = g if service == "gas" else liq
+        return f * p1abs, f"{f:g} x P1abs (page C-5 table 3, 9500 {disk} disk, {max_rotation} deg)"
+    if service == "gas":
+        if k is None:
+            raise ValueError("gas dP eff needs K (k_values_c14)")
+        return k * p1abs, f"K={k:g} x P1abs (page C-5 table 3)"
+    if None in (km, rc, pv_psia):
+        raise ValueError("liquid dP eff needs km, rc and pv_psia")
+    return km * (p1abs - rc * pv_psia), "Km (P1abs - rc Pv) (page C-5 table 3)"
+
+
+def constructions_covered() -> list[dict]:
+    """Page C-4 table 1: the valve constructions the pressure drop tables cover, as printed."""
+    tid = next(t["id"] for t in tables() if t["printed_label"] == "C-4")
+    headers, rows = table(tid)
+    return [{"valve": r[0], "constructions": r[1], "note": r[2] if len(r) > 2 else ""} for r in rows]

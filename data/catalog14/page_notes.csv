@@ -1,0 +1,720 @@
+page,printed_label,table,number,text
+3,A-3,1,1,1-inch stem.
+3,A-3,1,2,1-1/4 inch stem.
+4,A-4,1,1,1-inch stem.
+4,A-4,1,2,1-1/4 inch stem.
+5,A-5,1,1,1-inch stem.
+5,A-5,1,2,1-1/4 inch stem.
+6,A-6,1,1,1-inch stem.
+6,A-6,1,2,1-1/4 inch stem.
+7,A-7,1,1,The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal.
+7,A-7,1,2,3 - 11 psig range.
+7,A-7,1,3,3 - 9 psig range.
+8,A-8,1,1,"The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+8,A-8,1,2,3-11 psig range
+8,A-8,1,3,3-9 psig range
+9,A-9,1,1,"The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+9,A-9,1,2,3-11 psig range
+9,A-9,1,3,3-9 psig range
+9,A-9,1,4,6-21 psig range
+10,A-10,1,1,"The pressure drops as shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+10,A-10,1,2,3-11 psig.
+10,A-10,1,3,3-9 psig range.
+10,A-10,1,4,6-21 psig range.
+11,A-11,1,1,"The pressure drops as shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+11,A-11,1,2,3-11 psig.
+11,A-11,1,3,3-9 psig range.
+12,A-12,1,1,"The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+12,A-12,1,2,3-11 psig range.
+12,A-12,1,3,3-9 psig range.
+13,A-13,1,1,"The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+13,A-13,1,2,3-11 psig range.
+13,A-13,1,3,3-9 psig range.
+14,A-14,1,1,"The pressure drops as shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+14,A-14,1,2,3-11 psig.
+14,A-14,1,3,3-9 psig range.
+15,A-15,1,1,"The pressure drops as shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+15,A-15,1,2,3-11 psig.
+15,A-15,1,3,3-9 psig range.
+15,A-15,1,4,6-21 psig range.
+16,A-16,1,1,"The pressure drops shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. A positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+16,A-16,1,2,3-11 psig range.
+16,A-16,1,3,3-9 psig range.
+17,A-17,1,1,"The pressure drops shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. A positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+17,A-17,1,2,3-11 psig range.
+17,A-17,1,3,3-9 psig range.
+18,A-18,1,1,"The pressure drops shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. A positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+18,A-18,1,2,3-11 psig range.
+18,A-18,1,3,3-9 psig range.
+19,A-19,1,1,"The pressure drops shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. A positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+19,A-19,1,2,3-11 psig range.
+19,A-19,1,3,3-9 psig range.
+20,A-20,1,1,"The pressure drops shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. A positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+20,A-20,1,2,3-11 psig range.
+20,A-20,1,3,3-9 psig range.
+20,A-20,1,4,3-4 psig range.
+20,A-20,1,5,6-29 psig range.
+20,A-20,1,6,6-23 psig range.
+20,A-20,1,7,6-21 psig range.
+21,A-21,1,1,"The pressure drops shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. A positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+21,A-21,1,2,7-15 psig range.
+21,A-21,1,3,9-15 psig range.
+22,A-22,1,1,"The pressure drops sown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+22,A-22,1,2,7-15 psig range.
+22,A-22,1,3,9-15 psig range.
+23,A-23,1,1,"The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+23,A-23,1,2,7-15 psig range.
+23,A-23,1,3,9-15 psig range.
+24,A-24,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+24,A-24,1,2,7 - 15 psig range.
+24,A-24,1,3,9 - 15 psig range.
+25,A-25,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+25,A-25,1,2,7-15 psig range.
+26,A-26,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+27,A-27,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+27,A-27,1,2,7-15 psig range.
+27,A-27,1,3,9-15 psig range.
+28,A-28,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate extended range."
+28,A-28,1,2,7-15 psig range.
+28,A-28,1,3,9-15 psig range.
+29,A-29,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate extended range."
+29,A-29,1,2,7-15 psig range.
+29,A-29,1,3,9-15 psig range.
+30,A-30,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+30,A-30,1,2,7-15 psig range.
+31,A-31,1,1,"The pressure drops shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+32,A-32,1,1,The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal.
+33,A-33,1,1,The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal.
+34,A-34,1,1,The pressure drops shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal.
+34,A-34,1,2,9-30 psig range.
+34,A-34,1,3,14-26 psig range for 667-4 without handjack.
+34,A-34,1,4,9-29 psig range.
+38,B-4,1,1,Unbalance area is the annular area between the cage inside diameter and the seat line. It does not include the stem area. See the following footnote.
+38,B-4,1,2,Unbalance area for the C-seal trim is the annular area between the upper seat diameter and the lower seat diameter.
+39,B-5,1,1,Unbalance area is the annular area between the cage inside diameter and the seat line. It does not include the stem area. See footnote 2 here for definition of unbalance area of C-seal trim.
+39,B-5,1,2,Unbalance area for the C-seal trim is the annular area between the upper seat diameter and the lower seat diameter.
+40,B-6,1,1,Unbalance area is the annular area between the cage inside diameter and the seat line. It does not include the stem area. See footnote 2 here for definition of unbalance area of C-seal trim.
+40,B-6,1,2,Unbalance area for the C-seal trim is the annular area between the upper seat diameter and the lower seat diameter.
+41,B-7,1,1,Same as ET or EWT port diameter. Also listed in valve bulletin.
+42,B-7.1,1,1,Values for CL900 NPS 8 x 6 and 12 x 8 EWT available in two-stage trim same as CL600 NPS 8 x 6 and 12 x 8 EWT.
+42,B-7.1,1,2,"For larger sizes, consult your Emerson sales office."
+45,B-9,1,1,"Unbalanced trim, PTTO (pressure tends to open)."
+45,B-9,1,2,"Balanced trim, PTTC (pressure tends to close)."
+49,B-13,1,1,"For valves with composition seat constructions, port size 1.3125 inches and greater, see table 5 for A & B factor. For port size less than 1.3125 inches use 40 pounds per lineal inch of port circumference."
+49,B-13,1,2,Cav4 is standard with dual Class V & Class VI shutoff. Seat Load to correspond to Class V as this is more stringent.
+49,B-13,1,3,Class III offered for high temperature service only. Class V seat loads are used to achieve Class III leakage rates.
+49,B-13,1,4,Sizing for this construction requires special factors inclusive of seat load and friction factors. Contact your local Emerson sales office for assistance.
+50,B-14,1,1,PTFE seat max. ΔP = 1440 psi.
+50,B-14,1,2,Synthetic rubber seat max. ΔP = 400 psi.
+50,B-14,1,3,Polyurethane seat max. ΔP = 1000 psi.
+50,B-14,1,4,Available only with ET and EWT with Whisper Trim III.
+50,B-14,1,5,"Available only with ES, EWS, ET, or EWT globe-style valves."
+52,B-16,1,1,Values shown are frictional forces typically encountered when using standard packing flange bolt torquing procedures.
+52,B-16,1,2,"Packing friction on intermediate classes is the same as the next lower standard class, i.e. for CL1876, use CL1500, or for CL3273, use CL2500."
+53,B-17,1,1,"HIGH-SEAL packing systems are intended for applications with pressure limits up to 290 bar (4200 psig), except for 9.5 mm (3/8 inch) stem size, which is restricted to 110 bar (1600 psig)."
+53,B-17,3,1,"HIGH-SEAL packing systems are intended for applications with pressure limits up to 290 bar (4200 psig), except for 9.5 mm (3/8 inch) stem size, which is restricted to 110 bar (1600 psig)."
+59,B-21,1,1,"Upward spring force for a 585C actuator (spring retracts actuator rod), downward spring force for a 585C actuator (spring extends actuator rod)."
+59,B-21,1,2,"Valve travel is from fully open position for a 585C actuator (spring retracts actuator rod), and from a fully closed position for a 585C actuator (spring extends actuator rod)."
+59,B-21,1,3,"For 585C actuator, at 0 inches of valve travel the valve is fully open and the actuator piston is at the top of the actuator cylinder. For 585CR actuator, at 0 inches of valve travel the valve is fully closed and the actuator piston is at the bottom of the actuator cylinder."
+62,B-24,1,1,The size 68 actuator with a handwheel is limited to 40000 Newtons (9000 lb) thrust.
+72,B-27.7,1,1,Values representative of a Side Mounted Handwheel
+72,B-27.7,1,2,Values representative of a Side Mounted Hydraulic Hand­Pump
+73,B-27.8,1,1,Maximum allowable thrust without considering manual override limit.
+73,B-27.8,1,2,Top mounted handwheel available with cylinder size 280−385; manual hand pump available with cylinder size 435−685.
+73,B-27.8,2,1,Cylinder size 280−385 available with top mounted handwheel; size 435−685 available with manual hand pump cylinder.
+74,B-27.9,1,1,Cylinder size 335−385 available with top mounted handwheel; size 435−685 available with manual hand pump cylinder.
+82,B-27.17,1,1,Cylinder size 335−385 available with top mounted handwheel; size 435−685 available with manual hand pump cylinder.
+82,B-27.17,2,2,Use the above table to locate the Stroking Speed Limit for specific cylinder size. Calculate Hand Pump Stroking Time=(Valve Travel)/(Hand Pump Stroking Speed Limit)
+82,B-27.17,2,3,"The final Actuator Stroking Time is the Actuator Pneumatic System Stroking Time or Hand Pump Stroking Time, whichever is greater."
+83,B-28,2,1,Valve stem connection.
+83,B-28,2,2,657C VSC in inches only available in sizes 40i and 46i.
+83,B-28,2,3,667 size i actuators only available in sizes 30i - 46i.
+89,B-33,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+90,B-34,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+91,B-35,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+92,B-36,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+93,B-37,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+94,B-38,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+95,B-39,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+96,B-40,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+97,B-41,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+98,B-42,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+99,B-43,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+99,B-43,1,2,0 to 21 psig supply pressure assumed.
+100,B-44,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+101,B-45,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+101,B-45,1,2,0 to 21 psig supply pressure assumed.
+102,B-46,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+107,B-47,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+107,B-47,1,2,Specify spring adjustor 1R9209X00A2.
+108,B-48,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+108,B-48,1,2,Specify spring adjustor 1H153924102.
+109,B-49,1,1,"The force values shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+109,B-49,1,2,Specify spring adjustor 1H153924102.
+110,B-50,1,1,"The force values shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+110,B-50,1,2,Specify spring adjustor 1K331724102.
+111,B-51,1,1,"The force values shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+111,B-51,1,2,Specify spring adjustor 1K677324102.
+112,B-52,1,1,"The force values shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+112,B-52,1,2,Specify spring adjustor 1K331724102.
+113,B-53,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+113,B-53,1,2,Specify spring adjustor 1K677324102.
+113,B-53,1,3,Specify spring adjustor 1K331724102.
+114,B-54,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+114,B-54,1,2,Specify spring adjustor 1K331724102.
+115,B-55,1,1,"The force values shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+115,B-55,1,2,Specify spring adjustor 1K331724102.
+116,B-56,1,1,"The force values shown assume a supply pressure to the actuator of 0 to 18 psig for a 3 to 15 nominal psig signal and a 0 to 33 psig supply for a 6 to 30 nominal psig signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+116,B-56,1,2,Specify spring adjustor 1N827035132.
+116,B-56,1,3,Specify spring adjustor 1P994435132.
+116,B-56,1,4,4 to 18 psig to diaphragm (0 to 21 psig supply).
+116,B-56,1,5,"2420 lb force, 11 to 23 psig bench set with side-mounted handwheel."
+116,B-56,1,6,"2200 lb force, 10 to 24 psig bench set with side-mounted handwheel."
+117,B-57,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+117,B-57,1,2,Specify spring adjustor 1P161724492.
+118,B-58,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+118,B-58,1,2,Specify spring adjustor 1N872035132.
+118,B-58,1,3,Specify spring adjustor 1P994435132.
+119,B-59,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+120,B-60,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+120,B-60,1,2,Specify spring adjustor 1J711524102.
+121,B-61,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+121,B-61,1,2,Specify spring adjustor 1J717724102.
+121,B-61,1,3,Specify spring adjustor 1J711924102.
+122,B-62,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+122,B-62,1,2,Specify spring adjustor 1J717724102.
+122,B-62,1,3,Specify spring adjustor 1J711924102.
+123,B-63,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+123,B-63,1,2,Specify spring adjustor 1J712224102.
+124,B-64,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig diaphragm loading for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+124,B-64,1,2,Specify spring adjustor 1J712224102.
+125,B-65,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+125,B-65,1,2,Specify spring adjustor 1J712224102.
+126,B-66,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+126,B-66,1,2,Specify spring adjustor 1J712224102.
+127,B-67,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+127,B-67,1,2,Specify spring adjustor 1J712224102.
+128,B-68,1,1,"The force values shown assume a diaphragm loading pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+128,B-68,1,2,Specify spring adjustor 1J712224102.
+129,B-69,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+129,B-69,1,2,Specify spring adjustor 1U1079X00A2.
+129,B-69,1,3,Specify spring adjustor 1N909524502.
+129,B-69,1,4,3 to 18 psig to diaphragm (0 to 21 psig supply).
+129,B-69,1,5,"1980 lb force, 9 to 21 psig bench set with side-mounted handwheel."
+129,B-69,1,6,"1980 lb force, 9 to 25 psig bench set with side-mounted handwheel."
+130,B-70,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 33 psig for a 6-30 psig nominal signal, and 0-48 psig for a 3-45 psig nominal signal."
+130,B-70,2,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+130,B-70,2,2,Specify spring adjustor 1N329219042.
+131,B-71,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+131,B-71,1,2,Specify spring adjustor 1U1079X00A2.
+131,B-71,1,3,Specify spring adjustor 1N909524502.
+131,B-71,1,4,3 to 18 psig to diaphragm (0 to 21 psig supply).
+131,B-71,1,5,"1980 lb force, 9 to 21 psig bench set with side-mounted handwheel."
+131,B-71,1,6,"1980 lb force, 9 to 25 psig bench set with side-mounted handwheel."
+132,B-72,1,1,"The force values shown assume a diaphragm pressure to the actuator of 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 psig nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range."
+134,B-74,1,1,These FS numbers are for the 5-inch yoke boss only. An option is required for 5H yoke boss.
+134,B-74,2,1,These FS numbers are for the 5-inch yoke boss only. An option is required for 5H yoke boss.
+148,B-84,1,1,Standard.
+148,B-84,1,2,Without side-mounted handwheel.
+148,B-84,1,3,Size 76 is 667 only.
+148,B-84,1,4,MO—side mounted handwheel.
+148,B-84,1,5,667 size i is limited to 30i through 46i.
+148,B-84,1,6,Available for 657C size 40i.
+148,B-84,1,7,Available for 657C size 46i and 60i.
+150,B-86,1,1,"For 2-inch travel optional Linear, use Kn = 3.9."
+150,B-86,1,2,For Cavitrol III Tight Shutoff option.
+150,B-86,1,3,"Applicable to Whisper I, III, or WhisperFlo."
+150,B-86,1,4,Values applicable to equivalent DN or PN rating.
+150,B-86,6,1,Negative gradient values listed are for radius seat design. Consult factory for beveled seat design negative gradient value.
+150,B-86,7,1,"Applicable to Whisper I, Whisper III, or WhisperFlo Trims."
+150,B-86,7,2,Values applicable to equivalent DN or PN rating.
+151,B-86.1,2,1,4.8 for maximum travel 2-inches.
+151,B-86.1,2,2,2.8 for maximum travel 2-inches.
+151,B-86.1,2,3,5.6 for maximum travel 2-inches.
+151,B-86.1,2,4,4.0 for maximum travel 2.5-inches.
+151,B-86.1,2,5,2.0 for maximum travel 2.5-inches.
+151,B-86.1,2,6,"Applicable to Whisper I, III, or WhisperFlo."
+151,B-86.1,3,1,Negative gradient values are applicable to protected inside seat design.
+151,B-86.1,3,2,Values applicable to equivalent DN or PN rating.
+151,B-86.1,3,3,"Applicable to Whisper I, III, or WhisperFlo."
+152,B-86.2,2,1,The unbalanced NotchFlo design experiences negative gradient caused by the localized pressure gradient on the plug associated with the changes in the trim geometry. Please use the published valves for both balanced and unbalanced NotchFlo designs.
+152,B-86.2,3,1,For converging flow only.
+168,B-100,1,1,Refers to trim size.
+168,B-100,1,2,Through 1 in. maximum travel only.
+168,B-100,1,3,Through 1.5 in. maximum travel only.
+168,B-100,1,4,Through 2 in. maximum travel only.
+168,B-100,1,5,Through 3 in. maximum travel only.
+168,B-100,1,6,6 in. maximum travel.
+168,B-100,1,7,5 in. maximum travel.
+168,B-100,1,8,8 in. maximum travel.
+168,B-100,1,9,Includes Cavitrol III and Whisper Trim III constructions.
+168,B-100,1,10,Electric actuators mounted on YD and YS valves must be capable of thrust limits in both the up and down positions.
+169,B-101,1,1,The “A” dimension for a style 3 extension bonnet refers to the distance from the match line for the actuator to the center line of the valve body. This is commonly specified as dimension D in product bulletins.
+170,B-102,1,1,"Stem loads shown for temperatures to 38C (100F) are valid for temperatures to -253.8C (-425F). Do not use below the lower temperature limit of the bonnet, packing, or valve construction materials being used."
+170,B-102,1,2,"For temperatures above 427C (800F), calculate stem load using the reference loads and stem material factors given in table 4 for 316 stainless steel annealed (SA-479-316) stems."
+170,B-102,2,1,"Except where indicated, stem loads calculated using the factors shown for temperatures to 38C (100F) are valid for temperatures to -253C (-425F). Do not use below the lower temperature limit of the bonnet, packing, or valve construction materials being used."
+170,B-102,2,2,Do not use below -78.8C (-110F).
+170,B-102,2,3,At 343C (650F).
+170,B-102,2,4,Do not use below -17.7C (0F).
+171,B-103,1,1,"Stem loads shown for temperatures to 38C (100F) are valid for temperatures to -253.58C (-425F). Do not use below the lower temperature limit of the bonnet, packing, or valve construction materials being used."
+171,B-103,2,1,"Except where indicated, stem loads calculated using the factors shown for temperatures to 38C (100F) are valid for temperatures to -253C (-425F). Do not use below the lower temperature limit of the bonnet, packing, or valve construction materials being used."
+171,B-103,2,2,Do not use below -78.8C (-110F).
+171,B-103,2,3,At 343C (650F).
+172,B-104,1,1,"Stem loads shown for temperatures to 38C (100F) are valid for temperatures to -253.8C (-425F). Do not use below the lower temperature limit of the bonnet, packing, or valve construction materials being used."
+172,B-104,2,1,"Except where indicated, stem loads calculated using the factors shown for temperatures to 38C (100F) are valid for temperatures to -253.8C (-425F). Do not use below the lower temperature limit of the bonnet, packing, or valve construction materials being used."
+172,B-104,2,2,Do not use below -78.8C (-110F).
+172,B-104,2,3,At 343C (650F).
+178,C-4,1,2,Compare ΔP to ΔP (if ΔP is known) at Definition and Use eff actual actual each angle of rotation. Use the smaller of the two values (ΔP eff or ΔP actual ) as the effective pressure drop at open angles of rotation.
+178,C-4,1,3,Turn to the appropriate Section C table. Make sure or ball in the fully open position.
+178,C-4,1,4,"Use the actual maximum shutoff pressure drop, to the wide open position. ΔP , as the pressure drop in the closed position, 0 shutoff"
+179,C-5,1,1,"For 1052 and 1066 actuators. If 75 maximum rotation is needed for a 1051 or 1066SR actuator, consult your Emerson sales office."
+183,C-9,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, 75 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+183,C-9,1,2,Maximum allowable pressure drop when limited to 75 degrees rotation.
+184,C-10,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+185,C-11,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, 75, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+186,C-12,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+186,C-12,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+186,C-12,1,3,The NPS 24 valve body and size 60 or 68 actuator combination requires a special mounting yoke and valve shaft. Consult your Emerson sales office.
+187,C-13,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+187,C-13,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+188,C-14,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+188,C-14,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a Type 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+189,C-15,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+189,C-15,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+190,C-16,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+191,C-17,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+192,C-18,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+193,C-19,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+194,C-20,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+195,C-21,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+196,C-22,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+197,C-23,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+198,C-24,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+199,C-25,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+200,C-26,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+201,C-27,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+201,C-27,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10 percent greater than the cylinder pressure shown above."
+202,C-28,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+202,C-28,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a Type 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10 percent greater than the cylinder pressure shown above."
+203,C-29,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+203,C-29,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10 percent greater than the cylinder pressure shown above."
+205,C-31,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+205,C-31,2,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+206,C-32,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+207,C-33,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+208,C-34,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+209,C-35,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+210,C-36,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+211,C-37,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+212,C-38,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+214,C-40,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+214,C-40,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10 percent greater than the cylinder pressure shown above."
+214,C-40,1,3,Symbols for disk styles are as follows: C-conventional style; F-FISHTAIL™ style.
+215,C-41,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+216,C-42,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+217,C-43,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+218,C-44,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+219,C-45,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+220,C-46,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+221,C-47,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+222,C-48,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+223,C-49,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+224,C-50,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+225,C-51,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+225,C-51,1,2,"When ordering a 1052 actuator, the FS number shown must be preceded by 1052- for size 20 and 33, or 1052K- for all other sizes. Right-hand actuator mounting FS numbers are shown."
+226,C-52,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+227,C-53,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+228,C-54,1,1,"At 0 degrees, use maximum actual shutoff pressure. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+229,C-55,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+229,C-55,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+229,C-55,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+229,C-55,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+230,C-56,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+230,C-56,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+230,C-56,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+230,C-56,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+231,C-57,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+231,C-57,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+231,C-57,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+231,C-57,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+232,C-58,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+232,C-58,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+232,C-58,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+232,C-58,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+233,C-59,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+233,C-59,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+233,C-59,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+233,C-59,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+234,C-60,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+234,C-60,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+234,C-60,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+234,C-60,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+235,C-61,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+235,C-61,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+235,C-61,2,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+235,C-61,2,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure at the positioner should be 10 percent greater than the cylinder pressure shown above."
+236,C-62,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+237,C-63,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+238,C-64,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+239,C-65,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+240,C-66,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+241,C-67,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+242,C-68,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+243,C-69,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+244,C-70,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+245,C-71,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+246,C-72,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+247,C-73,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+248,C-74,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+249,C-75,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+250,C-76,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+250,C-76,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+251,C-77,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+251,C-77,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+252,C-78,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+252,C-78,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+253,C-79,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+253,C-79,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+254,C-80,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+254,C-80,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+255,C-81,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+255,C-81,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+256,C-82,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+256,C-82,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+257,C-83,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+257,C-83,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+258,C-84,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+258,C-84,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+259,C-85,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+259,C-85,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+260,C-86,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+260,C-86,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+261,C-87,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+261,C-87,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+262,C-88,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+262,C-88,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+263,C-89,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+263,C-89,1,2,"Optional minimum supply pressure, select appropriate option (S60 or S100)"
+264,C-94,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+264,C-94,2,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+265,C-95,1,1,"At 0 degrees, use maximum actual shutoff pressure drop."
+266,C-96,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+267,C-97,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+268,C-98,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+269,C-99,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+270,C-100,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+271,C-101,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+272,C-102,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+272,C-102,1,2,Shaft diameter x spline diameter.
+273,C-103,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+273,C-103,1,2,Shaft diameter x spline diameter.
+274,C-104,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+274,C-104,1,2,Shaft diameter x spline diameter.
+275,C-105,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+275,C-105,1,2,Shaft diameter x spline diameter.
+276,C-106,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+276,C-106,1,2,Shaft diameter x spline diameter.
+277,C-107,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+277,C-107,1,2,Shaft diameter x spline diameter.
+278,C-108,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610P positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+278,C-108,1,3,Shaft diameter x spline diameter.
+279,C-109,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+279,C-109,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+279,C-109,1,3,Shaft diameter x spline diameter.
+280,C-110,1,1,"At 0 degrees, use actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+280,C-110,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+280,C-110,1,3,Shaft diameter x spline diameter.
+281,C-111,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610P positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+281,C-111,1,3,Shaft diameter x spline diameter.
+282,C-112,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610P positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+282,C-112,1,3,Shaft diameter x spline diameter.
+284,C-114,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+285,C-115,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+286,C-116,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+287,C-117,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+288,C-118,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+289,C-119,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 10 or 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+290,C-120,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+291,C-121,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+291,C-121,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+292,C-122,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+293,C-123,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+293,C-123,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+294,C-124,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+295,C-125,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+295,C-125,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+296,C-126,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+297,C-127,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+297,C-127,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+298,C-128,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+299,C-129,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+299,C-129,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+300,C-130,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+300,C-130,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown above."
+301,C-131,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+301,C-131,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown above."
+302,C-132,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+302,C-132,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+303,C-133,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+303,C-133,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+304,C-134,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+304,C-134,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown above."
+305,C-135,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+305,C-135,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+306,C-136,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+306,C-136,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+307,C-137,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+307,C-137,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+308,C-138,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+308,C-138,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+309,C-139,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+309,C-139,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+310,C-140,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+310,C-140,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+311,C-141,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+311,C-141,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+312,C-142,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+312,C-142,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+313,C-143,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+313,C-143,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+314,C-144,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+314,C-144,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+315,C-145,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+315,C-145,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+316,C-146,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+316,C-146,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+317,C-147,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+317,C-147,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball™ product bulletin for pressure drop limitations of CL150 valve bodies.
+318,C-148,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+318,C-148,1,2,Maximum allowable pressure drop based on trim. Consult the Vee-Ball product bulletin for pressure drop limitations of CL150 valve bodies.
+319,C-149,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+320,C-150,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+320,C-150,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+321,C-151,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+322,C-152,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+322,C-152,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+323,C-153,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+324,C-154,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+325,C-155,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+326,C-156,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+326,C-156,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+327,C-157,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+328,C-158,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 60 or 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+328,C-158,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+329,C-159,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+329,C-159,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+330,C-160,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+330,C-160,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+331,C-161,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+331,C-161,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+332,C-162,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+332,C-162,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+333,C-163,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+333,C-163,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+334,C-164,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+335,C-165,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+335,C-165,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+336,C-166,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+337,C-167,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+337,C-167,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+338,C-168,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+339,C-169,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+339,C-169,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+340,C-170,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+341,C-171,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+341,C-171,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+342,C-172,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less"
+343,C-173,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+343,C-173,1,2,Maximum allowable pressure drop when limited to 60 degrees rotation.
+344,C-174,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+344,C-174,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+345,C-175,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+345,C-175,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+346,C-176,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+346,C-176,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+347,C-177,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+347,C-177,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+348,C-178,1,1,"These tables provide pressure drop values according to actuator size and cylinder pressure. Cylinder pressure equals supply pressure for an actuator without a positioner. When a positioner is used, supply pressure to the positioner should be 5 psi greater than the supply pressure shown in the table."
+348,C-178,1,2,"At 0 degrees, use maximum actual shutoff pressure drop. At 70 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+349,C-179,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+349,C-179,1,2,Shaft diameter x spline diameter.
+350,C-180,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+350,C-180,1,2,Shaft diameter x spline diameter.
+351,C-181,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+352,C-182,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 20, 60, or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+352,C-182,1,2,Shaft diameter x spline diameter.
+353,C-183,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+353,C-183,1,2,Shaft diameter x spline diameter.
+354,C-184,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+354,C-184,1,2,Shaft diameter x spline diameter.
+355,C-185,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+355,C-185,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+355,C-185,1,3,Shaft diameter x spline diameter.
+356,C-186,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+356,C-186,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+356,C-186,1,3,Shaft diameter x spline diameter.
+357,C-187,1,1,"At 0 degrees, use actual shutoff pressure drop. At 60 or 90 degrees, use maximum effective or actual flowing pressure drop, whichever is lower."
+357,C-187,1,2,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, supply pressure to the positioner should be 10% greater than the cylinder pressure shown above."
+357,C-187,1,3,Shaft diameter x spline diameter.
+359,C-189,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+360,C-190,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+361,C-191,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+362,C-192,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+363,C-193,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+364,C-194,1,1,"At 0 degrees, use maximum actual shutoff pressure drop. At 80 degrees, use maximum effective or actual flowing pressure drop, whichever is less."
+370,D-6,1,1,Based on shaft with 3-1/2 inch diameter at splined end.
+373,D-11,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+373,D-11,2,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+374,D-12,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+377,D-13,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+378,D-14,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+380,D-14.2,2,1,NOVEX style seals are available in NPS 36 and 38. Metal seals are available in NPS 42 and 48.
+382,D-14.4,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+382,D-14.4,2,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+383,D-15,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+383,D-15,1,2,"For NPS 30 through 48, shaft diameter is the diameter at the actuator keyed connection."
+383,D-15,2,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+383,D-15,2,2,"For NPS 30 through 48, shaft diameter is the diameter at the actuator keyed connection."
+384,D-16,1,1,"For NPS 30 through 48, shaft diameter is the diameter at the actuator keyed connection."
+385,D-17,1,1,"For NPS 2, flow is recommended in the forward direction only. Also, NPS 2 is multirated to CL150/300/600."
+385,D-17,2,1,"For NPS 2, flow is recommended in the forward direction only. Also, NPS 2 is multirated to CL150/300/600."
+386,D-18,1,1,Use 80 for units with greater than 80 maximum rotation.
+386,D-18,1,2,Forward flow is the preferred direction.
+386,D-18,1,3,The 2-inch size is multirated to Classes 150/300/600.
+387,D-19,1,1,Use 80 for units with greater than 80 maximum rotation.
+388,D-20,1,1,Use 80 for units with greater than 80 maximum rotation.
+388,D-20,1,2,Forward flow is the preferred direction.
+388,D-20,1,3,The 2-inch size is multirated to Classes 150/300/600.
+389,D-21,1,1,Use 80 for units with greater than 80 maximum rotation.
+390,D-22,1,1,Use 80 for valve units with greater than 80 maximum rotation.
+390,D-22,1,2,"Reverse flow is the preferred direction Responsibility for selection, use, and maintenance of any product remains solely with the purchaser and end user. The contents of this publication are for informational purposes only and are not to be construed as warranties or guarantees, express or implied, regarding the products or services described therein. Fisher is a mark owned by one of the companies in the Emerson Automation Solutions business unit of Emerson Electric Co. Emerson Automation Solutions, Emerson, and the Emerson logo are trademarks and service marks of Emerson Electric Co. All other marks are the property of their respective owners."
+391,D-23,1,1,Use 80 for valve units with greater than 80 maximum rotation.
+391,D-23,1,2,Reverse flow is the preferred direction.
+396,D-26.2,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+396,D-26.2,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+397,D-26.3,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+397,D-26.3,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+398,D-26.4,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+398,D-26.4,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+399,D-26.5,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+399,D-26.5,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+400,D-26.6,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+400,D-26.6,3,1,"Nominal diameter of shaft at the key. For more dimensions, see Fisher bulletin 51.6:8590 (D104017X012)"
+414,D-32,2,1,NOVEX style seals are available in NPS 36 and 38. Metal seals are available in NPS 42 and 48.
+416,D-34,2,1,NOVEX style seals are available in NPS 36 and 38. Metal seals are available in NPS 42 and 48.
+418,D-36,2,1,NOVEX style seals are not available in sizes over 36 inches.
+470,D-92,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+470,D-92,2,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+470,D-92,3,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+470,D-92,4,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+470,D-92,5,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+471,D-93,1,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+471,D-93,2,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+471,D-93,3,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+471,D-93,4,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+471,D-93,5,1,"When two dimensions are indicated, the first is the shaft diameter to mate with the actuator yoke bearing and the second references the Fisher spline size."
+473,D-93.2,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+473,D-93.2,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+474,D-93.3,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+474,D-93.3,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+475,D-93.4,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+475,D-93.4,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+476,D-93.5,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+476,D-93.5,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+477,D-93.6,1,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+477,D-93.6,2,1,"Nominal diameter of spline shaft used for selecting Fisher actuators. For more dimensions, see Fisher bulletin 51.3:Control−Disk CL600 (D104025X012)"
+479,D-98,1,1,Maximum Allowable Shaft Torque.
+479,D-98,2,1,Maximum Allowable Shaft Torque.
+480,D-98.1,1,1,Maximum Allowable Shaft Torque.
+480,D-98.1,2,1,Maximum Allowable Shaft Torque.
+480,D-98.1,3,1,Maximum Allowable Shaft Torque.
+483,D-98.4,1,1,Maximum Allowable Shaft Torque.
+483,D-98.4,2,1,Maximum Allowable Shaft Torque.
+484,D-98.5,1,1,Maximum Allowable Shaft Torque.
+484,D-98.5,2,1,Maximum Allowable Shaft Torque.
+484,D-98.5,3,1,Maximum Allowable Shaft Torque.
+485,D-99,1,1,Two numbers indicate shaft diameter x spline diameter.
+485,D-99,1,2,Positive values indicate dynamic torque tends to close the valve. Negative values indicate dynamic torque tends to open the valve.
+485,D-99,2,1,Two numbers indicate shaft diameter x spline diameter.
+485,D-99,2,2,Dynamic torque tends to close the valve.
+491,D-105,1,1,See table 3 for C factors with Cavitrol™ V trim.
+493,D-107,1,1,PEEK/PTFE or metal/PTFE bearings.
+494,D-108,1,1,PEEK/PTFE or metal/PTFE bearings.
+494,D-108,1,2,"With lubricated service, the process fluid provides lubrication to the seal. With non-lubricated service (such as superheated steam or filtered air), the process fluid provides no lubrication to the seal."
+494,D-108,1,3,V200U available in sizes NPS 3 through NPS 10 (DN 80 through DN 250).
+495,D-108.1,1,1,PEEK/PTFE or metal/PTFE bearings.
+495,D-108.1,1,2,With lubricated service the process fluid provides lubrication to the seal. With non-lubricated service (such as superheated steam or filtered air) the process fluid provides no lubrication to the seal.
+498,D-110,1,1,"For other seal materials, see Catalog 14, Section D."
+498,D-110,3,1,This value is the maximum allowable spline torque.
+500,D-112,1,1,This is an optional operating pressure for the 1−spring design.
+500,D-112,1,2,This is an optional operating pressure for the 2−spring design.
+500,D-112,2,1,This is an optional operating pressure for the 1−spring design.
+500,D-112,2,2,This is an optional operating pressure for the 2−spring design.
+502,D-114,2,3,Be sure actuator torque exceeds valve torque.
+502,D-114,3,1,Values obtained from table 5.
+502,D-114,3,2,Values obtained from table 7.
+502,D-114,3,4,These values of valve dynamic torque exceed available actuator torque and shaft spline torque limits. The solution would be to use a valve and actuator with greater capability.
+513,D-121,1,1,Two numbers indicate shaft diameter X spline diameter.
+513,D-121,1,2,Positive values indicate dynamic torque tends to close valve; negative values indicate dynamic torque tends to open valve.
+513,D-121,2,1,Two numbers indicate shaft diameter X spline diameter.
+513,D-121,2,2,Dynamic torque tends to close valve.
+515,D-122.1,2,1,Margin factor must be added to all torque values.
+515,D-122.1,2,2,Minimum margin factor is 1.25.
+515,D-122.1,2,3,Margin factors above are suggestions only.
+517,D-122.3,1,1,High strength key required.
+517,D-122.3,1,2,"Shaft material meets requirements for NACE MR0175-2002, MR0175-2003, MR0103, and MR0175/ISO15156."
+519,D-123,1,1,This spring uses spring seat 12A9449X012.
+519,D-123,1,2,This spring uses spring seat 12A9448X012.
+519,D-123,1,3,Maximum rotation limited to 60 with adjustable up travel stop.
+519,D-123,1,4,"The numbers in this column reflect the net spring torque output (inlbs) at 60, valve torque tending to close."
+519,D-123,1,5,"The numbers in this column reflect the net spring torque output (inlbs) at 90, valve torque tending to close."
+519,D-123,1,6,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 60, valve torque tending to close."
+519,D-123,1,7,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 90, valve torque tending to close."
+520,D-124,1,1,"If selecting actuator for throttling valve with metal bearings and metal seal, reduce this torque by one-third."
+520,D-124,1,2,This spring uses spring seat 12A9448X012.
+520,D-124,1,3,This spring uses spring seat 12A9449X012.
+520,D-124,1,6,"The numbers in this column reflect the net spring torque output (inlbs) at 60, valve torque tending to close."
+520,D-124,1,7,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 90, valve torque tending to open."
+520,D-124,1,8,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 10, valve torque tending to close."
+520,D-124,1,9,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 60, valve torque tending to close."
+520,D-124,1,10,"The numbers in this column reflect the net spring torque output (inlbs) at 90, valve torque tending to open."
+521,D-125,1,1,"If selecting actuator for throttling valve with metal bearings, reduce this torque by one-third."
+521,D-125,1,2,This spring uses spring seat 12A9448X012.
+521,D-125,1,3,This spring uses spring seat 12A9449X012.
+522,D-126,1,1,This spring uses spring seat 12A9448X012.
+522,D-126,1,2,This spring uses spring seat 12A9449X012.
+523,D-127,1,1,This spring uses spring seat 12A9448X012.
+523,D-127,1,2,This spring uses spring seat 12A9449X012.
+524,D-128,1,1,This spring uses spring seat 12A9448X012.
+524,D-128,1,2,This spring uses spring seat 12A9449X012.
+524,D-128,1,3,"For V150, V200 or V300 with attenuator, see page D-66 through D-70."
+525,D-129,1,1,Spring Seat 12A9448 X012.
+525,D-129,1,2,Spring Seat 12A9449 X012.
+526,D-130,1,1,Spring Seat 12A9448 X012.
+526,D-130,1,2,Spring Seat 12A9449 X012.
+527,D-131,1,1,Maximum rotation limited to 60 with adjustable up travel stop.
+527,D-131,1,2,"The numbers in this column reflect the net spring torque output (inlbs) at 60, valve torque tending to close."
+527,D-131,1,3,"The numbers in this column reflect the net spring torque output (inlbs) at 90, valve torque tending to close."
+527,D-131,1,4,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 60, valve torque tending to close."
+527,D-131,1,5,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 90, valve torque tending to close."
+528,D-132,1,1,"If selecting actuator for throttling valve with metal bushings and metal seal, reduce this torque by one-third."
+528,D-132,1,4,"The numbers in this column reflect the net spring torque output (inlbs) at 60, valve torque tending to close."
+528,D-132,1,5,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 90, valve torque tending to open."
+528,D-132,1,6,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 10, valve torque tending to close."
+528,D-132,1,7,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 60, valve torque tending to close."
+528,D-132,1,8,"The numbers in this column reflect the net spring torque output (inlbs) at 90, valve torque tending to open."
+529,D-133,1,3,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 60, valve torque tending to close."
+529,D-133,1,4,"The numbers in this column reflect the net diaphragm torque output (inlbs) at 75, valve torque tending to close."
+529,D-133,1,5,"The numbers in this column reflect the net spring torque output (inlbs) at 75, valve torque tending to open."
+530,D-134,1,1,"If selecting actuator for throttling valve with metal bearings, reduce this torque by one-third."
+534,D-138,1,1,"For V150, V200 or V300 with attenuator, see page D-109 through D-114."
+538,D-142,1,1,"Cylinder pressure equals supply pressure for an actuator without a positioner or for a 3610JP positioner and actuator combination. When another positioner is used, assume cylinder pressure is 90% of supply pressure."
+539,D-143,2,2,Actuator/Valve Body Shaft Combinations
+539,D-143,3,1,"The Shaft Diameters used in this table are standard F Mounting sizes. If the valve you are sizing has a necked down shaft, use the reduced diameter."
+539,D-143,3,2,Available actuator output torque can exceed these values but valve TB or TD cannot.
+549,D-150.3,1,1,Check dynamic torque against valve Td at 60° even though max valve rotation may be less than 60°.
+549,D-150.3,1,2,Check dynamic torque against valve Td at 70° for NPS 10 valve even though max valve rotation may be less than 70°.
+549,D-150.3,2,1,Check dynamic torque against valve Td at 60° even though max valve rotation may be less than 60°.
+549,D-150.3,2,2,Check dynamic torque against valve Td at 70° for NPS 10 valve even though max valve rotation may be less than 70°.
+555,D-155,1,1,"If selecting actuator for throttling valve with metal bushings and metal seat, reduce this torque by one-third."
+556,D-156,1,1,"If selecting actuator for throttling valve with metal bushings and metal seat, reduce this torque by one-third."

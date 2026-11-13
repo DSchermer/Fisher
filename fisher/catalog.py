@@ -30,6 +30,9 @@ def _size_to_float(s: str) -> float | None:
     return float(s) if m else None
 
 
+STANDARD_NPS = [0.5, 0.75, 1, 1.5, 2, 2.5, 3, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 30, 36, 42, 48]
+
+
 # Nominal metric size (DN, mm) to NPS (inches), for tables that print DN.
 DN_TO_NPS = {15: 0.5, 20: 0.75, 25: 1, 32: 1.25, 40: 1.5, 50: 2, 65: 2.5, 80: 3, 100: 4, 125: 5, 150: 6,
              200: 8, 250: 10, 300: 12, 350: 14, 400: 16, 450: 18, 500: 20, 600: 24, 750: 30, 900: 36}
@@ -49,6 +52,12 @@ def parse_nps(raw: str, dn: bool = False) -> list[float]:
                 if int(v) in DN_TO_NPS]
     s = re.sub(r"\((\d+)\)", "", raw)          # footnote markers
     s = s.replace("‐", "-").replace("X", "x")
+    m = re.fullmatch(r"\s*all sizes\s*(\S+)\s*[-–]\s*(\S+)\s*", s, re.I)
+    if m:                                       # "All Sizes 1/2 - 2": every standard size in the range
+        lo, hi = _size_to_float(m.group(1)), _size_to_float(m.group(2))
+        if lo is not None and hi is not None:
+            return [float(v) for v in STANDARD_NPS if lo <= v <= hi]
+    s = re.sub(r"^\s*all sizes\s*", "", s, flags=re.I)
     paren = re.findall(r"\((\d+-\d+/\d+|\d+/\d+|\d+)\)", s)
     if paren:                                   # metric with inches in brackets
         return [v for v in (_size_to_float(p) for p in paren) if v is not None]
@@ -64,7 +73,29 @@ def parse_nps(raw: str, dn: bool = False) -> list[float]:
     return out
 
 
+def fallback_sizes(row: dict, attrs: dict) -> list[float]:
+    """Sizes for configurations whose size cell is not a size:
+    - a 'Body Size' column beside a cage-level code (EH: 'A1' with body size '8 & 10');
+    - a title naming one size ('NPS 1 Micro-Notch Ball').
+    """
+    body = next((v for k, v in attrs.items() if re.search(r"body size", k, re.I) and v != row["nps"]), "")
+    if body:
+        return parse_nps(body)
+    m = re.search(r"\bNPS\s+(\d+(?:-\d+/\d+)?|\d+/\d+)\b", " ".join((row["page_title"], row["table_title"])))
+    if m and not row["nps"]:
+        v = _size_to_float(m.group(1))
+        return [v] if v is not None else []
+    return []
+
+
 # ---------------------------------------------------------------- data model
+
+# Valve types whose Catalog 12 tables have no opening axis, so the axis cannot say how they move.
+ROTARY_FAMILIES = {"SIS", "Z500"}  # ball valves (Catalog 14 sizes both by the torque method)
+REFERENCE_FAMILIES = {"Fd Style Modifiers"}  # a table of Fd modifiers, not a valve
+PRESSURE_CLASS = re.compile(r"(?:ANSI\s*)?(?:CL|Class)\s*\d+(?:\s*(?:/|-|–|through|to|and|,|&)\s*(?:CL|Class)?\s*\d+)*"
+                            r"|PN\s*\d+(?:\s*(?:-|–|/)\s*\d+)?", re.I)
+
 
 @dataclass
 class Config:
@@ -93,6 +124,28 @@ class Config:
     @property
     def source(self) -> str:
         return f"Fisher Catalog 12, page {self.printed_label} (PDF page {self.page})"
+
+    @property
+    def pressure_class(self) -> str:
+        """Pressure class as printed in the page, table or section title (e.g. 'CL150 to CL300'), or ''."""
+        m = PRESSURE_CLASS.search(" | ".join((self.page_title, self.table_title, self.section)))
+        return m.group(0).strip() if m else ""
+
+    @property
+    def class_range(self) -> tuple[int, int] | None:
+        """(lowest, highest) ASME class named in pressure_class, e.g. (150, 300); None for PN or none."""
+        nums = [int(n) for n in re.findall(r"\d+", self.pressure_class)] if self.pressure_class.upper().startswith(
+            ("CL", "ANSI", "CLASS")) else []
+        return (min(nums), max(nums)) if nums else None
+
+    @property
+    def motion(self) -> str:
+        """'rotary', 'sliding-stem' or 'reference': from the position axis, else from the valve type."""
+        if self.family in REFERENCE_FAMILIES:
+            return "reference"
+        if self.position_basis == "deg_rotation" or self.family in ROTARY_FAMILIES:
+            return "rotary"
+        return "sliding-stem"
 
     def curve(self, coefficient: str = "Cv") -> list[tuple[float, float]]:
         """(opening, value) points for a coefficient, in order of opening."""
@@ -172,7 +225,7 @@ class Catalog:
                 config_id=r["config_id"], page=int(r["page"]), printed_label=r["printed_label"],
                 family=r["family"], page_title=r["page_title"], table_title=r["table_title"],
                 section=r["section"], characteristic=r["characteristic"], flow_direction=r["flow_direction"],
-                nps=r["nps"], sizes=parse_nps(r["nps"], dn=dn), attrs=attrs,
+                nps=r["nps"], sizes=parse_nps(r["nps"], dn=dn) or fallback_sizes(r, attrs), attrs=attrs,
                 restricted=r["restricted_trim"] == "1", restricted_source=r["restricted_source"],
             )
         for v in _rows(d / "coefficients.csv"):

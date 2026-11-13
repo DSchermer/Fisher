@@ -71,7 +71,9 @@ def rotary_tokens(text: str) -> set[str]:
 def actuators_for_config(config: Config, dp_required: float = 0.0, *, angle_deg: float | None = None,
                          leakage: str | None = None, valve_code: str | None = None) -> ActuatorMatch:
     """Catalog 14 constructions rated for this Catalog 12 configuration at `dp_required` psi or more."""
-    if config.position_basis == "deg_rotation":
+    if config.motion == "reference":
+        return ActuatorMatch(config.config_id, "reference", {}, [], "a reference table, not a valve")
+    if config.motion == "rotary":
         tokens = {config.family.replace("™", "")}
         hits = [r for r in actuators.ratings() if r.section == "C" and r.unit == "psi"
                 and tokens & rotary_tokens(r.valve) and r.valve_nps in config.sizes
@@ -80,10 +82,19 @@ def actuators_for_config(config: Config, dp_required: float = 0.0, *, angle_deg:
         m = ActuatorMatch(config.config_id, "rotary", {"valve": config.family, "nps": config.sizes,
                                                        "angle_deg": angle_deg}, hits)
         if not hits:
+            from . import torque
+            typed = [v for v in torque.valves() if config.family.replace("™", "") in v.replace("/", " ").split()
+                     or v == config.family]
             m.note = (f"Catalog 14 section C has no pressure drop table for {config.family} NPS "
                       f"{config.nps}" + (f" at {angle_deg:g} degrees" if angle_deg is not None else "") +
-                      "; see the torque method (section D).")
+                      "; see the torque method (section D)" +
+                      (f": fisher.torque.valve_torque_catalog('{typed[0]}', ...)" if typed else "") + ".")
         return m
+
+    if config.family == "GX":
+        return ActuatorMatch(config.config_id, "sliding-stem", {"valve": "GX"}, [],
+                             "Catalog 14 page A-1: each GX valve has a preselected actuator; "
+                             "see the GX product bulletin rather than the pressure drop tables.")
 
     codes = sliding_valve_codes(config)
     code = valve_code or (codes[0] if codes else None)
