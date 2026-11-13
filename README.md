@@ -23,6 +23,7 @@ There is no AI at run time. The tools read frozen CSV files and do arithmetic, s
 1. **Second reader.** Every row of values was re-read with a different PDF engine (poppler `pdftotext`) and had to appear on the page in the same order. 8,592 of 8,596 rows matched exactly. The other 4 were checked by eye and are correct: poppler wraps two of them across lines, and two have a stray glyph next to a number.
 2. **Physics checks** (`data/flags.csv`): Kv ≈ 0.865 × Cv for 20,000 pairs, XT/FL/Fd in range, and Cv rising with opening.
 3. **The catalog's own worked examples.** All Section 2 sample problems are tests and reproduce the printed answers. The data tests check that lookups return the exact table values those examples quote (e.g. "NPS 3 CL300 ED linear cage has a Cv of 133 at 80 percent travel").
+4. **Hand check.** 20 tables were compared against the PDF by hand, with no errors found.
 
 The remaining warnings (243 values on 39 pages) are **errors or quirks in the catalog itself**. They are flagged, never corrected. Examples:
 
