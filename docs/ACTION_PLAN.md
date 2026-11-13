@@ -6,6 +6,8 @@
 
 The companion file [`page_inventory.csv`](page_inventory.csv) classifies every page. It is a first pass made with heuristics, so Phase 0 checks it before anything else relies on it.
 
+**Execution model:** AI agents do the work (see §3); a person approves at three review gates.
+
 ---
 
 ## 1. What the document contains (from recon)
@@ -77,72 +79,97 @@ A wide view (one row per configuration with columns for each position) is genera
 
 ---
 
-## 3. Phased action plan
+## 3. Execution model: AI does the work, humans approve at gates
 
-### Phase 0 — Setup & inventory (0.5 day)
-- [ ] Repo layout: `src/` (pipeline), `data/raw|interim|final/`, `docs/`, `tests/`. Store the PDF under `data/source/` with its SHA-256 so a new edition can be detected.
-- [ ] Toolchain: `pdfplumber` (words, rects, fills; already confirmed working), `pymupdf` (fast render/images), `poppler-utils`, `pandas`/`duckdb`, `pydantic` for schemas.
-- [ ] Spot-check `page_inventory.csv` (page_kind, family) by hand and fix it. It drives every later phase.
-- [ ] **Exit:** each of the 398 pages has a family, kind, and printed label everyone agrees on.
+Everything below assumes **AI agents do the extraction, coding, chunking and modeling**, and a person only makes decisions and signs off. That changes the plan in three ways:
 
-### Phase 1 — Lossless raw extraction (1 day)
-- [ ] Per page: dump `chars/words` (text, x0/x1/top/bottom, fontname, size), `rects` (with `non_stroking_color`), `lines`, and images to JSON.
-- [ ] Build a **glyph-repair map** for the Interleaf/PSO symbol fonts (`+`→`=`, `D`→`Δ` in Symbol font only, `_`→`°`, U+2010→`-`, etc.), applied **by font name**, never as a global replace.
-- [ ] Render every page to PNG at 150 dpi (QA and figure work) and export the 24 large images.
-- [ ] Strip boilerplate: copyright footer, disclaimer, trademark block, "Catalog 12" header. Keep the date and printed label as metadata.
-- [ ] **Exit:** the raw layer re-renders to text matching `pdftotext -layout` for ~20 sample pages.
+1. **Never trust one reading.** A vision model reading a dense numeric table will sometimes swap digits, shift a column, or fill a `‐‐‐` cell with a plausible number. Every coefficient is therefore read **two independent ways**, and only values both readings agree on are accepted automatically.
+2. **Code checks, not AI opinion.** Validation is deterministic (Kv/Cv ratio, monotonicity, ranges, unit agreement). An LLM never grades its own extraction.
+3. **Time is measured in hours of compute, not days of labor.** The limits are API cost, how many disagreements need adjudication, and how fast a person can clear the review gates.
 
-### Phase 2 — Coefficient table extraction (§1, 287 pages) (3–5 days, the bulk of the work)
-Do this as a **template-driven** parser, not one generic table finder:
-1. **Page header parser:** family, body/pressure class, trim, flow direction, characteristic (top-right label), date.
-2. **Grid detection:** use the ~500–1300 cell rectangles per page as cell boundaries (pdfplumber `table_settings` with `"lines"`/`explicit` strategies). Fall back to word-x clustering against header column centers when rects are missing.
-3. **Column header resolver:** decide whether the axis is *% travel* or *degrees*, read the position values, and spot the special columns (6 mm travel, FL at 100%).
-4. **Row-block assembler:** group consecutive `Cv/Kv/XT/FL/Fd` rows into one *configuration*, then attach the spanning NPS/port/travel cells by **vertical overlap** with the block (because the labels sit mid-block).
-5. **Shading detector:** match each row's bbox against gray-filled rects, then set `restricted_trim` (or whatever the page legend says the shading means).
-6. **Footnote resolver:** pull `(n)` markers off cell values and link them to the page's footnote text.
-7. **Template families:** cluster pages by header signature (expect about 6–10 layouts, e.g. globe-%travel, rotary-degrees, Baumann, butterfly with disk-type columns, YD/YS 3-way). Write and test one template per cluster, starting with the biggest (EW, HP, ED, EH, V150, 30,000).
-- [ ] **Exit:** each table page produces records that pass Phase 5 checks. Failures go to a `needs_review` queue with the page image.
+### Roles
 
-### Phase 3 — Reference tables, procedures & figures (§1 intro, §2, §3) (2–3 days)
-- [ ] **Structured tables:** Fd modifier table (1-1), abbreviations/terminology (2-2), numerical constants N1…N9 tables, leakage classes (2-27), saturated steam P/T (≈2-32/2-33), piping/velocity tables. Each gets its own CSV and schema.
-- [ ] **Equations:** rebuild each sizing equation as LaTeX + a **Python function** (liquid Cv, gas Cv with Y/xT/Fk, FP, FLP, ΔPmax, FR, FF, velocity, two-phase). Use the *worked sample problems* (2-8…2-16, 2-29…2-32) as unit tests: run each one and check that the computed answer matches the printed result.
-- [ ] **Figures (24 images):** sort them into (a) digitize, for curves needed in calculations such as pulp correction factors, FF vs Pv/Pc, ΔSPL vs G, using WebPlotDigitizer or a scripted digitizer, then save points and record the digitization error, and (b) describe only, for illustrations. Every figure gets a caption chunk either way.
-- [ ] **Redirects (9 pages) & "also appropriate for" notes (≈33 pages):** write them as `SHARES_COEFFICIENTS_WITH` / `SEE_EXTERNAL_DOC` edges, not as data copies.
+| Role | Who | Does |
+|---|---|---|
+| **Builder agent** | Claude Code (this kind of session) | Writes and runs the pipeline code, the deterministic parser, prompts, schemas, tests. Commits to this repo |
+| **Extractor** | Claude Opus 5.5 (`claude-opus-5-5`) via the **Message Batches API** | Reads each page (single-page PDF = text layer + page image) and returns schema-constrained JSON |
+| **Deterministic reader** | Python (`pdfplumber`), written by the builder agent | Reads the same page from word positions, cell rectangles and fill colors. No AI involved |
+| **Adjudicator** | Claude Opus 5.5 at higher effort, with a zoomed crop of the disputed cells | Settles cells where the two readings disagree. It must cite the crop, and if it can't decide, the cell goes to a human |
+| **Reviewer** | A person | Approves the schema and ontology, clears the human queue, signs off on a random audit sample |
 
-### Phase 4 — Chunking for retrieval (1–2 days)
-Chunk **by meaning, not by token count**. This document is mostly numbers, so naive splitting breaks tables apart and loses their headers.
+### Claude API features used
+- **Structured outputs** (`output_config.format` with a JSON schema) so every response parses. Citations can't be combined with structured outputs, so traceability comes from the deterministic reader's bboxes, not from model citations.
+- **Message Batches**: 50% cheaper, asynchronous, results keyed by `custom_id` = `p{page}-{pass}`.
+- **Prompt caching**: one frozen prefix (instructions + JSON schema + 2–3 worked page examples) cached across all ~300 requests. Only the page itself changes.
+- **Input format:** split the catalog into one-page PDFs, so each request gets both the text layer and the rendered image. For the densest pages (EW, HP, ED-11/12, TBX), the pilot also tests sending the top and bottom halves as separate 2× crops, in case small digits get lost when the page image is downscaled.
+- **Adaptive thinking**, effort `medium` for extraction and `high` for adjudication and equations.
+- Prerequisite: an Anthropic API key available to the pipeline (stored as an environment secret, never committed).
 
-| Chunk type | Unit | Content | Est. count |
-|---|---|---|---|
-| `coeff_config` | One valve configuration (family + class + trim + characteristic + direction + NPS + port) | Header context + a small markdown table of Cv/Kv/XT/FL/Fd across positions + footnotes | ~2,000–4,000 |
-| `coeff_page_summary` | One table page | "ED CL125–600 Quick Opening, Flow Down: NPS 1–3, ports 33.3–87.3 mm, rated Cv 22–161" + list of child chunk IDs | ~287 |
-| `family_overview` | One valve family | Style, pages, variants, characteristics, pressure classes, shared-coefficient links, external refs | ~64 |
-| `procedure_step` | One numbered step / subsection in §2–§3 | Prose + its equations (LaTeX) + symbol definitions inlined | ~80–150 |
-| `worked_example` | One sample problem, start to finish | Givens → steps → answer, kept together | ~10–15 |
-| `reference_table` | One reference table (or a logical slice of the big steam table) | Markdown table + caption + units | ~15–25 |
-| `figure` | One figure | Caption, axes, description, link to digitized CSV | ~24 |
+---
 
-Rules:
-- **Every chunk carries context in its own text**, so it is understandable when retrieved alone. Repeat the family, class, trim, characteristic, flow direction and units in the chunk body.
-- Metadata on every chunk: `source_page`, `printed_label`, `section`, `valve_family`, `chunk_type`, `page_date`, `parent_id`, `related_ids`.
-- Numbers are **answered from the structured store, not from text chunks**. Chunks are for finding the right configuration and explaining it. Exact values come from a SQL/tool call against the coefficient table, so the model never makes up a Cv.
-- Target 200–800 tokens per chunk. Never split a configuration block or a worked example.
+## 4. Phased action plan (AI-executed)
 
-### Phase 5 — Validation (runs alongside Phases 2–4, ~2 days total)
-**Automatic checks (all coefficient records):**
-- `Kv ≈ 0.865 × Cv` (±1–2% rounding). This is the strongest consistency check available, and it catches column shifts immediately.
-- Cv increases monotonically with travel/rotation (flag any violation, since some are real, e.g. QO plateaus or butterfly near 90°).
-- Range sanity: `0 < XT ≤ ~1`, `0.3 < FL ≤ 1`, `0 < Fd ≤ 1`.
-- Every configuration has the expected number of positions. NPS values are on the standard list. mm and inch columns agree (port_mm ≈ 25.4 × port_in).
-- Every value traces back to a bbox on its source page.
+### Phase 0 — Setup & pilot (builder agent, ~2–3 hours) · **Gate A**
+- [ ] Repo skeleton: `src/`, `prompts/`, `schemas/`, `data/{source,raw,interim,final}/`, `tests/`. Store the PDF with its SHA-256.
+- [ ] Builder agent checks and fixes `page_inventory.csv` by rendering pages and confirming page kinds.
+- [ ] Draft `schemas/coeff_page.json` (compact *wide* form: one object per configuration, arrays of values per coefficient type, explicit `null` for `‐‐‐`, raw strings kept alongside parsed numbers, footnote markers split off).
+- [ ] **Pilot on 12 pages chosen to cover every layout** (e.g. 1-1, 8532-1, 24000CVF-1, ED-1, ED-12, EW-4, HP-42, TBX-2, V150-1, V500-1, YD-1, A31A-1). Hand-verify them once to make a **gold set**.
+- [ ] Measure on the gold set: cell accuracy, tokens and cost per page, and whether whole-page images or half-page crops do better.
+- **Gate A (human, ~1 hour):** approve the schema, look at the pilot accuracy and cost, and confirm the decisions in §8. Nothing runs at scale before this.
 
-**Manual checks:**
-- Visual diff: overlay the extracted cell values on the rendered page PNG for 1 random page per template cluster plus all flagged pages.
-- Double entry: hand-key 2% of configurations and measure the error rate (target: 0 errors on Cv/Kv).
-- Equations: all worked examples reproduce their printed answers.
+### Phase 1 — Deterministic reader (builder agent, ~0.5–1 day of agent time)
+- [ ] Per-page raw dump: words with bbox and font, rects with fill color, images (`data/raw/page_NNN.json`).
+- [ ] Glyph-repair map keyed by font name (Interleaf/PSO symbol fonts).
+- [ ] Rule-based table reader for the main layouts: header resolver (%-travel vs degrees), row-block grouping, size labels attached by vertical overlap, gray-fill → shading flag, footnote split.
+- [ ] Doesn't need to be perfect. It's the *second opinion*. Any page it can't handle confidently is marked `det_status: low_confidence` and relies on the vision read plus adjudication.
 
-### Phase 6 — Conceptual model (1–2 days, can begin after Phase 2 templates stabilize)
-**Core entities**
+### Phase 2 — AI extraction at scale (Batches API, ~1–6 hours wall clock)
+- [ ] **Batch 1 — tables:** all 287 coefficient pages → JSON per the schema.
+- [ ] **Batch 2 — everything else:** index pages, §2 text/tables/equations (equations returned as LaTeX plus symbol list), the 24 figures (type, axes, captions, and for the charts needed in calculations, *approximate* digitized points marked as such), the 9 redirect pages and ~33 "also appropriate for" notes as structured relationships.
+- [ ] Store every raw response with model ID, prompt version and schema version, so any value can be traced to the call that produced it.
+
+### Phase 3 — Reconcile & validate (code + adjudicator, ~2–4 hours)
+1. **Align** the vision read and the deterministic read cell by cell (family, config, coefficient, position).
+2. **Auto-accept** when they agree exactly *and* the value passes every check:
+   - `Kv / Cv` between 0.85 and 0.88
+   - mm ≈ 25.4 × in for ports and travel
+   - `0 < XT ≤ 1`, `0.3 < FL ≤ 1`, `0 < Fd ≤ 1`
+   - Cv non-decreasing with opening (violations flagged, not rejected: quick-opening plateaus and butterflies near 90° are real)
+   - expected number of positions per row, NPS on the standard list
+3. **Adjudicate** the disagreements: Opus 5.5 gets a 3× crop of just those cells plus both candidate values and must return one, or `unresolvable`.
+4. **Human queue:** `unresolvable` cells, any check failure the adjudicator couldn't explain, and pages where both readers were low-confidence. *Expect this to be well under 5% of cells. Treat that as an estimate to confirm in the pilot.*
+5. **Equations:** the builder agent turns each §2 equation into a Python function and runs the printed **worked sample problems as unit tests**. An equation is accepted only when its example reproduces the printed answer.
+
+**Gate B (human, ~2–4 hours):** clear the human queue, then audit a **random sample of ~50 configurations against the rendered page** (the builder agent generates an overlay page: extracted values drawn over the PDF image). If the sample has any Cv/Kv error, find the cause, fix it, re-run the affected pages, and sample again.
+
+### Phase 4 — Chunking (mostly code, some AI writing, ~2–3 hours)
+Same chunk types as before. The difference is who writes what:
+
+| Chunk type | Written by | Numbers come from |
+|---|---|---|
+| `coeff_config` (~2–4k) | **Code template** from verified data | Verified dataset only |
+| `coeff_page_summary` (~287) | Code template | Verified dataset |
+| `family_overview` (~64) | **AI-written** prose + code-inserted facts | Verified dataset + relationship edges |
+| `procedure_step`, `worked_example` (~100–160) | AI segments §2–§3 into self-contained steps | Source text; equations from Phase 3 |
+| `reference_table` (~15–25) | Code | Verified reference CSVs |
+| `figure` (~24) | AI description | Figure metadata; digitized points marked approximate |
+
+**Guardrail on AI-written chunks:** a script pulls every number out of each AI-written chunk and checks that it exists in that chunk's source data. Any chunk with an unmatched number is regenerated or flagged. This blocks invented values from getting into the knowledge base.
+
+### Phase 5 — Conceptual model (AI proposes, human approves, ~2–3 hours) · **Gate C**
+- [ ] The builder agent proposes the ontology (core entities from §6 below) from the verified data and the inventory, generates an ERD, and loads the graph (`graph/nodes.csv`, `graph/edges.csv`).
+- [ ] AI pulls relationships from the note and redirect pages (`SHARES_COEFFICIENTS_WITH`, `DOCUMENTED_IN`). Code then checks each claimed "identical coefficients" link by comparing the two tables, and records disagreements instead of hiding them.
+- [ ] Computes derived concepts: rangeability, characteristic-shape fit, Cv per NPS by valve style, coverage gaps.
+- **Gate C (human, ~1 hour):** approve the ontology and spot-check the relationship list.
+
+### Phase 6 — Packaging & regression (builder agent, ~1–2 hours)
+- [ ] `coefficients.parquet`, reference CSVs, `chunks.jsonl`, graph CSVs, `catalog12.duckdb`, data dictionary, coverage matrix, validation report.
+- [ ] The gold set becomes a **regression eval**. Any prompt, model or code change must still score 100% on it before re-running.
+- [ ] One command re-runs everything, keyed by PDF hash, so the next catalog edition is extracted and diffed against this one automatically.
+
+---
+
+## 5. Conceptual model (target)
 ```
 Manufacturer ─< ValveFamily ─< BodyVariant(pressure class, style) ─< TrimConfiguration
      (Fisher, Baumann)   (ED, V150…)                                 (cage/plug/ball/disk/seal,
@@ -156,49 +183,44 @@ SizingProcedure(liquid | gas | cavitating/flashing | two-phase | pulp | noise) �
 Parameter ─ DEFINED_BY ─ TerminologyEntry (Table 1, page 2-2)
 CoefficientCurve.type ─ IS_A ─ Parameter                    ← the link that connects data to procedures
 ```
-That last edge is what makes the data *usable*: a tool can take service conditions, run the §2 procedure, find candidate `TrimConfiguration`s whose Cv curve covers the required Cv at a sensible travel, and check the XT/FL limits for choked flow. All of it can be traced back to page and cell.
-
-**Derived concepts worth computing once the data is extracted**
-- Rangeability per configuration (Cv@max / Cv@min usable)
-- Inherent characteristic fit (classify curve shape and compare it to the stated characteristic)
-- Cross-family comparison: Cv per NPS by valve style (globe vs. ball vs. butterfly capacity)
-- Gaps: families/configurations missing XT, FL, or Fd
-
-### Phase 7 — Packaging & documentation (1 day)
-- [ ] `data/final/coefficients.parquet`, `reference/*.csv`, `chunks.jsonl`, `graph/*.csv`, `catalog12.duckdb`
-- [ ] Data dictionary + ERD diagram + per-family coverage matrix (which coefficient types exist per family)
-- [ ] Re-runnable pipeline (`make extract chunk model validate`) keyed on the PDF hash, so the next catalog edition can be diffed
+With this in place, an AI assistant can answer a sizing question by running a §2 procedure as code, finding the `TrimConfiguration`s whose Cv curve covers the required Cv, checking choked-flow limits with XT/FL, and giving the source page for every number. It reads numbers from the database through a tool call, never from memory or retrieved prose.
 
 ---
 
-## 4. Order of work & effort
+## 6. Time & cost estimate
 
-| # | Phase | Effort | Depends on |
-|---|---|---|---|
-| 0 | Setup & inventory | 0.5 d | — |
-| 1 | Raw extraction | 1 d | 0 |
-| 2 | Coefficient tables | 3–5 d | 1 |
-| 3 | Reference/procedures/figures | 2–3 d | 1 (parallel with 2) |
-| 4 | Chunking | 1–2 d | 2, 3 |
-| 5 | Validation | ~2 d (continuous) | 2, 3 |
-| 6 | Conceptual model | 1–2 d | 2 |
-| 7 | Packaging | 1 d | all |
-| | **Total** | **~11–16 working days** | |
+| Item | Estimate |
+|---|---|
+| Builder-agent work (code, prompts, tests) | ~1–2 days elapsed, mostly unattended |
+| Batch extraction wall clock | Usually a few hours; the Batches API allows up to 24 h |
+| Human time at gates A + B + C | **~4–6 hours total**, mostly the Gate B audit |
+| **API cost, rough** | Opus 5.5 is $4 / $20 per M input/output tokens, and Batches halve that. At ~4k input and ~5–9k output tokens (including thinking) per table page, extraction is roughly **$15–30 batched** for 287 pages. Adjudication, §2/§3 pages, chunk prose and re-runs add a similar amount. **Plan on ~$50–150 total**, and replace this with the real per-page cost measured in the pilot |
 
-**Fastest route to something useful:** do Phase 0 → 1 → Phase 2 for the single biggest template cluster (e.g. EW/HP globe %-travel) → Kv/Cv check → a `coeff_config` chunk sample. That gives a working end-to-end slice in about 3 days and shows how far the template approach scales.
+The cost is small next to the cost of one wrong Cv in a sizing decision, which is why the plan spends tokens on reading everything twice rather than saving them.
 
-## 5. Risks & mitigations
+---
+
+## 7. Risks specific to AI extraction
+
 | Risk | Mitigation |
 |---|---|
-| Shading meaning varies by page (not always "restricted trim") | Read the legend text next to the shaded swatch on each page and store it as `shading_meaning` |
-| Rare layouts break templates | `needs_review` queue + page image; hand-key the long tail if it's < 5% |
-| Symbol-font misreads in equations | Rebuild §2 equations by hand from rendered images, then verify them with the worked examples |
-| Digitized curves are imprecise | Store digitization uncertainty and mark such values `approximate` |
-| Licensing/redistribution | This is copyrighted Emerson material. Keep derived datasets internal unless usage rights are confirmed |
-| Newer catalog editions | Pipeline keyed on PDF hash + per-page dates, so a diff report shows changed pages |
+| Plausible-looking wrong digits | Two independent readings + Kv/Cv check + random human audit |
+| Model fills `‐‐‐` / blank cells | Schema requires `null` + raw string; deterministic reader confirms the cell is empty |
+| Column shift on misaligned rows | Deterministic reader uses cell rectangles, not text order. Monotonicity and Kv/Cv checks catch shifts |
+| Footnote marker merged into value (`0.010(1)` → `0.0101`) | Schema field for footnote IDs. Deterministic reader splits on superscript font size |
+| Shading missed or misread | Fill color comes from the PDF vector data, not just the image |
+| Small digits lost when the page image is downscaled | Pilot compares whole page vs half-page 2× crops and picks per layout |
+| Invented numbers in prose chunks | Number-membership check on every AI-written chunk |
+| Same input, different output on re-runs | Store raw responses + model/prompt/schema versions; gold-set regression eval |
+| Model refusals / API errors | Batch results checked per `custom_id`; failed or refused pages are re-queued, never silently dropped |
+| Copyright | Emerson material: keep derived data internal unless you've confirmed rights to share it. Uploading to the API for processing is a separate question from redistributing |
 
-## 6. Decisions needed
-1. **Main consumer:** RAG/chat assistant, a sizing calculator, or an analytics database? This sets how much effort goes into Phase 4 versus Phases 3 and 6.
-2. **Units:** keep both US (Cv, in) and metric (Kv, mm) as printed, or normalize to one and derive the other?
-3. **Figures:** which charts actually have to be digitized for calculations?
-4. **Scope:** all 64 families, or a priority subset (e.g. only the valves in your installed base)?
+---
+
+## 8. Decisions needed before Gate A
+1. **Main consumer:** RAG/chat assistant, sizing calculator, or analytics database? This decides how much goes into Phase 4 versus Phase 5.
+2. **API access:** OK to send the catalog pages to the Anthropic API, and whose key/account pays for it?
+3. **Units:** keep US and metric as printed, or normalize?
+4. **Figures:** which charts must be digitized for calculations (approximate values), and which only need a description?
+5. **Scope:** all 64 families or a priority subset first?
+6. **Accuracy bar:** zero tolerated Cv/Kv errors in the audit sample (recommended), or a stated error rate?
