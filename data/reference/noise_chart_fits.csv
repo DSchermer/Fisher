@@ -1,0 +1,6 @@
+term,page,x,slope,intercept,x_min,x_max,pixels,scatter_db
+SPL_dP_cavitating,3-8,log10(dP psi),14.880,73.587,0.1,10000,4753,0.26
+SPL_dP_noncavitating,3-8,log10(dP psi),19.729,35.661,0.1,10000,5332,0.28
+dSPL_Cv,3-9,log10(Cv),9.862,-0.123,1,10000,6343,0.37
+dSPL_Km,3-10,log10(Km),-4.842,0.053,0.1,1.0,6427,0.08
+dSPL_G,3-11,log10(G),-4.879,0.040,0.3,3.0,1950,0.10

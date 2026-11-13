@@ -119,3 +119,35 @@ def allowable_leakage(leak_class: str, *, rated_cv: float | None = None, dp_psi:
                         "medium": row["test_medium"]}
         raise KeyError(f"port diameter {port_diameter_in!r} is not listed for class VI")
     raise KeyError(leak_class)
+
+
+# ------------------------------------------------------------------ digitized charts (approximate)
+
+def _curve(name: str, xkey: str, ykey: str) -> list[tuple[float, float]]:
+    return [(float(r[xkey]), float(r[ykey])) for r in _rows(name)]
+
+
+def _interp_curve(pts: list[tuple[float, float]], x: float, label: str) -> float:
+    if not pts[0][0] <= x <= pts[-1][0]:
+        raise ValueError(f"{label}: {x} is outside the digitized range {pts[0][0]} to {pts[-1][0]}")
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        if x0 <= x <= x1:
+            return _interp(x, x0, x1, y0, y1)
+    raise AssertionError("unreachable")
+
+
+def two_phase_fm(vr: float) -> float:
+    """Cv correction factor Fm for liquid-gas mixtures vs gas volume ratio Vr (page 2-30, figure 1).
+
+    Digitized chart, APPROXIMATE (about ±0.02): the catalog's examples read 0.475 at Vr 0.498 (this
+    gives 0.458) and 0.97 at Vr 0.939 (0.968).
+    """
+    return _interp_curve(_curve("two_phase_fm.csv", "vr", "fm"), vr, "Vr")
+
+
+def critical_gas_dp_ratio(c1: float) -> float:
+    """Pressure drop ratio dP/P1 giving 100% critical gas flow vs C1 = Cg/Cv (page 2-30, figure 2).
+
+    Digitized chart, APPROXIMATE; defined for C1 from 10 to 40.
+    """
+    return _interp_curve(_curve("two_phase_critical_dp_ratio.csv", "c1", "dp_over_p1"), c1, "C1")

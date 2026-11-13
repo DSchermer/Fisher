@@ -1,4 +1,5 @@
-"""Extract the Section 2 reference tables (unit conversions, steam, gas k values, flow areas).
+"""Extract the reference tables (Section 2: unit conversions, steam, gas k values, flow areas;
+Section 3: the ΔSPL_K pipe correction table).
 
 Each table is written as-is to data/reference/tables/<id>.csv, with an index in
 data/reference/index.csv. The saturated steam tables are also combined into one typed
@@ -22,7 +23,7 @@ from parse_tables import TABLE_SETTINGS, clean, parse_value  # noqa: E402
 
 # Pages holding reference tables (PDF page numbers) and their printed labels.
 PAGES = {367: "2-24", 368: "2-25", 369: "2-26", 370: "2-27", 376: "2-33", 377: "2-34",
-         380: "2-37", 381: "2-38", 382: "2-39", 383: "2-40", 384: "2-41", 385: "2-42"}
+         380: "2-37", 381: "2-38", 382: "2-39", 383: "2-40", 384: "2-41", 385: "2-42", 395: "3-9"}
 DECIMAL = re.compile(r"^[–-]?\d[\d,]*\.\d+$|^\.\d+$")
 STEAM_PAGES = (376, 377)
 
@@ -132,7 +133,8 @@ def main(pdf_path: str, out_dir: str) -> None:
             headers, rows = extract_table(t)
             if not rows:
                 continue
-            title = title_above(page, t) or f"Table on page {label}"
+            title = title_above(page, t) or ("Delta SPL K, pipe wall and insulation correction" if pn == 395
+                                             else f"Table on page {label}")
             if pn in STEAM_PAGES:
                 title = "Saturated Steam Pressure and Temperature"
                 for r in rows:

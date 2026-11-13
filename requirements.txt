@@ -1,3 +1,6 @@
 # Only needed to re-run the extraction (make data). The fisher package itself uses the standard library.
 pdfplumber==0.11.10
+# Chart digitizing (extract/digitize_charts.py)
+numpy==2.5.3
+pillow==12.3.0
 # Also needs poppler-utils (pdftotext) for the cross-check.

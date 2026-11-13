@@ -10,6 +10,7 @@ data: $(PDF)       ## extract, validate and cross-check (needs pdfplumber and po
 	python3 extract/validate.py data
 	python3 extract/crosscheck.py $(PDF) data
 	python3 extract/reference_tables.py $(PDF) data/reference
+	python3 extract/digitize_charts.py $(PDF) data/reference
 
 test:              ## run the tests (standard library only)
 	python3 -m unittest discover -s tests -t .

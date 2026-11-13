@@ -60,6 +60,20 @@ class Mixtures(unittest.TestCase):
         self.assertAlmostEqual(s.mixture_cv(216, 2330, 21.0, 0.97).steps["Cvg"], 111, delta=0.5)
 
 
+class TwoPhaseCharts(unittest.TestCase):
+    def test_fm_against_examples(self):  # page 2-31/2-32 readings, within chart-reading accuracy
+        from fisher import reference as ref
+        self.assertAlmostEqual(ref.two_phase_fm(0.498), 0.475, delta=0.025)
+        self.assertAlmostEqual(ref.two_phase_fm(0.939), 0.97, delta=0.02)
+        self.assertAlmostEqual(ref.critical_gas_dp_ratio(24.7), 0.40, delta=0.02)  # example 1, step 1
+
+    def test_end_to_end_liquid_gas(self):
+        from fisher import reference as ref
+        vr = s.gas_volume_ratio_gas(625000, 3000, 414.7, 560)
+        r = s.mixture_cv(581, 2710, 24.7, ref.two_phase_fm(vr))
+        self.assertAlmostEqual(r.cv, 1020, delta=1020 * 0.02)
+
+
 class SizingOnCatalogValve(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

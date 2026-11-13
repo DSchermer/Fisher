@@ -9,6 +9,7 @@
     python -m fisher liquid-flow --cv 134.6 --p1 389.7 --p2 114.7 --gf 0.93 --fl 0.84 --pv 41.9 --ff 0.90
     python -m fisher size-valve 309-1-3 --q 6e6 --gg 0.6 --t1 520 --p1 214.7 --p2 64.7 --k 1.31
     python -m fisher steam --psia 40
+    python -m fisher noise --dp 175 --p1 250 --pv 11.5 --cv 70 --km 0.7 --nps 4 --schedule 40
 """
 from __future__ import annotations
 
@@ -16,7 +17,7 @@ import argparse
 import json
 import sys
 
-from . import reference, sizing
+from . import noise, reference, sizing
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -76,6 +77,13 @@ def main(argv=None) -> int:
     p = sub.add_parser("steam")
     p.add_argument("--psia", type=float)
     p.add_argument("--temp-f", type=float)
+    p = sub.add_parser("noise", help="hydrodynamic noise, Section 3")
+    for a in ("dp", "p1", "pv", "cv", "km"):
+        p.add_argument(f"--{a}", type=float, required=True)
+    p.add_argument("--nps", required=True)
+    p.add_argument("--schedule", required=True)
+    p.add_argument("--g", type=float, default=1.0)
+    p.add_argument("--style", default="standard", choices=sorted(set(noise.AR_COEFFICIENTS) | noise.CAPPED_TRIMS))
     args = ap.parse_args(argv)
 
     cat = Catalog.load() if args.cmd in ("families", "find", "select", "show", "size-valve") else None
@@ -112,6 +120,9 @@ def main(argv=None) -> int:
             r = size_liquid_on_valve(c, args.q, args.p1, args.p2, args.gf, pv=args.pv, ff_value=args.ff,
                                      pc=args.pc, fp_value=args.fp or 1.0)
         out = r.__dict__
+    elif args.cmd == "noise":
+        out = noise.hydrodynamic_noise(dp=args.dp, p1=args.p1, pv=args.pv, cv=args.cv, km=args.km, nps=args.nps,
+                                       schedule=args.schedule, g=args.g, style=args.style).__dict__
     elif args.cmd == "steam":
         out = reference.saturated_steam(psia=args.psia, temp_f=args.temp_f)
     else:

@@ -340,7 +340,8 @@ def mixture_dp_allow(km: float, p1: float, rc: float, pv: float) -> float:
 def mixture_cv(cvl: float, cg: float, c1: float, fm: float) -> Result:
     """Cv for a mixture: Cvr = (Cvl + Cvg)(1 + Fm), Cvg = Cg / C1  (equation 1).
 
-    Fm comes from figure 1 on page 2-30 as a function of Vr (see fisher.charts.fm).
+    Fm comes from figure 1 on page 2-30 as a function of Vr (see fisher.reference.two_phase_fm).
+    The critical pressure ratio rc for mixture_dp_allow is the liquid FF (see ff).
     """
     cvg = cg / c1
     return Result((cvl + cvg) * (1 + fm), {"Cvg": cvg, "Fm": fm})
