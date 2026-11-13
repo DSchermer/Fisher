@@ -6,7 +6,7 @@
 
 The companion file [`page_inventory.csv`](page_inventory.csv) classifies every page. It is a first pass made with heuristics, so Phase 0 checks it before anything else relies on it.
 
-**Execution model:** AI agents do the work (see §3); a person approves at three review gates.
+**Execution model:** AI agents do the work (see section 3 of this plan); a person approves at three review gates.
 
 ---
 
@@ -157,7 +157,7 @@ Same chunk types as before. The difference is who writes what:
 **Guardrail on AI-written chunks:** a script pulls every number out of each AI-written chunk and checks that it exists in that chunk's source data. Any chunk with an unmatched number is regenerated or flagged. This blocks invented values from getting into the knowledge base.
 
 ### Phase 5 — Conceptual model (AI proposes, human approves, ~2–3 hours) · **Gate C**
-- [ ] The builder agent proposes the ontology (core entities from §6 below) from the verified data and the inventory, generates an ERD, and loads the graph (`graph/nodes.csv`, `graph/edges.csv`).
+- [ ] The builder agent proposes the ontology (core entities in section 5 of this plan) from the verified data and the inventory, generates an ERD, and loads the graph (`graph/nodes.csv`, `graph/edges.csv`).
 - [ ] AI pulls relationships from the note and redirect pages (`SHARES_COEFFICIENTS_WITH`, `DOCUMENTED_IN`). Code then checks each claimed "identical coefficients" link by comparing the two tables, and records disagreements instead of hiding them.
 - [ ] Computes derived concepts: rangeability, characteristic-shape fit, Cv per NPS by valve style, coverage gaps.
 - **Gate C (human, ~1 hour):** approve the ontology and spot-check the relationship list.
