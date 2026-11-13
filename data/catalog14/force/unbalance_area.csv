@@ -1,0 +1,72 @@
+table,port_in,unbalance_area_in2,applies_to,printed_label
+2,1.3125,0.04,ET Class V Shutoff—Metal Seats,B-4
+2,1.3125,0.16,"ED, EDR, ET, ETR",B-4
+2,1.5,0.17,CAV4,B-4
+2,1.875,0.062,ET Class V Shutoff—Metal Seats,B-4
+2,1.875,0.22,"ED, EDR, ET, ETR",B-4
+2,2.3125,0.27,"ED, EDR, ET, ETR, EWD, EWT",B-4
+2,2.3125,0.074,"ET, EWT Class V Shutoff—Metal Seats",B-4
+2,2.75,0.32,CAV4 Seal Ring Construction,B-4
+2,2.875,0.098,"ET, EWT Class V Shutoff—Metal Seats",B-4
+2,2.875,0.17,"C-seal trim, high-temperature, Class V Shutoff",B-4
+2,2.875,0.34,"ED, EDR, ET, ETR",B-4
+2,3.4375,0.118,"ET, EWT Class V Shutoff or ET-C—Metal Seats",B-4
+2,3.4375,0.21,"C-seal trim, high-temperature, Class V Shutoff",B-4
+2,3.4375,0.4,"ED, EDR, ET, ETR",B-4
+2,3.625,0.21,"C-seal trim, high-temperature, Class V Shutoff",B-5
+2,4.375,0.154,"ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats",B-5
+2,4.375,0.25,"C-seal trim, high-temperature, Class V Shutoff",B-5
+2,4.375,0.51,"CAV4, ED, EDR, ET, ETR, EWD, EWT",B-5
+2,5.375,0.63,"ED, ET, EWND, EWNT",B-5
+2,5.375,0.206,"CHPD, CHPT, ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats",B-5
+2,5.375,0.37,CHPD-Bore Seal,B-5
+2,5.375,0.37,"C-seal trim, high-temperature, Class V Shutoff",B-5
+2,6.75,3.79,"EWND, EWNT",B-5
+2,7.0,0.3,"ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats",B-5
+2,7.0,0.47,"C-seal trim, high-temperature, Class V Shutoff",B-5
+2,7.0,0.81,"ED, ET, ETR, EWD, EWT",B-5
+2,7.75,4.33,"EWND, EWNT",B-5
+2,8.0,0.35,"ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats",B-5
+2,8.0,0.6,"C-seal trim, high-temperature, Class V Shutoff",B-5
+2,8.0,0.86,"ED, ET, ETR, EWD, EWT",B-5
+2,10.0,0.57,ET and ED Whisper Trim III Level D,B-5
+2,10.0,1.24,"EWND, EWNT",B-5
+2,10.0,1.87,"ED-J, ET-J except Cavitrol III",B-5
+2,10.0,0.66,ET-J Cavitrol III,B-5
+2,10.0,2.51,"ED-J, ET-J except Cavitrol III",B-5
+2,10.0,0.89,ET-J Cavitrol III,B-5
+2,16.25,0.72,"ET/EWT Whisper Trim III Level A, B, and C",B-5
+2,18.25,0.81,,B-5
+2,19.75,0.87,"ET/EWT Whisper Trim III Level A, B, and C",B-5
+2,24.0,0.96,,B-5
+2,26.0,1.02,"ET Whisper Trim III Levels A, B, and C",B-5
+2C,1.25,0.02,"EHT, HPT",B-6
+2C,1.375,0.055,"HPT, HPD",B-6
+2C,1.5,0.051,"EHD, EHT",B-6
+2C,1.875,0.062,"EHD, EHT, HPD, HPT",B-6
+2C,2.25,0.088,"HPT, HPD",B-6
+2C,2.3125,0.074,"EHD, EHT",B-6
+2C,2.875,0.17,High-temperature C-seal trim with Class V Shutoff,B-6
+2C,2.875,0.098,"EHD, EHT, HPD, HPT",B-6
+2C,2.9,0.113,"HPT, HPD",B-6
+2C,3.4375,0.21,High-temperature C-seal trim with Class V Shutoff,B-6
+2C,3.6,0.128,"HPT, HPD",B-6
+2C,3.625,0.128,"EHD, EHT, HPD, HPT, HPT-C",B-6
+2C,3.625,0.21,High-temperature C-seal trim with Class V Shutoff,B-6
+2C,4.17,0.167,"HPT, HPD",B-6
+2C,4.375,0.154,"EHD, EHT, HPD, HPT",B-6
+2C,4.375,0.25,High-temperature C-seal trim with Class V Shutoff,B-6
+2C,5.375,0.206,"EHD, EHT, HPD, HPT, HPT-C",B-6
+2C,5.375,0.37,High-temperature Bore Seal trim with Class V Shutoff,B-6
+2C,5.4,0.206,"HPT, HPD",B-6
+2C,5.5,0.41,"HPT, HPD",B-6
+2C,6.0,0.45,"HPT, HPT-C, HPD",B-6
+2C,6.5,0.49,"HPT, HPD",B-6
+2C,7.0,0.3,"EHD, EHT",B-6
+2C,7.0,0.53,"HPT, HPT-C, HPD",B-6
+2C,7.0,0.47,High-temperature Bore Seal trim with Class V Shutoff,B-6
+2C,7.5,0.56,"HPT, HPD",B-6
+2C,8.0,0.6,"HPT, HPT-C, HPD",B-6
+2C,8.0,0.6,High-temperature Bore Seal trim with Class V Shutoff,B-6
+2C,8.5,0.324,"HPT, HPD",B-6
+2C,10.0,0.54,"EHD, EHT",B-6

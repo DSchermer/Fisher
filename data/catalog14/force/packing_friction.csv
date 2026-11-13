@@ -1,0 +1,284 @@
+table,packing,stem_in,pressure_class,pounds,printed_label
+6,PTFE single,0.3125,All,20.0,B-16
+6,PTFE double,0.3125,All,30.0,B-16
+6,PTFE single,0.375,125,38.0,B-16
+6,PTFE double,0.375,125,56.0,B-16
+6,PTFE/composition,0.375,125,63.0,B-16
+6,PTFE single,0.375,150,38.0,B-16
+6,PTFE double,0.375,150,56.0,B-16
+6,PTFE/composition,0.375,150,63.0,B-16
+6,Graphite ribbon/filament single,0.375,150,125.0,B-16
+6,Graphite ribbon/filament double,0.375,150,175.0,B-16
+6,PTFE single,0.375,250,38.0,B-16
+6,PTFE double,0.375,250,56.0,B-16
+6,PTFE/composition,0.375,250,95.0,B-16
+6,PTFE single,0.375,300,38.0,B-16
+6,PTFE double,0.375,300,56.0,B-16
+6,PTFE/composition,0.375,300,95.0,B-16
+6,Graphite ribbon/filament single,0.375,300,190.0,B-16
+6,Graphite ribbon/filament double,0.375,300,266.0,B-16
+6,PTFE single,0.375,600,38.0,B-16
+6,PTFE double,0.375,600,56.0,B-16
+6,PTFE/composition,0.375,600,125.0,B-16
+6,Graphite ribbon/filament single,0.375,600,250.0,B-16
+6,Graphite ribbon/filament double,0.375,600,350.0,B-16
+6,PTFE single,0.375,900,38.0,B-16
+6,PTFE double,0.375,900,56.0,B-16
+6,PTFE/composition,0.375,900,160.0,B-16
+6,Graphite ribbon/filament single,0.375,900,320.0,B-16
+6,Graphite ribbon/filament double,0.375,900,448.0,B-16
+6,PTFE single,0.375,1500,38.0,B-16
+6,PTFE double,0.375,1500,56.0,B-16
+6,PTFE/composition,0.375,1500,190.0,B-16
+6,Graphite ribbon/filament single,0.375,1500,380.0,B-16
+6,Graphite ribbon/filament double,0.375,1500,532.0,B-16
+6,PTFE single,0.5,125,50.0,B-16
+6,PTFE double,0.5,125,75.0,B-16
+6,PTFE/composition,0.5,125,90.0,B-16
+6,PTFE single,0.5,150,50.0,B-16
+6,PTFE double,0.5,150,75.0,B-16
+6,PTFE/composition,0.5,150,90.0,B-16
+6,Graphite ribbon/filament single,0.5,150,180.0,B-16
+6,Graphite ribbon/filament double,0.5,150,252.0,B-16
+6,PTFE single,0.5,250,50.0,B-16
+6,PTFE double,0.5,250,75.0,B-16
+6,PTFE/composition,0.5,250,115.0,B-16
+6,PTFE single,0.5,300,50.0,B-16
+6,PTFE double,0.5,300,75.0,B-16
+6,PTFE/composition,0.5,300,115.0,B-16
+6,Graphite ribbon/filament single,0.5,300,230.0,B-16
+6,Graphite ribbon/filament double,0.5,300,322.0,B-16
+6,PTFE single,0.5,600,50.0,B-16
+6,PTFE double,0.5,600,75.0,B-16
+6,PTFE/composition,0.5,600,160.0,B-16
+6,Graphite ribbon/filament single,0.5,600,320.0,B-16
+6,Graphite ribbon/filament double,0.5,600,448.0,B-16
+6,PTFE single,0.5,900,50.0,B-16
+6,PTFE double,0.5,900,75.0,B-16
+6,PTFE/composition,0.5,900,205.0,B-16
+6,Graphite ribbon/filament single,0.5,900,410.0,B-16
+6,Graphite ribbon/filament double,0.5,900,574.0,B-16
+6,PTFE single,0.5,1500,50.0,B-16
+6,PTFE double,0.5,1500,75.0,B-16
+6,PTFE/composition,0.5,1500,250.0,B-16
+6,Graphite ribbon/filament single,0.5,1500,500.0,B-16
+6,Graphite ribbon/filament double,0.5,1500,700.0,B-16
+6,PTFE single,0.5,2500,50.0,B-16
+6,PTFE double,0.5,2500,75.0,B-16
+6,PTFE/composition,0.5,2500,295.0,B-16
+6,Graphite ribbon/filament single,0.5,2500,590.0,B-16
+6,Graphite ribbon/filament double,0.5,2500,826.0,B-16
+6,PTFE single,0.5,3200,50.0,B-16
+6,PTFE double,0.5,3200,75.0,B-16
+6,Graphite ribbon/filament single,0.5,3200,655.0,B-16
+6,Graphite ribbon/filament double,0.5,3200,915.0,B-16
+6,PTFE single,0.625,125,63.0,B-16
+6,PTFE double,0.625,125,95.0,B-16
+6,PTFE/composition,0.625,125,109.0,B-16
+6,PTFE single,0.625,150,63.0,B-16
+6,PTFE double,0.625,150,95.0,B-16
+6,PTFE/composition,0.625,150,109.0,B-16
+6,Graphite ribbon/filament single,0.625,150,218.0,B-16
+6,Graphite ribbon/filament double,0.625,150,305.0,B-16
+6,PTFE single,0.625,250,63.0,B-16
+6,PTFE double,0.625,250,95.0,B-16
+6,PTFE/composition,0.625,250,145.0,B-16
+6,PTFE single,0.625,300,63.0,B-16
+6,PTFE double,0.625,300,95.0,B-16
+6,PTFE/composition,0.625,300,145.0,B-16
+6,Graphite ribbon/filament single,0.625,300,290.0,B-16
+6,Graphite ribbon/filament double,0.625,300,406.0,B-16
+6,PTFE single,0.625,600,63.0,B-16
+6,PTFE double,0.625,600,95.0,B-16
+6,PTFE/composition,0.625,600,200.0,B-16
+6,Graphite ribbon/filament single,0.625,600,400.0,B-16
+6,Graphite ribbon/filament double,0.625,600,560.0,B-16
+6,PTFE single,0.75,125,75.0,B-16
+6,PTFE double,0.75,125,112.5,B-16
+6,PTFE/composition,0.75,125,175.0,B-16
+6,PTFE single,0.75,150,75.0,B-16
+6,PTFE double,0.75,150,112.5,B-16
+6,PTFE/composition,0.75,150,175.0,B-16
+6,Graphite ribbon/filament single,0.75,150,350.0,B-16
+6,Graphite ribbon/filament double,0.75,150,490.0,B-16
+6,PTFE single,0.75,250,75.0,B-16
+6,PTFE double,0.75,250,112.5,B-16
+6,PTFE/composition,0.75,250,220.0,B-16
+6,PTFE single,0.75,300,75.0,B-16
+6,PTFE double,0.75,300,112.5,B-16
+6,PTFE/composition,0.75,300,220.0,B-16
+6,Graphite ribbon/filament single,0.75,300,440.0,B-16
+6,Graphite ribbon/filament double,0.75,300,616.0,B-16
+6,PTFE single,0.75,600,75.0,B-16
+6,PTFE double,0.75,600,112.5,B-16
+6,PTFE/composition,0.75,600,330.0,B-16
+6,Graphite ribbon/filament single,0.75,600,660.0,B-16
+6,Graphite ribbon/filament double,0.75,600,924.0,B-16
+6,PTFE single,0.75,900,75.0,B-16
+6,PTFE double,0.75,900,112.5,B-16
+6,PTFE/composition,0.75,900,440.0,B-16
+6,Graphite ribbon/filament single,0.75,900,880.0,B-16
+6,Graphite ribbon/filament double,0.75,900,1232.0,B-16
+6,PTFE single,0.75,1500,75.0,B-16
+6,PTFE double,0.75,1500,112.5,B-16
+6,PTFE/composition,0.75,1500,550.0,B-16
+6,Graphite ribbon/filament single,0.75,1500,1100.0,B-16
+6,Graphite ribbon/filament double,0.75,1500,1540.0,B-16
+6,PTFE single,0.75,2500,75.0,B-16
+6,PTFE double,0.75,2500,112.5,B-16
+6,PTFE/composition,0.75,2500,660.0,B-16
+6,Graphite ribbon/filament single,0.75,2500,1320.0,B-16
+6,Graphite ribbon/filament double,0.75,2500,1848.0,B-16
+6,PTFE single,0.75,3200,75.0,B-16
+6,PTFE double,0.75,3200,112.5,B-16
+6,Graphite ribbon/filament single,0.75,3200,1475.0,B-16
+6,Graphite ribbon/filament double,0.75,3200,2065.0,B-16
+6,PTFE single,1.0,300,100.0,B-16
+6,PTFE double,1.0,300,150.0,B-16
+6,PTFE/composition,1.0,300,305.0,B-16
+6,Graphite ribbon/filament single,1.0,300,610.0,B-16
+6,Graphite ribbon/filament double,1.0,300,854.0,B-16
+6,PTFE single,1.0,600,100.0,B-16
+6,PTFE double,1.0,600,150.0,B-16
+6,PTFE/composition,1.0,600,425.0,B-16
+6,Graphite ribbon/filament single,1.0,600,850.0,B-16
+6,Graphite ribbon/filament double,1.0,600,1190.0,B-16
+6,PTFE single,1.0,900,100.0,B-16
+6,PTFE double,1.0,900,150.0,B-16
+6,PTFE/composition,1.0,900,530.0,B-16
+6,Graphite ribbon/filament single,1.0,900,1060.0,B-16
+6,Graphite ribbon/filament double,1.0,900,1484.0,B-16
+6,PTFE single,1.0,1500,100.0,B-16
+6,PTFE double,1.0,1500,150.0,B-16
+6,PTFE/composition,1.0,1500,650.0,B-16
+6,Graphite ribbon/filament single,1.0,1500,1300.0,B-16
+6,Graphite ribbon/filament double,1.0,1500,1820.0,B-16
+6,PTFE single,1.0,2500,100.0,B-16
+6,PTFE double,1.0,2500,150.0,B-16
+6,PTFE/composition,1.0,2500,770.0,B-16
+6,Graphite ribbon/filament single,1.0,2500,1540.0,B-16
+6,Graphite ribbon/filament double,1.0,2500,2156.0,B-16
+6,PTFE single,1.0,3200,100.0,B-16
+6,PTFE double,1.0,3200,150.0,B-16
+6,Graphite ribbon/filament single,1.0,3200,1710.0,B-16
+6,Graphite ribbon/filament double,1.0,3200,2395.0,B-16
+6,PTFE single,1.25,300,120.0,B-16
+6,PTFE double,1.25,300,180.0,B-16
+6,PTFE/composition,1.25,300,400.0,B-16
+6,Graphite ribbon/filament single,1.25,300,800.0,B-16
+6,Graphite ribbon/filament double,1.25,300,1120.0,B-16
+6,PTFE single,1.25,600,120.0,B-16
+6,PTFE double,1.25,600,180.0,B-16
+6,PTFE/composition,1.25,600,550.0,B-16
+6,Graphite ribbon/filament single,1.25,600,1100.0,B-16
+6,Graphite ribbon/filament double,1.25,600,1540.0,B-16
+6,PTFE single,1.25,900,120.0,B-16
+6,PTFE double,1.25,900,180.0,B-16
+6,PTFE/composition,1.25,900,700.0,B-16
+6,Graphite ribbon/filament single,1.25,900,1400.0,B-16
+6,Graphite ribbon/filament double,1.25,900,1960.0,B-16
+6,PTFE single,1.25,1500,120.0,B-16
+6,PTFE double,1.25,1500,180.0,B-16
+6,PTFE/composition,1.25,1500,850.0,B-16
+6,Graphite ribbon/filament single,1.25,1500,1700.0,B-16
+6,Graphite ribbon/filament double,1.25,1500,2380.0,B-16
+6,PTFE single,1.25,2500,120.0,B-16
+6,PTFE double,1.25,2500,180.0,B-16
+6,PTFE/composition,1.25,2500,1020.0,B-16
+6,Graphite ribbon/filament single,1.25,2500,2040.0,B-16
+6,Graphite ribbon/filament double,1.25,2500,2856.0,B-16
+6,PTFE single,1.25,3200,120.0,B-16
+6,PTFE double,1.25,3200,180.0,B-16
+6,Graphite ribbon/filament single,1.25,3200,2280.0,B-16
+6,Graphite ribbon/filament double,1.25,3200,3190.0,B-16
+6,PTFE single,2.0,300,200.0,B-16
+6,PTFE double,2.0,300,300.0,B-16
+6,PTFE/composition,2.0,300,613.0,B-16
+6,Graphite ribbon/filament single,2.0,300,1225.0,B-16
+6,Graphite ribbon/filament double,2.0,300,1715.0,B-16
+6,PTFE single,2.0,600,200.0,B-16
+6,PTFE double,2.0,600,300.0,B-16
+6,PTFE/composition,2.0,600,862.5,B-16
+6,Graphite ribbon/filament single,2.0,600,1725.0,B-16
+6,Graphite ribbon/filament double,2.0,600,2415.0,B-16
+6,PTFE single,2.0,900,200.0,B-16
+6,PTFE double,2.0,900,300.0,B-16
+6,PTFE/composition,2.0,900,1125.0,B-16
+6,Graphite ribbon/filament single,2.0,900,2250.0,B-16
+6,Graphite ribbon/filament double,2.0,900,3150.0,B-16
+6,PTFE single,2.0,1500,200.0,B-16
+6,PTFE double,2.0,1500,300.0,B-16
+6,PTFE/composition,2.0,1500,1375.0,B-16
+6,Graphite ribbon/filament single,2.0,1500,2750.0,B-16
+6,Graphite ribbon/filament double,2.0,1500,3850.0,B-16
+6,PTFE single,2.0,2500,200.0,B-16
+6,PTFE double,2.0,2500,300.0,B-16
+6,PTFE/composition,2.0,2500,1623.0,B-16
+6,Graphite ribbon/filament single,2.0,2500,3245.0,B-16
+6,Graphite ribbon/filament double,2.0,2500,4543.0,B-16
+6,PTFE single,2.0,3200,200.0,B-16
+6,PTFE double,2.0,3200,300.0,B-16
+6,Graphite ribbon/filament single,2.0,3200,3590.0,B-16
+6,Graphite ribbon/filament double,2.0,3200,5025.0,B-16
+6A,6A ENVIRO-SEAL Graphite ULF,0.375,All,210.0,B-17
+6A,6A ENVIRO-SEAL Graphite ULF,0.5,All,280.0,B-17
+6A,6A ENVIRO-SEAL Graphite ULF,0.625,All,380.0,B-17
+6A,6A ENVIRO-SEAL Graphite ULF,0.75,All,530.0,B-17
+6A,6A ENVIRO-SEAL Graphite ULF,1.0,All,840.0,B-17
+6A,6A ENVIRO-SEAL Graphite ULF,1.25,All,1100.0,B-17
+6A,6A ENVIRO-SEAL Graphite ULF,2.0,All,1350.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,0.3125,All,60.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,0.375,All,125.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,0.375,All,210.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,0.5,All,170.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,0.5,All,280.0,B-17
+6B,6B HIGH-SEAL Graphite ULF H2 duplex,0.5,All,340.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,0.625,All,210.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,0.625,All,380.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,0.75,All,250.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,0.75,All,530.0,B-17
+6B,6B HIGH-SEAL Graphite ULF H2 duplex,0.75,All,500.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,1.0,All,340.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,1.0,All,840.0,B-17
+6B,6B HIGH-SEAL Graphite ULF H2 duplex,1.0,All,680.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,1.25,All,425.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,1.25,All,1100.0,B-17
+6B,6B HIGH-SEAL Graphite ULF H2 duplex,1.25,All,850.0,B-17
+6B,6B HIGH-SEAL Graphite ULF PTFE or duplex,2.0,All,725.0,B-17
+6B,6B HIGH-SEAL Graphite ULF Graphite ULF,2.0,All,1350.0,B-17
+6C,6C HIGH-SEAL Graphite Graphite,0.375,All,420.0,B-17
+6C,6C HIGH-SEAL Graphite Graphite,0.5,All,1130.0,B-17
+6C,6C HIGH-SEAL Graphite Graphite,0.75,All,2120.0,B-17
+6C,6C HIGH-SEAL Graphite Graphite,1.0,All,3390.0,B-17
+6C,6C HIGH-SEAL Graphite Graphite,1.25,All,4240.0,B-17
+6C,6C HIGH-SEAL Graphite Graphite,2.0,All,6790.0,B-17
+6D,ISO-Seal PTFE,0.375,Up to CL600,90.0,B-18
+6D,ISO-Seal Graphite,0.375,Up to CL600,290.0,B-18
+6D,ISO-Seal PTFE,0.375,CL900-1500,130.0,B-18
+6D,ISO-Seal Graphite,0.375,CL900-1500,430.0,B-18
+6D,ISO-Seal PTFE,0.375,CL2500,180.0,B-18
+6D,ISO-Seal Graphite,0.375,CL2500,470.0,B-18
+6D,ISO-Seal PTFE,0.5,Up to CL600,120.0,B-18
+6D,ISO-Seal Graphite,0.5,Up to CL600,380.0,B-18
+6D,ISO-Seal PTFE,0.5,CL900-1500,180.0,B-18
+6D,ISO-Seal Graphite,0.5,CL900-1500,560.0,B-18
+6D,ISO-Seal PTFE,0.5,CL2500,240.0,B-18
+6D,ISO-Seal Graphite,0.5,CL2500,620.0,B-18
+6D,ISO-Seal PTFE,0.75,Up to CL600,240.0,B-18
+6D,ISO-Seal Graphite,0.75,Up to CL600,740.0,B-18
+6D,ISO-Seal PTFE,0.75,CL900-1500,350.0,B-18
+6D,ISO-Seal Graphite,0.75,CL900-1500,1060.0,B-18
+6D,ISO-Seal PTFE,0.75,CL2500,470.0,B-18
+6D,ISO-Seal Graphite,0.75,CL2500,1190.0,B-18
+6D,ISO-Seal PTFE,1.0,Up to CL600,380.0,B-18
+6D,ISO-Seal Graphite,1.0,Up to CL600,1170.0,B-18
+6D,ISO-Seal PTFE,1.0,CL900-1500,560.0,B-18
+6D,ISO-Seal Graphite,1.0,CL900-1500,1690.0,B-18
+6D,ISO-Seal PTFE,1.0,CL2500,750.0,B-18
+6D,ISO-Seal Graphite,1.0,CL2500,1900.0,B-18
+6D,ISO-Seal PTFE,1.25,Up to CL600,470.0,B-18
+6D,ISO-Seal Graphite,1.25,Up to CL600,1460.0,B-18
+6D,ISO-Seal PTFE,1.25,CL900-1500,700.0,B-18
+6D,ISO-Seal Graphite,1.25,CL900-1500,2110.0,B-18
+6D,ISO-Seal PTFE,1.25,CL2500,940.0,B-18
+6D,ISO-Seal Graphite,1.25,CL2500,2370.0,B-18
