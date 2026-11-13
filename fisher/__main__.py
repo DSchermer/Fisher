@@ -34,7 +34,7 @@ def summary(c, opening=None) -> dict:
     return d
 
 
-def main(argv=None) -> int:
+def parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(prog="fisher", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("families")
@@ -84,7 +84,12 @@ def main(argv=None) -> int:
     p.add_argument("--schedule", required=True)
     p.add_argument("--g", type=float, default=1.0)
     p.add_argument("--style", default="standard", choices=sorted(set(noise.AR_COEFFICIENTS) | noise.CAPPED_TRIMS))
-    args = ap.parse_args(argv)
+    return ap
+
+
+def run(argv) -> object:
+    """Run one command and return its result (a JSON-serializable object). Used by the CLI and the UI."""
+    args = parser().parse_args(argv)
 
     cat = Catalog.load() if args.cmd in ("families", "find", "select", "show", "size-valve") else None
     if args.cmd == "families":
@@ -129,7 +134,11 @@ def main(argv=None) -> int:
         r = sizing.gas_cv(args.p1, args.p2, args.k, args.xt, q=args.q, w=args.w, gg=args.gg, m=args.m,
                           gamma1=args.gamma1, t1=args.t1, z=args.z or 1.0, fp_value=args.fp or 1.0)
         out = {"cv": r.cv, "kv": r.kv, "steps": r.steps}
-    json.dump(out, sys.stdout, indent=1, default=str)
+    return out
+
+
+def main(argv=None) -> int:
+    json.dump(run(argv), sys.stdout, indent=1, default=str)
     print()
     return 0
 

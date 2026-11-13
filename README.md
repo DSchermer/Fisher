@@ -57,6 +57,16 @@ The page 3-7 noise example comes out at 84.2 dBA against the printed 84.1. ΔSPL
 
 ## Use
 
+### In a browser
+
+```bash
+python3 -m fisher.ui
+```
+
+Then open http://127.0.0.1:8000. One page with a form for each tool: find valves, select by required Cv, valve details (coefficient table, Cv curve, footnotes, flags), liquid and gas sizing, sizing on a catalog valve, flow prediction, saturated steam, and noise. The "Catalog example" button fills in a worked example from the catalog. Standard library only; the page runs the same code as the command line.
+
+### From the command line
+
 ```bash
 python3 -m fisher find --family ED --nps 3 --characteristic linear
 ```

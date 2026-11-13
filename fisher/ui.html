@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fisher Catalog 12 Tools</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --line: #e2e2dc;
+    --accent: #1f5f8b; --accent-text: #ffffff; --warn: #9a5b00; --err: #b3261e; --row: #f2f2ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --panel: #1f1f1d; --text: #ecece8; --muted: #a2a29b; --line: #34342f;
+            --accent: #6fb1e0; --accent-text: #0e1a22; --warn: #f0b45a; --err: #ff8a80; --row: #262623; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 14px 20px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  header h1 { margin: 0; font-size: 17px; }
+  header p { margin: 2px 0 0; color: var(--muted); font-size: 12.5px; }
+  .wrap { display: flex; min-height: calc(100vh - 62px); }
+  nav { width: 210px; flex: none; padding: 12px; border-right: 1px solid var(--line); background: var(--panel); }
+  nav button { display: block; width: 100%; text-align: left; padding: 7px 10px; margin: 2px 0;
+               border: 0; border-radius: 6px; background: none; color: var(--text); font: inherit; cursor: pointer; }
+  nav button:hover { background: var(--row); }
+  nav button.on { background: var(--accent); color: var(--accent-text); }
+  nav .group { margin: 12px 10px 4px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+  main { flex: 1; padding: 18px 22px; min-width: 0; }
+  h2 { margin: 0 0 4px; font-size: 16px; }
+  .hint { color: var(--muted); margin: 0 0 14px; max-width: 760px; }
+  form { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: flex-end; padding: 14px;
+         background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+  label { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); gap: 3px; }
+  label.check { flex-direction: row; align-items: center; gap: 6px; color: var(--text); font-size: 13px; }
+  input, select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px;
+                  background: var(--bg); color: var(--text); width: 140px; }
+  input.wide { width: 200px; }
+  label.req span::after { content: " *"; color: var(--err); }
+  button.go { padding: 7px 16px; border: 0; border-radius: 6px; background: var(--accent);
+              color: var(--accent-text); font: inherit; font-weight: 600; cursor: pointer; }
+  #out { margin-top: 16px; }
+  .error { color: var(--err); font-weight: 600; }
+  .note { color: var(--warn); }
+  table { border-collapse: collapse; margin: 6px 0 14px; background: var(--panel); font-variant-numeric: tabular-nums; }
+  th, td { border: 1px solid var(--line); padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: var(--row); font-weight: 600; font-size: 12.5px; }
+  td.num { text-align: right; }
+  .scroll { overflow-x: auto; max-width: 100%; }
+  a.cfg { color: var(--accent); cursor: pointer; text-decoration: underline; }
+  .big { font-size: 20px; font-weight: 700; margin: 4px 0 10px; }
+  h3 { font-size: 14px; margin: 14px 0 4px; }
+  svg text { fill: var(--muted); font-size: 11px; }
+  @media (max-width: 720px) {
+    .wrap { flex-direction: column; }
+    nav { width: auto; border-right: 0; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 4px; }
+    nav button { width: auto; } nav .group { display: none; }
+    main { padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Fisher Catalog 12 Tools</h1>
+  <p>Deterministic lookups and sizing from the extracted catalog data. US units: gpm, scfh, lb/h, psia, °R, inches.</p>
+</header>
+<div class="wrap">
+  <nav id="nav"></nav>
+  <main>
+    <h2 id="title"></h2>
+    <p class="hint" id="hint"></p>
+    <form id="form" autocomplete="off"></form>
+    <div id="out"></div>
+  </main>
+</div>
+<script>
+const CHAR = ["", "Linear", "Equal Percentage", "Modified Equal Percentage", "Quick Opening", "Modified Linear", "Characterized"];
+const FILTERS = [
+  {k: "family", label: "Family", type: "family"}, {k: "nps", label: "Size (NPS)"},
+  {k: "characteristic", label: "Characteristic", type: "select", options: CHAR},
+  {k: "flow_direction", label: "Flow direction"}, {k: "text", label: "Text in title", wide: 1},
+  {k: "no_restricted", label: "Hide restricted trim", type: "check"}];
+const FORMS = [
+  {group: "Catalog"},
+  {id: "find", title: "Find valves", hint: "Filter the 3,593 catalog configurations. Click a config id for its full coefficient table.",
+   fields: FILTERS},
+  {id: "select", title: "Select by required Cv", hint: "Configurations that reach the required Cv between the two openings (% travel or degrees), smallest size first.",
+   fields: [{k: "cv", label: "Required Cv", req: 1}, ...FILTERS,
+            {k: "min_open", label: "Min opening", value: "20"}, {k: "max_open", label: "Max opening", value: "80"}]},
+  {id: "show", title: "Valve details", hint: "Every coefficient for one configuration, with the catalog page, footnotes and any flags.",
+   fields: [{k: "config_id", label: "Config id", req: 1, value: "122-1-10"}]},
+  {group: "Sizing"},
+  {id: "liquid", title: "Liquid: required Cv", hint: "Give FL and Pv (plus FF or Pc) to apply the choked-flow limit.",
+   fields: [{k: "q", label: "Flow q (gpm)", req: 1}, {k: "p1", label: "P1 (psia)", req: 1}, {k: "p2", label: "P2 (psia)", req: 1},
+            {k: "gf", label: "Specific gravity Gf", req: 1}, {k: "fl", label: "FL"}, {k: "pv", label: "Pv (psia)"},
+            {k: "ff", label: "FF"}, {k: "pc", label: "Pc (psia)"}, {k: "fp", label: "Fp"}, {k: "fr", label: "FR"}]},
+  {id: "gas", title: "Gas: required Cv", hint: "Give q (scfh) with Gg or M, or w (lb/h) with γ1 or M. xT from the valve table.",
+   fields: [{k: "p1", label: "P1 (psia)", req: 1}, {k: "p2", label: "P2 (psia)", req: 1}, {k: "k", label: "k", req: 1},
+            {k: "xt", label: "xT", req: 1}, {k: "q", label: "q (scfh)"}, {k: "w", label: "w (lb/h)"}, {k: "gg", label: "Gg"},
+            {k: "m", label: "M"}, {k: "gamma1", label: "γ1 (lb/ft³)"}, {k: "t1", label: "T1 (°R)"}, {k: "z", label: "Z"}, {k: "fp", label: "Fp"}]},
+  {id: "size-valve", title: "Size on a catalog valve", hint: "Sizes, finds the opening, re-reads xT (gas) or FL (liquid) there, and repeats until the opening settles. Gas if k is given, otherwise liquid.",
+   fields: [{k: "config_id", label: "Config id", req: 1, value: "309-1-3"}, {k: "p1", label: "P1 (psia)", req: 1}, {k: "p2", label: "P2 (psia)", req: 1},
+            {k: "k", label: "k (gas)"}, {k: "q", label: "q (gpm or scfh)"}, {k: "w", label: "w (lb/h)"}, {k: "gg", label: "Gg"}, {k: "m", label: "M"},
+            {k: "gamma1", label: "γ1"}, {k: "t1", label: "T1 (°R)"}, {k: "gf", label: "Gf (liquid)"}, {k: "pv", label: "Pv (liquid)"}, {k: "ff", label: "FF"}, {k: "fp", label: "Fp"}]},
+  {id: "liquid-flow", title: "Liquid: predict flow", hint: "Flow through a valve of known Cv. Give nu (cSt) and d (in) to apply the viscosity correction.",
+   fields: [{k: "cv", label: "Cv", req: 1}, {k: "p1", label: "P1 (psia)", req: 1}, {k: "p2", label: "P2 (psia)", req: 1},
+            {k: "gf", label: "Gf", req: 1}, {k: "fl", label: "FL"}, {k: "pv", label: "Pv"}, {k: "ff", label: "FF"},
+            {k: "pc", label: "Pc"}, {k: "nu", label: "ν (cSt)"}, {k: "d", label: "d (in)"}, {k: "fp", label: "Fp"}]},
+  {group: "Reference"},
+  {id: "steam", title: "Saturated steam", hint: "Pages 2-33/2-34, interpolated. Give one of the two.",
+   fields: [{k: "psia", label: "Pressure (psia)"}, {k: "temp_f", label: "Temperature (°F)"}]},
+  {id: "noise", title: "Hydrodynamic noise", hint: "Section 3 method, dBA at 1 m. Four terms come from digitized charts (approximate).",
+   fields: [{k: "dp", label: "ΔP (psi)", req: 1, value: "175"}, {k: "p1", label: "P1 (psia)", req: 1, value: "250"},
+            {k: "pv", label: "Pv (psia)", req: 1, value: "11.5"}, {k: "cv", label: "Required Cv", req: 1, value: "70"},
+            {k: "km", label: "Km (FL²)", req: 1, value: "0.7"}, {k: "nps", label: "Pipe NPS", req: 1, value: "4"},
+            {k: "schedule", label: "Schedule", req: 1, value: "40"}, {k: "g", label: "Specific gravity", value: "1"},
+            {k: "style", label: "Valve style", type: "select",
+             options: ["standard", "cavitrol_iii_1_stage", "rotary_attenuator", "cavitrol_iii_2_stage", "cavitrol_iii_3_stage", "cavitrol_iv"]}]},
+];
+const EXAMPLES = {
+  liquid: {q: 2200, p1: 389.7, p2: 114.7, gf: 0.93, fl: 0.84, pv: 41.9, ff: 0.90},
+  gas: {p1: 214.7, p2: 64.7, k: 1.31, xt: 0.137, q: 6e6, gg: 0.6, t1: 520},
+  "size-valve": {p1: 214.7, p2: 64.7, k: 1.31, q: 6e6, gg: 0.6, t1: 520},
+  "liquid-flow": {cv: 134.6, p1: 389.7, p2: 114.7, gf: 0.93, fl: 0.84, pv: 41.9, ff: 0.90},
+  steam: {psia: 40},
+};
+let families = [];
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const fmt = v => typeof v === "number" ? (Number.isInteger(v) ? String(v) : (Math.abs(v) >= 1000 ? v.toFixed(0) : String(+v.toPrecision(4)))) : v;
+
+function cell(v, key) {
+  if (key === "config_id") return `<a class="cfg" data-id="${esc(v)}">${esc(v)}</a>`;
+  if (v === null || v === undefined || v === "") return "—";
+  if (typeof v === "boolean") return v ? "yes" : "no";
+  if (typeof v === "object") return render(v);
+  return esc(fmt(v));
+}
+function table(rows) {
+  const cols = [...new Set(rows.flatMap(r => Object.keys(r)))];
+  return `<div class="scroll"><table><tr>${cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr>` +
+    rows.map(r => `<tr>${cols.map(c => `<td class="${typeof r[c] === "number" ? "num" : ""}">${cell(r[c], c)}</td>`).join("")}</tr>`).join("") +
+    `</table></div>`;
+}
+function kv(obj) {
+  return `<div class="scroll"><table>${Object.entries(obj).map(([k, v]) =>
+    `<tr><th>${esc(k)}</th><td class="${typeof v === "number" ? "num" : ""}">${cell(v, k)}</td></tr>`).join("")}</table></div>`;
+}
+function render(v) {
+  if (Array.isArray(v)) return v.length && typeof v[0] === "object" ? table(v) : esc(v.map(fmt).join(", "));
+  if (v && typeof v === "object") return kv(v);
+  return esc(fmt(v));
+}
+function curveChart(pts, basis) {
+  if (pts.length < 2) return "";
+  const W = 420, H = 180, P = 34, xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y1 = Math.max(...ys) || 1;
+  const X = x => P + (x - x0) / (x1 - x0 || 1) * (W - P - 10), Y = y => H - 22 - y / y1 * (H - 34);
+  const path = pts.map((p, i) => `${i ? "L" : "M"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join("");
+  return `<svg width="${W}" height="${H}" role="img" aria-label="Cv curve">
+    <line x1="${P}" y1="${H - 22}" x2="${W - 10}" y2="${H - 22}" stroke="currentColor" opacity=".25"/>
+    <line x1="${P}" y1="10" x2="${P}" y2="${H - 22}" stroke="currentColor" opacity=".25"/>
+    <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2"/>
+    ${pts.map(p => `<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="2.5" fill="var(--accent)"/>`).join("")}
+    <text x="${P}" y="${H - 6}">${fmt(x0)}</text><text x="${W - 40}" y="${H - 6}">${fmt(x1)} ${basis === "deg_rotation" ? "°" : "%"}</text>
+    <text x="2" y="16">${fmt(y1)}</text><text x="2" y="${H - 24}">0</text></svg>`;
+}
+function renderShow(d) {
+  const curves = d.curves || {}, coeffs = Object.keys(curves);
+  const positions = [...new Set(coeffs.flatMap(c => Object.keys(curves[c])))].sort((a, b) => a - b);
+  let h = `<div class="big">${esc(d.family)} · NPS ${esc(d.nps || "—")}</div>
+    <p>${esc(d.title)}<br><span class="hint">${esc(d.source)}</span></p>`;
+  if (d.restricted_trim) h += `<p class="note">Restricted trim (${esc(d.restricted_source)})</p>`;
+  h += kv({characteristic: d.characteristic, flow_direction: d.flow_direction, ...d.attributes});
+  if (coeffs.length) {
+    h += `<h3>Coefficients by ${d.position_basis === "deg_rotation" ? "rotation (degrees)" : "opening (% travel)"}</h3>
+      <div class="scroll"><table><tr><th></th>${positions.map(p => `<th>${esc(p)}</th>`).join("")}</tr>` +
+      coeffs.map(c => `<tr><th>${esc(c)}</th>${positions.map(p => `<td class="num">${curves[c][p] ?? "—"}</td>`).join("")}</tr>`).join("") +
+      `</table></div>`;
+    if (curves.Cv) h += curveChart(Object.entries(curves.Cv).map(([p, v]) => [+p, v]).sort((a, b) => a[0] - b[0]), d.position_basis);
+  }
+  if (Object.keys(d.single_values || {}).length) h += `<h3>Single values</h3>` + kv(d.single_values);
+  if ((d.flags || []).length) h += `<h3 class="note">Catalog checks flagged on this configuration</h3>` + table(d.flags);
+  if ((d.page_notes || []).length) h += `<h3>Footnotes on this page</h3>` + table(d.page_notes);
+  return h;
+}
+function renderResult(id, d) {
+  if (d && d.error) return `<p class="error">${esc(d.error)}</p>`;
+  if (id === "show") return renderShow(d);
+  if (id === "find" || id === "select") {
+    if (!d.length) return `<p>No matching configurations.</p>`;
+    const rows = d.map(r => { const {source, ...rest} = r; return rest; });
+    return `<p>${d.length} configuration${d.length === 1 ? "" : "s"}${d.length > 300 ? " (showing the first 300)" : ""}</p>` + table(rows.slice(0, 300));
+  }
+  let head = "";
+  if (d.cv !== undefined) head = `<div class="big">Cv ${fmt(d.cv)} <span class="hint">(Kv ${fmt(d.kv)})</span></div>`;
+  if (d.q !== undefined) head = `<div class="big">q ${fmt(d.q)}</div>`;
+  if (d.spl_dba !== undefined) head = `<div class="big">${fmt(d.spl_dba)} dBA <span class="hint">(${esc(d.governing)})</span></div>`;
+  if (d.required_cv !== undefined) head = `<div class="big">${d.opening == null ? "Valve too small for this flow" :
+      `Opening ${fmt(d.opening)}${d.position_basis === "deg_rotation" ? "°" : "%"} · required Cv ${fmt(d.required_cv)}`}</div>`;
+  return head + render(d);
+}
+async function submit(id, params) {
+  $("#out").innerHTML = "<p class='hint'>Working…</p>";
+  try {
+    const r = await fetch(`/api/${id}?` + new URLSearchParams(params));
+    $("#out").innerHTML = renderResult(id, await r.json());
+  } catch (e) { $("#out").innerHTML = `<p class="error">${esc(e)}</p>`; }
+}
+function field(f) {
+  const id = `f_${f.k}`;
+  if (f.type === "check") return `<label class="check"><input type="checkbox" name="${f.k}" id="${id}" style="width:auto">${esc(f.label)}</label>`;
+  let input;
+  if (f.type === "family") input = `<select name="${f.k}" id="${id}"><option value=""></option>${families.map(x => `<option>${esc(x)}</option>`).join("")}</select>`;
+  else if (f.type === "select") input = `<select name="${f.k}" id="${id}">${f.options.map(o => `<option>${esc(o)}</option>`).join("")}</select>`;
+  else input = `<input name="${f.k}" id="${id}" class="${f.wide ? "wide" : ""}" value="${esc(f.value ?? "")}" ${f.req ? "required" : ""}>`;
+  return `<label class="${f.req ? "req" : ""}" for="${id}"><span>${esc(f.label)}</span>${input}</label>`;
+}
+function show(id, preset) {
+  const f = FORMS.find(x => x.id === id);
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.id === id));
+  $("#title").textContent = f.title; $("#hint").textContent = f.hint; $("#out").innerHTML = "";
+  $("#form").innerHTML = f.fields.map(field).join("") + `<button class="go" type="submit">Run</button>` +
+    (EXAMPLES[id] ? ` <button class="go" type="button" id="ex" style="background:var(--row);color:var(--text)">Catalog example</button>` : "");
+  $("#form").onsubmit = e => {
+    e.preventDefault();
+    const params = {};
+    for (const el of $("#form").elements) if (el.name) params[el.name] = el.type === "checkbox" ? (el.checked ? "on" : "") : el.value.trim();
+    submit(id, params);
+  };
+  const ex = $("#ex");
+  if (ex) ex.onclick = () => { for (const [k, v] of Object.entries(EXAMPLES[id])) { const el = $(`#f_${k}`); if (el) el.value = v; } };
+  if (preset) { for (const [k, v] of Object.entries(preset)) { const el = $(`#f_${k}`); if (el) el.value = v; } $("#form").requestSubmit(); }
+  try { localStorage.setItem("fisher_tab", id); } catch (e) {}
+}
+document.addEventListener("click", e => {
+  const a = e.target.closest("a.cfg");
+  if (a) show("show", {config_id: a.dataset.id});
+});
+(async () => {
+  try { families = Object.keys(await (await fetch("/api/families")).json()); } catch (e) {}
+  $("#nav").innerHTML = FORMS.map(f => f.group ? `<div class="group">${esc(f.group)}</div>` :
+    `<button data-id="${f.id}">${esc(f.title)}</button>`).join("");
+  document.querySelectorAll("nav button").forEach(b => b.onclick = () => show(b.dataset.id));
+  let start = "find";
+  try { start = localStorage.getItem("fisher_tab") || "find"; } catch (e) {}
+  show(FORMS.some(f => f.id === start) ? start : "find");
+})();
+</script>
+</body>
+</html>

@@ -18,6 +18,7 @@ class Sized:
     required_cv: float
     opening: float | None          # None: the valve cannot pass the flow
     rated_cv: float | None
+    position_basis: str = ""        # pct_travel or deg_rotation
     iterations: list[dict] = field(default_factory=list)
 
 
@@ -50,7 +51,8 @@ def size_gas_on_valve(config: Config, p1: float, p2: float, k: float, *, max_ite
             opening = new
             break
         opening = new
-    return Sized(config.config_id, config.source, steps[-1]["required_cv"], opening, config.rated(), steps)
+    return Sized(config.config_id, config.source, steps[-1]["required_cv"], opening, config.rated(),
+                 config.position_basis, steps)
 
 
 def size_liquid_on_valve(config: Config, q: float, p1: float, p2: float, gf: float, *, pv: float | None = None,
@@ -69,4 +71,5 @@ def size_liquid_on_valve(config: Config, q: float, p1: float, p2: float, gf: flo
             opening = new
             break
         opening = new
-    return Sized(config.config_id, config.source, steps[-1]["required_cv"], opening, config.rated(), steps)
+    return Sized(config.config_id, config.source, steps[-1]["required_cv"], opening, config.rated(),
+                 config.position_basis, steps)
