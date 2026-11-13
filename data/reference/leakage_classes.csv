@@ -1,0 +1,6 @@
+class,maximum_leakage,fraction_of_rated_capacity,test_medium,test_conditions,page
+II,0.5% valve capacity at full travel,0.005,Air,"Service dP or 50 psid (3.4 bar differential), whichever is lower, at 50 to 125F (10 to 52C)",2-28
+III,0.1% valve capacity at full travel,0.001,Air,"Service dP or 50 psid (3.4 bar differential), whichever is lower, at 50 to 125F (10 to 52C)",2-28
+IV,0.01% valve capacity at full travel,0.0001,Air,"Service dP or 50 psid (3.4 bar differential), whichever is lower, at 50 to 125F (10 to 52C)",2-28
+V,5 x 10-4 mL/min/psid/in. port dia. (5 x 10-12 m3/sec/bar differential/mm port dia),,Water,Service dP at 50 to 125F (10 to 52C),2-28
+VI,see leakage_class_vi.csv (bubbles or mL per minute by nominal port diameter),,Air,"Service dP or 50 psid (3.4 bar differential), whichever is lower, at 50 to 125F (10 to 52C)",2-28

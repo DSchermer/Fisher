@@ -1,0 +1,2 @@
+degrees Celsius(1) C,Kelvin K,degrees Fahrenheit F,degrees Rankine R
+C C + 273.15 9/5C + 32 9/5C + 491.67,K-273.15 K 9/5K-459.67 9/5K,5/9(F-32) 5/9(F + 459.67) F F + 459.67,5/9(R-491.67) 5/9R R-459.67 R

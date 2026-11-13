@@ -1,0 +1,34 @@
+id,page,printed_label,title,rows,columns,rows_confirmed
+p2_24_t1_table_1_length,367,2-24,Table 1. Length,5,6,5
+p2_24_t2_table_2_area,367,2-24,Table 2. Area,5,6,5
+p2_24_t3_table_3_volume,367,2-24,Table 3. Volume,7,8,7
+p2_25_t1_table_4_mass,368,2-25,Table 4. Mass,6,7,6
+p2_25_t2_table_5_density,368,2-25,Table 5. Density,4,5,4
+p2_25_t3_table_6_velocity,368,2-25,Table 6. Velocity,6,7,6
+p2_25_t4_table_7_heat_flow_rate,368,2-25,Table 7. Heat Flow Rate,4,5,4
+p2_25_t5_table_8_force,368,2-25,Table 8. Force,4,5,4
+p2_26_t1_table_9_power,369,2-26,Table 9. Power,5,6,5
+p2_26_t2_table_10_torque,369,2-26,Table 10. Torque,4,5,4
+p2_26_t3_table_11_pressure_and_liquid_head,369,2-26,Table 11. Pressure and Liquid Head,10,11,10
+p2_26_t4_table_12_volumetric_rate_of_flow,369,2-26,Table 12. Volumetric Rate of Flow,8,9,8
+p2_27_t1_table_13_temperature,370,2-27,Table 13. Temperature,1,4,0
+p2_27_t2_table_14_abbreviated_conversions_of_degrees,370,2-27,Table 14. Abbreviated Conversions of Degrees,45,6,39
+p2_33_t1_saturated_steam_pressure_and_temperature,376,2-33,Saturated Steam Pressure and Temperature,66,5,66
+p2_33_t2_saturated_steam_pressure_and_temperature,376,2-33,Saturated Steam Pressure and Temperature,70,5,70
+p2_34_t1_saturated_steam_pressure_and_temperature,377,2-34,Saturated Steam Pressure and Temperature,75,5,75
+p2_34_t2_saturated_steam_pressure_and_temperature,377,2-34,Saturated Steam Pressure and Temperature,74,5,74
+p2_37_t1_table_1_specific_heat_ratio_k,380,2-37,Table 1. Specific Heat Ratio (k),16,2,16
+p2_37_t2_table_2_flow_area_for_easy_e_valves_1_square_inches,380,2-37,"Table 2. Flow Area for easy-e™ Valves(1) (Square Inches),",17,10,17
+p2_37_t3_table_3_flow_area_for_ed_j_and_et_j_valves_square_inches,380,2-37,Table 3. Flow Area for ED-J and ET-J Valves (Square Inches),3,4,3
+p2_38_t1_table_4_flow_area_for_pipe_square_inches,381,2-38,Table 4. Flow Area for Pipe (Square Inches),15,10,15
+p2_38_t2_table_5_fisher_fb_outlet_flow_area_inch2,381,2-38,"Table 5. Fisher FB Outlet Flow Area, Inch2",9,13,9
+p2_38_t3_table_6_fisher_eh_flow_area_inch2,381,2-38,"Table 6. Fisher EH Flow Area, Inch2",9,8,8
+p2_39_t1_table_7_fisher_chp_flow_area_inch2,382,2-39,"Table 7. Fisher CHP Flow Area, Inch2",1,4,1
+p2_39_t2_table_8_fisher_hp_flow_area_inch2,382,2-39,"Table 8. Fisher HP Flow Area, Inch2",13,14,13
+p2_39_t3_table_9_diffuser_tube_cross_sectional_area,382,2-39,Table 9. Diffuser Tube Cross-Sectional Area,15,3,15
+p2_40_t1_table_10_diffuser_tube_cross_sectional_area,383,2-40,Table 10. Diffuser Tube Cross-Sectional Area,15,3,15
+p2_40_t2_table_11_flow_area_for_pipe_inch2,383,2-40,"Table 11. Flow Area for Pipe, Inch2",17,11,17
+p2_40_t3_table_12_baumann_24000_flow_area_inch2,383,2-40,"Table 12. Baumann 24000 Flow Area, Inch2",6,8,6
+p2_41_t1_table_13_fisher_notchflo_outlet_flow_area_inch2,384,2-41,"Table 13. Fisher Notchflo Outlet Flow Area, Inch2",15,13,15
+p2_41_t2_table_14_fisher_461_outlet_flow_area_inch2_1,384,2-41,"Table 14. Fisher 461 Outlet Flow Area, Inch2(1)",18,6,18
+p2_42_t1_table_13_fisher_461_outlet_flow_area_inch2_1,385,2-42,"Table 13. Fisher 461 Outlet Flow Area, Inch2(1)",41,6,41
