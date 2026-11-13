@@ -88,6 +88,14 @@ python3 -m fisher.ui
 
 Then open http://127.0.0.1:8000. One page with a form for each tool: find valves, select by required Cv, valve details (coefficient table, Cv curve, footnotes, flags), liquid and gas sizing, sizing on a catalog valve, flow prediction, saturated steam, and noise. The "Catalog example" button fills in a worked example from the catalog. Standard library only; the page runs the same code as the command line.
 
+### From an AI assistant (MCP)
+
+```bash
+claude mcp add fisher -- python3 -m fisher.mcp_server
+```
+
+Run that in this folder. `fisher.mcp_server` speaks the Model Context Protocol over stdio (standard library only) and offers every command below as a tool, with input schemas generated from the command-line parser, plus `sql` over the whole dataset.
+
 ### From the command line
 
 ```bash
@@ -135,7 +143,7 @@ print(valve.source, need, valve.opening_for(need))   # page ES-5, Cv 121.5 neede
 
 Behavior worth knowing:
 
-- Values between catalog points are **linearly interpolated**. Outside the listed openings the result is `None`, never extrapolated.
+- Values between catalog points are **linearly interpolated** by default; `interp="pchip"` uses a monotone cubic, which `docs/INTERPOLATION.md` shows is about twice as accurate on the catalog's own curves. Outside the listed openings the result is `None`, never extrapolated.
 - `find(family="EDR")` follows the catalog's "identical to" and "also appropriate for" statements. Pass `include_aliases=False` to turn that off.
 - Characteristic is blank for 679 configurations and flow direction for 408, because the catalog doesn't state them for those tables (mostly butterfly and ball valves). They are left blank, not guessed.
 - The Reynolds-number factor FR comes from Table 3 by linear interpolation, which the catalog says is satisfactory.
@@ -146,12 +154,12 @@ Behavior worth knowing:
 |---|---|---|---|
 | A, sliding-stem, pressure drop method | 1–34 | 2,559 maximum allowable shutoff ΔP values (585C, 657, 667) by port, travel, yoke boss, actuator size, air pressure or bench set | `actuators.sliding_stem()`, `actuator-sliding` |
 | C, rotary, pressure drop method | 175–364 | 19,082 maximum allowable ΔP values (1052, 1061, 2052, FieldQ on 8510, 8532, 8580, 9500, A11, CV500, Control-Disk, V150, V200, V300, V500) by valve size or shaft, opening angle, actuator size, supply pressure and spring | `actuators.rotary()`, `actuator-rotary` |
-| B, sliding-stem, force method | 35–174 | Port and unbalance areas, seat loads, packing friction, actuator force tables, as printed | `actuators.search_tables()`, `c14-tables` |
-| D, rotary, torque method | 365–560 | Valve torque factors, shaft torque limits, actuator output torque, as printed | same |
+| B, sliding-stem, force method | 35–174 | Every table typed (`c14_table_value`): port and unbalance areas, seat loads, packing friction, actuator forces and springs (585C, 657, 657C, 657R, 667, 685, 685SE/SR, 785C, 3025), stem loads, piston ring friction charts | `fisher.force`, `fisher.actuator_force`, `fisher.piston_actuators`, `fisher.stem_load` |
+| D, rotary, torque method | 365–560 | Every table typed: A, B, C, K, MAST, shaft strength for 26 valves (`torque_factor`); 1051, 1052, 1061, 1068, 2052 output torque (`actuator_torque`) | `fisher.torque`, `fisher.rotary_actuator`, `valve-torque`, `rotary-actuator` |
 
 - **ΔP values:** each of the 21,641 values was confirmed by the second PDF reader. That row's values appear, in order, on one line of poppler's text.
 - **Other tables:** all 695 tables are kept as printed in `data/catalog14/tables/`, with an index giving page, heading and how many rows the second reader confirms.
-- **Not implemented yet:** the force and torque *procedures* (the step-by-step calculations in sections B and D). Their tables are available to look up, but the calculation steps aren't code yet.
+- **Sections B and D:** 35,000 values typed with row keys and column paths; all confirmed by the second reader (126 only as "found on the page", see `docs/GAPS.md`).
 
 ```bash
 python3 -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
@@ -160,7 +168,16 @@ python3 -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
 ### Force and torque methods
 
 - **Force method (sliding-stem, section B):** `fisher.force` calculates the valve body force A + B + C + D. A is static unbalance (eight cases on pages B-2/B-3); B is seat load from the Table 4 rules and Table 5 factors; C is packing friction (Tables 6–6D); D is additional forces, supplied by you. `fisher.actuator_force` then selects a 585C (springless) or a 657, 657R or 667 spring-and-diaphragm actuator, either from the available-force tables or by the spring-rate calculation. The tests reproduce the catalog's sample calculations on pages B-77, B-80.1, B-80.3 and B-81.
-- **Torque method (rotary, section D):** `fisher.torque` calculates breakout torque TB = A·ΔPshutoff + B and dynamic torque TD = C·ΔPeff, and checks them against the shaft limit. Typed A, B and C data exists so far only for the 7600 butterfly. The test reproduces the example on page D-100.
+- **More sliding-stem actuators:** `fisher.piston_actuators` sizes the 585C spring-biased (B-19), 685 (B-26), 685SE/685SR with the catalog's equations (B-27.1), 785C (B-27.8) and 3025 (B-73); 657C joins the diaphragm tables. `fisher.stem_load` checks the actuator force against the maximum allowable stem load (B-99; reproduces its worked example). `force.piston_ring_friction` reads figures 4 and 4A.
+- **Torque method (rotary, section D):** `fisher.torque` calculates breakout torque TB = A·ΔPshutoff + B and dynamic torque TD = C·ΔPeff (liquid ΔPeff = FL²(P1abs − FF·Pv), gas K·P1abs) for every valve with typed factors, and checks them against the shaft limit. `fisher.rotary_actuator` then picks the 1051, 1052, 1061, 1068 or 2052 configurations that cover the valve at every angle. The tests reproduce the examples on pages D-100 and D-113/D-114.
+
+```bash
+python3 -m fisher rotary-actuator --valve CV500 --nps 4 --dp-shutoff 150 --p1 150 --fl 0.6 --ff 0.94 --pv 0.5 --flow forward
+```
+
+```bash
+python3 -m fisher stem-load --stem 0.75 --temp-f 400 --force 9000 --design ED
+```
 
 What isn't covered yet is listed in `docs/GAPS.md` (item 1).
 
