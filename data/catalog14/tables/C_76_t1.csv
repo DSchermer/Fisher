@@ -1,0 +1,35 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Valve Size, NPS","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Angle of Opening","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 60 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 60 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 80 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 80 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 100 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 100 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 60 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 60 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 80 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 80 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 100 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 100 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 60 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 60 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 80 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 80 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 100 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Spring-To-Close (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 100 Psig psi"
+3,0,,,,,,,11.0,159,11.7,170,11.7,170,28.3,411,28.3,411,28.3,411
+3,90,,,,,,,0.8,12,2.8,40,4.3,62,1.7,24,4.5,66,5.9,86
+4,0,,,,,,,,,,,,,2.2,32,2.2,32,2.2,32
+4,90,,,,,,,,,,,,,1.2,18,2.2,32,2.2,32
+6,0,,,,,,,,,,,,,,,,,,
+6,90,,,,,,,,,,,,,,,,,,
+"Valve Size, NPS",Angle of Opening,Q 150,,,,,,Q 200,,,,,,Q 350,,,,,
+"Valve Size, NPS",Angle of Opening,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,
+3,0,68.2,989,68.2,989,68.2,989,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435
+3,90,2.0,29,6.6,95,10.1,146,3.3,48,9.6,139,13.3,193,5.2,76,16.1,234,23.5,342
+4,0,21.6,313,21.6,313,21.6,313,38.5,558,38.5,558,38.5,558,90.5,1313,92.4,1339,92.4,1339
+4,90,1.5,22,4.9,71,7.6,110,2.5,36,7.2,104,10.0,145,3.9,57,12.1,175,17.7,256
+6,0,,,,,,,2.3,34,2.3,34,2.3,34,21.3,309,21.9,318,21.9,318
+6,90,,,,,,,0.4,6,1.2,17,1.7,24,0.7,9,2.0,29,2.9,43
+8,0,,,,,,,,,,,,,0.8,11,1.0,15,1.0,15
+8,90,,,,,,,,,,,,,0.3,4,0.9,14,1.0,15
+10,0,,,,,,,,,,,,,,,,,,
+10,90,,,,,,,,,,,,,,,,,,
+12,0,,,,,,,,,,,,,,,,,,
+12,90,,,,,,,,,,,,,,,,,,
+"Valve Size, NPS",Angle of Opening,Q 600,,,,,,Q 950,,,,,,Q 1600,,,,,
+"Valve Size, NPS",Angle of Opening,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,
+3,0,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435
+3,90,9.4,136,27.9,404,39.6,574,14.2,206,41.8,607,58.9,854,24.6,357,70.3,1020,96.4,1398
+4,0,68.2,989,68.2,989,68.2,989,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435,98.9,1435
+4,90,2.0,29,6.6,95,10.1,146,3.3,48,9.6,139,13.3,193,5.2,76,16.1,234,23.5,342
+6,0,49.9,724,49.9,724,49.9,724,83.2,1207,83.2,1207,83.2,1207,103.4,1500,103.4,1500,103.4,1500
+6,90,1.2,17,3.5,51,4.9,72,1.8,26,5.2,76,7.4,107,3.1,45,8.8,128,12.0,175
+8,0,12.7,184,12.7,184,12.7,184,26.5,384,26.5,384,26.5,384,55.5,806,55.5,806,55.5,806
+8,90,0.5,8,1.6,24,2.3,33,0.8,12,2.4,35,3.4,50,1.4,21,4.1,59,5.6,81
+10,0,2.1,30,2.1,30,2.1,30,9.6,140,9.6,140,9.6,140,25.5,370,25.5,370,25.5,370
+10,90,0.2,3,0.7,10,1.0,15,0.4,5,1.1,15,1.5,22,0.6,9,1.8,26,2.5,36
+12,0,,,,,,,1.2,18,1.2,18,1.2,18,10.4,150,10.4,150,10.4,150
+12,90,,,,,,,0.2,4,0.7,10,1.0,15,0.4,6,1.2,18,1.7,24

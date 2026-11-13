@@ -1,0 +1,35 @@
+"Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Valve Size, NPS","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Angle of Opening","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 60 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 60 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 80 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 80 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 100 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 100 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 60 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 60 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 80 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 80 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 100 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 100 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 60 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 60 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 80 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 80 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 100 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 100 Psig psi"
+3,0,,,,,,,,,,,,,,,,,11.0,159
+3,90,,,,,,,,,,,,,,,,,3.7,54
+4,0,,,,,,,,,,,,,,,,,,
+4,90,,,,,,,,,,,,,,,,,,
+6,0,,,,,,,,,,,,,,,,,,
+6,90,,,,,,,,,,,,,,,,,,
+"Valve Size, NPS",Angle of Opening,Q 150,,,,,,Q 200,,,,,,Q 350,,,,,
+"Valve Size, NPS",Angle of Opening,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,
+3,0,,,18.7,271,49.4,717,,,49.4,717,49.4,717,2.3,33,49.4,717,49.4,717
+3,90,,,6.2,90,6.2,90,,,8.3,121,8.3,121,2.3,33,15.1,220,15.1,220
+4,0,,,,,8.2,118,,,5.1,74,26.7,388,,,42.9,622,85.8,1244
+4,90,,,,,4.6,67,,,5.1,74,6.2,90,,,11.4,165,11.4,165
+6,0,,,,,,,,,,,,,,,,,10.5,152
+6,90,,,,,,,,,,,,,,,,,1.9,27
+8,0,,,,,,,,,,,,,,,,,,
+8,90,,,,,,,,,,,,,,,,,,
+10,0,,,,,,,,,,,,,,,,,,
+10,90,,,,,,,,,,,,,,,,,,
+12,0,,,,,,,,,,,,,,,,,,
+12,90,,,,,,,,,,,,,,,,,,
+"Valve Size, NPS",Angle of Opening,Q 600,,,,,,Q 950,,,,,,Q 1600,,,,,
+"Valve Size, NPS",Angle of Opening,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,
+3,0,49.4,717,49.4,717,49.4,717,49.4,717,49.4,717,49.4,717,49.4,717,49.4,717,49.4,717
+3,90,24.9,361,24.9,361,24.9,361,36.5,529,36.5,529,36.5,529,49.4,717,49.4,717,49.4,717
+4,0,3.9,57,98.4,1427,98.4,1427,31.9,463,98.4,1427,98.4,1427,92.1,1336,98.4,1427,98.4,1427
+4,90,3.9,57,18.7,271,18.7,271,27.4,397,27.4,397,27.4,397,45.6,662,45.6,662,45.6,662
+6,0,,,19.3,281,43.4,629,,,48.0,696,82.9,1202,12.7,185,103.4,1500,103.4,1500
+6,90,,,3.1,45,3.1,45,,,4.6,66,4.6,66,7.6,110,7.6,110,7.6,110
+8,0,,,,,3.8,54,,,5.6,82,19.9,289,,,29.5,427,51.2,743
+8,90,,,,,1.4,21,,,2.1,31,2.1,31,,,3.5,51,3.5,51
+10,0,,,,,,,,,,,5.9,86,,,11.1,161,22.9,333
+10,90,,,,,,,,,,,0.9,14,,,1.6,23,1.6,23
+12,0,,,,,,,,,,,,,,,2.3,33,9.1,131
+12,90,,,,,,,,,,,,,,,1.1,15,1.1,15

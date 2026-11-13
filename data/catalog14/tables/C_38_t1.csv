@@ -1,0 +1,15 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Valve Size, NPS",Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Angle of Opening,"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 psi"
+2,0,,,14.0,202,,,,,,,,
+2,90,,,14.0,202,,,,,,,,
+3,0,,,,,16,237,16,239,,,,
+3,90,,,,,7.8,113,7.8,113,,,,
+4,0,,,,,1.7,24,14,202,14,202,14,202
+4,90,,,,,1.7,24,6.9,100,6.9,100,6.9,100
+6,0,,,,,,,0.6,8.3,6.0,88,13,185
+6,90,,,,,,,0.6,8.3,6.0,88,6.1,89
+8,0,,,,,,,,,1.9,28,11,159
+8,90,,,,,,,,,1.9,28,3.0,44
+10,0,,,,,,,,,,,2.7,39
+10,90,,,,,,,,,,,1.9,27
+12,0,,,,,,,,,,,,
+12,90,,,,,,,,,,,,

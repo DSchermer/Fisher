@@ -1,0 +1,12 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Valve Size, NPS 2 3",Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Angle of Opening 0 90 0,"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 bar 47 14 - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 psi 678 210 - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 bar - - - 52","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 psi - - - 750","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 bar - - - 52","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 psi - - - 750","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Push-Down-To-Close Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 psi - - -"
+,90,,,,,7.8,113,7.8,113,,,,
+4,0,,,,,7.2,105,44,645,52,750,52,750
+4,90,,,,,5.0,73,6.9,100,6.9,100,6.9,100
+6,0,,,,,,,6.5,94,42,612,52,750
+6,90,,,,,,,4.6,66,6.1,89,6.1,89
+8,0,,,,,,,,,13,186,31,450
+8,90,,,,,,,,,1.5,22,3.0,44
+10,0,,,,,,,,,,,14,201
+10,90,,,,,,,,,,,1.9,27
+12,0,,,,,,,,,,,,
+12,90,,,,,,,,,,,,

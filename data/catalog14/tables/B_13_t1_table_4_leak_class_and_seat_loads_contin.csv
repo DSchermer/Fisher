@@ -1,0 +1,26 @@
+TYPE,CONSTRUCTION,"Port Size, Inch",LEAK CLASS,Seat load Equation,LEAK CLASS,Seat load Equation
+GX,Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+GX,Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+GX,Composition Seat(1),All,VI,(A*Pshutoff)+B,,
+"HPAD, HPD",Metal Seat,2.25 or Less,II,20*PC,,
+"HPAD, HPD",Metal Seat,2.3125 to 4.17,II,20*PC,III,40*PC
+"HPAD, HPD",Metal Seat,Greater than 4.17,III,40*PC,IV,80*PC
+"HPAS, HPAT, HPS, HPT",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"HPAS, HPAT, HPS, HPT",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"HPT-C, HPS-C",Soft Metal-to-Metal Seat,4.375 or Less,IV,40*PC,V (Air),300*PC
+"HPT-C, HPS-C",Soft Metal-to-Metal Seat,Greater than 4.375,IV,80*PC,V (Air),300*PC
+M-Flat Anti-Cavitation,Metal Seat,All,V,(100+0.122Pshutoff)*PC,,
+Protected Inside Seat,Metal Seat,All,V,800*PC,,
+RSS,Composition Seat,All,VI,(4),,
+TBX,Bore Seal,All,V,(210+0.122*Pshutoff)*PC,IV,190* PC
+TBX,Bore Seal,All,IV,80*PC,,
+TSO Trim,TSO,All,TSO,(100+0.122Pshutoff)*PC,,
+"Y, YY",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"Y, YY",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"Y, YY",Composition Seat(1),All,VI,(A*Pshutoff)+B,,
+YD,Low Temp Metal Seat,All,IV,40*PC,,
+YD,High Temp Metal Seat,All,II,20*PC,,
+YS,Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+YS,Metal Seat,Greater than 4.375,IV,80*PC,,
+461,Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+461,Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC

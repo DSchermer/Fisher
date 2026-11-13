@@ -1,0 +1,19 @@
+"Valve Size, NPS",Angle of Opening,"Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 bar","Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 psi","Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 bar","Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 psi","Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 bar","Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 psi","Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 bar","Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 psi","Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 bar","Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 psi","Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 bar","Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 psi"
+2,0,,,14.0,202,,,,,,,,
+2,60,,,14.0,202,,,,,,,,
+2,90,,,14.0,202,,,,,,,,
+3,0,,,,,18.9,274,31.5,457,,,,
+3,60,,,,,18.9,274,31.5,457,,,,
+3,90,,,,,10.1,146,10.1,146,,,,
+4,0,,,,,3.3,49,23.2,336,28.8,417,28.8,417
+4,60,,,,,3.3,49,23.2,336,28.8,417,28.8,417
+4,90,,,,,3.3,49,7.0,101,7.0,101,7.0,101
+6,0,,,,,,,3.4,49,8.2,120,21.2,307
+6,60,,,,,,,3.4,49,8.2,120,21.2,307
+6,90,,,,,,,3.4,49,6.1,88,6.1,88
+8,0,,,,,,,,,0.1,1.0,9.6,140
+8,60,,,,,,,,,0.1,1.0,9.6,140
+8,90,,,,,,,,,0.1,1.0,5.2,75
+10,0,,,,,,,,,,,3.1,45
+10,60,,,,,,,,,,,3.1,45
+10,90,,,,,,,,,,,2.0,29

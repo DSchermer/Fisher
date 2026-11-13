@@ -1,0 +1,15 @@
+"Size 1, 2, and 3 Valve Size, NPS 1 1-1/2","Size 1, 2, and 3 Angle of Opening 0 70 0 70","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig 90 bar 41 23","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig 90 psi 593 340 334","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig 90 bar 52 50 46","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig 90 psi 750 725 667","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig 90 bar - - - 50","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig 90 psi - - - 725","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig 90 bar - - - 50","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig 90 psi - - - 725","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig 90 bar - - -","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig 90 psi - - -","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig 90 bar - - -","Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig 90 psi - - -"
+2,0,6.7,97,22,315,26,373,26,373,,,,
+2,70,6.7,97,21,306,26,373,26,373,,,,
+3,0,1.5,22,15,213,18,254,18,254,18,254,18,254
+3,70,1.5,22,8.9,129,18,254,18,254,18,254,18,254
+4,0,,,7.5,109,11,160,11,160,11,160,11,160
+4,70,,,4.2,61,8.8,128,11,160,11,160,11,160
+6,0,,,,,7.5,109,11,158,11,158,11,158
+6,70,,,,,3.2,46,6.4,93,8.6,125,8.6,125
+8,0,,,,,0.2,3.5,7.8,113,11,163,11,163
+8,70,,,,,0.2,3.5,3.6,52,4.9,71,10,147
+10,0,,,,,,,2.5,36,6.1,89,6.1,89
+10,70,,,,,,,1.4,20,1.9,27,3.8,56
+12,0,,,,,,,,,2.2,31,5.7,83
+12,70,,,,,,,,,1.5,22,3.2,46

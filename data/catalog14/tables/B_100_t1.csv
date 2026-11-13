@@ -1,0 +1,33 @@
+"Table 1. Usage Guide VALVE BODY DESIGN D & DA ED, ES, ET, EZ, EAD, EAS, & EAT ED, ES, ET, & EZ ET-C, EWT-C, & EZ-C EDR & ETR","Table 1. Usage Guide SIZE, NPS - - -",Table 1. Usage Guide PRESSURE RATING - - - Through CL600 - - -,Table 1. Usage Guide BONNET STYLE Plain Style 1 extension Style 3 extension Plain,"Table 1. Usage Guide STEM DIAMETER, INCHES - - - 0.375 & 0.5 0.75 1 & 1.25 - - -",Table 1. Usage Guide TABLE REFERENCES 3 & 4 7 & 8 5 & 6 3 & 4 2 5 & 6
+"EHD(9), EHS, & EHT","1(1,2)",CL2500,Plain,0.5,7 & 8
+,,,,0.75,3 & 4
+"EHD(9), EHS, & EHT",2(1),CL2500(3),Plain,0.5,7 & 8
+,,,,0.75,5 & 6
+,,,,1,3 & 4
+"EHD(9), EHS, & EHT","3(1,4)",CL2500,Plain,0.5,5 & 6
+,,,,0.75,7 & 8
+,,,,1,3 & 4
+"EHD(9), EHS, & EHT","4(1,4)",CL2500,Plain,0.75,5 & 6
+,,,,1,3 & 4
+"EHD(9), EHS, & EHT","6(1,5)",CL2500,Plain,0.75 1 & 1.25,5 & 6 3 & 4
+"EHD, EHP, & EHT",8 Through 14,,Plain,1.25,7 & 8
+,,,,2,3 & 4
+EWD & EWS,Through 12 x 6,Through CL900,Plain,,3 & 4
+"EWT, EWD-1, & EWT-1",12 x 8(5),,Plain,,7 & 8
+"EWT, EWD-1, & EWT-1",12 x 8(5),,Plain,0.75,7 & 8
+"EWT, EWD-1, & EWT-1",12 x 8(6),,Plain,1.25,5 & 6
+EWND-1 & EWND-2,8 x 6(7),,Plain,0.75,7 & 8
+EWND-1 & EWNT-1,12 x 8(8),,Plain,1.25,7 & 8
+"HPD, HPS, & HPT",1,CL1500,Plain,0.5 & 0.75,3 & 4
+"HPD, HPS, & HPT",2,CL1500,Plain,"0.5, 0.75, & 1",3 & 4
+"HPD, HPS, & HPT",3,CL900,Plain,0.5,5 & 6
+"HPD, HPS, & HPT",3,CL1500 & 2500,Plain,0.75 & 1,3 & 4
+"HPD, HPS, & HPT",4,"CL900, 1500, & 2500",Plain,0.75 & 1,3 & 4
+HPD & HPT,6,CL900 & 1500,Plain,"0.75, 1, & 1.25",3 & 4
+HPD & HPT,8 & 10,CL900 through CL3200,Plain,"1, 1.25 & 2",3 & 4
+HPD & HPT,12,"CL900, 2500, & 3200",Plain,"1, 1.25 & 2",3 & 4
+HPD & HPT,12,CL1500,,1,5 & 6
+HPS-C,1 to 3,CL900 and CL1500,Style 3 Extension,"1/2, 3/4, 1",9
+HPS-C,1 to 2,CL2500,,"1/2, 3/4, 1",
+HPT-C,4 to 12,CL900 and CL1500,Style 3 Extension,"3/4,1,1 1/4,2",9
+YD & YS(10),,,Plain,,7 & 8

@@ -1,0 +1,5 @@
+Disk Style,Service,For 60 Maximum Angle of Rotation,For 90 Maximum Angle of Rotation
+Conventional,Liquid,ΔPeff = 0.450 P1 abs,ΔPeff = 0.350 P1 abs
+Conventional,Gaseous,ΔPeff = 0.200 P1 abs,ΔPeff = 0.140 P1 abs
+FISHTAIL,Liquid,ΔPeff = 0.600 P1 abs,ΔPeff = 0.450 P1 abs
+FISHTAIL,Gaseous,ΔPeff = 0.180 P1 abs,ΔPeff = 0.090 P1 abs

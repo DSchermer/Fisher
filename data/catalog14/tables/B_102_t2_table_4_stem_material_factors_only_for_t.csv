@@ -1,0 +1,26 @@
+"REFERENCE LOADS TO OBTAIN STEM LOAD, MULTIPLY REFERENCE LOAD AT RIGHT BY MATERIAL FACTOR BELOW Stem Material Factors Stem Material","REFERENCE LOADS TO OBTAIN STEM LOAD, MULTIPLY REFERENCE LOAD AT RIGHT BY MATERIAL FACTOR BELOW Stem Material Factors Temperature, to 38C(1) to 100F(1)","REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Temperature, 93C 200F","REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Temperature, 149C 300F","REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Temperature, 204C 400F","REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Temperature, 260C 500F","REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Temperature, 316C 600F","REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) 2 Inch Stem: 159.958 kN (35960 Lb) Stem Material Factors Temperature, 371C 700F","REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) 2 Inch Stem: 159.958 kN (35960 Lb) Stem Material Factors Temperature, 427C 800F","REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) 2 Inch Stem: 159.958 kN (35960 Lb) Stem Material Factors Temperature, 482C 900F","REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) 2 Inch Stem: 159.958 kN (35960 Lb) Stem Material Factors Temperature, 537C 1000F","REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) 2 Inch Stem: 159.958 kN (35960 Lb) Stem Material Factors Temperature, 593C 1100F"
+316 stainless steel annealed,0.833,0.705,0.638,0.576,0.548,0.518,0.497,0.483,0.475,0.466,
+(SA-479-316),0.684,0.579,0.519,0.473,0.437,0.413,0.393,0.377,0.361,0.341,
+316L stainless steel,2.319,2.153,2.065,1.997,1.936,1.883,1.860(3),,,,
+(SA-479-316L),1.903,1.847,1.814,1.812,1.810,1.808,1.806,1.803,1.800,1.777,
+17-4PH stainless steel H1150,2.303,2.220,2.159,2.117,2.115,2.113,2.090,2.081,,,
+(SA-564 630)(2),3.669,3.568,3.497,3.427,3.382,3.339,3.304,3.270,3.253,3.325,3.317
+S66286 stainless steel,1.780,1.716,1.666,1.619,1.573,1.531,,,,,
+(SA 638-660 Type B),2.322,2.076,1.977,1.878,1.806,1.734,1.668,1.605,1.549,1.494,1.435
+N05500 Alloy,1.905,1.882,1.859,1.837,1.793,1.77,1.722,1.63,1.564,1.306,1.13
+(N05500 HT 27-35 RC),,,,,,,,,,,
+N07718 (ASTM A637),,,,,,,,,,,
+N06625 Grade 1 (ASTM SB466),,,,,,,,,,,
+S20910,,,,,,,,,,,
+(SA-479 Grade XM-19),,,,,,,,,,,
+S42200,,,,,,,,,,,
+(ASTM A565 GR 616 Condition H),,,,,,,,,,,
+N04400,0.683,0.603,0.562,0.543,0.543,0.543,0.543,0.521,,,
+N10665,1.245,1.157,1.096,1.046,1.000,0.968,0.944,0.919,,,
+(ASME SB335),1.242,1.166,1.102,1.046,1.003,0.957,0.943,0.943,,,
+N10276,0.923,0.900,0.877,0.855,0.809,0.804,0.786,0.786,0.785,0.740,
+(ASME SB574),2.022,1.895,1.747,1.683,1.639,1.616,1.605,1.594,,,
+N06600,,,,,,,,,,,
+(ASME SB166),,,,,,,,,,,
+R05200,,,,,,,,,,,
+(ASTM B-365)(4),,,,,,,,,,,

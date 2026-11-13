@@ -1,0 +1,19 @@
+"Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Valve Body Size, NPS 2 3 4 6 8 10",Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Angle of Opening 0 90 0 90 0 90 0 90 0 90 0,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 30 60 Psig 816 215 935 146 780 71 365 31 131 11 42,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 30 80 Psig 816 215 935 146 780 95 537 42 217 15 94,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 30 100 Psig 816 215 935 146 780 101 710 53 303 19 146,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 40 60 Psig --- 215 --- 146 780 101 840 63 389 23 198,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 40 80 Psig --- 780 101 840 85 562 30 303,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 40 100 Psig --- 780 101 840 88 734 38 407,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 40 120 Psig --- 780 101 840 88 792 46 511,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 60 60 Psig --- 780 101 840 88 792 46 511,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 60 80 Psig --- 780 101 840 88 792 61 547,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 60 100 Psig --- 780 101 840 88 792 75 547,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 68 60 Psig --- 780 101 840 88 792 74 547,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation) Actuator Size and Cylinder Pressure(2) Size 68 80 Psig --- 780 101 840 88 792 75 547
+,90,4.4,5.9,7.4,8.8,11,14,17,17,23,29,28,29
+12,0,,,,101,169,238,306,306,443,580,553,600
+,90,,,,6.0,8.0,10,12,12,15,20,19,24
+14,0,,,,52,101,151,200,200,285,285,285,285
+,10,,,,42,57,71,85,85,113,141,135,146
+,90,,,,3.5,4.7,5.8,7.0,7.0,9.3,11,11,14
+16,0,,,,17,52,87,122,121,190,260,246,285
+,10,,,,17,31,39,46,46,62,77,74,99
+,90,,,,2.1,2.9,3.6,4.3,4.3,5.7,7.1,6.9,9.1
+18,0,,,,,23,50,77,76,131,185,174,261
+,10,,,,,23,32,39,39,52,64,62,82
+,90,,,,,2.1,2.6,3.2,3.2,4.2,5.3,5.1,6.7
+20,0,,,,,3.1,24,45,44,86,128,120,187
+,10,,,,,3.1,24,29,29,39,48,46,62
+,90,,,,,1.6,2.0,2.4,2.4,3.2,4.0,3.8,5.1
+24(3),0,,,,,,,,6,32,58,53,94
+,10,,,,,,,,6,22,28,26,35
+,90,,,,,,,,1.4,1.8,2.3,2.2,2.9

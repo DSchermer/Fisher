@@ -1,0 +1,15 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Valve Size, NPS",Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Angle of Opening,"Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg/ 29 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg/ 29 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig psi","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig bar","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig psi"
+3,0,,,2.1,30,49,716,49,716,,,,
+3,80,,,2.1,30,9.1,132,9.1,132,,,,
+4,0,,,,,12,168,73,1062,98,1427,98,1427
+4,80,,,,,10,152,21,304,24,349,24,349
+6,0,,,,,,,6.0,88,30,439,94,1359
+6,80,,,,,,,3.5,51,4.7,68,9.8,142
+8,0,,,,,,,,,,,24,353
+8,80,,,,,,,,,,,4.6,66
+10,0,,,,,,,,,,,8.3,121
+10,80,,,,,,,,,,,2.0,29
+12,0,,,,,,,,,,,0.7,10
+12,80,,,,,,,,,,,0.7,10
+14,0,,,,,,,,,,,,
+14,80,,,,,,,,,,,,

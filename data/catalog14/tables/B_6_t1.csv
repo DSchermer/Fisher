@@ -1,0 +1,34 @@
+Table 2C. Port Data for Fisher EH & HP Valves Port Diameter (Inches),"Table 2C. Port Data for Fisher EH & HP Valves Port Circumference, (Inches)",Table 2C. Port Data for Fisher EH & HP Valves Port Area (Sq. Inches),"Table 2C. Port Data for Fisher EH & HP Valves Unbalance Area(1) (Balanced Plug), Sq. Inches"
+0.25,0.78,0.049,
+0.375,1.18,0.110,
+0.5,1.57,0.196,
+0.625,1.96,0.307,
+0.75,2.36,0.441,
+0.875,2.75,0.601,
+1,3.14,0.785,
+1.25,3.93,1.23,"0.02 (EHT, HPT)"
+1.375,4.32,1.48,"0.055 (HPT, HPD)"
+1.5,4.71,1.77,"0.051 (EHD, EHT)"
+1.75,5.5,2.405,
+1.875,5.89,2.76,"0.062 (EHD, EHT, HPD, HPT)"
+2.25,7.07,3.98,"0.088 (HPT, HPD)"
+2.3125,7.26,4.20,"0.074 (EHD, EHT)"
+2.875,9.03,6.49,"0.17(2) (High-temperature C-seal trim with Class V Shutoff) 0.098 (EHD, EHT, HPD, HPT)"
+2.9,9.11,6.61,"0.113 (HPT, HPD)"
+3.25,10.2,8.30,
+3.4375,10.8,9.28,0.21(2) (High-temperature C-seal trim with Class V Shutoff)
+3.6,11.31,10.18,"0.128 (HPT, HPD)"
+3.625,11.39,10.32,"0.128 (EHD, EHT, HPD, HPT, HPT-C) 0.21(2) (High-temperature C-seal trim with Class V Shutoff)"
+4.17,13.10,13.66,"0.167 (HPT, HPD)"
+4.375,13.74,15.03,"0.154 (EHD, EHT, HPD, HPT) 0.25(2) (High-temperature C-seal trim with Class V Shutoff)"
+4.9375,15.5,19.15,
+5.375,16.89,22.69,"0.206 (EHD, EHT, HPD, HPT, HPT-C) 0.37(2) (High-temperature Bore Seal trim with Class V Shutoff)"
+5.4,16.96,22.90,"0.206 (HPT, HPD)"
+5.5,17.28,23.76,"0.41 (HPT, HPD)"
+6,18.85,28.27,"0.45 (HPT, HPT-C, HPD)"
+6.5,20.42,33.18,"0.49 (HPT, HPD)"
+7,22.0,38.48,"0.30 (EHD, EHT), 0.53 (HPT, HPT-C, HPD) 0.47(2) (High-temperature Bore Seal trim with Class V Shutoff)"
+7.5,23.56,44.18,"0.56 (HPT, HPD)"
+8,25.13,50.24,"0.60 (HPT, HPT-C, HPD) 0.60(2) (High-temperature Bore Seal trim with Class V Shutoff)"
+8.5,26.70,56.75,"0.324 (HPT, HPD)"
+10,31.42,78.5,"0.540 (EHD, EHT)"

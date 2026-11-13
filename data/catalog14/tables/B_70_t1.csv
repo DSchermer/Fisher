@@ -1,0 +1,17 @@
+Available Actuator Force Size 76⎯0-33 Psig to Diaphragm(1),Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force
+"Travel, Inch",0.75,0.875,1,1.125,1.5,2,"Spring Part Number (Spring Rate, Lb/Inch)"
+"Force, Lb",,,,2808,2184,1404,1N128727082
+"(Bench Set, Psig)",,,,(18-30),(14-30),(9-30),(1680)
+"(Bench Set, Psig)",,,,3276,2808,2184,1N128427082
+,,,,(21-30),(18-30),(14-30),(1260)
+Size 76⎯0-48 Psig to Diaphragm(1),0.75,,,,,,
+"Force, Lb",3588,3120,,,,,1N128127082
+"(Bench Set, Psig)",(23-45),(20-45),,,,,(4475)
+"(Bench Set, Psig)",4524,,3588,3276,,,1N127927082
+,(29-45),,(23-45),(21-45),,,(3360)
+"(Bench Set, Psig)",,4836,4524,,3276,2028,1N128527082
+,,(31-45),(29-45),,(21-45),(13-45),(2520)
+"(Bench Set, Psig)",,,4836,4524,3744,2496,1N719327082
+,,,(31-45),(29-45),(24-45),(16-45),(2240)
+"(Bench Set, Psig)",,,,,4212,3276,1N128727082
+,,,,,(27-43),(21-43),(1680)

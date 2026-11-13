@@ -10,6 +10,12 @@
     python -m fisher size-valve 309-1-3 --q 6e6 --gg 0.6 --t1 520 --p1 214.7 --p2 64.7 --k 1.31
     python -m fisher steam --psia 40
     python -m fisher noise --dp 175 --p1 250 --pv 11.5 --cv 70 --km 0.7 --nps 4 --schedule 40
+
+  Catalog 14 (actuator sizing):
+    python -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
+    python -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
+    python -m fisher c14-tables --text "port data"
+    python -m fisher c14-table B_5_t1_table_2_port_data_for_single_port_valves
 """
 from __future__ import annotations
 
@@ -17,7 +23,7 @@ import argparse
 import json
 import sys
 
-from . import noise, reference, sizing
+from . import actuators, noise, reference, sizing
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -77,6 +83,25 @@ def parser() -> argparse.ArgumentParser:
     p = sub.add_parser("steam")
     p.add_argument("--psia", type=float)
     p.add_argument("--temp-f", type=float)
+    p = sub.add_parser("actuator-sliding", help="Catalog 14 section A: sliding-stem actuators by allowable shutoff dP")
+    p.add_argument("--dp", type=float, required=True)
+    p.add_argument("--port", type=float, required=True)
+    p.add_argument("--travel", type=float)
+    for a in ("actuator", "yoke-boss", "balance", "leakage"):
+        p.add_argument(f"--{a}")
+    p = sub.add_parser("actuator-rotary", help="Catalog 14 section C: rotary actuators by allowable dP")
+    p.add_argument("--dp", type=float, required=True)
+    p.add_argument("--valve", required=True)
+    p.add_argument("--nps")
+    p.add_argument("--angle", type=float)
+    for a in ("actuator", "text", "flow", "shaft"):
+        p.add_argument(f"--{a}")
+    p = sub.add_parser("c14-tables", help="search every Catalog 14 table by heading or title")
+    p.add_argument("--text", default="")
+    p.add_argument("--section", choices=list("ABCD"))
+    sub.add_parser("c14-options", help="actuators, valves and ports available in Catalog 14")
+    p = sub.add_parser("c14-table", help="one Catalog 14 table as printed")
+    p.add_argument("table_id")
     p = sub.add_parser("noise", help="hydrodynamic noise, Section 3")
     for a in ("dp", "p1", "pv", "cv", "km"):
         p.add_argument(f"--{a}", type=float, required=True)
@@ -125,6 +150,24 @@ def run(argv) -> object:
             r = size_liquid_on_valve(c, args.q, args.p1, args.p2, args.gf, pv=args.pv, ff_value=args.ff,
                                      pc=args.pc, fp_value=args.fp or 1.0)
         out = r.__dict__
+    elif args.cmd == "actuator-sliding":
+        out = [r.to_dict() for r in actuators.sliding_stem(args.dp, args.port, args.travel, actuator=args.actuator,
+                                                          yoke_boss=args.yoke_boss, balance=args.balance,
+                                                          leakage=args.leakage)]
+    elif args.cmd == "actuator-rotary":
+        out = [r.to_dict() for r in actuators.rotary(args.dp, args.valve, args.nps, angle_deg=args.angle,
+                                                    actuator=args.actuator, text=args.text, flow=args.flow,
+                                                    shaft_in=args.shaft)]
+    elif args.cmd == "c14-options":
+        out = actuators.options()
+    elif args.cmd == "c14-tables":
+        out = actuators.search_tables(args.text, args.section)
+    elif args.cmd == "c14-table":
+        info = next((t for t in actuators.tables() if t["id"] == args.table_id), None)
+        if info is None:
+            raise KeyError(args.table_id)
+        headers, rows = actuators.table(args.table_id)
+        out = {**info, "headers": headers, "data": rows}
     elif args.cmd == "noise":
         out = noise.hydrodynamic_noise(dp=args.dp, p1=args.p1, pv=args.pv, cv=args.cv, km=args.km, nps=args.nps,
                                        schedule=args.schedule, g=args.g, style=args.style).__dict__

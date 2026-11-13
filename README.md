@@ -1,6 +1,6 @@
-# Fisher Catalog 12: deterministic lookup and sizing tools
+# Fisher Catalogs 12 and 14: deterministic lookup and sizing tools
 
-Data and tools built from Emerson's **Fisher Catalog 12, ASME/ISA/IEC Valve Sizing** (D103182X012, April 2022 edition).
+Data and tools built from Emerson's **Fisher Catalog 12, ASME/ISA/IEC Valve Sizing** (D103182X012, April 2022 edition) and **Fisher Catalog 14, Actuator Sizing** (D103428X012). Catalog 14 is covered in [its own section below](#catalog-14-actuator-sizing).
 
 - **Lookups:** find a valve configuration and read its Cv, Kv, XT, FL and Fd at any opening.
 - **Valve selection:** list configurations that reach a required Cv between, say, 20% and 80% open.
@@ -117,6 +117,27 @@ Behavior worth knowing:
 - Characteristic is blank for 679 configurations and flow direction for 408, because the catalog doesn't state them for those tables (mostly butterfly and ball valves). They are left blank, not guessed.
 - The Reynolds-number factor FR comes from Table 3 by linear interpolation, which the catalog says is satisfactory.
 
+## Catalog 14: actuator sizing
+
+| Section | Pages | What is extracted | Use |
+|---|---|---|---|
+| A, sliding-stem, pressure drop method | 1–34 | 2,559 maximum allowable shutoff ΔP values (585C, 657, 667) by port, travel, yoke boss, actuator size, air pressure or bench set | `actuators.sliding_stem()`, `actuator-sliding` |
+| C, rotary, pressure drop method | 175–364 | 19,082 maximum allowable ΔP values (1052, 1061, 2052, FieldQ on 8510, 8532, 8580, 9500, A11, CV500, Control-Disk, V150, V200, V300, V500) by valve size or shaft, opening angle, actuator size, supply pressure and spring | `actuators.rotary()`, `actuator-rotary` |
+| B, sliding-stem, force method | 35–174 | Port and unbalance areas, seat loads, packing friction, actuator force tables, as printed | `actuators.search_tables()`, `c14-tables` |
+| D, rotary, torque method | 365–560 | Valve torque factors, shaft torque limits, actuator output torque, as printed | same |
+
+- **ΔP values:** each of the 21,641 values was confirmed by the second PDF reader. That row's values appear, in order, on one line of poppler's text.
+- **Other tables:** all 695 tables are kept as printed in `data/catalog14/tables/`, with an index giving page, heading and how many rows the second reader confirms.
+- **Not implemented yet:** the force and torque *procedures* (the step-by-step calculations in sections B and D). Their tables are available to look up, but the calculation steps aren't code yet.
+
+```bash
+python3 -m fisher actuator-sliding --dp 500 --port 2.5 --actuator 585C
+```
+
+```bash
+python3 -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
+```
+
 ## Files
 
 | Path | Contents |
@@ -128,7 +149,8 @@ Behavior worth knowing:
 | `data/flags.csv` | Validation warnings |
 | `data/crosscheck.csv` | Second-reader result for every value row |
 | `data/reference/` | Section 2 and 3 reference tables as printed (`tables/`, `index.csv`), saturated steam, leakage classes, chart digitizations |
-| `fisher/` | `catalog.py` lookups, `sizing.py` equations, `select.py` sizing on a catalog valve, `reference.py` reference data, `noise.py` noise; standard library only |
+| `data/catalog14/` | Catalog 14: `allowable_dp.csv` (sections A and C, one row per value) with `pages.csv` (page headings), every table as printed (`tables/`, `index.csv`) |
+| `fisher/` | `actuators.py` Catalog 14 actuator selection, `catalog.py` lookups, `sizing.py` equations, `select.py` sizing on a catalog valve, `reference.py` reference data, `noise.py` noise; standard library only |
 | `extract/` | Extraction, validation, cross-check and chart digitizing scripts |
 | `docs/page_inventory.csv` | Every PDF page with its printed label, family and type |
 

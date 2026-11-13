@@ -1,0 +1,13 @@
+"Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Valve Size, NPS 1 1-1/2 2","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Angle of Opening 0 70 0 70 0 70","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig 90 psi - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig 90 bar - - -","Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow Size 1, 2, and 3 Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig 90 psi - - -"
+3,0,0.5,6.7,7.0,101,17,246,17,246,17,246,17,246
+3,70,0.5,6.7,7.0,101,17,246,17,246,17,246,17,246
+4,0,,,2.5,37,10,146,10,146,10,146,10,146
+4,70,,,2.5,37,5.5,80,8.1,118,8.1,118,8.1,118
+6,0,,,,,4.4,64,11,155,11,155,11,155
+6,70,,,,,2.8,40,5.5,80,7.9,115,7.9,115
+8,0,,,,,2.0,29,6.3,91,9.2,134,11,154
+8,70,,,,,1.7,24,3.3,48,5.1,74,10,144
+10,0,,,,,,,2.4,35,3.7,54,5.9,85
+10,70,,,,,,,1.6,23,2.5,36,4.8,69
+12,0,,,,,,,,,1.9,27,5.3,76
+12,70,,,,,,,,,1.9,27,4.2,61

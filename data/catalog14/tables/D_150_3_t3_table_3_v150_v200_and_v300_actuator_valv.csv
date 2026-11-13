@@ -1,0 +1,10 @@
+SR SIZES,"SHAFT DIAMETER, (inches) SQUARE SIZE, (mm)",col2,col3,col4,col5,col6
+,0.5 (9),0.62 (11),0.75 (14),1 (19),1.25 (22),1.5 (27)
+5i,0.5 (9),,,,,
+7i,x,x,,,,
+8i,x,x,x,,,
+9i,x,,x,,,
+10i,x,,,,,
+12i,x,,,x,,
+14i,x,,,,x,
+15i,x,,,,,x

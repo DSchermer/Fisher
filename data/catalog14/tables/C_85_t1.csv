@@ -1,0 +1,27 @@
+"Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Valve Size, NPS 3 4 6 Valve Size, NPS","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Angle of Opening 0 90 0 90 0 90 Angle of Opening","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 60 Psig bar - - - Q 150 60 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 60 Psig psi - - - Q 150 60 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 80 Psig bar - - - Q 150 80 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 80 Psig psi - - - Q 150 80 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 100 Psig bar - - - Q 150 100 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 40 100 Psig psi - - - Q 150 100 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 60 Psig bar - - - Q 200 60 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 60 Psig psi - - - Q 200 60 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 80 Psig bar - - - Q 200 80 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 80 Psig psi - - - Q 200 80 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 100 Psig bar - - - Q 200 100 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 65 100 Psig psi - - - Q 200 100 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 60 Psig bar - - - Q 350 60 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 60 Psig psi - - - Q 350 60 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 80 Psig bar - - - Q 350 80 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 80 Psig psi - - - Q 350 80 Psig psi","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 100 Psig bar - - - Q 350 100 Psig bar","Spring-To-Open (90 Maximum Rotation), Actuator Size, Supply Pressure Q 100 100 Psig psi - - - Q 350 100 Psig psi"
+3,0,,,,,25.4,368,,,25.4,368,25.4,368,,,25.4,368,25.4,368
+3,90,,,,,6.2,90,,,8.3,121,8.3,121,,,15.1,220,15.1,220
+4,0,,,,,,,,,,,15.6,227,,,33.7,489,81.7,1185
+4,90,,,,,,,,,,,6.2,90,,,11.4,165,11.4,165
+6,0,,,,,,,,,,,,,,,,,9.9,144
+6,90,,,,,,,,,,,,,,,,,1.9,27
+8,0,,,,,,,,,,,,,,,,,,
+8,90,,,,,,,,,,,,,,,,,,
+10,0,,,,,,,,,,,,,,,,,,
+10,90,,,,,,,,,,,,,,,,,,
+12,0,,,,,,,,,,,,,,,,,,
+12,90,,,,,,,,,,,,,,,,,,
+"Valve Size, NPS",Angle of Opening,Q 600,,,,,,Q 950,,,,,,Q 1600,,,,,
+"Valve Size, NPS",Angle of Opening,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,,60 Psig,,80 Psig,,100 Psig,
+3,0,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368
+3,90,24.9,361,24.9,361,24.9,361,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368,25.4,368
+4,0,,,98.1,1423,98.1,1423,21.4,311,98.1,1423,98.1,1423,88.7,1287,98.1,1423,98.1,1423
+4,90,,,18.7,271,18.7,271,21.4,311,27.4,397,27.4,397,45.6,662,45.6,662,45.6,662
+6,0,,,19.2,279,44.6,646,,,49.4,717,86.2,1250,12.3,178,103.4,1500,103.4,1500
+6,90,,,3.1,45,3.1,45,,,4.6,66,4.6,66,7.6,110,7.6,110,7.6,110
+8,0,,,,,8.6,124,,,10.5,152,24.9,262,,,34.6,502,56.7,823
+8,90,,,,,1.4,21,,,2.1,31,2.1,31,,,3.5,51,3.5,51
+10,0,,,,,,,,,,,6.0,87,,,11.1,161,22.8,330
+10,90,,,,,,,,,,,0.9,14,,,1.6,23,1.6,23
+12,0,,,,,,,,,,,,,,,0.5,8,7.2,104
+12,90,,,,,,,,,,,,,,,0.5,8,1.1,15

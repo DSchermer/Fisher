@@ -1,0 +1,14 @@
+"Push-Down-To-Close Valve Size, NPS 3",Push-Down-To-Close Angle of Opening 0,"Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig bar - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig psi - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig bar - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig psi - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig bar 25","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig psi 369","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig bar 25","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig psi 369","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig bar - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig psi - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig bar - - -","Push-Down-To-Close Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig psi - - -"
+,80,,,,,9.1,132,9.1,132,,,,
+4,0,,,,,,,68,982,103,1500,103,1500
+4,80,,,,,,,20,297,24,349,24,349
+6,0,,,,,,,5.2,76,21,299,87,1267
+6,80,,,,,,,3.4,49,5.3,77,10,147
+8,0,,,,,,,,,,,25,368
+8,80,,,,,,,,,,,4.8,69
+10,0,,,,,,,,,,,6.2,90
+10,80,,,,,,,,,,,2.1,30
+12,0,,,,,,,,,,,,
+12,80,,,,,,,,,,,,
+14,0,,,,,,,,,,,,
+14,80,,,,,,,,,,,,

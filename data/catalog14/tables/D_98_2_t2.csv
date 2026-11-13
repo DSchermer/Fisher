@@ -1,0 +1,5 @@
+SIS Torque Equations,col1,col2
+ETO,.65 BTO,"150,300,600"
+ETO,.60 BTO,"900,1500"
+BTC,.85 BTO,All
+ETC,.80 BTO,All

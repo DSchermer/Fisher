@@ -1,0 +1,24 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Valve Size, NPS 2 3","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Angle of Opening 0 90 0","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 30 60 psig psi 750 210 750","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 30 60 psig bar 52 14 52","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 30 80 psig psi 750 210 750","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 30 80 psig bar 52 14 52","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 30 100 psig psi 750 210 750","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 30 100 psig bar 52 14 52","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 60 psig psi 750 210 750","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 60 psig bar 52 14 52","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 80 psig psi - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 80 psig bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 100 psig psi - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 100 psig bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 120 psig psi - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Size 30, 40, 60, 68 Actuator Size and Cylinder Pressure Size 40 120 psig bar - - -"
+,90,113,7.8,113,7.8,113,7.8,113,7.8,,,,,,
+4,0,750,52,750,52,750,52,750,52,750,52,750,52,750,52
+4,90,71,4.9,94,6.5,100,6.9,100,6.9,100,6.9,100,6.9,100,6.9
+6,0,353,24.4,526,36.3,698,48,750,52,750,52,750,52,750,52
+6,90,32,2.2,43,3.0,54,3.7,64,4.4,86,5.9,89,6.1,89,6.1
+8,0,131,9.0,217,15.0,303,21,390,27,562,39,734,51,750,52
+8,90,6.7,0.5,9.0,0.6,11,0.8,13,0.9,18,1.2,22,1.5,27,1.9
+10,0,,,37,2.5,89,6.2,142,9.8,247,17,353,24,458,32
+10,90,,,5.6,0.4,7.0,0.5,8.4,0.6,11,0.8,14,1.0,17,1.2
+12,0,,,,,,,33,2.3,117,8.0,200,14,283,20
+12,90,,,,,,,4.8,0.3,6.4,0.4,8.0,0.6,10,0.7
+"Valve Size, NPS",Angle of Opening,Size 60,,,,,,Size 68,,,,,,,
+"Valve Size, NPS",Angle of Opening,60 psig,,80 psig,,100 psig,,60 psig,,80 psig,,,,,
+4,0,750,52,750,52,750,52,750,52,750,52,,,,
+4,90,100,6.9,100,6.9,100,6.9,100,6.9,100,6.9,,,,
+6,0,750,52,750,52,750,52,750,52,750,52,,,,
+6,90,89,6.1,89,6.1,89,6.1,89,6.1,89,6.1,,,,
+8,0,750,52,750,52,750,52,750,52,750,52,,,,
+8,90,27,1.9,36,2.5,44,3.0,43,3.0,44,3.0,,,,
+10,0,458,32,524,36,524,36,524,36,524,36,,,,
+10,90,17,1.2,22,1.5,27,1.9,27,1.8,27,1.9,,,,
+12,0,283,20,450,31,600,41,583,40,600,41,,,,
+12,90,10,0.7,13,0.9,16,1.1,15,1.1,19,1.3,,,,

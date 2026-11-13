@@ -1,4 +1,4 @@
-"""A small local web UI for the lookups and sizing tools.
+"""A small local web UI for the Catalog 12 and Catalog 14 tools.
 
     python -m fisher.ui            # then open http://127.0.0.1:8000
     python -m fisher.ui --port 9000
@@ -19,13 +19,13 @@ from urllib.parse import parse_qsl, urlparse
 from .__main__ import run
 
 PAGE = Path(__file__).with_name("ui.html")
-POSITIONAL = {"show", "size-valve"}  # commands whose first argument is a config id
+POSITIONAL = {"show": "config_id", "size-valve": "config_id", "c14-table": "table_id"}  # first argument
 
 
 def to_argv(command: str, params: dict[str, str]) -> list[str]:
     argv = [command]
     if command in POSITIONAL:
-        argv.append(params.pop("config_id", ""))
+        argv.append(params.pop(POSITIONAL[command], ""))
     for key, value in params.items():
         if value == "":
             continue

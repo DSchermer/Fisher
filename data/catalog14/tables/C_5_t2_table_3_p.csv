@@ -1,0 +1,10 @@
+VALVE,DEGREES MAXIMUM ROTATION,DISK STYLE,ΔPeff EQUATIONS,col4
+9500,60,FISHTAIL™ Disk,ΔPeff = 0.18 P1abs,ΔPeff = 0.60 P1abs
+9500,60,Conventional Disk,ΔPeff = 0.20 P1abs,ΔPeff = 0.45 P1abs
+9500,90,FISHTAIL Disk,ΔPeff = 0.09 P1abs,ΔPeff = 0.45 P1abs
+9500,90,Conventional Disk,ΔPeff = 0.14 P1abs,ΔPeff = 0.35 P1abs
+8532 (CL150),90,,ΔPeff = K P1abs See table 4 for K values,ΔPeff = Km (P1abs - rcPv) See Valve Sizing for Flashing and Cavitating Liquids procedure in Catalog 12 for definition of variables.
+8532 (CL300),90,,,
+V150,60 or 90,,,
+V500,60,,ΔPeff = K P1abs,
+,90,,See table 5 for K values,

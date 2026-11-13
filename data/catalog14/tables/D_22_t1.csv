@@ -1,0 +1,31 @@
+"CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) Valve Size, NPS","CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) Shaft Diameter, Inches",CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) A,CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) B,CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) C 10 Value,CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) C 60 Value,CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) C 75 Torque,CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) C 75 Value,CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) C 80(1) Value,"CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) Maximum Torque, In-lbs 80(1) Breakout TB","CL150 Torque Characteristics Phoenix III Seal / PEEK/PTFE Bearing (Reverse Flow)(2) Maximum Torque, In-lbs 80(1) Dynamic TD"
+3,1/2,0.81,270,1.2,6.7,K,14,14.7,500,515
+4,5/8,1.14,800,1.8,19,K,33,33,1125,1225
+6,3/4,1.75,1500,7.7,52,K,106,106,2000,2120
+8,1,4.87,1400,12,113,K,212,213,2790,4140
+10,1-1/4,7.5,2150,25,216,K,406,409,4290,9820
+12,1-1/2,13.1,4200,35,360,K,687,695,7935,"12,000"
+Phoenix III Seal / PEEK/PTFE Bearing (Forward Flow)(2),1-1/2,,,,,,,,,
+Phoenix III Seal / PEEK/PTFE Bearing (Forward Flow)(2),1-1/2,,,10,60,75,,90,,
+3,1/2,0.81,270,,0.8,θ,1.8,8,500,515
+4,5/8,1.14,800,,3.1,θ,4.7,25,1125,1225
+6,3/4,1.75,1500,,30,K,24,70,2000,2120
+8,1,4.87,1400,,65,K,47,165,2790,4140
+10,1-1/4,7.5,2150,,125,K,90,310,4290,9820
+12,1-1/2,13.1,4200,,216,K,140,580,7935,"12,000"
+Phoenix III Seal / Metal Bearing (Reverse Flow)(2),1-1/2,,,,,,,,,
+Phoenix III Seal / Metal Bearing (Reverse Flow)(2),1-1/2,,,10,60,75,,80(1),,
+3,1/2,1.2,350,1.2,6.7,K,14,14.7,515,515
+4,5/8,1.9,900,1.8,19,K,33,33,1225,1225
+6,3/4,4,1700,7.7,52,K,106,106,2120,2120
+8,1,11.5,1950,12,113,K,212,213,4140,4140
+10,1-1/4,14.6,3500,25,216,K,406,409,7661,9820
+12,1-1/2,27.3,5200,35,360,K,687,695,"12,000","12,000"
+Phoenix III Seal / Metal Bearing (Forward Flow)(2),1-1/2,,,,,,,,,
+Phoenix III Seal / Metal Bearing (Forward Flow)(2),1-1/2,,,10,60,75,,90,,
+3,1/2,1.2,350,,0.8,θ,1.8,8,515,515
+4,5/8,1.9,900,,3.1,θ,4.7,25,1225,1225
+6,3/4,4,1700,,30,K,24,70,2120,2120
+8,1,11.5,1950,,65,K,47,165,4140,4140
+10,1-1/4,14.6,3500,,125,K,90,310,7661,9820
+12,1-1/2,27.3,5200,,216,K,140,580,"12,000","12,000"

@@ -1,0 +1,38 @@
+"2.875 Inch Port (ED, Class II Leakage) Air to Cylinder, Psig Travel Inch","2.875 Inch Port (ED, Class II Leakage) Air to Cylinder, Psig Yoke Boss Size, Inch","2.875 Inch Port (ED, Class II Leakage) Air to Cylinder, Psig Actuator Size","2.875 Inch Port (ED, Class II Leakage) 50 ΔP, Psi","2.875 Inch Port (ED, Class II Leakage) 60 ΔP, Psi","2.875 Inch Port (ED, Class II Leakage) 80 ΔP, Psi","2.875 Inch Port (ED, Class II Leakage) 100 ΔP, Psi"
+1.5,3-9/16,60,6000,6000,6000,6000
+,,80,6000,6000,,
+"2.875 Inch Port (ET, Class IV Leakage)",3-9/16,,,,,
+1.5,3-9/16,60,6000,6000,6000,6000
+,,80,6000,6000,,
+"3.4375 Inch Port (ED, Class II Leakage)",3-9/16,,,,,
+1.5,3-9/16,60,5516,6000,6000,6000
+,,68,6000,6000,,
+"3.4375 Inch Port (ET, Class IV Leakage)",3-9/16,,,,,
+1.5,3-9/16,60,4976,6000,6000,6000
+,,68,6000,6000,,
+"4.375 Inch Port (ED, Class II Leakage)",3-9/16,,,,,
+2,3-9/16,60,4211,5190,6000,6000
+,,68,6000,6000,,
+2,5,80(1),6000,6000,6000,6000
+,,100(2),6000,6000,6000,6000
+,,130(2),6000,6000,,
+"4.375 Inch Port (ET, Class IV Leakage)",5,,,,,
+2,3-9/16,60,3672,4652,6000,6000
+,,68,6000,6000,,
+2,5,80(1),6000,6000,6000,6000
+,,100(2),6000,6000,6000,6000
+,,130(2),6000,6000,,
+"4.375 Inch Port (ET, Class V Leakage) Soft Seat Only",5,,,,,
+2,3-9/16,60,1440,1440,1440,1440
+"5.375 Inch Port (ED, Class II Leakage)",3-9/16,,,,,
+2,3-9/16,60,3349,4142,5727,7313
+,,68,5706,6000,6000,6000
+2 and 3,5,80(1),5706,6000,6000,6000
+,,100(2),6000,6000,6000,6000
+,,130(2),6000,6000,6000,6000
+"5.375 Inch Port (ET, Class IV Leakage)",5,,,,,
+2,3-9/16,60,1740,2533,4119,5704
+,,68,4097,5362,6000,6000
+2 and 3,5,80(1),4097,5362,6000,6000
+,,100(2),6000,6000,6000,6000
+,,130(2),6000,6000,6000,6000

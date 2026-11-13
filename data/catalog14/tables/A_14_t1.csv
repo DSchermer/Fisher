@@ -1,0 +1,20 @@
+"Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) Air to Diaphragm, Psig Bench Set, Psig Travel, Inch","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) Air to Diaphragm, Psig Bench Set, Psig Yoke Boss Size, Inch","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) Air to Diaphragm, Psig Bench Set, Psig Actuator Size","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) 0-18(1) 3-15 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) 0-18(1) 3-12 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) 0-18(1) 3-10 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) 0-33(1) 6-30 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) 0-33(1) 6-26 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 1.875 Inch Port (ED, Class II Leakage) 0-33(1) 6-22 ΔP, Psi"
+0.75,2-1/8,"30, 30i",,758(2),1176(3),,758,1594
+0.75,2-1/8,"34, 34i",235,1490(2),2117(3),235,1490,2744
+0.75,2-13/16,"40, 40i",178,1433(2),2060(3),178,1433,2687
+0.75,2-13/16,"45, 45i",669,2101,3055,669,2578,4487
+0.75,3-9/16,"50, 50i",555,1987,2942,555,2465,4374
+0.75,3-9/16,"60, 60i",1251,3378,4796,1251,4087,6000
+"1.875 Inch Port (ET, Class IV Leakage)",3-9/16,,,,,,,
+0.75,2-1/8,"30, 30i",,222(2),640(3),,222,1059
+0.75,2-1/8,"34, 34i",,954(2),1581(3),,954,2209
+0.75,2-13/16,"40, 40i",,897(2),1525(3),,897,2152
+0.75,2-13/16,"45, 45i",134,1565,2520,134,2043,3952
+0.75,3-9/16,"50, 50i",20,1452,2406,20,1929,3838
+0.75,3-9/16,"60, 60i",715,2843,4261,715,3552,6000
+"1.875 Inch Port (ET, Class V Leakage) Soft Seat Only",3-9/16,,,,,,,
+0.75,2-1/8,"30, 30i",,361(2),673(3),,361,986
+0.75,2-1/8,"34, 34i",,908(2),1378(3),,908,1440
+0.75,2-13/16,"40, 40i",,867(2),1337(3),,867,1440
+0.75,2-13/16,"45, 45i",296,1367,1440,296,1440,1440
+0.75,3-9/16,"50, 50i",211,1282,1440,211,1440,1440

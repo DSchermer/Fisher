@@ -1,0 +1,46 @@
+"Table 4. Leak Class and Seat Loads TYPE A, AR (double port) Bore Seal or C-Seal CAV4 Cavitrol III 1-stage Cavitrol III 2-stage through 5-stage",Table 4. Leak Class and Seat Loads CONSTRUCTION Metal Seat Soft Metal-to-Metal Seat Metal to Metal,"Table 4. Leak Class and Seat Loads Port Size, Inch All 4.375 or Less Greater than 4.375 All",Table 4. Leak Class and Seat Loads LEAK CLASS Standard II V V/VI(2) IV V,Table 4. Leak Class and Seat Loads Seat load Equation Standard 20*PC (210+0.122Pshutoff)*PC (100+0.122Pshutoff)*PC (100+0.05Pshutoff)*PC (100+0.122Pshutoff)*PC,Table 4. Leak Class and Seat Loads LEAK CLASS Optional III IV V ---,Table 4. Leak Class and Seat Loads Seat load Equation Optional 40*PC 150*PC 190*PC (100+.05Pshutoff)*PC (100+0.122Pshutoff)*PC ---
+CHPD,Metal Seat,5.375,II,20*PC,,
+CHPT,Metal Seat,5.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+CVX,Bore Seal,All,V,(210+0.122*Pshutoff)*PC,IV,190*PC
+CVX,Piston Rings,All,IV,80*PC,,
+"D, DA",Metal Seat,All,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"D2T, D3, D4",Metal Seat,All,IV,40*PC,,
+"DST, NotchFlo DST",Metal Seat,All,V,(100+0.122Pshutoff)*PC,III(3),(100+0.122Pshutoff)*PC
+DST-G,Metal Seat,All,V,(100+0.122Pshutoff)*PC,III(3),(100+0.122Pshutoff)*PC
+"ED, EAD, EWD, EDR",Metal Seat,1.3125-18.25,II,20*PC,III,40*PC
+"ED, EAD, EWD, EDR",Metal Seat,4.375 or less,IV,40*PC,,40*PC
+"ED, EAD, EWD, EDR",Metal Seat,Greater than 4.375,IV,80*PC,,80*PC
+ED-J,Metal Seat,All,II,20*PC,III,40*PC
+ED-J,Metal Seat,,,,IV,80*PC
+EHAD & EHD,Metal Seat,1.875 or smaller,II,20*PC,,
+EHAD & EHD,Metal Seat,2.3125-3.625,II,20*PC,III,40*PC
+EHAD & EHD,Metal Seat,Greater than 4.375,III,40*PC,IV,80*PC
+"EHAS, EHS EHAT, & EHT",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"EHAS, EHS EHAT, & EHT",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"EHZ, HPZ",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"EHZ, HPZ",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"ES, EAS, ESR, & EWS",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"ES, EAS, ESR, & EWS",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"ES, EAS, ESR, & EWS",Soft Metal-to-Metal,All,VI,300*PC,,
+"ES, EAS, ESR, & EWS",Composition Seat(1),All,VI,(A*Pshutoff)+B,,
+"ET, EAT, ETR",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"ET, EAT, ETR",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"ET, EAT, ETR",Soft Metal-to-Metal,All,VI,300*PC,,
+"ET, EAT, ETR",Composition Seat(1),All,V (Air),(A*Pshutoff)+B,VI,(A*Pshutoff)+B
+"ET-C, EWT-C",Soft Metal-to-Metal,4.375 or Less,IV,40*PC,V (Air),300*PC
+"ET-C, EWT-C",Soft Metal-to-Metal,Greater than 4.375,IV,80*PC,V (Air),300*PC
+"ET-C, EWT-C",Composition Seat(1),All,V (Air),(A*Pshutoff)+B,VI,(A*Pshutoff)+B
+ET-J,Metal Seat,All,IV,80*PC,V,(100+0.122Pshutoff)*PC
+ET-J,Composition (Soft) Seat,All,V,(150+0.122Pshutoff)*PC,,
+EWND,Metal Seat,All,III,40*PC,IV,80*PC
+EWND,Metal Seat,10.125,II,20*PC,III,40*PC
+"EWT, EWNT",Metal Seat,4.375 or Less,IV,40*PC,V,(100+0.122Pshutoff)*PC
+"EWT, EWNT",Metal Seat,Greater than 4.375,IV,80*PC,V,(100+0.122Pshutoff)*PC
+"EWT, EWNT",Soft Metal-to Metal (EWT only),8 or less,VI,300*PC,,
+"EWT, EWNT",Composition Seat(1),All,V (Air),(A*Pshutoff)+B,,
+EZ,Metal Seat,All,IV,40*PC,V,(100+0.122Pshutoff)*PC
+EZ,Composition Seat(1),All,VI,(A*Pshutoff)+B,,
+EZ,Soft Metal-to-Metal Seat,All,VI,300*PC,,
+EZ-C,Soft Metal-to-Metal Seat,All,IV,40*PC,VI,300*PC
+FBD,Metal Seat,All,II,20*PC,,
+FBT,Metal Seat,All,IV,80*PC,V,(100+0.122Pshutoff)*PC

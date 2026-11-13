@@ -1,0 +1,46 @@
+Available Actuator Force 0-18 Psig to Diaphragm(1),Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force,Available Actuator Force
+"Travel, Inch",0.375,0.4375,0.5,0.625,0.75,1.125,"Spring Part Number (Spring Rate, Lb/In)"
+"Force, Lb",207,,,,,,1E805227082
+"(Bench Set, Psig)",(3-15),,,,,,(2210)
+"(Bench Set, Psig)",345,207,,,,,1E805127082
+,(3-13),(3-15),,,,,(1840)
+"(Bench Set, Psig)",483,414,276,,,,1E805527082
+,(3-11),(3-12),(3-14),,,,(1470)
+"(Bench Set, Psig)",552,483,345,207,,,1E804927082
+,(3-10),(3-11),(3-13),(3-15),,,(1327)
+"(Bench Set, Psig)",552,483,414,276,,,1E805427082
+,(3-10),(3-11),(3-12),(3-14),,,(1230)
+"(Bench Set, Psig)",621,552,483,345,207,,1E805827082
+,(3-9),(3-10),(3-11),(3-13),(3-15),,(1100)
+"(Bench Set, Psig)",690,621,552,414,345,,1E805727092
+,(3-8),(3-9),(3-10),(3-12),(3-13),,(920)
+"(Bench Set, Psig)",759 (3-7),690 (3-8),690 (3-8),552 (3-10),483 (3-11),207 (3-15),1E805327092 (736)
+"(Bench Set, Psig)",,,759,690,621,414,1E805627092
+,,,(3-7),(3-8),(3-9),(3-12),(550)
+"(Bench Set, Psig)",,,,759,690,552,1F177227092
+,,,,(3-7),(3-8),(3-10),(460)
+"(Bench Set, Psig)",,,,,759,621,1F177127092
+,,,,,(3-7),(3-9),(370)
+0-33 Psig to Diaphragm(1),759 (3-7),,,,,,
+"Force, Lb",414,207,,,,,1E805027082
+"(Bench Set, Psig)",(6-27),(6-30),,,,,(3780)
+"(Bench Set, Psig)",690,483,276,,,,1E804727082
+,(6-23),(6-26),(6-29),,,,(3160)
+"(Bench Set, Psig)",897,759,552,207,,,1E804827082
+,(6-20),(6-22),(6-25),(6-30),,,(2650)
+"(Bench Set, Psig)",1035,897,759,483,207,,1E805227082
+,6-18),(6-20),(6-22),(6-26),(6-30),,(2210)
+"(Bench Set, Psig)",1173,1035,966,759,483,,1E805127082
+,(6-16),(6-18),(6-19),(6-22),(6-26),,(1840)
+"(Bench Set, Psig)",1311 (6-14),1242 (6-15),1104 (6-17),966 (6-19),759 (6-22),207 (6-30),1E805527082 (1470)
+"(Bench Set, Psig)",,1311,1173,1035,897,345,1E804927082
+,,(6-14),(6-16),(6-18),(6-20),(6-28),(1327)
+"(Bench Set, Psig)",,1311,1242,1104,966,483,1E805427082
+,,(6-14),(6-15),(6-17),(6-190),(6-26),(1230)
+"(Bench Set, Psig)",,,1311,1173,1035,621,1E805827082
+,,,(6-14),(6-16),(6-18),(6-24),(1100)
+"(Bench Set, Psig)",,,,1311,1173,759,1E805727092
+,,,,(6-14),(6-16),(6-22),(924)
+"(Bench Set, Psig)",,,,,1311,1035,1E805327092
+,,,,,(6-14),(6-18),(736)
+"1.The force values shown assume a diaphragm loading pressure to the actuator or 0 to 18 psig for a 3 to 15 psig nominal signal and a 0 to 33 psig supply for a 6 to 30 nominal signal. Any positioner, controller, or transducer used with these actuators must be capable of delivering the appropriate slightly extended range.",1311 (6-14),,,,,,

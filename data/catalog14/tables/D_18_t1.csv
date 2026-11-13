@@ -1,0 +1,23 @@
+"CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) Valve Size, NPS","CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) Shaft Diameter, Inches",CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) A,CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) B,CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) C 10 Value,CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) C 60 Value,CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) C 75 Torque,CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) C 75 Value,CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) C 90 Value,"CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) Maximum Torque, In-lbs 90 Breakout TB","CL150 Torque Characteristics Soft Seal / PEEK/PTFE Bearing (Forward Flow)(2) Maximum Torque, In-lbs 90 Dynamic TD"
+2(3),1/2,0.3,100,,0.64,θ,1.6,2.4,345,515
+3,1/2,0.50,136,,0.8,θ,1.8,8,280,515
+4,5/8,0.91,217,,3.1,θ,4.7,25,476,1225
+6,3/4,1.97,403,,30,K,24,70,965,2120
+8,1,4.2,665,,65,K,47,165,1860,4140
+10,1-1/4,7.3,1012,,125,K,90,310,3095,9820
+12,1-1/2,11.4,1422,,216,K,140,580,4670,"12,000"
+Soft Seal / PEEK/PTFE Bearing (Reverse Flow)(2),1-1/2,,,,,,,,,
+Soft Seal / PEEK/PTFE Bearing (Reverse Flow)(2),1-1/2,,,10,60,75,,80(1),,
+2(3),1/2,0.3,100,,,,,,345,515
+3,1/2,0.50,136,1.2,6.7,K,14,14.7,280,515
+4,5/8,0.91,217,1.8,19,K,33,33,476,1225
+6,3/4,1.97,403,7.7,52,K,106,106,965,2120
+8,1,4.2,665,12,113,K,212,213,1860,4140
+10,1-1/4,7.3,1012,25,216,K,406,409,3095,9820
+12,1-1/2,11.4,1422,35,360,K,687,695,4670,"12,000"
+Metal Seal / PEEK/PTFE Bearing (Forward Flow)(2)(3),1-1/2,,,,,,,,,
+Metal Seal / PEEK/PTFE Bearing (Forward Flow)(2)(3),1-1/2,,,10,60,75,,90,,
+2,1/2,0.23,297,,0.64,θ,1.6,2.4,467,515
+Metal Seal / Metal Bearing (Forward Flow)(2)(3),1/2,,,,,,,,,
+Metal Seal / Metal Bearing (Forward Flow)(2)(3),1/2,,,10,60,75,,90,,
+2,1/2,0.77,297,,0.64,θ,1.6,2.4,515,515

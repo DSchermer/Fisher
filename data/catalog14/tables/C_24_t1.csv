@@ -1,0 +1,14 @@
+Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,col1,col2,col3
+,,Size 70,
+,,40 Psig,55 Psig
+,,3.3 Psig,10.1 Psig
+,,1R676027082,1R676017082
+14,0,177,285
+,60,6,12
+,90,1,5
+16,0,,200
+,60,,7
+,90,,2
+18,0,,74
+,60,,4
+,90,,1

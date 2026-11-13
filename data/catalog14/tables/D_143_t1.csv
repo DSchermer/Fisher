@@ -1,0 +1,4 @@
+col0,col1,col2,col3,col4,col5
+SIZ,,E 30,SIZE,60,
+SIZ,SIZ,E 30,,,
+SIZ,SIZ,,,,SIZE 68

@@ -1,0 +1,25 @@
+col0,col1,col2,col3,col4,col5,col6
+Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,,,,,
+Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,,Size 70,,,
+Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,,0-33 Psig,0-40 Psig,0-55 Psig,3-30 Psig
+Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,,10.1 Psig,10.1 Psig,10.1 Psig,10.1 Psig
+Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,,90 Maximum Rotation,,,
+Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,,1R676027082,1R676027082,1R676027082,1R676027082
+3,1 x,0,,,,
+,3/4(2),60,,,,
+,,90,,,,
+3,1,0,,,,
+,,60,,,,
+,,90,,,,
+4,1-1/4,0,600,600,600,600
+,,60,600,600,600,600
+,,90,553,600,600,215
+6,1-1/2 x,0,300,300,300,300
+,1-1/4(2),60,300,300,300,263
+,,90,64,156,282,25
+6,1-1/2,0,300,300,300,300
+,,60,300,300,300,263
+,,90,64,156,300,25
+8,1-1/2,0,220,220,220,220
+,,60,158,220,220,116
+,,90,70,169,220,27

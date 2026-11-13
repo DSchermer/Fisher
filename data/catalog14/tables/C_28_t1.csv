@@ -1,0 +1,29 @@
+Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,col1,col2,col3,col4,col5,col6,col7,col8,col9,col10,col11,col12,col13,col14,col15,col16,col17,col18,col19,col20,col21,col22
+Push-Down-To-Open or Push-Down-To-Close (90 Maximum Rotation),,,,,,,,,,,,,,,,,,,,,,
+"Valve Body Size, NPS",Angle of Opening,,Actuator Size and Cylinder Pressure(2),,,,,,,,,,,,,,,,,,,
+"Valve Body Size, NPS",Angle of Opening,,Size 30,,,,,Size 40,,,,,,,Size 60,,,,,Size 68,,
+"Valve Body Size, NPS",Angle of Opening,,60 Psig,,80 Psig,,100 Psig,60 Psig,,80 Psig,,100 Psig,120 Psig,,60 Psig,,80 Psig,100 Psig,,60 Psig,,80 Psig
+14,0,,,,,,,,,,,,,,,,127,258,,232,,285
+,60,,,,,,,,,,,,,,,,14,17,,17,,18
+,90,,,,,,,,,,,,,,,,5,6,,6,,8
+16,0,,,,,,,,,,,,,,,,10,102,,84,,232
+,60,,,,,,,,,,,,,,,,8,10,,10,,12
+,90,,,,,,,,,,,,,,,,3,4,,3,,5
+18,0,,,,,,,,,,,,,,,,,8,,,,96
+,60,,,,,,,,,,,,,,,,,6,,,,8
+,90,,,,,,,,,,,,,,,,,2,,,,3
+20,0,,,,,,,,,,,,,,,,,,,,,19
+,60,,,,,,,,,,,,,,,,,,,,,5
+,90,,,,,,,,,,,,,,,,,,,,,2
+"Valve Body Size, NPS",90,Angle of Opening,,Actuator Size and Cylinder Pressure(2),,,,,,,,,,,,,,,,,,
+"Valve Body Size, NPS",90,,,Size 80,,,,,,,,,,Size 100,,,,,,,,
+"Valve Body Size, NPS",90,,,60 Psig,,80 Psig,,,100 Psig,,120 Psig,,,60 Psig,,80 Psig,,,100 Psig,,120 Psig,
+18,90,0,,259,,285,,,285,,285,,,285,,285,,,285,,285,
+,,60,,11,,11,,,11,,11,,,11,,11,,,11,,11,
+,,90,,4,,6,,,6,,6,,,6,,6,,,6,,6,
+20,90,0,,136,,270,,,285,,285,,,285,,285,,,285,,285,
+,,60,,8,,10,,,11,,11,,,11,,11,,,11,,11,
+,,90,,3,,4,,,5,,5,,,4,,5,,,5,,5,
+24,90,0,,,,69,,,139,,208,,,104,,208,,,285,,285,
+,,60,,,,5,,,6,,7,,,5,,7,,,9,,11,
+,,90,,,,2,,,2,,3,,,2,,3,,,3,,4,

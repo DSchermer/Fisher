@@ -1,0 +1,14 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Valve Size, NPS 3",Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Angle of Opening 0,"Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig bar 10","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 2 barg / 29 Psig psi 150","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig bar 53","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 1 4 barg / 58 Psig psi 762","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig bar 99","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 2 barg / 29 Psig psi 1435","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig bar 99","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 2 4 barg / 58 Psig psi 1435","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 2 barg / 29 Psig psi - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig bar - - -","Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow Push-Down-To-Open Actuator Size, Air-to-Diaphragm, Maximum Rotation Size 3 4 barg / 58 Psig psi - - -"
+,80,3.4,49,6.8,98,9.1,132,9.1,132,,,,
+4,0,,,14,202,57,830,103,1495,103,1495,103,1495
+4,80,,,5.1,74,10,152,21,304,24,349,24,349
+6,0,,,,,9.2,133,40,578,74,1071,103,1500
+6,80,,,,,1.7,25,3.5,51,4.7,68,9.8,142
+8,0,,,,,,,8.5,123,23,328,60,863
+8,80,,,,,,,1.6,24,2.2,32,4.6,66
+10,0,,,,,,,,,7.5,109,28,402
+10,80,,,,,,,,,1.0,14,2.0,29
+12,0,,,,,,,,,,,12,168
+12,80,,,,,,,,,,,1.4,20
+14,0,,,,,,,,,,,6.6,95
+14,80,,,,,,,,,,,1.1,16

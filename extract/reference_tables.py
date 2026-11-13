@@ -43,6 +43,9 @@ def expand(raw: list[list[str | None]]) -> list[list[str]]:
         multi = [p for p in parts if len(p) > 1]
         if k > 1 and (len(stacked_numbers) >= 2 or (stacked_numbers and all(len(p) == k for p in multi))):
             # Align stacked values line by line; a single-line cell belongs to the first line.
+            # Numbers stacked in a cell are aligned line by line; a shorter text cell is a wrapped
+            # label and stays whole on the first line.
+            parts = [p if len(p) == k or p in stacked_numbers else ([" ".join(p)] if p else p) for p in parts]
             for j in range(k):
                 out.append([p[j] if j < len(p) else "" for p in parts] + ["__stacked__" if j else ""])
         else:

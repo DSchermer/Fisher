@@ -1,0 +1,6 @@
+Safety Factors Service Factor (frequency of operation),Safety Factors SF
+Process On-Off Valves,1.3
+Emergency Shutdown Valves (ESD),1.5
+ESD Long Stand Still application (operated once in 6 months or longer duration),2
+"Clean, particle free, non viscous liquids",1
+"Dry gas, steam",1.2

@@ -1,0 +1,5 @@
+Calculation Procedures,col1
+1.,Calculate breakout torque.
+2.,Determine dynamic torque at every 10 degrees of rotation.
+3.,Be sure the actuator capability exceeds the required valve torque.
+4.,Be sure the breakout and/or dynamic torques are less than the shaft spline limit.

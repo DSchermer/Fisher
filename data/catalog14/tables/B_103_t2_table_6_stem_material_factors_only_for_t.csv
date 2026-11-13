@@ -1,0 +1,24 @@
+"REFERENCE LOADS TO OBTAIN STEM LOAD, MULTIPLY REFERENCE LOAD AT RIGHT BY MATERIAL FACTOR BELOW Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Stem Material","REFERENCE LOADS TO OBTAIN STEM LOAD, MULTIPLY REFERENCE LOAD AT RIGHT BY MATERIAL FACTOR BELOW Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature to 38C(1) to 100F(1)",REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 93C 200F,REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 149C 300F,REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 204C 400F,REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 260C 500F,REFERENCE LOADS 5/16 Inch Stem: 3.914 kN (880 Lb) 3/8 Inch Stem: 5.604 kN (1260 Lb) 1/2 Inch Stem: 10.008 kN (2250 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 316C 600F,REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 371C 700F,REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 427C 800F,REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 482C 900F,REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 537C 1000F,REFERENCE LOADS 3/4 Inch Stem: 22.508 kN (5060 Lb) 1 Inch Stem: 39.989 kN (8990 Lb) 1-1/4 Inch Stem: 62.497 kN (14050 Lb) Stem Material Factors Based on Annealed 316 L/D Ratio of 10 to 1 Temperature 593C 1100F
+316 stainless steel annealed,0.811,0.700,0.634,0.583,0.545,0.515,0.494,0.480,0.472,0.463,
+(ASME SA479-316),0.679,0.575,0.516,0.470,0.435,0.411,0.391,0.375,0.359,0.340,
+316L stainless steel annealed,2.245,2.089,2.005,1.925,1.882,1.834,1.808(3),,,,
+(ASME SA479-316L),1.856,1.801,1.769,1.766,1.764,1.761,1.757,1.753,1.749,1.726,
+17-4PH stainless steel H1150,2.222,2.145,2.088,2.048,2.046,2.043,2.020,2.010,,,
+(ASME SA564 630)(2),3.488,3.393,3.327,3.262,3.218,3.177,3.141,3.108,3.089,3.069,3.006
+S66286 stainless steel,2.257,2.024,1.929,1.833,1.763,1.694,1.630,1.568,1.515,1.461,1.401
+(ASTM SA638-660 Type B),1.859,1.836,1.815,1.793,1.75,1.727,1.679,1.589,1.524,1.278,1.107
+N05500,,,,,,,,,,,
+(N05500 HT 27-35 RC),,,,,,,,,,,
+N07718 (ASTM A637),,,,,,,,,,,
+S20910,,,,,,,,,,,
+(ASME SA479 Grade XM-19),,,,,,,,,,,
+S42200,,,,,,,,,,,
+(ASTM A565 GR 616 Condition H),,,,,,,,,,,
+N10665,1.230,1.144,1.084,1.034,0.990,0.958,0.934,0.910,,,
+(ASME SB335),1.226,1.151,1.150,1.034,0.992,0.947,0.933,0.932,,,
+N10276,0.913,0.891,0.868,0.846,0.801,0.796,0.778,0.778,0.777,0.732,
+(ASME SB574),1.964,1.845,1.705,1.643,1.600,1.578,1.567,1.557,,,
+N06625,,,,,,,,,,,
+(ASME SB446),,,,,,,,,,,
+Titanium Grade 5 R56400,,,,,,,,,,,
+(ASTM B348),,,,,,,,,,,

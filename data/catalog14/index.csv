@@ -1,0 +1,696 @@
+id,page,printed_label,section,heading,title,rows,columns,rows_confirmed
+A_2_t1,2,A-2,A,,,2,3,2
+A_3_t1,3,A-3,A,585C | Size 60 - 130 | Unbalanced Valve Bodies - Class IV Leakage | 1 to 4.375 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,33,7,23
+A_4_t1,4,A-4,A,,,25,7,16
+A_5_t1,5,A-5,A,585C | Size 60 - 130 | Balanced Valve Bodies | 2.875 to 5.375 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,37,7,22
+A_6_t1,6,A-6,A,585C | Size 60 - 130 | Balanced Valve Bodies | 5.375 to 8 Inch Ports,,32,7,24
+A_7_t1,7,A-7,A,657 | Unbalanced Valve Bodies | Class IV Leakage | 1.25 to 1.5 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,20,9,2
+A_8_t1,8,A-8,A,657 | Unbalanced Valve Bodies | Class IV Leakage | 0.75 to 1.25 Inch Ports,,22,9,2
+A_9_t1,9,A-9,A,657 | Unbalanced Valve Bodies | Class IV Leakage | 1.3125 to 1.875 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,22,9,2
+A_10_t1,10,A-10,A,657 | Unbalanced Valve Bodies | Class IV Leakage | 2 to 2.875 Inch Ports,,23,9,5
+A_11_t1,11,A-11,A,657 | Unbalanced Valve Bodies | Class IV Leakage | 3 to 4 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,21,9,5
+A_12_t1,12,A-12,A,657 | Unbalanced Valve Bodies | Class IV Leakage | 4.375 to 8 Inch Ports,,30,9,4
+A_13_t1,13,A-13,A,657 | Balanced Valve Bodies | 1.3125 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,18,9,2
+A_14_t1,14,A-14,A,657 | Balanced Valve Bodies | 1.875 Inch Ports,,19,9,3
+A_15_t1,15,A-15,A,657 | Balanced Valve Bodies | 2.3125 to 2.875 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,25,9,7
+A_16_t1,16,A-16,A,657 | Balanced Valve Bodies | 3.4375 Inch Ports,,16,9,4
+A_17_t1,17,A-17,A,657 | Balanced Valve Bodies | 4.375 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,21,9,3
+A_18_t1,18,A-18,A,657 | Balanced Valve Bodies | 5.375 Inch Ports,,28,9,5
+A_19_t1,19,A-19,A,657 | Balanced Valve Bodies | 7 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,19,9,4
+A_20_t1,20,A-20,A,657 | Balanced Valve Bodies | 8 Inch Ports,,29,9,4
+A_21_t1,21,A-21,A,667 | Unbalanced Valve Bodies | Class IV Leakage | 0.25 to 0.5 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,20,9,2
+A_22_t1,22,A-22,A,667 | Unbalanced Valve Bodies | Class IV Leakage | 0.75 to 1.25 Inch Ports,,22,9,2
+A_23_t1,23,A-23,A,667 | Unbalanced Valve Bodies | Class IV Leakage | 1.3125 to 1.5 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,15,9,1
+A_24_t1,24,A-24,A,667 | Unbalanced Valve Bodies | Class IV Leakage | 1.875 to 2.5 Inch Ports,,24,9,4
+A_25_t1,25,A-25,A,667 | Unbalanced Valve Bodies | Class IV Leakage | 2.875 to 4 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,25,9,9
+A_26_t1,26,A-26,A,667 | Unbalanced Valve Bodies | Class IV Leakage | 4.375 to 8 Inch Ports,,25,9,6
+A_27_t1,27,A-27,A,667 | Balanced Valve Bodies | 1.3125 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,18,9,2
+A_28_t1,28,A-28,A,667 | Balanced Valve Bodies | 1.875 Inch Ports,,19,9,3
+A_29_t1,29,A-29,A,667 | Balanced Valve Bodies | 2.3125 to 2.875 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,26,9,8
+A_30_t1,30,A-30,A,667 | Balanced Valve Bodies | 3.4375 Inch Ports,,17,9,6
+A_31_t1,31,A-31,A,667 | Balanced Valve Bodies | 4.375 Inch Ports | Maximum Allowable Pressure Drops (ΔP),,21,9,3
+A_32_t1,32,A-32,A,667 | Balanced Valve Bodies | 5.375 Inch Ports,,25,9,6
+A_33_t1,33,A-33,A,667 | Balanced Valve Bodies | 7 Inch Ports | Maximum Allowable Pressure Drops (P),,19,9,6
+A_34_t1,34,A-34,A,667 | Balanced Valve Bodies | 8 Inch Ports,,26,9,3
+B_2_t1_table_1_balanced_and_unbalanced_valves,36,B-2,B,"Force Method | A. Force to Overcome Static | Figure 1. Pressure-Tends-To-Open | Unbalance | (1) Use table 1 to determine if the valve construction is | balanced or unbalanced. (The trim parts in a balanced | design minimize the net fluid flow forces creating | static unbalance, making possible the selection of a | smaller actuator.) | Table 1. Balanced and Unbalanced Valves",Table 1. Balanced and Unbalanced Valves,1,2,1
+B_4_t1,38,B-4,B,Force Method,,24,4,19
+B_5_t1_table_2_port_data_for_single_port_valves,39,B-5,B,Force Method | Table 2. Port Data for Single-Port Valves (See Separate Tables for Fisher EH and HP Valves; | See Bulletin 51.1:FB for Fisher FB Valves) (continued),Table 2. Port Data for Single-Port Valves (See Separate Tables for Fisher EH and HP Valves;,26,4,20
+B_5_t2,39,B-5,B,Force Method | Table 2. Port Data for Single-Port Valves (See Separate Tables for Fisher EH and HP Valves; | See Bulletin 51.1:FB for Fisher FB Valves) (continued),,6,7,6
+B_5_t3,39,B-5,B,Force Method | Table 2. Port Data for Single-Port Valves (See Separate Tables for Fisher EH and HP Valves; | See Bulletin 51.1:FB for Fisher FB Valves) (continued),,6,10,6
+B_6_t1,40,B-6,B,,,33,4,27
+B_7_t1,41,B-7,B,Force Method | Table 2D. Port Data for Fisher ET and EWT Valves with Cavitrol III One-Stage Trim,,22,8,8
+B_7_1_t1,42,B-7.1,B,Force Method,,27,8,14
+B_7_1_t2,42,B-7.1,B,Force Method,,11,8,5
+B_8_t1,43,B-8,B,"Force Method | Table 2G. Port Data for Fisher EHT, HPT Valves with Protected Inside Seat with Cavitrol III 2-Stage and 3-Stage Trim",,13,11,0
+B_8_t2,43,B-8,B,"Force Method | Table 2G. Port Data for Fisher EHT, HPT Valves with Protected Inside Seat with Cavitrol III 2-Stage and 3-Stage Trim",,17,12,17
+B_9_t1,45,B-9,B,Force Method | Table 2H. Port Data for Fisher NotchFlo™ DST Valves,,18,8,18
+B_11_t1_table_3_valve_stem_area_than_recommended,47,B-11,B,Force Method | Table 3. Valve Stem Area | than recommended seat load. See table 4 for,Table 3. Valve Stem Area than recommended seat load. See table 4 for,9,4,9
+B_12_t1,48,B-12,B,,,45,7,45
+B_13_t1_table_4_leak_class_and_seat_loads_contin,49,B-13,B,Force Method | Table 4. Leak Class and Seat Loads (continued),Table 4. Leak Class and Seat Loads (continued),25,7,23
+B_14_t1,50,B-14,B,Force Method,,13,12,13
+B_16_t1,52,B-16,B,,,27,7,18
+B_17_t1,53,B-17,B,"Force Method | When sizing actuators for valves that use ENVIRO-SEAL | Table 6B. Packing Friction with HIGH-SEAL Graphite | or HIGH-SEAL packing, use the packing friction from | ULF Packing(1)",,14,3,14
+B_17_t2,53,B-17,B,"Force Method | When sizing actuators for valves that use ENVIRO-SEAL | Table 6B. Packing Friction with HIGH-SEAL Graphite | or HIGH-SEAL packing, use the packing friction from | ULF Packing(1)",,16,5,16
+B_17_t3,53,B-17,B,"Force Method | When sizing actuators for valves that use ENVIRO-SEAL | Table 6B. Packing Friction with HIGH-SEAL Graphite | or HIGH-SEAL packing, use the packing friction from | ULF Packing(1)",,12,3,12
+B_18_t1,54,B-18,B,,,15,7,5
+B_21_t1,59,B-21,B,"585C | Actuator Sizing (Sizes 25 and 50 Spring-Biased Construction) | Force Method | Fisher 585C Actuator Spring Force, Pounds(1)",,13,6,11
+B_24_t1_table_8_fisher_585c_piston_actuator_forc,62,B-24,B,"585C | Actuator Sizing (Springless Construction) | Force Method | Double-Acting Piston Actuators— | Fisher 585C | Note | Actuator force must not exceed the maximum allowable | Use the following procedure to select and size a 585C | valve stem load. Refer to the Stem Load Calculation section | springless construction piston actuator. This | for additional information and procedures. | procedure uses equations and forces designated by | letters (A, B, C, and D). The equation and forces are | described in the Basic Valve Body Requirements | procedure at the beginning of this section (page B-1) | 4. If the actuator originally selected is too small, go to | of the catalog. | the next larger actuator with the same size yoke boss. | 5. In step 3, figure 5 was used to find the approximate | 1. Knowing the valve stem connection size, select the | force available. To determine the exact force available | for any size 585C piston actuator, multiply the | proper yoke boss size from table 10. | appropriate force available shown in table 8 by the | following factor: | 2. Match the valve body yoke boss size to the smallest | actuator with the same yoke boss size (see table 10). | Actual | Supply | (or | Operating) | Pressure, | Bar(Psig) | 3. On the graph in figure 5, find the force on the | 6.9 | bar(100 | Psig) | horizontal axis equal to the valve body force required. | Any size actuator whose curve passes beyond the force | required may be used. The necessary air supply | 6. When ordering, specify the desired actuator action | pressure may be read on the vertical axis. | and piston motion from table 9. | Table 8. Fisher 585C Piston Actuator Forces Available",Table 8. Fisher 585C Piston Actuator Forces Available,7,7,7
+B_25_t2_table_10_fisher_585c_piston_area_actuato,63,B-25,B,585C | Actuator Sizing (Springless Construction) | Force Method | Figure 5. Fisher 585C Piston Actuator Force when used with 3600 Series Positioner or DVC6000 Digital Valve | Controller | S | IZ | E | SIZE 25 | SIZE 50 | SIZE 60 | SIZE 100 | 1 | 68 | & | 80,"Table 10. Fisher 585C Piston Area, Actuator Travels, Yoke Boss Diameters, and Valve Stem Diameters",18,9,4
+B_26_t1,64,B-26,B,"685 | Actuator Sizing | Force Method | Double-Acting Piston Actuators— | required may be used. The necessary air supply | pressure may be read on the vertical axis. | Fisher 685 | 4. If the actuator originally selected is too small, go to | Use the following procedure to select and size a 685 | the next larger actuator with the same size yoke boss. | piston actuator. This procedure uses equations and | forces designated by letters (A, B, C, and D). The | 5. In step 3, figure A was used to find the approximate | equation and forces are described in the Basic Valve | force available. To determine the exact force available | Body Requirements procedure at the beginning of this | section (page B-1) of the catalog. | for any size 685 piston actuator, multiply the | appropriate force available shown in table A by the | following factor: | 1. Knowing the valve stem connection size, select the | proper yoke boss size from table C. | 2. Match the valve body yoke boss size to the smallest | Actual | Supply | (or | Operating) | Pressure, | Bar(Psig) | actuator with the same yoke boss size (see table C). | 6.9 | bar(100 | Psig) | 3. On the graph in figure A, find the force on the | horizontal axis equal to the valve body force required. | 6. When ordering, specify the desired actuator action | Any size actuator whose curve passes beyond the force | and piston motion from table B. | Table A. Fisher 685 Piston Actuator Forces Available",,16,8,15
+B_27_t1,65,B-27,B,685 | Actuator Sizing (Springless Construction) | Force Method | Figure A. Fisher 685 Piston Actuator Force when used with DVC6200 Digital Valve Controller,,18,16,14
+B_27_t2,65,B-27,B,685 | Actuator Sizing (Springless Construction) | Force Method | Figure A. Fisher 685 Piston Actuator Force when used with DVC6200 Digital Valve Controller,,14,12,11
+B_27_t3,65,B-27,B,685 | Actuator Sizing (Springless Construction) | Force Method | Figure A. Fisher 685 Piston Actuator Force when used with DVC6200 Digital Valve Controller,,16,11,0
+B_27_5_t1,70,B-27.5,B,685SE and 685SR | Actuator Sizing | Force Method,,32,11,0
+B_27_6_t1_table_3_fisher_685se_and_685sr_spring_ra,71,B-27.6,B,685SE and 685SR | Actuator Sizing | Force Method | Table 3. Fisher 685SE and 685SR Spring Rates and Preloads,Table 3. Fisher 685SE and 685SR Spring Rates and Preloads,20,6,0
+B_27_7_t1,72,B-27.7,B,,,11,3,11
+B_27_7_t2_table_4_average_valve_plug_weight_w_tabl,72,B-27.7,B,,Table 4. Average Valve Plug Weight (W) Table 5. 685SE and 685SR Actuator Manual Override,20,4,20
+B_27_8_t1_table_1_785c_double_acting_springless_pi,73,B-27.8,B,785C | Actuator Sizing | Force Method | Table 1. 785C Double Acting Springless Piston Actuator Forces Available,Table 1. 785C Double Acting Springless Piston Actuator Forces Available,9,7,9
+B_27_8_t2_table_2_785c_double_acting_springless_pi,73,B-27.8,B,785C | Actuator Sizing | Force Method | Table 1. 785C Double Acting Springless Piston Actuator Forces Available,"Table 2. 785C Double Acting Springless Piston Area, Valve Travels, Yoke Boss Diameters, and Valve Stem Diameters",25,11,0
+B_27_9_t1,74,B-27.9,B,785C | Actuator Sizing | Force Method,,22,15,0
+B_27_10_t1_table_4_785c_single_acting_spring_return,75,B-27.10,B,785C | Actuator Sizing | Force Method | Table 4. 785C Single Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,Table 4. 785C Single Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,32,5,2
+B_27_10_t2_table_4_785c_single_acting_spring_return,75,B-27.10,B,785C | Actuator Sizing | Force Method | Table 4. 785C Single Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,Table 4. 785C Single Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,30,5,0
+B_27_11_t1_table_5_785c_single_acting_spring_return,76,B-27.11,B,785C | Actuator Sizing | Force Method | Table 5. 785C Single Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,Table 5. 785C Single Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,26,5,8
+B_27_11_t2_table_5_785c_single_acting_spring_return,76,B-27.11,B,785C | Actuator Sizing | Force Method | Table 5. 785C Single Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,Table 5. 785C Single Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,26,5,3
+B_27_12_t1_table_6_785c_double_acting_spring_return,77,B-27.12,B,785C | Actuator Sizing | Force Method | Table 6. 785C Double-Acting Spring Return Standard Constructions,Table 6. 785C Double-Acting Spring Return Standard Constructions,25,15,0
+B_27_13_t1_table_7_785c_double_acting_spring_return,78,B-27.13,B,785C | Actuator Sizing | Force Method | Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,50,5,8
+B_27_13_t2_table_7_785c_double_acting_spring_return,78,B-27.13,B,785C | Actuator Sizing | Force Method | Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates,48,5,8
+B_27_14_t1_table_7_785c_double_acting_spring_return,79,B-27.14,B,785C | Actuator Sizing | Force Method | Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates (continued),Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates (continued),10,5,2
+B_27_14_t2_table_7_785c_double_acting_spring_return,79,B-27.14,B,785C | Actuator Sizing | Force Method | Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates (continued),Table 7. 785C Double Acting Spring Return Piston Actuator — Rod Retracts Preloads and Spring Rates (continued),9,5,6
+B_27_15_t1_table_8_785c_double_acting_spring_return,80,B-27.15,B,785C | Actuator Sizing | Force Method | Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,47,5,9
+B_27_15_t2_table_8_785c_double_acting_spring_return,80,B-27.15,B,785C | Actuator Sizing | Force Method | Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates,41,5,3
+B_27_16_t1_table_8_785c_double_acting_spring_return,81,B-27.16,B,785C | Actuator Sizing | Force Method | Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates (continued),Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates (continued),23,5,1
+B_27_16_t2_table_8_785c_double_acting_spring_return,81,B-27.16,B,785C | Actuator Sizing | Force Method | Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates (continued),Table 8. 785C Double Acting Spring Return Piston Actuator — Rod Extends Preloads and Spring Rates (continued),14,5,12
+B_27_17_t1_table_9_785c_springless_and_spring_retur,82,B-27.17,B,785C | Actuator Sizing | Force Method | Table 9. 785C Springless and Spring Return | Table 10. 785C Springless and Spring Return Piston | Piston Actuator Manual Override Thrust Limit | Actuator Handpump Stroke Speed Limit,Table 9. 785C Springless and Spring Return Table 10. 785C Springless and Spring Return Piston,9,3,9
+B_27_17_t2_table_9_785c_springless_and_spring_retur,82,B-27.17,B,785C | Actuator Sizing | Force Method | Table 9. 785C Springless and Spring Return | Table 10. 785C Springless and Spring Return Piston | Piston Actuator Manual Override Thrust Limit | Actuator Handpump Stroke Speed Limit,Table 9. 785C Springless and Spring Return Table 10. 785C Springless and Spring Return Piston,6,4,0
+B_28_t1_table_12_spring_and_diaphragm_actuator,83,B-28,B,Actuator Sizing | For Spring-and-Diaphragm Actuators | Spring-and Diaphragm | packing | friction | effective | diaphragm | area | Actuators | Use the following procedure to select a | Table 12. Spring-and-Diaphragm Actuator | spring-and-diaphragm actuator. | Recommendations for Desired Fail Action,Table 12. Spring-and-Diaphragm Actuator,2,3,2
+B_28_t2_table_13_spring_and_diaphragm_actuator_v,83,B-28,B,Actuator Sizing | For Spring-and-Diaphragm Actuators | Spring-and Diaphragm | packing | friction | effective | diaphragm | area | Actuators | Use the following procedure to select a | Table 12. Spring-and-Diaphragm Actuator | spring-and-diaphragm actuator. | Recommendations for Desired Fail Action,Table 13. Spring-and-Diaphragm Actuator Valve,16,5,3
+B_28_t3_table_14_fisher_657_657r_and_667_size_80,83,B-28,B,Actuator Sizing | For Spring-and-Diaphragm Actuators | Spring-and Diaphragm | packing | friction | effective | diaphragm | area | Actuators | Use the following procedure to select a | Table 12. Spring-and-Diaphragm Actuator | spring-and-diaphragm actuator. | Recommendations for Desired Fail Action,"Table 14. Fisher 657, 657R, and 667 Size 80",6,2,6
+B_31_t1,87,B-31,B,"657 | Size 30, 30i (2-1/8 Inch Yoke Boss) | Available Actuator Force",,43,8,42
+B_32_t1,88,B-32,B,,,45,8,44
+B_33_t1,89,B-33,B,"657 | Size 40, 40i (2-13/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal | Available Actuator Force",,27,11,27
+B_34_t1,90,B-34,B,"657 | Size 40, 40i (2-13/16 Inch Yoke Boss) | 6-30 psig to Diaphragm",,29,11,29
+B_35_t1,91,B-35,B,"657 | Size 45, 45i (2-13/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal | Available Actuator Force",,37,12,37
+B_36_t1,92,B-36,B,,,37,12,37
+B_37_t1,93,B-37,B,"657 | Size 46, 46i (2-13/16 Inch Yoke Boss | 3-15 psig Nominal(1) Signal | Available Actuator Force",,37,12,37
+B_38_t1,94,B-38,B,,,33,12,33
+B_39_t1,95,B-39,B,"657 | Size 50, 50i (3-9/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal | Available Actuator Force",,37,12,37
+B_40_t1,96,B-40,B,"657 | Size 50, 50i (3-9/16 Inch Yoke Boss) | 6-30 psig to Diaphragm",,37,12,37
+B_41_t1,97,B-41,B,"657 | Size 60, 60i (3-9/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal | Available Actuator Force",,37,12,37
+B_42_t1,98,B-42,B,"657 | Size 60, 60i (3-9/16 Inch Yoke Boss) | 6-30 psig to Diaphragm",,33,12,33
+B_43_t1,99,B-43,B,"657 | Size 70, 70i (3-9/16 Inch Yoke Boss) | Available Actuator Force",,33,15,33
+B_44_t1,100,B-44,B,657 | Size 80 (5 Inch Yoke Boss),,22,7,22
+B_45_t1,101,B-45,B,657 | Size 87 (5 Inch Yoke Boss),,30,14,30
+B_46_t1,102,B-46,B,657 | Size 100 (5 and 7 Inch Yoke Boss),,36,8,36
+B_46_1_t1,103,B-46.1,B,657C | Size 40i (2-13/16 Inch Yoke Boss),,9,11,9
+B_46_2_t1,104,B-46.2,B,,,9,13,9
+B_46_3_t1,105,B-46.3,B,657C | Size 60i (3-9/16 Inch Yoke Boss),,10,4,10
+B_47_t1,107,B-47,B,657R | Size 30 (2-1/8 Inch Yoke Boss) | Available Actuator Force,,34,8,34
+B_48_t1,108,B-48,B,657R | Size 34 (2-1/8 Inch Yoke Boss),,34,7,34
+B_49_t1,109,B-49,B,657R | Size 40 (2-13/16 Inch Yoke Boss) | Available Actuator Force,,40,10,40
+B_50_t1,110,B-50,B,657R | Size 45 (2-13/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal,,33,11,33
+B_51_t1,111,B-51,B,657R | Size 45 (2-13/16 Inch Yoke Boss) | 6-30 psig Nominal(1) Signal | Available Actuator Force,,29,11,29
+B_52_t1,112,B-52,B,657R | Size 46 (2-13/16 Inch Yoke Boss),,48,11,48
+B_53_t1,113,B-53,B,657R | Size 50 (3-9/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal | Available Actuator Force,,33,11,33
+B_54_t1,114,B-54,B,657R | Size 50 (3-9/16 Inch Yoke Boss) | 6-30 psig to Diaphragm(1),,29,11,29
+B_55_t1,115,B-55,B,657R | Size 60 (3-9/16 Inch Yoke Boss) | Available Actuator Force,,48,11,48
+B_56_t1,116,B-56,B,,,29,14,27
+B_57_t1,117,B-57,B,657R | Size 80 (5 Inch Yoke Boss) | Available Actuator Force,,18,7,18
+B_58_t1,118,B-58,B,657R | Size 87 (5 Inch Yoke Boss),,26,12,26
+B_59_t1,119,B-59,B,657R | Size 100 (5 and 7 Inch Yoke Boss) | Available Actuator Force,,30,8,30
+B_60_t1,120,B-60,B,667 | Size 30/30i (2-1/8 Inch Yoke Boss),,34,8,34
+B_61_t1,121,B-61,B,667 | Size 34/34i (2-1/8 Inch Yoke Boss) | Available Actuator Force,,40,8,40
+B_62_t1,122,B-62,B,667 | Size 40/40i (2-13/16 Inch Yoke Boss),,42,11,42
+B_63_t1,123,B-63,B,667 | Size 45/45i (2-13/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal | Available Actuator Force,,33,12,33
+B_64_t1,124,B-64,B,667 | Size 45/45i (2-13/16 Inch Yoke Boss) | 6-30 psig Nominal(1) Signal,,29,12,29
+B_65_t1,125,B-65,B,667 | Size 46/46i (2-13/16 Inch Yoke Boss) | Available Actuator Force,,48,12,48
+B_66_t1,126,B-66,B,667 | Size 50 (3-9/16 Inch Yoke Boss) | 3-15 psig Nominal(1) Signal,,33,12,33
+B_67_t1,127,B-67,B,667 | Size 50 (3-9/16 Inch Yoke Boss) | 6-30 psig Nominal(1) Signal | Available Actuator Force,,29,12,29
+B_68_t1,128,B-68,B,667 | Size 60 (3-9/16 Inch Yoke Boss),,48,12,48
+B_69_t1,129,B-69,B,"667, 667-4 | Size 70 (3-9/16 Inch Yoke Boss) | Available Actuator Force",,29,14,29
+B_70_t1,130,B-70,B,667 | Size 76 (3-9/16 Inch Yoke Boss) | Size 80 (5 Inch Yoke Boss),,16,8,16
+B_70_t2,130,B-70,B,667 | Size 76 (3-9/16 Inch Yoke Boss) | Size 80 (5 Inch Yoke Boss),,20,7,20
+B_71_t1,131,B-71,B,"667, 667-4 | Size 87 (5 Inch Yoke Boss) | Available Actuator Force",,29,14,29
+B_72_t1,132,B-72,B,667 | Size 100 (5 and 7 Inch Yoke Boss),,18,8,18
+B_73_t1,133,B-73,B,3025 | Size P460-200 (3-9/16 Yoke Boss) | Available Actuator Force,,9,4,3
+B_73_t2,133,B-73,B,3025 | Size P460-200 (3-9/16 Yoke Boss) | Available Actuator Force,,6,6,6
+B_74_t1,134,B-74,B,3025 | Size P460-200 (5 Inch and 5H Yoke Boss),,9,4,3
+B_74_t2,134,B-74,B,3025 | Size P460-200 (5 Inch and 5H Yoke Boss),,6,6,6
+B_75_t1,135,B-75,B,3025 | Size P462 | Available Actuator Force,,10,4,2
+B_75_t2,135,B-75,B,3025 | Size P462 | Available Actuator Force,,5,6,5
+B_75_t3,135,B-75,B,3025 | Size P462 | Available Actuator Force,,10,4,2
+B_75_t4,135,B-75,B,3025 | Size P462 | Available Actuator Force,,5,6,5
+B_76_t1,136,B-76,B,,,7,4,1
+B_76_t2,136,B-76,B,,,5,5,5
+B_84_t1,148,B-84,B,,,23,11,15
+B_85_t1_table_17_safe_spring_loads_for_diaphragm,149,B-85,B,Sample Calculations | 657 (Except Size 80) | The spring compression force is found by multiplying | Table 17. Safe Spring Loads for Diaphragm Actuator | the spring rate by the travel. | Springs,Table 17. Safe Spring Loads for Diaphragm Actuator,44,4,44
+B_86_t1_table_21_negative_gradients_for_fisher_c,150,B-86,B,"Sample Calculations | 657 (Except Size 80) | As the valve plug travels, the fluid force curve may have | Table 21. Negative Gradients for Fisher CL125 | a | negative | gradient | at | some | point. | If | this | through CL600 ED, EAD, ET, EAT, EWD and EWT(4)",Table 21. Negative Gradients for Fisher CL125,11,7,11
+B_86_t2_table_22_negative_gradient_for_fisher,150,B-86,B,"Sample Calculations | 657 (Except Size 80) | As the valve plug travels, the fluid force curve may have | Table 21. Negative Gradients for Fisher CL125 | a | negative | gradient | at | some | point. | If | this | through CL600 ED, EAD, ET, EAT, EWD and EWT(4)",Table 22. Negative Gradient for Fisher,3,2,3
+B_86_t3_table_18_negative_gradients_for_fisher_w,150,B-86,B,"Sample Calculations | 657 (Except Size 80) | As the valve plug travels, the fluid force curve may have | Table 21. Negative Gradients for Fisher CL125 | a | negative | gradient | at | some | point. | If | this | through CL600 ED, EAD, ET, EAT, EWD and EWT(4)",Table 18. Negative Gradients for Fisher™ Whisper Trim,5,2,5
+B_86_t4_table_23_negative_gradient_for_fisher_ed,150,B-86,B,"Sample Calculations | 657 (Except Size 80) | As the valve plug travels, the fluid force curve may have | Table 21. Negative Gradients for Fisher CL125 | a | negative | gradient | at | some | point. | If | this | through CL600 ED, EAD, ET, EAT, EWD and EWT(4)",Table 23. Negative Gradient for Fisher ED-J and ET-J,3,6,3
+B_86_t6_table_20_negative_gradient_for_fisher_np,150,B-86,B,"Sample Calculations | 657 (Except Size 80) | As the valve plug travels, the fluid force curve may have | Table 21. Negative Gradients for Fisher CL125 | a | negative | gradient | at | some | point. | If | this | through CL600 ED, EAD, ET, EAT, EWD and EWT(4)",Table 20. Negative Gradient for Fisher NPS 12 and,14,2,14
+B_86_t7_table_20_negative_gradient_for_fisher_np,150,B-86,B,"Sample Calculations | 657 (Except Size 80) | As the valve plug travels, the fluid force curve may have | Table 21. Negative Gradients for Fisher CL125 | a | negative | gradient | at | some | point. | If | this | through CL600 ED, EAD, ET, EAT, EWD and EWT(4)",Table 20. Negative Gradient for Fisher NPS 12 and,2,5,2
+B_86_1_t1_table_25_negative_gradients_for_fisher_c,151,B-86.1,B,Sample Calculations | 657 (Except Size 80) | Table 25. Negative Gradients for Fisher CHPD/CHPT | Table 27. Negative Gradient for Fisher EHD and EHT,Table 25. Negative Gradients for Fisher CHPD/CHPT Table 27. Negative Gradient for Fisher EHD and EHT,1,6,1
+B_86_1_t2_table_25_negative_gradients_for_fisher_c,151,B-86.1,B,Sample Calculations | 657 (Except Size 80) | Table 25. Negative Gradients for Fisher CHPD/CHPT | Table 27. Negative Gradient for Fisher EHD and EHT,Table 25. Negative Gradients for Fisher CHPD/CHPT Table 27. Negative Gradient for Fisher EHD and EHT,46,9,45
+B_86_1_t3_table_26_negative_gradient_for_fisher_hp,151,B-86.1,B,Sample Calculations | 657 (Except Size 80) | Table 25. Negative Gradients for Fisher CHPD/CHPT | Table 27. Negative Gradient for Fisher EHD and EHT,"Table 26. Negative Gradient for Fisher HPD, HPT, 0.875 N/A N/A N/A N/A CF CF 3.5 N/A",37,7,37
+B_86_2_t1,152,B-86.2,B,,,2,2,2
+B_86_2_t2_table_28_negative_gradients_for_fisher_n,152,B-86.2,B,,Table 28. Negative Gradients for Fisher Notchflo Table 31. Negative Gradients for Fisher CAV4,2,2,2
+B_86_2_t3_table_32_negative_gradients_for_fisher_3,152,B-86.2,B,,Table 32. Negative Gradients for Fisher 3-Way,1,6,1
+B_86_2_t4_table_29_negative_gradient_for_fisher_ds,152,B-86.2,B,,Table 29. Negative Gradient for Fisher DST,26,5,26
+B_86_2_t5_table_33_negative_gradients_for_fisher_t,152,B-86.2,B,,Table 33. Negative Gradients for Fisher TBX Flow Up,2,2,1
+B_86_2_t6_table_34_negative_gradients_for_fisher_c,152,B-86.2,B,,Table 34. Negative Gradients for Fisher CVX,2,2,1
+B_86_2_t7_table_35_negative_gradients_for_fisher_d,152,B-86.2,B,,Table 35. Negative Gradients for Fisher DFA,2,2,2
+B_100_t1,168,B-100,B,Stem Load Calculations,,32,6,2
+B_101_t1_table_2_maximum_allowable_stem_loads_for,169,B-101,B,"Stem Load Calculations | Table 2. Maximum Allowable Stem Loads for Fisher ET-C, EWT-C, and EZ-C with Standard Extension Bonnet Length | and S20910(XM-19) Stem Material, 38C (100F) or Lower Service Temperature","Table 2. Maximum Allowable Stem Loads for Fisher ET-C, EWT-C, and EZ-C with Standard Extension Bonnet Length",16,7,6
+B_102_t1,170,B-102,B,Stem Load Calculations,,15,9,14
+B_102_t2_table_4_stem_material_factors_only_for_t,170,B-102,B,Stem Load Calculations,Table 4. Stem Material Factors (Only for the Appropriate Valves Listed in Table 1 Having L/D Ratios,25,12,24
+B_103_t1_table_5_stem_loads_for_strain_hardened_3,171,B-103,B,Stem Load Calculations | Table 5. Stem Loads for Strain-Hardened 316 and 316L Stainless Steel (ASTM-276-B) Stems | (Only for the Appropriate Valves Listed in Table 1 Having L/D Ratios of Up to 15 to 1),Table 5. Stem Loads for Strain-Hardened 316 and 316L Stainless Steel (ASTM-276-B) Stems,13,9,12
+B_103_t2_table_6_stem_material_factors_only_for_t,171,B-103,B,Stem Load Calculations | Table 5. Stem Loads for Strain-Hardened 316 and 316L Stainless Steel (ASTM-276-B) Stems | (Only for the Appropriate Valves Listed in Table 1 Having L/D Ratios of Up to 15 to 1),Table 6. Stem Material Factors (Only for the Appropriate Valves Listed in Table 1 Having L/D Ratios,23,12,22
+B_104_t1,172,B-104,B,,,11,9,10
+B_104_t2_table_8_stem_material_factors_only_for_t,172,B-104,B,,Table 8. Stem Material Factors (Only for the Appropriate Valves Listed in Table 1 Having L/D Ratios of Up to 20 to 1,12,12,12
+B_105_t1_table_9_max_allowable_loads_for_fisher_h,173,B-105,B,Stem Load Calculations | Table 9. Max Allowable Loads for Fisher HPT-C and HPS-C with Std Bonnet Extension Length and S20910 Stem Mat'l,Table 9. Max Allowable Loads for Fisher HPT-C and HPS-C with Std Bonnet Extension Length and S20910 Stem Mat'l,18,7,7
+C_4_t1_table_1_constructions_covered_for_each_v,178,C-4,C,Pressure Drop Method | Table 1. Constructions Covered for Each Valve Type,Table 1. Constructions Covered for Each Valve Type,6,3,6
+C_5_t1_table_2_angles_of_rotation_for_required_,179,C-5,C,Pressure Drop Method | Table 2. Angles of Rotation for Required P | Calculation | eff,Table 2. Angles of Rotation for Required P,6,4,0
+C_5_t2_table_3_p,179,C-5,C,Pressure Drop Method | Table 2. Angles of Rotation for Required P | Calculation | eff,Table 3. P,9,5,4
+C_6_t1,180,C-6,C,,,9,11,9
+C_7_t1_table_5_fisher_v500_k_values_for_effecti,181,C-7,C,"Pressure Drop Method | Table 5. Fisher V500 K Values for Effective Pressure Drop, P | eff","Table 5. Fisher V500 K Values for Effective Pressure Drop, P",7,5,7
+C_9_t1,183,C-9,C,8510 with 1052 Actuator | PTFE Bushings and PTFE Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,9,7,0
+C_10_t1,184,C-10,C,,,33,5,10
+C_11_t1,185,C-11,C,8510 with 1052 Actuator | PTFE Bushings and Metal Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,23,5,9
+C_12_t1,186,C-12,C,"8510 with 1061 Actuator | PTFE Bushings and PTFE Seal | Size 30, 40, 60, and 68",,18,14,0
+C_13_t1,187,C-13,C,8510 with 1061 Actuator | PTFE Bushings and PTFE Seal | Size 80 and 100 | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,13,9,0
+C_14_t1,188,C-14,C,"8510 with 1061 Actuator | PTFE Bushings and Metal Seal | Size 30, 40,60, and 68",,15,14,0
+C_15_t1,189,C-15,C,8510 with 1061 Actuator | PTFE Bushings and Metal Seal | Size 80 and 100 | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,13,10,0
+C_16_t1,190,C-16,C,,,37,14,0
+C_17_t1,191,C-17,C,"8510B with 2052 Actuator | PTFE Seal, PTFE Bearings, Forward Flow, Push-Down-To-Close | Sizes 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,37,14,0
+C_18_t1,192,C-18,C,,,21,14,0
+C_19_t1,193,C-19,C,"8510B Valve with 2052 Actuator | Metal Seal, PTFE Bearings, Forward Flow,Push-Down-To-Close | Sizes 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,18,14,0
+C_20_t1,194,C-20,C,,,21,14,0
+C_21_t1,195,C-21,C,"8510B Valve with 2052 Actuator | Metal Seal, Metal Bearings, Forward Flow, Push-Down-To-Close | Sizes 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,18,14,0
+C_22_t1,196,C-22,C,"8532, CL150, S17400 (H1025) Shaft with 1052 Actuator | Novex Seal, Metal Bearings, Graphite Packing | Push-Down-To-Close",,16,4,5
+C_23_t1,197,C-23,C,"8532, CL150, S17400 (H1025) Shaft with 1052 Actuator | Novex Seal, Metal Bearings, Graphite Packing | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,10,5,4
+C_24_t1,198,C-24,C,"8532, CL150, S17400 (H1025) Shaft with 1052 Actuator | Phoenix III Seal, Metal Bearings, Graphite Packing | Push-Down-To-Close",,13,4,5
+C_25_t1,199,C-25,C,"8532, CL150, S17400 (H1025) Shaft with 1052 Actuator | Novex Seal, PEEK Bearings, PTFE V-Ring Packing | Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,16,4,4
+C_26_t1,200,C-26,C,"8532, CL150, S17400 (H1025) Shaft with 1052 Actuator | Novex Seal, PEEK Bearings, PTFE V-Ring Packing | Push-Down-To-Open",,13,5,4
+C_27_t1,201,C-27,C,"8532, CL150, S17400 (H1025) Shaft with 1061 Actuator | Novex Seal, Metal Bearings, Graphite Packing | Sizes 30, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,27,23,3
+C_28_t1,202,C-28,C,"8532 CL150, S17400 (H1025) Shaft with 1061 Actuator | Phoenix III Seal, Metal Bearings, Graphite Packing | Size 30, 40, 60, 68, 80, and 100",,28,23,5
+C_29_t1,203,C-29,C,"8532, CL150, S17400 (H1025) Shaft with 1061 Actuator | Novex Seal, PEEK Bearings, PTFE V-Ring Packing | Sizes 30, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (P)(1) for Forward Flow",,27,23,17
+C_31_t1,205,C-31,C,8580 with 1052 Actuator | PEEK/PTFE Bearings with PTFE Seal | Push-Down-To-Open and Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,5,12,0
+C_31_t2,205,C-31,C,8580 with 1052 Actuator | PEEK/PTFE Bearings with PTFE Seal | Push-Down-To-Open and Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,5,8,0
+C_32_t1,206,C-32,C,,,23,16,2
+C_33_t1,207,C-33,C,"8580, CL150 to CL300 with 2052 Actuator | Soft (PTFE) Seal, PEEK Bearing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,13,14,0
+C_34_t1,208,C-34,C,,,12,14,0
+C_35_t1,209,C-35,C,"8580, CL150 to CL300 with 2052 Actuator | Metal Seal, PEEK Bearing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,11,14,0
+C_36_t1,210,C-36,C,,,11,14,0
+C_37_t1,211,C-37,C,"8580, CL150 to CL300 with 2052 Actuator | Metal Seal, Metal Bearing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,11,14,0
+C_38_t1,212,C-38,C,,,14,14,0
+C_39_t1,213,C-39,C,9500 with 1061 Actuator | Push-Down-To-Open or Push-Down-To-Close | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,8,16,3
+C_40_t1,214,C-40,C,9500 with 1061 Actuator | Push-Down-To-Open or Push-Down-To-Close,,18,16,0
+C_41_t1,215,C-41,C,"A11, CL600 with 1052 Actuator | Soft (ETFE) Seal, PEEK Bearing, PTFE Packing (Trims 500 and 501) | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_42_t1,216,C-42,C,,,8,6,0
+C_43_t1,217,C-43,C,"A11, CL600 with 1052 Actuator | Metal Seal, PEEK Bearing, PTFE Packing (Trims 502 and 503) | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_44_t1,218,C-44,C,,,8,8,0
+C_45_t1,219,C-45,C,"A11, CL600 with 1052 Actuator | Metal Seal, Metal Bearings, PTFE Packing (Trims 505 and 506) | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_46_t1,220,C-46,C,,,8,8,0
+C_47_t1,221,C-47,C,"A11, CL600 with 1052 Actuator | Phoenix III Seal, PEEK Bearing, PTFE Packing (Trim 504) | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_48_t1,222,C-48,C,,,8,8,0
+C_49_t1,223,C-49,C,"A11, CL600 with 1052 Actuator | Phoenix III Seal, Metal Bearing, Graphite Packing | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_50_t1,224,C-50,C,,,8,8,0
+C_51_t1,225,C-51,C,"A11, CL600 with 1052 Actuator | High-Pressure Seal, PEEK Bearing, PTFE Packing | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_52_t1,226,C-52,C,,,8,8,0
+C_53_t1,227,C-53,C,"A11, CL600 with 1052 Actuator | High-Pressure Seal, Metal Bearing, Graphite Packing | Size 70 - Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,8,14,0
+C_54_t1,228,C-54,C,,,8,8,0
+C_55_t1,229,C-55,C,"A11, CL600 with 1061 Actuator | Soft (ETFE) Seal, PEEK Bearing, PTFE Packing (Trims 500 and 501) | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,22,0
+C_55_t2,229,C-55,C,"A11, CL600 with 1061 Actuator | Soft (ETFE) Seal, PEEK Bearing, PTFE Packing (Trims 500 and 501) | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,10,22,0
+C_56_t1,230,C-56,C,,,14,22,0
+C_56_t2,230,C-56,C,,,10,22,0
+C_57_t1,231,C-57,C,"A11, CL600 with 1061 Actuator | Metal Seal, Metal Bearing, Graphite Packing (Trims 505 and 506) | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,22,0
+C_57_t2,231,C-57,C,"A11, CL600 with 1061 Actuator | Metal Seal, Metal Bearing, Graphite Packing (Trims 505 and 506) | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,10,22,0
+C_58_t1,232,C-58,C,,,14,22,0
+C_58_t2,232,C-58,C,,,10,22,0
+C_59_t1,233,C-59,C,"A11, CL600 with 1061 Actuator | Phoenix III Seal, Metal Bearing, Graphite Packing | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,22,0
+C_59_t2,233,C-59,C,"A11, CL600 with 1061 Actuator | Phoenix III Seal, Metal Bearing, Graphite Packing | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,10,22,0
+C_60_t1,234,C-60,C,,,14,22,0
+C_60_t2,234,C-60,C,,,10,22,0
+C_61_t1,235,C-61,C,"A11, CL600 with 1061 Actuator | High-Pressure Seal, Metal Bearing, Graphite Packing | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,22,0
+C_61_t2,235,C-61,C,"A11, CL600 with 1061 Actuator | High-Pressure Seal, Metal Bearing, Graphite Packing | Size 33, 40, 60, 68, 80, and 100 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,10,22,0
+C_62_t1,236,C-62,C,"A11, CL600 with 2052 Actuator | Soft (ETFE) Seal, PEEK Bearing, PTFE Packing (Trims 500 and 501) | Size 1, 2, and 3",,13,14,0
+C_63_t1,237,C-63,C,"A11, CL600 with 2052 Actuator | Soft (ETFE) Seal, PEEK Bearing, PTFE Packing (Trims 500 and 501) | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,13,14,0
+C_64_t1,238,C-64,C,"A11, CL600 with 2052 Actuator | Metal Seal, PEEK Bearing, PTFE Packing (Trims 502 and 503) | Size 1, 2, and 3",,14,14,0
+C_65_t1,239,C-65,C,"A11, CL600 with 2052 Actuator | Metal Seal, PEEK Bearing, PTFE Packing (Trims 502 and 503) | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,14,0
+C_66_t1,240,C-66,C,"A11, CL600 with 2052 Actuator | Metal Seal, Metal Bearing, Graphite Packing (Trims 505 and 506) | Size 1, 2, and 3",,14,14,0
+C_67_t1,241,C-67,C,"A11, CL600 with 2052 Actuator | Metal Seal, Metal Bearing, Graphite Packing (Trims 505 and 506) | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,14,0
+C_68_t1,242,C-68,C,"A11, CL600 with 2052 Actuator | Phoenix III Seal, PEEK Bearing, PTFE Packing (Trim 504) | Size 1, 2, and 3",,13,14,0
+C_69_t1,243,C-69,C,"A11, CL600 with 2052 Actuator | Phoenix III Seal, PEEK Bearing, PTFE Packing (Trim 504) | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,13,14,0
+C_70_t1,244,C-70,C,"A11, CL600 with 2052 Actuator | Phoenix III Seal, Metal Bearing, Graphite Packing | Size 1, 2, and 3",,13,14,0
+C_71_t1,245,C-71,C,"A11, CL600 with 2052 Actuator | Phoenix III Seal, Metal Bearing, Graphite Packing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,13,14,0
+C_72_t1,246,C-72,C,"A11, CL600 with 2052 Actuator | High-Pressure Seal, PEEK Bearing, PTFE Packing | Size 1, 2, and 3",,14,14,0
+C_73_t1,247,C-73,C,"A11, CL600 with 2052 Actuator | High-Pressure Seal, PEEK Bearing, PTFE Packing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,14,0
+C_74_t1,248,C-74,C,"A11, CL600 with 2052 Actuator | High-Pressure Seal, Metal Bearing, Graphite Packing | Size 1, 2, and 3",,14,14,0
+C_75_t1,249,C-75,C,"A11, CL600 with 2052 Actuator | High-Pressure Seal, Metal Bearing, Graphite Packing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,14,14,0
+C_76_t1,250,C-76,C,"A11, CL600 with FieldQ™ Actuator | Soft (PTFE) Seal, PEEK Bearing (Trims 500 and 501) | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,34,20,4
+C_77_t1,251,C-77,C,"A11, CL600 with FieldQ™ Actuator | Soft (PTFE) Seal, PEEK Bearing (Trims 500 and 501) | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,34,20,5
+C_78_t1,252,C-78,C,"A11, CL600 with FieldQ Actuator | Metal Seal, PEEK Bearing (Trims 502 and 503) | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,26,20,2
+C_79_t1,253,C-79,C,"A11, CL600 with FieldQ™ Actuator | Metal Seal, PEEK Bearing (Trims 502 and 503) | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,34,20,5
+C_80_t1,254,C-80,C,"A11, CL600 with FieldQ Actuator | Metal Seal, Metal Bearing (Trims 505 and 506) | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,26,20,2
+C_81_t1,255,C-81,C,"A11, CL600 with FieldQ™ Actuator | Metal Seal, Metal Bearing (Trims 505 and 506) | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,34,20,4
+C_82_t1,256,C-82,C,"A11, CL600 with FieldQ Actuator | Phoenix III Seal, PEEK Bearing (Trim 504) | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,26,20,3
+C_83_t1,257,C-83,C,"A11, CL600 with FieldQ™ Actuator | Phoenix III Seal, PEEK Bearing (Trim 504) | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,26,20,3
+C_84_t1,258,C-84,C,"A11, CL600 with FieldQ Actuator | Phoenix III Seal, Metal Bearing | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,26,20,3
+C_85_t1,259,C-85,C,"A11, CL600 with FieldQ™ Actuator | Phoenix III Seal, Metal Bearing | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,26,20,2
+C_86_t1,260,C-86,C,"A11, CL600 with FieldQ Actuator | High-Pressure Seal, PEEK Bearing | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,26,20,3
+C_87_t1,261,C-87,C,"A11, CL600 with FieldQ™ Actuator | High-Pressure Seal, PEEK Bearing | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,26,20,2
+C_88_t1,262,C-88,C,"A11, CL600 with FieldQ Actuator | High-Pressure Seal, Metal Bearing | Size 40-1600 (Spring Set 4), Spring-To-Close (Fail-Close)",,26,20,2
+C_89_t1,263,C-89,C,"A11, CL600 with FieldQ™ Actuator | High-Pressure Seal, Metal Bearing | Size 40-1600 (Spring Set 4), Spring-To-Open (Fail-Open) | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,26,20,2
+C_94_t1,264,C-94,C,,,5,12,0
+C_94_t2,264,C-94,C,,,5,8,0
+C_95_t1,265,C-95,C,Control-Disk™ Valve with 1061 Actuator | PEEK Bearings with PTFE Seal | Push-Down-To-Open or Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,19,16,2
+C_96_t1,266,C-96,C,,,12,14,0
+C_97_t1,267,C-97,C,"Control-Disk™ Valve, CL150-CL300 with 2052 Actuator | Soft (PTFE) Seal, PEEK Bearing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,12,14,0
+C_98_t1,268,C-98,C,,,10,14,0
+C_99_t1,269,C-99,C,"Control-Disk™ Valve, CL150-CL300 with 2052 Actuator | Metal Seal, PEEK Bearing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,10,14,0
+C_100_t1,270,C-100,C,,,10,14,0
+C_101_t1,271,C-101,C,"Control-Disk™ Valve, CL150-CL300 with 2052 Actuator | Metal Seal, Metal Bearing | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,10,14,0
+C_102_t1,272,C-102,C,,,26,7,18
+C_103_t1,273,C-103,C,CV500 with 1052 Actuator | S44004 Bearings | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,26,7,18
+C_104_t1,274,C-104,C,,,26,7,18
+C_105_t1,275,C-105,C,CV500 with 1052 Actuator | R30006 Bearings | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,26,7,18
+C_106_t1,276,C-106,C,,,26,7,18
+C_107_t1,277,C-107,C,CV500 with 1052 Actuator | PTFE/Composition Bearings | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,26,7,18
+C_108_t1,278,C-108,C,CV500 with 1061 Actuator | S44004 Bearings | Push-Down-To-Open or Push-Down-To-Close,,13,11,10
+C_109_t1,279,C-109,C,CV500 with 1061 Actuator | R30006 Bearings | Push-Down-To-Open or Push-Down-To-Close | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,26,14,24
+C_110_t1,280,C-110,C,CV500 with 1061 Actuator | R30006 Bearings | Push-Down-To-Open or Push-Down-To-Close,,12,11,9
+C_111_t1,281,C-111,C,CV500 with 1061 Actuator | PTFE/Composition Bearings | Push-Down-To-Open or Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,27,15,19
+C_112_t1,282,C-112,C,CV500 with 1061 Actuator | S44004 Bearings | Push-Down-To-Open or Push-Down-To-Close,,13,11,10
+C_114_t1,284,C-114,C,,,27,15,0
+C_115_t1,285,C-115,C,"CV500 with 2052 Actuator | Metal Seat, S44004 Bearings | Forward Flow, Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,27,15,0
+C_116_t1,286,C-116,C,,,27,15,0
+C_117_t1,287,C-117,C,"CV500 with 2052 Actuator | Metal Seat, R30006 Bearings | Forward Flow, Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,27,15,0
+C_118_t1,288,C-118,C,,,27,15,0
+C_119_t1,289,C-119,C,"CV500 with 2052 Actuator | Metal Seat, PTFE/Composition Bearings | Forward Flow, Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow",,27,15,0
+C_120_t1,290,C-120,C,,,15,5,8
+C_121_t1,291,C-121,C,V150 with 1052 Actuator | PEEK/PTFE Bearings and TCM Ball Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,15,6,8
+C_122_t1,292,C-122,C,,,15,5,8
+C_123_t1,293,C-123,C,V150 with 1052 Actuator | PEEK/PTFE Bearings and Flat Metal Ball Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,15,6,8
+C_124_t1,294,C-124,C,,,15,5,8
+C_125_t1,295,C-125,C,V150 with 1052 Actuator | PEEK/PTFE Bearings and HD Metal Seal (Non-lubricated) | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,15,6,8
+C_126_t1,296,C-126,C,,,15,5,8
+C_127_t1,297,C-127,C,V150 with 1052 Actuator | PEEK/PTFE Bearings and HD Metal Seal (Lubricated) | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,15,6,8
+C_128_t1,298,C-128,C,,,15,5,8
+C_129_t1,299,C-129,C,V150 with 1052 Actuator | PEEK/PTFE Bearings and Flow Ring Construction | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,15,6,8
+C_130_t1,300,C-130,C,V150 with 1061 Actuator | PEEK/PTFE Bearings and TCM Ball Seal,,21,14,5
+C_131_t1,301,C-131,C,V150 with 1061 Actuator | PEEK/PTFE Bearings and Flat Metal Seal | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,21,14,4
+C_132_t1,302,C-132,C,V150 with 1061 Actuator | PEEK Bearings and HD Seal (Non-lubricated),,17,14,3
+C_133_t1,303,C-133,C,V150 with 1061 Actuator(1) | PEEK Bearings and HD Seal (Lubricated) | Maximum Allowable Pressure Drops (ΔP)(2) for Forward Flow,,16,14,2
+C_134_t1,304,C-134,C,,,22,14,6
+C_135_t1,305,C-135,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and TCM Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,9,14,0
+C_136_t1,306,C-136,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and TCM Seal | Push-Down-To-Close",,9,14,0
+C_137_t1,307,C-137,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and Flat Metal Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,12,14,0
+C_138_t1,308,C-138,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and Flat Metal Seal | Push-Down-To-Close",,12,14,0
+C_139_t1,309,C-139,C,"V150, V200, V300 with 2052 Actuator | Metal Bearing and Flat Metal Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,12,14,0
+C_140_t1,310,C-140,C,"V150, V200, V300 with 2052 Actuator | Metal Bearing and Flat Metal Seal | Push-Down-To-Close",,12,14,0
+C_141_t1,311,C-141,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and Flow Ring | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,11,14,0
+C_142_t1,312,C-142,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and Flow Ring | Push-Down-To-Close",,11,14,0
+C_143_t1,313,C-143,C,"V150, V200, V300 with 2052 Actuator | Metal Bearing and Flow Ring | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,12,14,0
+C_144_t1,314,C-144,C,"V150, V200, V300 with 2052 Actuator | Metal Bearing and Flow Ring | Push-Down-To-Close",,12,14,0
+C_145_t1,315,C-145,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and HD Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,12,14,0
+C_146_t1,316,C-146,C,"V150, V200, V300 with 2052 Actuator | PEEK/PTFE Bearing and HD Seal | Push-Down-To-Close",,12,14,0
+C_147_t1,317,C-147,C,"V150, V200, V300 with 2052 Actuator | Metal Bearing and HD Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(1,2) for Forward Flow",,14,14,0
+C_148_t1,318,C-148,C,"V150, V200, V300 with 2052 Actuator | Metal Bearing and HD Seal | Push-Down-To-Close",,14,14,0
+C_149_t1,319,C-149,C,V200 with 1052 Actuator | PEEK/PTFE Bearings and TCM Ball Seal | Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,13,5,7
+C_150_t1,320,C-150,C,,,13,6,7
+C_151_t1,321,C-151,C,V200 with 1052 Actuator | PEEK/PTFE Bearings and Flat Metal Seal | Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,13,5,7
+C_152_t1,322,C-152,C,,,13,6,7
+C_153_t1,323,C-153,C,V200 with 1052 Actuator | PEEK/PTFE Bearings and HD Seal (Non-lubricated) | Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,13,5,7
+C_154_t1,324,C-154,C,,,13,6,7
+C_155_t1,325,C-155,C,V200 with 1052 Actuator | PEEK Bearings and HD Seal (Lubricated) | Push-Down-To-Close | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,13,5,2
+C_156_t1,326,C-156,C,,,13,6,2
+C_157_t1,327,C-157,C,V200 with 1052 Actuator | PEEK/PTFE Bearings and Flow Ring Construction | Push-Down-To-Close | Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow,,13,5,7
+C_158_t1,328,C-158,C,,,13,6,7
+C_159_t1,329,C-159,C,V200 with 1061 Actuator | PEEK/PTFE Bearings and TCM Ball Seal(1) | Push-Down-To-Close or Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(2) for Forward Flow,,14,14,2
+C_160_t1,330,C-160,C,V200 with 1061 Actuator | PEEK/PTFE Bearings and Flat Metal Seal(1) | Push-Down-To-Close or Push-Down-To-Open,,15,14,3
+C_161_t1,331,C-161,C,V200 with 1061 Actuator | PEEK/PTFE Bearings and HD Seal (Non-lubricated)(1) | Push-Down-To-Close or Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(2) for Forward Flow,,14,14,2
+C_162_t1,332,C-162,C,V200 with 1061 Actuator | PEEK/PTFE Bearings and HD Seal (Lubricated)(1) | Push-Down-To-Close or Push-Down-To-Open,,15,14,3
+C_163_t1,333,C-163,C,V200 with 1061 Actuator | PEEK/PTFE Bearings and Flow Ring Construction(1) | Push-Down-To-Close or Push-Down-To-Open | Maximum Allowable Pressure Drops (ΔP)(2) for Forward Flow,,14,14,2
+C_164_t1,334,C-164,C,,,15,5,2
+C_165_t1,335,C-165,C,V300 with 1052 Actuator | PEEK/PTFE Bearings and TCM Ball Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,15,6,2
+C_166_t1,336,C-166,C,,,15,5,2
+C_167_t1,337,C-167,C,V300 with 1052 Actuator | PEEK/PTFE Bearings and Flat Metal Seal | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,15,6,2
+C_168_t1,338,C-168,C,,,15,5,2
+C_169_t1,339,C-169,C,V300 with 1052 Actuator | PEEK/PTFE Bearings and HD Seal (Non-lubricated) | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,15,6,2
+C_170_t1,340,C-170,C,,,15,5,2
+C_171_t1,341,C-171,C,V300 with 1052 Actuator | PEEK/PTFE Bearings and HD Seal (Lubricated) | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,15,6,2
+C_172_t1,342,C-172,C,,,15,5,2
+C_173_t1,343,C-173,C,V300 with 1052 Actuator | PEEK/PTFE Bearings and Flow Ring Construction | Push-Down-To-Open | Maximum Allowable Pressure Drops (P)(1) for Forward Flow,,15,6,2
+C_174_t1,344,C-174,C,V300 with 1061 Actuator | PEEK/PTFE Bearings and TCM Ball Seal | Push-Down-To-Close or Push-Down-To-Open(1),,17,14,3
+C_175_t1,345,C-175,C,V300 with 1061 Actuator | PEEK/PTFE Bearings and Flat Metal Seal | Push-Down-To-Close or Push-Down-To-Open(1) | Maximum Allowable Pressure Drops (P)(2) for Forward Flow,,16,14,2
+C_176_t1,346,C-176,C,V300 with 1061 Actuator | PEEK/PTFE Bearings and HD Seal (Non-lubricated) | Push-Down-To-Close or Push-Down-To-Open(1),,17,14,3
+C_177_t1,347,C-177,C,V300 with 1061 Actuator | PEEK/PTFE Bearings and HD Seal (Lubricated) | Push-Down-To-Close or Push-Down-To-Open(1) | Maximum Allowable Pressure Drops (P)(2) for Forward Flow,,16,14,2
+C_178_t1,348,C-178,C,V300 with 1061 Actuator | PEEK/PTFE Bearings and Flow Ring Construction | Push-Down-To-Close or Push-Down-To-Open(1),,17,14,3
+C_179_t1,349,C-179,C,V500 with 1052 Actuator | S44004 Bearings and Level 2 or 3 Trim | Push-Down-To-Close | Maximum Allowable Pressure Drop (ΔP)(1) for Forward Flow,,23,6,9
+C_180_t1,350,C-180,C,,,24,7,10
+C_181_t1,351,C-181,C,V500 with 1052 Actuator | S44004 Bearings and Level 1 Trim | Push-Down-To-Close | Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,23,6,9
+C_182_t1,352,C-182,C,,,24,7,10
+C_183_t1,353,C-183,C,"V500 with 1052 Actuator | R30006 Bearings and Level 1, 2, or 3 Trim | Push-Down-To-Close | Maximum Allowable Pressure Drops (P)(1) for Reverse Flow",,23,6,9
+C_184_t1,354,C-184,C,,,24,7,10
+C_185_t1,355,C-185,C,V500 with 1061 Actuator | S44004 Bearings and Level 2 or 3 Trim | Maximum Allowable Pressure Drops (P)(1) for Reverse Flow,,33,15,4
+C_186_t1,356,C-186,C,V500 with 1061 Actuator | S44004 Bearings and Level 1 Trim,,33,15,3
+C_187_t1,357,C-187,C,"V500 with 1061 Actuator | R30006 Bearings and Level 1, 2, or 3 Trim | Maximum Allowable Pressure Drops (P)(1) for Reverse Flow",,33,15,3
+C_189_t1,359,C-189,C,"V500 with 2052 Actuator | Metal Seal, S44004 Bearings, Reverse Flow - Level 2 or 3 Trim | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,27,15,0
+C_190_t1,360,C-190,C,,,27,15,0
+C_191_t1,361,C-191,C,"V500 with 2052 Actuator | Metal Seal, S44004 Bearings, Reverse Flow - Level 1 Trim | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,30,15,0
+C_192_t1,362,C-192,C,,,30,15,0
+C_193_t1,363,C-193,C,"V500 with 2052 Actuator | Metal Seal, R30006 Bearings, Reverse Flow - Level 1, 2, or 3 Trim | Size 1, 2, and 3 | Maximum Allowable Pressure Drops (ΔP)(1) for Reverse Flow",,30,15,0
+C_194_t1,364,C-194,C,,,30,15,0
+D_5_t1_table_1_torque_characteristics,369,D-5,D,7600 Butterfly Valve Body | Normal Flow | Table 1. Torque Characteristics,Table 1. Torque Characteristics,17,8,0
+D_6_t1,370,D-6,D,7600 Butterfly Valve Body | Normal Flow,,7,8,0
+D_6_t2_table_2_effective_pressure_drop_p,370,D-6,D,7600 Butterfly Valve Body | Normal Flow,Table 2. Effective Pressure Drop (P,2,4,2
+D_6_t3_table_3_relative_strengths_of_shaft_mate,370,D-6,D,7600 Butterfly Valve Body | Normal Flow,Table 3. Relative Strengths of Shaft Materials,10,16,2
+D_10_t1,372,D-10,D,"8532 | CL150 and CL300 | Forward and Reverse Flow | Use the Torque Equation and Valve Body Torque | For flow in the nonpreferred direction, calculate the | Requirements to calculate valve breakout and dynamic | pressure drop at 10, 60, 75, and 90 degrees of | torque. | rotation. | If P | actual (actual pressure drop at the angle of | Use the appropriate table for soft, NOVEX, and Phoenix | rotation) is known, compare P | eff at the angle of | III seals and bearing materials. Definition of variables | rotation | can be found below. | to P | at each angle of rotation. Use the smaller of | actual | P | or P | and the C factor from the following | eff | Torque Equations | tables to calculate dynamic torque at each angle of | rotation listed in tables. Calculate torque. | Breakout Torque | Formulas for calculating P | for liquid and gas | = A (P | T | ) + B | B | shutoff | Liquid only | eff = F | 2 (P | - F | ) | L | 1abs | F | v | Dynamic Torque | = C (P | Gas only | D | eff = K P | 3. The breakout and dynamic torques must not | Valve Body Torque | exceed the maximum torques listed in the following | tables. | Requirements | Where: | 1. Find T | (breakout torque). | A, B, C, and K = Values from the | following tables | Use P | shutoff (actual pressure drop at shutoff) and the | shutoff = Actual pressure at shutoff | A and B factors from tables. Calculate T | . | eff = Effective pressure drop | L = Valve recovery coefficient | 1abs = Valve inlet pressure, absolute | 2. Find T | (dynamic torque) | = Liquid vapor pressure, psia | For flow in the preferred direction, calculate the P | = Critical pressure ratio | K = Values for effective pressure drop | effective pressure drop at 10, 60, 75, and 80 degrees. | Κ = Valve torque tends to close the valve (kappa) | If the maximum rotation is limited to less than 90 | θ = Valve torque beyond this degree of opening | degrees, calculate only to the limited degree of | opening. | tends to open the valve (theta) | CL150 K Values for Effective Pressure Drop for Gas, Preferred and Non-Preferred Directions",,1,6,1
+D_10_t2,372,D-10,D,"8532 | CL150 and CL300 | Forward and Reverse Flow | Use the Torque Equation and Valve Body Torque | For flow in the nonpreferred direction, calculate the | Requirements to calculate valve breakout and dynamic | pressure drop at 10, 60, 75, and 90 degrees of | torque. | rotation. | If P | actual (actual pressure drop at the angle of | Use the appropriate table for soft, NOVEX, and Phoenix | rotation) is known, compare P | eff at the angle of | III seals and bearing materials. Definition of variables | rotation | can be found below. | to P | at each angle of rotation. Use the smaller of | actual | P | or P | and the C factor from the following | eff | Torque Equations | tables to calculate dynamic torque at each angle of | rotation listed in tables. Calculate torque. | Breakout Torque | Formulas for calculating P | for liquid and gas | = A (P | T | ) + B | B | shutoff | Liquid only | eff = F | 2 (P | - F | ) | L | 1abs | F | v | Dynamic Torque | = C (P | Gas only | D | eff = K P | 3. The breakout and dynamic torques must not | Valve Body Torque | exceed the maximum torques listed in the following | tables. | Requirements | Where: | 1. Find T | (breakout torque). | A, B, C, and K = Values from the | following tables | Use P | shutoff (actual pressure drop at shutoff) and the | shutoff = Actual pressure at shutoff | A and B factors from tables. Calculate T | . | eff = Effective pressure drop | L = Valve recovery coefficient | 1abs = Valve inlet pressure, absolute | 2. Find T | (dynamic torque) | = Liquid vapor pressure, psia | For flow in the preferred direction, calculate the P | = Critical pressure ratio | K = Values for effective pressure drop | effective pressure drop at 10, 60, 75, and 80 degrees. | Κ = Valve torque tends to close the valve (kappa) | If the maximum rotation is limited to less than 90 | θ = Valve torque beyond this degree of opening | degrees, calculate only to the limited degree of | opening. | tends to open the valve (theta) | CL150 K Values for Effective Pressure Drop for Gas, Preferred and Non-Preferred Directions",,1,6,1
+D_11_t1,373,D-11,D,8532 | CL300 | Reverse Flow | CL300 Torque Characteristics,,9,11,9
+D_11_t2,373,D-11,D,8532 | CL300 | Reverse Flow | CL300 Torque Characteristics,,18,11,18
+D_12_t1,374,D-12,D,,,18,10,18
+D_12_t2,374,D-12,D,,,4,12,4
+D_12_t3,374,D-12,D,,,4,10,4
+D_12_1_t1,375,D-12.1,D,8532 | CL150 | Forward Flow | CL150 Torque Characteristics,,5,12,4
+D_12_1_t2,375,D-12.1,D,8532 | CL150 | Forward Flow | CL150 Torque Characteristics,,9,11,8
+D_12_2_t1,376,D-12.2,D,8532 | CL150/150 | Forward Flow,,5,12,4
+D_12_2_t2,376,D-12.2,D,8532 | CL150/150 | Forward Flow,,9,11,8
+D_13_t1,377,D-13,D,8532 | CL150 | Reverse Flow | CL150 Torque Characteristics,,9,13,8
+D_14_t1,378,D-14,D,8532 | CL150 | Reverse Flow,,37,12,37
+D_14_1_t1,379,D-14.1,D,8532 | CL150 | Reverse Flow | CL150 Cryogenic Torque Characteristics,,4,12,4
+D_14_1_t2,379,D-14.1,D,8532 | CL150 | Reverse Flow | CL150 Cryogenic Torque Characteristics,,4,10,4
+D_14_2_t1,380,D-14.2,D,8532 | CL150/150 | Reverse Flow,,5,11,4
+D_14_2_t2,380,D-14.2,D,8532 | CL150/150 | Reverse Flow,,19,10,18
+D_14_3_t1,381,D-14.3,D,8532 | Cryogenic CL150 | Reverse Flow | Cryogenic CL150/150 Torque Characteristics,,4,12,4
+D_14_3_t2,381,D-14.3,D,8532 | Cryogenic CL150 | Reverse Flow | Cryogenic CL150/150 Torque Characteristics,,4,10,4
+D_14_4_t1,382,D-14.4,D,8532 | CL300 | Forward Flow,,9,12,9
+D_14_4_t2,382,D-14.4,D,8532 | CL300 | Forward Flow,,18,11,18
+D_15_t1,383,D-15,D,"8532 | CL150, CL150/150, and CL300 NACE | Maximum Torque | For NACE constructions, the Maximum Torque limits to be used in calculating valve breakout and dynamic torque are | different from standard constructions. The NACE limits are listed in the following tables. | CL150 | CL300",,28,3,28
+D_15_t2,383,D-15,D,"8532 | CL150, CL150/150, and CL300 NACE | Maximum Torque | For NACE constructions, the Maximum Torque limits to be used in calculating valve breakout and dynamic torque are | different from standard constructions. The NACE limits are listed in the following tables. | CL150 | CL300",,28,3,28
+D_16_t1,384,D-16,D,,,13,3,13
+D_17_t1,385,D-17,D,8560 | CL150 and CL300 | K Values for Effective Pressure Drop ΔP | eff | CL150,,14,5,13
+D_17_t2,385,D-17,D,8560 | CL150 and CL300 | K Values for Effective Pressure Drop ΔP | eff | CL150,,14,5,13
+D_18_t1,386,D-18,D,8560 | CL150 and CL300 | Soft and Metal Seals,,22,11,19
+D_19_t1,387,D-19,D,8560 | CL150 and CL300 | Novex Seal | CL150 Torque Characteristics,,13,11,12
+D_20_t1,388,D-20,D,8560 | CL150 and CL300 | Soft and Metal Seals,,22,11,19
+D_21_t1,389,D-21,D,8560 | CL150 and CL300 | Novex Seal | CL300 Torque Characteristics,,13,11,12
+D_22_t1,390,D-22,D,8560 | CL150 and CL300 | Phoenix III Seal,,30,11,27
+D_23_t1,391,D-23,D,8560 | CL150 and CL300 | Phoenix III Seal | CL300 Torque Characteristics,,30,11,27
+D_25_t1,393,D-25,D,"8580 | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_25_t2,393,D-25,D,"8580 | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_25_t3,393,D-25,D,"8580 | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_26_t1,394,D-26,D,"8580 | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_26_t2,394,D-26,D,"8580 | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_26_t3,394,D-26,D,"8580 | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,3,7
+D_26_1_t1,395,D-26.1,D,"8590 | Reverse Flow | If P | Use the Torque Equation and Valve Body Torque | actual (actual pressure drop at the angle of | rotation) is known, compare P | Requirements to calculate valve breakout and dynamic | eff at the angle of | rotation to P | torque. Definition of variables can be found below. | at each angle of rotation. Use the | actual | smaller of P | or P | and the C factor from the | eff | following tables to calculate dynamic torque at each | Torque Equations | angle of rotation listed in the tables. Calculate torque. | Formulas for calculating P | for liquid and gas | Breakout Torque | Liquid only | P | eff = F | 2 (P | - F | ) | = A (P | L | 1abs | F | v | T | ) + B | B | shutoff | Gas only | Dynamic Torque | eff = K P | = C (P | D | 3. The breakout and dynamic torques must not | exceed the maximum torques listed in the following | Valve Body Torque | tables. | Where: | Requirements | A, B, C, and K = Values from the | following tables | 1. Fin | d | ( | b | r | e | a | k | o | u | t | q | ). | f | = | A | c | l | p | s | h | U | f ( | re | ssure drop at shutoff) and | to | E | fe | ct | i | ff | the A and B factors from tables. Calculate T | . | L = Valve recovery coefficient | 1abs = Valve inlet pressure, absolute | 2. Find T | (dynamic torque) | = Liquid vapor pressure, psia | Calculate the P | effective pressure drop at the | = Critical pressure ratio | K = Values for effective pressure drop | angles listed in the tables. If the maximum rotation is | Κ = Torque tends to CLOSE the valve | limited to less than 90 degrees, calculate only to the | limited degree of opening. | θ = Torque tends to OPEN the valve",,11,2,11
+D_26_2_t1,396,D-26.2,D,8590 | Reverse Flow,,11,12,11
+D_26_2_t2,396,D-26.2,D,8590 | Reverse Flow,,11,12,11
+D_26_3_t1,397,D-26.3,D,8590 | Reverse Flow,,11,12,11
+D_26_3_t2,397,D-26.3,D,8590 | Reverse Flow,,11,12,11
+D_26_4_t1,398,D-26.4,D,8590 | Reverse Flow,,11,12,11
+D_26_4_t2,398,D-26.4,D,8590 | Reverse Flow,,11,12,11
+D_26_5_t1,399,D-26.5,D,8590 | Reverse Flow,,11,12,11
+D_26_5_t2,399,D-26.5,D,8590 | Reverse Flow,,11,12,11
+D_26_6_t1,400,D-26.6,D,8590 | Reverse Flow,,13,8,13
+D_26_6_t2,400,D-26.6,D,8590 | Reverse Flow,,7,8,7
+D_26_6_t3,400,D-26.6,D,8590 | Reverse Flow,,6,8,6
+D_28_t1,402,D-28,D,9500 Butterfly Valve Body | Normal Flow,,7,10,7
+D_28_t2_table_2_effective_pressure_drop_p_psi,402,D-28,D,9500 Butterfly Valve Body | Normal Flow,"Table 2. Effective Pressure Drop (P ), Psi",4,4,4
+D_28_t3_table_3_relative_strengths_of_shaft_mate,402,D-28,D,9500 Butterfly Valve Body | Normal Flow,Table 3. Relative Strengths of Shaft Materials,6,5,5
+D_29_t1,403,D-29,D,"30,000 | CL150, PN16-25 | Reverse Flow (Shaft Side) | Operating Torques (inlb)",,23,13,12
+D_29_1_t1,404,D-29.1,D,"30,000 | CL150, PN16-25 | Reverse Flow (Shaft Side)",,11,11,11
+D_29_1_t2,404,D-29.1,D,"30,000 | CL150, PN16-25 | Reverse Flow (Shaft Side)",,2,2,2
+D_29_2_t1,405,D-29.2,D,"30,000 | CL300, PN40 | Reverse Flow (Shaft Side) | Operating Torques (inlb)",,23,13,12
+D_29_3_t1,406,D-29.3,D,"30,000 | CL300, PN40 | Reverse Flow (Shaft Side)",,11,11,11
+D_29_3_t2,406,D-29.3,D,"30,000 | CL300, PN40 | Reverse Flow (Shaft Side)",,2,2,2
+D_29_4_t1,407,D-29.4,D,"30,000 Cryo | CL150 | Reverse Flow (Shaft Side) | Operating Torques (inlb)",,23,12,12
+D_29_5_t1,408,D-29.5,D,"30,000 Cryo | CL150 | Reverse Flow (Shaft Side)",,11,10,11
+D_29_5_t2,408,D-29.5,D,"30,000 Cryo | CL150 | Reverse Flow (Shaft Side)",,1,2,1
+D_29_6_t1,409,D-29.6,D,"30,000 Cryo | CL300 | Reverse Flow (Shaft Side) | Operating Torques (inlb)",,23,12,12
+D_29_7_t1,410,D-29.7,D,"30,000 Cryo | CL300 | Reverse Flow (Shaft Side)",,11,10,11
+D_29_7_t2,410,D-29.7,D,"30,000 Cryo | CL300 | Reverse Flow (Shaft Side)",,1,2,1
+D_31_t1,413,D-31,D,"A11 | CL150/150, 150, 300, 600, 900, and 1500 | Forward and Reverse Flow | K Values for Effective Pressure Drop for Gas Reverse and Forward Directions",,9,6,9
+D_32_t1,414,D-32,D,A11 | CL150/150 | Reverse Flow,,5,11,4
+D_32_t2,414,D-32,D,A11 | CL150/150 | Reverse Flow,,19,10,18
+D_33_t1,415,D-33,D,A11 | Cryogenic CL150/150 | Reverse Flow,,4,12,4
+D_33_t2,415,D-33,D,A11 | Cryogenic CL150/150 | Reverse Flow,,4,10,4
+D_34_t1,416,D-34,D,,,5,11,4
+D_34_t2,416,D-34,D,,,19,10,18
+D_35_t1,417,D-35,D,A11 | Cryogenic CL150 | Reverse Flow,,4,12,4
+D_35_t2,417,D-35,D,A11 | Cryogenic CL150 | Reverse Flow,,4,10,4
+D_36_t1,418,D-36,D,,,5,11,4
+D_36_t2,418,D-36,D,,,12,11,11
+D_36_t3,418,D-36,D,,,9,10,8
+D_37_t1,419,D-37,D,A11 | Cryogenic CL300 | Reverse Flow,,4,12,4
+D_37_t2,419,D-37,D,A11 | Cryogenic CL300 | Reverse Flow,,4,10,4
+D_38_t1,420,D-38,D,,,11,12,11
+D_38_t2,420,D-38,D,,,22,12,22
+D_39_t1,421,D-39,D,A11 | CL600 | Reverse Flow,,22,10,22
+D_40_t1,422,D-40,D,,,22,12,22
+D_41_t1,423,D-41,D,A11 | Cryogenic CL600 | Reverse Flow,,11,12,11
+D_41_t2,423,D-41,D,A11 | Cryogenic CL600 | Reverse Flow,,11,10,11
+D_42_t1,424,D-42,D,A11 | CL900 | Reverse Flow,,27,10,27
+D_43_t1,425,D-43,D,A11 | CL900 | Reverse Flow,,18,12,18
+D_44_t1,426,D-44,D,,,9,12,9
+D_45_t1,427,D-45,D,A11 | CL1500 | Reverse Flow,,18,10,18
+D_45_t2,427,D-45,D,A11 | CL1500 | Reverse Flow,,12,12,12
+D_46_t1,428,D-46,D,,,6,12,6
+D_47_t1,429,D-47,D,A11 | CL150/150 | Forward Flow,,5,12,4
+D_47_t2,429,D-47,D,A11 | CL150/150 | Forward Flow,,9,11,8
+D_48_t1,430,D-48,D,,,5,12,4
+D_48_t2,430,D-48,D,,,9,11,8
+D_49_t1,431,D-49,D,A11 | CL300 | Forward Flow,,5,12,4
+D_49_t2,431,D-49,D,A11 | CL300 | Forward Flow,,9,11,8
+D_50_t1,432,D-50,D,,,11,12,11
+D_50_t2,432,D-50,D,,,22,10,22
+D_51_t1,433,D-51,D,A11 | CL900 | Forward Flow,,9,12,9
+D_51_t2,433,D-51,D,A11 | CL900 | Forward Flow,,18,10,18
+D_52_t1,434,D-52,D,,,6,12,6
+D_52_t2,434,D-52,D,,,12,10,12
+D_53_t1,435,D-53,D,"A11 | CL150/150, 150, and 300 NACE | Maximum Torque | For NACE constructions, the Maximum Torque limits to be used in calculating valve breakout and dynamic torque are | different from standard constructions. The NACE limits are listed in the following tables.",,5,4,5
+D_53_t2,435,D-53,D,"A11 | CL150/150, 150, and 300 NACE | Maximum Torque | For NACE constructions, the Maximum Torque limits to be used in calculating valve breakout and dynamic torque are | different from standard constructions. The NACE limits are listed in the following tables.",,5,4,5
+D_53_t3,435,D-53,D,"A11 | CL150/150, 150, and 300 NACE | Maximum Torque | For NACE constructions, the Maximum Torque limits to be used in calculating valve breakout and dynamic torque are | different from standard constructions. The NACE limits are listed in the following tables.",,5,4,5
+D_54_t1,436,D-54,D,,,12,4,12
+D_54_t2,436,D-54,D,,,12,3,12
+D_55_t1,437,D-55,D,"A11 | CL600, 900, and 1500 NACE | Maximum Torque",,12,7,12
+D_56_t1,438,D-56,D,"A11 | CL600, 900, and 1500 NACE | Maximum Torque",,12,7,12
+D_57_t1,439,D-57,D,"A31A | CL150 and CL300 | Forward and Reverse Flow | Use the Torque Equation and Valve Body Torque | the pressure drop at 10, 60, 75, and 90 degrees of | Requirements to calculate valve breakout and dynamic | rotation. | torque. | If P | actual (actual pressure drop at the angle of | rotation) is known, compare P | Use the appropriate table for soft, NOVEX, and | eff at the angle of | rotation to P | Phoenix III seals and bearing materials. Definition of | at each angle of rotation. Use the | actual | smaller of P | or P | variables can be found below. | and the C factor from the | eff | following tables to calculate dynamic torque at each | angle of rotation listed in tables. Calculate torque. | Torque Equations | Formulas for calculating P | for liquid and gas | Breakout Torque | Liquid only | = A (P | T | ) + B | P | B | shutoff | eff = F | 2 (P | - F | ) | L | 1abs | F | v | Dynamic Torque | Gas only | = C (P | D | eff = K P | Valve Body Torque | 3. The breakout and dynamic torques must not | exceed the maximum torques listed in the following | Requirements | tables. | 1. Find T | (breakout torque). | Where: | Use P | shutoff (actual pressure drop at shutoff) and | A, B, C, and K = Values from the | the A and B factors from tables. Calculate T | . | following tables | shutoff = Actual pressure at shutoff | 2. Find T | (dynamic torque) | eff = Effective pressure drop | L = Valve recovery coefficient | For flow in the preferred direction, calculate the | 1abs = Valve inlet pressure, absolute | effective pressure drop at 10, 60, 75, and 80 | = Liquid vapor pressure, psia | degrees. If the maximum rotation is limited to less | = Critical pressure ratio | K = Values for effective pressure drop | than 90 degrees, calculate only to the limited degree | Κ = Valve torque tends to close the valve (kappa) | of opening. | θ = Valve torque beyond this degree of opening | For flow in the nonpreferred direction, calculate | tends to open the valve (theta) | CL150 K Values for Effective Pressure Drop for Gas Preferred and Non-Preferred Directions",,1,6,1
+D_57_t2,439,D-57,D,"A31A | CL150 and CL300 | Forward and Reverse Flow | Use the Torque Equation and Valve Body Torque | the pressure drop at 10, 60, 75, and 90 degrees of | Requirements to calculate valve breakout and dynamic | rotation. | torque. | If P | actual (actual pressure drop at the angle of | rotation) is known, compare P | Use the appropriate table for soft, NOVEX, and | eff at the angle of | rotation to P | Phoenix III seals and bearing materials. Definition of | at each angle of rotation. Use the | actual | smaller of P | or P | variables can be found below. | and the C factor from the | eff | following tables to calculate dynamic torque at each | angle of rotation listed in tables. Calculate torque. | Torque Equations | Formulas for calculating P | for liquid and gas | Breakout Torque | Liquid only | = A (P | T | ) + B | P | B | shutoff | eff = F | 2 (P | - F | ) | L | 1abs | F | v | Dynamic Torque | Gas only | = C (P | D | eff = K P | Valve Body Torque | 3. The breakout and dynamic torques must not | exceed the maximum torques listed in the following | Requirements | tables. | 1. Find T | (breakout torque). | Where: | Use P | shutoff (actual pressure drop at shutoff) and | A, B, C, and K = Values from the | the A and B factors from tables. Calculate T | . | following tables | shutoff = Actual pressure at shutoff | 2. Find T | (dynamic torque) | eff = Effective pressure drop | L = Valve recovery coefficient | For flow in the preferred direction, calculate the | 1abs = Valve inlet pressure, absolute | effective pressure drop at 10, 60, 75, and 80 | = Liquid vapor pressure, psia | degrees. If the maximum rotation is limited to less | = Critical pressure ratio | K = Values for effective pressure drop | than 90 degrees, calculate only to the limited degree | Κ = Valve torque tends to close the valve (kappa) | of opening. | θ = Valve torque beyond this degree of opening | For flow in the nonpreferred direction, calculate | tends to open the valve (theta) | CL150 K Values for Effective Pressure Drop for Gas Preferred and Non-Preferred Directions",,1,6,1
+D_58_t1,440,D-58,D,A31A | CL150 | Reverse Flow,,5,11,5
+D_58_t2,440,D-58,D,A31A | CL150 | Reverse Flow,,20,10,20
+D_59_t1,441,D-59,D,A31A | CL300 | Reverse Flow | CL300 Torque Characteristics,,5,11,5
+D_59_t2,441,D-59,D,A31A | CL300 | Reverse Flow | CL300 Torque Characteristics,,10,11,10
+D_59_t3,441,D-59,D,A31A | CL300 | Reverse Flow | CL300 Torque Characteristics,,10,10,10
+D_60_t1,442,D-60,D,A31A | CL150 | Forward Flow,,5,12,5
+D_60_t2,442,D-60,D,A31A | CL150 | Forward Flow,,10,11,10
+D_61_t1,443,D-61,D,A31A | CL300 | Forward Flow | CL300 Torque Characteristics,,5,12,5
+D_61_t2,443,D-61,D,A31A | CL300 | Forward Flow | CL300 Torque Characteristics,,10,11,10
+D_62_t1,444,D-62,D,,,15,3,15
+D_62_t2,444,D-62,D,,,15,3,15
+D_63_t1,445,D-63,D,A31A Cryogenic | Cryogenic CL150 | Reverse Flow,,11,11,11
+D_63_t2,445,D-63,D,A31A Cryogenic | Cryogenic CL150 | Reverse Flow,,11,11,11
+D_64_t1,446,D-64,D,,,11,11,11
+D_64_t2,446,D-64,D,,,11,13,11
+D_65_t1,447,D-65,D,A31A Cryogenic | Cryogenic CL150 | Forward Flow,,11,12,11
+D_65_t2,447,D-65,D,A31A Cryogenic | Cryogenic CL150 | Forward Flow,,11,12,11
+D_66_t1,448,D-66,D,,,11,12,11
+D_66_t2,448,D-66,D,,,11,14,11
+D_67_t1,449,D-67,D,A31A Cryogenic | Cryogenic CL300 | Reverse Flow,,11,13,11
+D_67_t2,449,D-67,D,A31A Cryogenic | Cryogenic CL300 | Reverse Flow,,11,13,11
+D_68_t1,450,D-68,D,,,11,11,11
+D_68_t2,450,D-68,D,,,11,13,11
+D_69_t1,451,D-69,D,A31A Cryogenic | Cryogenic CL300 | Forward Flow,,11,14,11
+D_69_t2,451,D-69,D,A31A Cryogenic | Cryogenic CL300 | Forward Flow,,11,14,11
+D_70_t1,452,D-70,D,,,11,12,11
+D_70_t2,452,D-70,D,,,11,14,11
+D_71_t1,453,D-71,D,"A31D | CL150 and CL300 | Reverse and Forward Flow | Use the Torque Equation and Valve Body Torque | calculate the pressure drop at 10, 45, 60, 75, and 90 | Requirements to calculate valve breakout and dynamic | degrees of rotation. 45 degree calculation only | torque. | necessary for Type 1031 actuator. | Use the appropriate table for soft, NOVEX, and Phoenix | If P | actual (actual pressure drop at the angle of | rotation) is known, compare P | III seals and bearing materials. Definition of variables | eff at the angle of | can be found below. | rotation to P | at each angle of rotation. Use the | actual | smaller of P | or P | and the C factor from the | eff | following tables to calculate dynamic torque at each | Torque Equations | angle of rotation listed in tables. Calculate torque. | Breakout Torque | Formulas for calculating P | for liquid and gas | = A (P | T | ) + B | B | shutoff | Liquid only | P | eff = F | 2 (P | - F | ) | L | 1abs | F | v | Dynamic Torque | = C (P | D | Gas only | eff = K P | Valve Body Torque | 3. The breakout and dynamic torques must not | Requirements | exceed the maximum torques listed in the following | tables. | 1. Find T | (breakout torque). | Use P | shutoff (actual pressure drop at shutoff) and the | Where: | A and B factors from tables. Calculate T | . | A, B, C, and K = Values from the | following tables | 2. Find T | (dynamic torque) | shutoff = Actual pressure at shutoff | eff = Effective pressure drop | For flow in the Reverse (preferred) direction, calculate | L = Valve recovery coefficient | the P | effective pressure drop at 10, 45, 60, 75, and | 1abs = Valve inlet pressure, absolute | 80 degrees. If the maximum rotation is limited to less | = Liquid vapor pressure, psia | than 90 degrees, calculate only to the limited degree | = Critical pressure ratio | K = Values for effective pressure drop | of opening. 45 degree calculation only necessary for | Κ = Valve torque tends to close the valve (kappa) | θ = Valve torque beyond this degree of opening | For flow in the Forward (nonpreferred) direction, | tends to open the valve (theta) | CL150 K Values for Effective Pressure Drop for Gas Reverse and Forward Directions",,2,7,2
+D_71_t2,453,D-71,D,"A31D | CL150 and CL300 | Reverse and Forward Flow | Use the Torque Equation and Valve Body Torque | calculate the pressure drop at 10, 45, 60, 75, and 90 | Requirements to calculate valve breakout and dynamic | degrees of rotation. 45 degree calculation only | torque. | necessary for Type 1031 actuator. | Use the appropriate table for soft, NOVEX, and Phoenix | If P | actual (actual pressure drop at the angle of | rotation) is known, compare P | III seals and bearing materials. Definition of variables | eff at the angle of | can be found below. | rotation to P | at each angle of rotation. Use the | actual | smaller of P | or P | and the C factor from the | eff | following tables to calculate dynamic torque at each | Torque Equations | angle of rotation listed in tables. Calculate torque. | Breakout Torque | Formulas for calculating P | for liquid and gas | = A (P | T | ) + B | B | shutoff | Liquid only | P | eff = F | 2 (P | - F | ) | L | 1abs | F | v | Dynamic Torque | = C (P | D | Gas only | eff = K P | Valve Body Torque | 3. The breakout and dynamic torques must not | Requirements | exceed the maximum torques listed in the following | tables. | 1. Find T | (breakout torque). | Use P | shutoff (actual pressure drop at shutoff) and the | Where: | A and B factors from tables. Calculate T | . | A, B, C, and K = Values from the | following tables | 2. Find T | (dynamic torque) | shutoff = Actual pressure at shutoff | eff = Effective pressure drop | For flow in the Reverse (preferred) direction, calculate | L = Valve recovery coefficient | the P | effective pressure drop at 10, 45, 60, 75, and | 1abs = Valve inlet pressure, absolute | 80 degrees. If the maximum rotation is limited to less | = Liquid vapor pressure, psia | than 90 degrees, calculate only to the limited degree | = Critical pressure ratio | K = Values for effective pressure drop | of opening. 45 degree calculation only necessary for | Κ = Valve torque tends to close the valve (kappa) | θ = Valve torque beyond this degree of opening | For flow in the Forward (nonpreferred) direction, | tends to open the valve (theta) | CL150 K Values for Effective Pressure Drop for Gas Reverse and Forward Directions",,1,7,1
+D_72_t1,454,D-72,D,A31D | CL150 | Reverse Flow,,1,7,1
+D_72_t2,454,D-72,D,A31D | CL150 | Reverse Flow,,11,13,11
+D_72_t3,454,D-72,D,A31D | CL150 | Reverse Flow,,11,12,11
+D_72_t4,454,D-72,D,A31D | CL150 | Reverse Flow,,11,12,11
+D_73_t1,455,D-73,D,A31D | CL150 | Reverse Flow,,11,12,11
+D_73_t2,455,D-73,D,A31D | CL150 | Reverse Flow,,11,12,11
+D_74_t1,456,D-74,D,,,11,13,11
+D_74_t2,456,D-74,D,,,11,13,11
+D_74_t3,456,D-74,D,,,11,13,11
+D_75_t1,457,D-75,D,A31D | CL300 | Reverse Flow,,11,12,11
+D_75_t2,457,D-75,D,A31D | CL300 | Reverse Flow,,11,12,11
+D_76_t1,458,D-76,D,,,11,14,11
+D_76_t2,458,D-76,D,,,11,13,11
+D_77_t1,459,D-77,D,A31D | CL300 | Forward Flow | CL300 Torque Characteristics,,11,14,11
+D_77_t2,459,D-77,D,A31D | CL300 | Forward Flow | CL300 Torque Characteristics,,11,13,11
+D_78_t1,460,D-78,D,A31D | NACE | Maximum Torque,,11,9,11
+D_78_t2,460,D-78,D,A31D | NACE | Maximum Torque,,11,9,11
+D_88_t1,466,D-88,D,"Control-Disk Valve | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_88_t2,466,D-88,D,"Control-Disk Valve | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_88_t3,466,D-88,D,"Control-Disk Valve | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_89_t1,467,D-89,D,"Control-Disk™ Valve | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_89_t2,467,D-89,D,"Control-Disk™ Valve | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,8,7
+D_90_t1,468,D-90,D,"Control-Disk | PN 10 through PN 40, CL150 and CL300 | Forward Flow",,7,3,7
+D_91_t1,469,D-91,D,"Control-Disk™ Valve, NPS 14-36 | CL150 and CL300 | Reverse Flow | Use the Torque Equation and Valve Body Torque | limited to less than 90 degrees, calculate only to the | Requirements to calculate valve breakout and dynamic | limited degree of opening. | torque. | If P | actual (actual pressure drop at the angle of | rotation) is known, compare P | Use the appropriate table for soft, NOVEX, and Phoenix | eff at the angle of | rotation to P | III seals and bearing materials. Definition of variables | at each angle of rotation. Use the | actual | can be found below. | smaller of P | or P | and the C factor from the | eff | following tables to calculate dynamic torque at each | angle of rotation listed in tables. Calculate torque. | Formulas for calculating P | for liquid and gas | Torque Equations | Liquid only | P | 2 (P | eff = F | - F | ) | Breakout Torque | L | 1abs | F | v | = A (P | T | ) + B | B | shutoff | Gas only | Dynamic Torque | eff = K P | = C (P | D | 3. The breakout and dynamic torques must not | exceed the maximum torques listed in the following | tables. | Where: | Valve Body Torque | A, B, C, and K = Values from the | following tables | Requirements | shutoff = Actual pressure at shutoff | eff = Effective pressure drop | 1. Find T | (breakout torque). | L = Valve recovery coefficient | Use P | shutoff (actual pressure drop at shutoff) and the | 1abs = Valve inlet pressure, absolute | A and B factors from tables. Calculate T | . | = Liquid vapor pressure, psia | = Critical pressure ratio | 2. Find T | (dynamic torque) | K = Values for effective pressure drop | Calculate the effective pressure drop (P | Κ = Torque tends to close the valve | ) of the | θ = Torque tends to open the valve | angles listed in the tables. If the maximum rotation is",,5,3,5
+D_92_t1,470,D-92,D,"Control-Disk Valve, NPS 14-36 | Reverse Flow",,7,11,7
+D_92_t2,470,D-92,D,"Control-Disk Valve, NPS 14-36 | Reverse Flow",,7,10,7
+D_92_t3,470,D-92,D,"Control-Disk Valve, NPS 14-36 | Reverse Flow",,7,10,7
+D_92_t4,470,D-92,D,"Control-Disk Valve, NPS 14-36 | Reverse Flow",,7,10,7
+D_92_t5,470,D-92,D,"Control-Disk Valve, NPS 14-36 | Reverse Flow",,7,10,7
+D_93_t1,471,D-93,D,"Control-Disk™ Valve, NPS 14-36 | CL300 | Reverse Flow",,7,11,7
+D_93_t2,471,D-93,D,"Control-Disk™ Valve, NPS 14-36 | CL300 | Reverse Flow",,7,11,7
+D_93_t3,471,D-93,D,"Control-Disk™ Valve, NPS 14-36 | CL300 | Reverse Flow",,7,10,7
+D_93_t4,471,D-93,D,"Control-Disk™ Valve, NPS 14-36 | CL300 | Reverse Flow",,7,11,7
+D_93_t5,471,D-93,D,"Control-Disk™ Valve, NPS 14-36 | CL300 | Reverse Flow",,7,10,7
+D_93_1_t1,472,D-93.1,D,"Control-Disk™ Valve | CL600 | Reverse Flow | Use the Torque Equation and Valve Body Torque | If P | actual (actual pressure drop at the angle of | rotation) is known, compare P | Requirements to calculate valve breakout and dynamic | eff at the angle of | rotation to P | torque. Definition of variables can be found below. | at each angle of rotation. Use the | actual | smaller of P | or P | and the C factor from the | eff | following tables to calculate dynamic torque at each | Torque Equations | angle of rotation listed in the tables. Calculate torque. | Formulas for calculating P | for liquid and gas | Breakout Torque | Liquid only | P | eff = F | 2 (P | - F | ) | = A (P | L | 1abs | F | v | T | ) + B | B | shutoff | Gas only | Dynamic Torque | eff = K P | = C (P | D | 3. The breakout and dynamic torques must not | exceed the maximum torques listed in the following | Valve Body Torque | tables. | Where: | Requirements | A, B, C, and K = Values from the | following tables | 1. Fin | d | ( | b | r | e | a | k | o | u | t | q | ). | A | c | l | p | s | h | f | = | U | f ( | re | ssure drop at shutoff) and | to | E | fe | ct | i | ff | the A and B factors from tables. Calculate T | . | L = Valve recovery coefficient | 1abs = Valve inlet pressure, absolute | 2. Find T | (dynamic torque) | = Liquid vapor pressure, psia | Calculate the P | effective pressure drop at the | = Critical pressure ratio | K = Values for effective pressure drop | angles listed in the tables. If the maximum rotation is | Κ = Torque tends to CLOSE the valve | limited to less than 90 degrees, calculate only to the | limited degree of opening. | θ = Torque tends to OPEN the valve",,11,2,11
+D_93_2_t1,473,D-93.2,D,CL600 Control-Disk™ Valve | Reverse Flow,,11,11,11
+D_93_2_t2,473,D-93.2,D,CL600 Control-Disk™ Valve | Reverse Flow,,11,11,11
+D_93_3_t1,474,D-93.3,D,,,11,11,11
+D_93_3_t2,474,D-93.3,D,,,11,11,11
+D_93_4_t1,475,D-93.4,D,CL600 Control-Disk™ Valve | Reverse Flow,,11,11,11
+D_93_4_t2,475,D-93.4,D,CL600 Control-Disk™ Valve | Reverse Flow,,11,11,11
+D_93_5_t1,476,D-93.5,D,,,11,11,11
+D_93_5_t2,476,D-93.5,D,,,11,11,11
+D_93_6_t1,477,D-93.6,D,CL600 Control-Disk™ Valve | Reverse Flow,,12,8,12
+D_93_6_t2,477,D-93.6,D,CL600 Control-Disk™ Valve | Reverse Flow,,6,8,6
+D_98_t1,479,D-98,D,SIS Ball Valve | Full Bore,,12,9,12
+D_98_t2,479,D-98,D,SIS Ball Valve | Full Bore,,12,9,12
+D_98_1_t1,480,D-98.1,D,,,12,9,12
+D_98_1_t2,480,D-98.1,D,,,7,9,7
+D_98_1_t3,480,D-98.1,D,,,5,9,5
+D_98_2_t2,481,D-98.2,D,SIS Ball Valve | Full and Reduced Bore,,4,3,4
+D_98_3_t1,482,D-98.3,D,,,5,2,4
+D_98_4_t1,483,D-98.4,D,SIS Ball Valve | Reduced Bore,,11,9,7
+D_98_4_t2,483,D-98.4,D,SIS Ball Valve | Reduced Bore,,11,9,7
+D_98_5_t1,484,D-98.5,D,SIS Ball Valve | Reduced Bore,,11,9,7
+D_98_5_t2,484,D-98.5,D,SIS Ball Valve | Reduced Bore,,8,9,4
+D_98_5_t3,484,D-98.5,D,SIS Ball Valve | Reduced Bore,,5,9,1
+D_99_t1_table_1_torque_characteristics_forward_f,485,D-99,D,CV500 | Forward and Reverse Flow | Table 1. Torque Characteristics - Forward Flow,Table 1. Torque Characteristics - Forward Flow,9,11,0
+D_99_t2_table_2_torque_characteristics_reverse_f,485,D-99,D,CV500 | Forward and Reverse Flow | Table 1. Torque Characteristics - Forward Flow,Table 2. Torque Characteristics - Reverse Flow,9,11,9
+D_99_t3_table_3_k_values_for_effective_pressure_,485,D-99,D,CV500 | Forward and Reverse Flow | Table 1. Torque Characteristics - Forward Flow,Table 3. K Values for Effective Pressure Drop,6,5,6
+D_103_t1_table_1_torque_characteristics,489,D-103,D,U | Vee-Ball™ Valve | Forward Flow | Table 1. Torque Characteristics,Table 1. Torque Characteristics,6,15,2
+D_103_t2_table_2_torque_multipliers_for_non_stand,489,D-103,D,U | Vee-Ball™ Valve | Forward Flow | Table 1. Torque Characteristics,Table 2. Torque Multipliers for Non-Standard Travels Table 3. Dynamic Torque (C) Factor with Cavitrol™ V,4,5,4
+D_103_t3_table_2_torque_multipliers_for_non_stand,489,D-103,D,U | Vee-Ball™ Valve | Forward Flow | Table 1. Torque Characteristics,Table 2. Torque Multipliers for Non-Standard Travels Table 3. Dynamic Torque (C) Factor with Cavitrol™ V,1,2,1
+D_105_t1_table_1_torque_characteristics,491,D-105,D,"V100 | Vee-Ball™ Valve | Forward Flow | Table 2. K Values for Effective Pressure Drop, P | Table 1. Torque Characteristics | eff",Table 1. Torque Characteristics,40,8,36
+D_105_t2_table_1_torque_characteristics,491,D-105,D,"V100 | Vee-Ball™ Valve | Forward Flow | Table 2. K Values for Effective Pressure Drop, P | Table 1. Torque Characteristics | eff",Table 1. Torque Characteristics,11,4,9
+D_105_t3_table_3_dynamic_torque_c_factor_with_cav,491,D-105,D,"V100 | Vee-Ball™ Valve | Forward Flow | Table 2. K Values for Effective Pressure Drop, P | Table 1. Torque Characteristics | eff",Table 3. Dynamic Torque (C) Factor with Cavitrol V,4,2,4
+D_107_t1_table_1_torque_characteristics_for_compo,493,D-107,D,"V150, V200, and V300 | Vee-Ball™ Valves | Forward Flow | Table 1. Torque Characteristics for Composition Seal, Flat Metal Seal, and Flow-Ring Construction","Table 1. Torque Characteristics for Composition Seal, Flat Metal Seal, and Flow-Ring Construction",34,8,32
+D_108_t1,494,D-108,D,"V150, V200, V200U(3), and V300 | Vee-Ball Valves | Forward Flow",,13,9,13
+D_108_t2_table_3_k_values_for_effective_pressure_,494,D-108,D,"V150, V200, V200U(3), and V300 | Vee-Ball Valves | Forward Flow","Table 3. K Values for Effective Pressure Drops, P",10,5,10
+D_108_1_t1_table_1_torque_characteristics_for_tmc_p,495,D-108.1,D,"V150, V200, and V300 | Vee-Ball Valves | Cavitrol Hex™ Anti-Cavitation Trim | Forward Flow | Table 1. Torque Characteristics for TMC Plus, Flat Metal Seal, and HD Metal Seal","Table 1. Torque Characteristics for TMC Plus, Flat Metal Seal, and HD Metal Seal",25,9,23
+D_110_t1,498,D-110,D,"V150, V200, and V300 | with Attenuator",,9,4,9
+D_110_t2_table_2_k_factor_t_for_attenuated_valves,498,D-110,D,"V150, V200, and V300 | with Attenuator",Table 2. K Factor (T ) for Attenuated Valves,8,10,8
+D_110_t3_table_3_v_notch_ball_characteristics_c_f,498,D-110,D,"V150, V200, and V300 | with Attenuator",Table 3. V-Notch Ball Characteristics (C Factors) for Attenuated Valves,8,12,8
+D_111_t1_table_4_1052_actuator_torque_net_output_,499,D-111,D,"V150, V200, and V300 | with Attenuator | Table 4. 1052 Actuator Torque Net Output Lbfin with PDTO Attenuated Valve Action (Fail Closed)",Table 4. 1052 Actuator Torque Net Output Lbfin with PDTO Attenuated Valve Action (Fail Closed),10,14,0
+D_111_t2_table_5_1052_actuator_spring_output_torq,499,D-111,D,"V150, V200, and V300 | with Attenuator | Table 4. 1052 Actuator Torque Net Output Lbfin with PDTO Attenuated Valve Action (Fail Closed)",Table 5. 1052 Actuator Spring Output Torque in Lbfin with PDTC Attenuated Valve Action (Fail Open),11,14,0
+D_112_t1,500,D-112,D,"V150, V200, and V300",,13,12,4
+D_112_t2_table_7_fisher_2052_actuator_torque_net_,500,D-112,D,"V150, V200, and V300",Table 7. Fisher 2052 Actuator Torque Net Output Lbfin with PDTC Attenuated Valve Action (Fail Open),13,12,4
+D_113_t1,501,D-113,D,"V150, V200, and V300 | with Attenuator | Δ | Sample Calculations | 1. If | P | is not known, assume | shutoff = P | 1. | shutoff | T | = A( | P) + B = 4 (440) + 3000 = 4,760 | B | Lbf ft. Since shaft spline limit is 12,000 Lbf | in (from table 3 right column) breakout torque is | smaller than the spline limit. | 2. T | = C ( | P) or | whichever is less | effective | D | - r | = K | M (P | 1 absolute | ) | c | v | Given water at 100 F | Example problem based on an actual | Assume r | c = 0.95 and P | = 1 | application: | obtain K | m from Catalog 12",,4,2,4
+D_113_t2,501,D-113,D,"V150, V200, and V300 | with Attenuator | Δ | Sample Calculations | 1. If | P | is not known, assume | shutoff = P | 1. | shutoff | T | = A( | P) + B = 4 (440) + 3000 = 4,760 | B | Lbf ft. Since shaft spline limit is 12,000 Lbf | in (from table 3 right column) breakout torque is | smaller than the spline limit. | 2. T | = C ( | P) or | whichever is less | effective | D | - r | = K | M (P | 1 absolute | ) | c | v | Given water at 100 F | Example problem based on an actual | Assume r | c = 0.95 and P | = 1 | application: | obtain K | m from Catalog 12",,9,2,9
+D_114_t1,502,D-114,D,"V150, V200, and V300 | with Attenuator",,3,10,3
+D_114_t2_table_7_sample_calculations_dynamic_torq,502,D-114,D,"V150, V200, and V300 | with Attenuator",Table 7. Sample Calculations - Dynamic Torque,2,10,0
+D_114_t3_table_8_sample_values,502,D-114,D,"V150, V200, and V300 | with Attenuator",Table 8. Sample Values,2,11,2
+D_116_t1,504,D-116,D,V250 Valve Body | Forward or Reverse Flow,,19,6,16
+D_116_t2_table_2_torque_characteristics_c_factors,504,D-116,D,V250 Valve Body | Forward or Reverse Flow,"Table 2. Torque Characteristics, C Factors",9,13,8
+D_116_t3_table_3_k_values_for_effective_pressure_,504,D-116,D,V250 Valve Body | Forward or Reverse Flow,"Table 3. K values for Effective Pressure Drop, P",8,10,8
+D_118_t1,506,D-118,D,,,7,3,7
+D_118_t2,506,D-118,D,,,7,3,7
+D_118_t3,506,D-118,D,,,8,11,8
+D_118_t4,506,D-118,D,,,8,11,8
+D_118_t5_table_5_k_values_for_effective_pressure_,506,D-118,D,,Table 5. K-Values for Effective Pressure Drop for V260A and B (V260C on next page),2,9,2
+D_119_t1_table_6_dynamic_torque_characteristics_c,507,D-119,D,V260C | Forward or Reverse Flow | Table 6. Dynamic Torque Characteristics (C Factor),Table 6. Dynamic Torque Characteristics (C Factor),8,11,8
+D_119_t2_table_7_k_values_for_effective_pressure_,507,D-119,D,V260C | Forward or Reverse Flow | Table 6. Dynamic Torque Characteristics (C Factor),Table 7. K-Values for Effective Pressure Drop,1,9,1
+D_120_t1_table_1_breakout_torque_characteristics_,508,D-120,D,"V270 | Forward or Reverse Flow | Torque Equations | Liquid only | Breakout Torque | 2 (P | ΔP | eff = ΔP | = F | - F | P | ). Definition of | allowable | L | 1abs | F | v | variables can be found in the valve sizing for flashing | = A (ΔP | T | shutoff) + B | B | and cavitating and liquids procedure in section 2 of | Catalog 12. | Dynamic Torque | = C (ΔP | Gas only | eff) | D | = KP | eff | 1(abs). See tables 5 and 7 for K values. | Valve Body Torque Requirements | 1. Find T | (breakout torque). | Use ΔPshutoff (actual pressure drop) and the A and B | If ΔP | actual (actual pressure drop) is known, compare | factors from tables 1 and 2. | actual to ΔP | eff at each 10 degree increment of | rotation. Use the smaller of ΔP | actual or ΔP | eff and the C | 2. Find T | (dynamic torque). | factor from tables 3, 4 and 6 to calculate T | . | Calculate ΔP | eff (effective pressure drop) at 10 degree | increment up through maximum rotation. Use one of | 3. T | must not exceed the maximum T | D listed in | the following equations: | tables 3, 4 and 6. | Table 1. Breakout Torque Characteristics (A & B Factors)",Table 1. Breakout Torque Characteristics (A & B Factors),8,3,8
+D_120_1_t1_table_2_dynamic_torque_characteristics_c,509,D-120.1,D,V270 | Forward or Reverse Flow | Table 2. Dynamic Torque Characteristics (C Factor),Table 2. Dynamic Torque Characteristics (C Factor),25,12,1
+D_120_1_t2_table_3_k_values_for_effective_pressure_,509,D-120.1,D,V270 | Forward or Reverse Flow | Table 2. Dynamic Torque Characteristics (C Factor),Table 3. K Values for Effective Pressure Drop,8,10,8
+D_120_2_t1,510,D-120.2,D,,,5,3,5
+D_120_2_t2,510,D-120.2,D,,,5,3,5
+D_120_2_t3,510,D-120.2,D,,,6,11,6
+D_120_2_t4,510,D-120.2,D,,,6,11,6
+D_120_2_t5_table_5_dynamic_torque_characteristics_c,510,D-120.2,D,,Table 5. Dynamic Torque Characteristics (C Factor) Without Attenuator,6,11,6
+D_120_2_t6_table_6_k_values_for_effective_pressure_,510,D-120.2,D,,Table 6. K-Values for Effective Pressure Drop,3,10,3
+D_121_t1,513,D-121,D,V500 | Forward and Reverse Flow,,10,11,0
+D_121_t2,513,D-121,D,V500 | Forward and Reverse Flow,,10,11,7
+D_122_t1,514,D-122,D,V500 | Forward and Reverse Flow,,7,9,7
+D_122_1_t2,515,D-122.1,D,Z500 | Full and Reduced Bore,,3,2,3
+D_122_1_t4,515,D-122.1,D,Z500 | Full and Reduced Bore,,15,5,15
+D_122_2_t1,516,D-122.2,D,Z500 | Full and Reduced Bore,,43,7,1
+D_122_3_t1,517,D-122.3,D,Z500 | Full and Reduced Bore | Max Allowable Shaft Torque (MAST) (inlbf) (cont.),,23,7,6
+D_123_t1_table_1_actuator_torque_lbfin,519,D-123,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8532 and 8560 in Reverse Flow, | 9500, and Vee-Ball™ Valves with Attenuator | Table 1. Actuator Torque, lbfin","Table 1. Actuator Torque, lbfin",21,9,14
+D_123_t2_table_2_actuator_valve_body_shaft,519,D-123,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8532 and 8560 in Reverse Flow, | 9500, and Vee-Ball™ Valves with Attenuator | Table 1. Actuator Torque, lbfin",Table 2. Actuator / Valve Body Shaft,8,4,8
+D_124_t1,520,D-124,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8510B, 8532, 8560, and 8580 Valves | Forward Flow",,24,11,16
+D_124_t2_table_2_actuator_valve_body_shaft,520,D-124,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8510B, 8532, 8560, and 8580 Valves | Forward Flow",Table 2. Actuator / Valve Body Shaft,7,4,7
+D_125_t1_table_1_actuator_torque_lbfin,521,D-125,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with Control-Disk™ Valves | Forward Flow | Table 1. Actuator Torque, lbfin","Table 1. Actuator Torque, lbfin",23,9,15
+D_126_t1,522,D-126,D,1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Forward Flow,,24,11,16
+D_126_t2_table_2_actuator_valve_body_shaft_combin,522,D-126,D,1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Forward Flow,Table 2. Actuator/Valve Body Shaft Combinations,7,4,7
+D_127_t1_table_1_actuator_torque_lbfinch,523,D-127,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Reverse Flow | Table 1. Actuator Torque, LbfInch","Table 1. Actuator Torque, LbfInch",24,11,16
+D_127_t2_table_2_actuator_valve_shaft_combination,523,D-127,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Reverse Flow | Table 1. Actuator Torque, LbfInch",Table 2. Actuator/Valve Shaft Combinations,7,4,7
+D_128_t1,524,D-128,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with V150, V200, and V300 Vee-Ball™ Valves",,22,7,15
+D_128_t2_table_2_available_valve_shaft_diameter_a,524,D-128,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with V150, V200, and V300 Vee-Ball™ Valves",Table 2. Available Valve Shaft Diameter/Actuator Combinations,8,4,8
+D_129_t1_table_1_actuator_torque_inch_pounds,525,D-129,D,"1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valve Bodies | Forward Flow | Table 1. Actuator Torque, Inch-Pounds","Table 1. Actuator Torque, Inch-Pounds",24,11,17
+D_130_t1,526,D-130,D,1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valve Bodies | Reverse Flow,,24,11,17
+D_130_t2_table_3_actuator_valve_body_shaft_combin,526,D-130,D,1051 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valve Bodies | Reverse Flow,Table 3. Actuator/Valve Body Shaft Combinations,9,4,9
+D_131_t1_table_1_actuator_torque_lbfin,527,D-131,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8532 and 8560 in Reverse Flow, | 9500, and Vee-Ball™ Valves with Attenuator | Table 1. Actuator Torque, lbfin","Table 1. Actuator Torque, lbfin",33,11,27
+D_132_t1,528,D-132,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8532, 8560, and 8580 Valves | Forward Flow",,39,13,28
+D_133_t1_table_2_actuator_torques_for_60_or_75_li,529,D-133,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8532, 8560, and 8580 Valves | Forward Flow | Table 2. Actuator Torques for 60 or 75 Limited Maximum Rotation, lbin","Table 2. Actuator Torques for 60 or 75 Limited Maximum Rotation, lbin",16,10,0
+D_133_t2_table_3_actuator_valve_body_shaft_combin,529,D-133,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with 8532, 8560, and 8580 Valves | Forward Flow | Table 2. Actuator Torques for 60 or 75 Limited Maximum Rotation, lbin",Table 3. Actuator/Valve Body Shaft Combinations,9,6,9
+D_134_t1,530,D-134,D,1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with Control-Disk™ Valves | Forward Flow,,39,11,28
+D_135_t1_table_1_actuator_torque_lbfin,531,D-135,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Forward Flow | Table 1. Actuator Torque, LbfIn.","Table 1. Actuator Torque, LbfIn.",25,13,17
+D_136_t1,532,D-136,D,1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Forward Flow,,16,13,13
+D_136_t2_table_2_actuator_valve_shaft_combination,532,D-136,D,1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Forward Flow,Table 2. Actuator/Valve Shaft Combinations,9,6,9
+D_137_t1_table_1_actuator_torque_lbfin,533,D-137,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Reverse Flow | Table 1. Actuator Torque, LbfIn.","Table 1. Actuator Torque, LbfIn.",35,13,25
+D_137_t2_table_2_actuator_valve_shaft_combination,533,D-137,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Reverse Flow | Table 1. Actuator Torque, LbfIn.",Table 2. Actuator/Valve Shaft Combinations,9,6,9
+D_138_t1,534,D-138,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V150, V200, and V300 Vee-Ball™ Valves",,42,9,31
+D_139_t1_table_2_actuator_torques_for_60_degree_l,535,D-139,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V150, V200, and V300 Vee-Ball™ Valves | Table 2. Actuator Torques for 60-Degree LImited Maximum Rotation, LbfIn.","Table 2. Actuator Torques for 60-Degree LImited Maximum Rotation, LbfIn.",11,7,11
+D_139_t2_table_3_acceptable_valve_shaft,535,D-139,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V150, V200, and V300 Vee-Ball™ Valves | Table 2. Actuator Torques for 60-Degree LImited Maximum Rotation, LbfIn.",Table 3. Acceptable Valve Shaft,10,6,10
+D_140_t1,536,D-140,D,1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valves | Forward Flow,,37,13,26
+D_141_t1_table_2_actuator_torque_lbfin,537,D-141,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valves | Reverse Flow | Table 2. Actuator Torque, LbfIn.","Table 2. Actuator Torque, LbfIn.",32,13,22
+D_141_t2_table_3_acceptable_valve_shaft,537,D-141,D,"1052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valves | Reverse Flow | Table 2. Actuator Torque, LbfIn.",Table 3. Acceptable Valve Shaft,7,5,7
+D_142_t1_table_1_actuator_torque_per_psig_cylinde,538,D-142,D,"1061 | Pneumatic Piston Actuator | more torque than required by the valve body. Refer | psig of cylinder pressure at 0 and 90 | rotation. At | to table 2 and check the valve body/actuator shaft | intermediate degrees of rotation—for instance, at 10, | compatibility. | 60, or 70 rotation—more torque per psig of cylinder | pressure is available (see figure 1 and table 1) as a | or | result of changes in effective actuator lever length. | Refer to table 1. Use the following equation to | The actuator can be sized with one of the following | calculate the available actuator torque at each | two procedures. The first procedure is quicker and | required angle of opening: | compares the lowest actuator torque to the largest | required valve body torque. The second procedure is | Torque = Cylinder pressure, psig X Torque per psig | more detailed as it compares actuator and valve body | Cylinder pressure from table 1 | torques at each angle of opening. | Compare the valve body torque requirement for each | Use one of the following procedures: | required angle of opening to the available actuator | torque. Select an actuator size that satisfies all the | Compare the largest valve body torque requirement | valve body requirements with the required cylinder | to the 0 and 90 available actuator torque shown | pressure. Refer to table 2 and check the valve | in figure 1. Select an actuator size that provides | body/actuator shaft compatibility. | Table 1. Actuator Torque per Psig Cylinder Pressure(1), Inlbs/psig","Table 1. Actuator Torque per Psig Cylinder Pressure(1), Inlbs/psig",8,6,8
+D_143_t1,539,D-143,D,1061 | Pneumatic Piston Actuator | Figure 1. Available Actuator Torques at 0 and 90 | SIZE 40,,3,6,3
+D_143_t3_table_2_actuator_valve_body_shaft_combin,539,D-143,D,1061 | Pneumatic Piston Actuator | Figure 1. Available Actuator Torques at 0 and 90 | SIZE 40,Table 2. Actuator/Valve Body Shaft Combinations,16,10,16
+D_145_t1_table_1_double_acting_actuators_nm,541,D-145,D,"1068 Double Acting Actuator | All Valves | Table 1. Double Acting Actuators, Nm","Table 1. Double Acting Actuators, Nm",12,10,12
+D_145_t2_table_2_double_acting_actuators_lbfin,541,D-145,D,"1068 Double Acting Actuator | All Valves | Table 1. Double Acting Actuators, Nm","Table 2. Double Acting Actuators, lbfin",12,10,12
+D_145_t3_table_3_actuator_valve_body_shaft_combin,541,D-145,D,"1068 Double Acting Actuator | All Valves | Table 1. Double Acting Actuators, Nm",Table 3. Actuator / Valve Body Shaft Combinations,12,7,12
+D_146_t1,542,D-146,D,,,15,10,13
+D_146_t2_table_2_8580_actuator_air_to_close_inlb,542,D-146,D,,"Table 2. 8580 Actuator, Air to Close, inlb",14,10,14
+D_146_t3_table_3_8580_actuator_valve_body_shaft_c,542,D-146,D,,Table 3. 8580 Actuator / Valve Body Shaft Combinations,13,7,13
+D_147_t1_table_1_cv500_torque_spring_to_close_inl,543,D-147,D,"1068 Spring Return Actuator | Used with CV500 Valve | Forward Flow | Table 1. CV500 Torque, Spring to Close, inlb","Table 1. CV500 Torque, Spring to Close, inlb",14,13,14
+D_147_t2_table_2_cv500_torque_air_to_close_inlb,543,D-147,D,"1068 Spring Return Actuator | Used with CV500 Valve | Forward Flow | Table 1. CV500 Torque, Spring to Close, inlb","Table 2. CV500 Torque, Air to Close, inlb",14,13,14
+D_147_t3_table_3_cv500_actuator_valve_body_shaft_,543,D-147,D,"1068 Spring Return Actuator | Used with CV500 Valve | Forward Flow | Table 1. CV500 Torque, Spring to Close, inlb",Table 3. CV500 Actuator / Valve Body Shaft Combinations,13,7,13
+D_148_t1,544,D-148,D,,,15,13,15
+D_148_t2_table_2_cv500_torque_air_to_close_inlb,544,D-148,D,,"Table 2. CV500 Torque, Air to Close, inlb",14,13,14
+D_148_t3_table_3_cv500_actuator_valve_body_shaft_,544,D-148,D,,Table 3. CV500 Actuator / Valve Body Shaft Combinations,13,7,13
+D_149_t1_table_1_v150_v200_and_v300_with_attenuat,545,D-149,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves with Attenuator | Forward Flow | Table 1. V150, V200, and V300 with Attenuator Torque, Spring to Close, (inlb)","Table 1. V150, V200, and V300 with Attenuator Torque, Spring to Close, (inlb)",14,11,14
+D_149_t2_table_2_v150_v200_and_v300_with_attenuat,545,D-149,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves with Attenuator | Forward Flow | Table 1. V150, V200, and V300 with Attenuator Torque, Spring to Close, (inlb)","Table 2. V150, V200, and V300 with Attenuator Torque, Air to Close, (inlb)",14,11,14
+D_149_t3_table_3_v150_v200_and_v300_with_attenuat,545,D-149,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves with Attenuator | Forward Flow | Table 1. V150, V200, and V300 with Attenuator Torque, Spring to Close, (inlb)","Table 3. V150, V200, and V300 with Attenuator Torque, Spring to Close, (inlb)",14,11,14
+D_150_t1,546,D-150,D,"1068 Spring Return Actuator | Used with V150, V200, V200U, and V300 Valves | Forward Flow",,14,11,14
+D_150_t2_table_5_v150_v200_and_v300_with_attenuat,546,D-150,D,"1068 Spring Return Actuator | Used with V150, V200, V200U, and V300 Valves | Forward Flow","Table 5. V150, V200, and V300 with Attenuator Torque, Spring to Close, (inlb)",14,11,14
+D_150_t3_table_6_v150_v200_and_v300_with_attenuat,546,D-150,D,"1068 Spring Return Actuator | Used with V150, V200, V200U, and V300 Valves | Forward Flow","Table 6. V150, V200, and V300 with Attenuator Torque, Air to Close, (inlb)",14,11,14
+D_150_1_t1_table_7_v150_v200_and_v300_with_attenuat,547,D-150.1,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves with Attenuator | Forward Flow | Table 7. V150, V200 and V300 with Attenuator Valve Actuator / Valve Body Shaft Combinations","Table 7. V150, V200 and V300 with Attenuator Valve Actuator / Valve Body Shaft Combinations",13,7,13
+D_150_2_t1,548,D-150.2,D,,,15,10,15
+D_150_2_t2_table_2_v150_v200_v200u_and_v300_valve_t,548,D-150.2,D,,"Table 2. V150, V200, V200U, and V300 Valve Torque, Air to Close, inlb",14,10,14
+D_150_2_t3_table_3_v150_v200_v200u_and_v300_actuato,548,D-150.2,D,,"Table 3. V150, V200, V200U, and V300 Actuator / Valve Body Shaft Combinations",13,7,13
+D_150_3_t1_table_1_v150_v200_and_v300_valve_torque_,549,D-150.3,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves for Fixed Stops | Forward Flow | Table 1. V150, V200, and V300 Valve Torque, Spring to Close, inlb","Table 1. V150, V200, and V300 Valve Torque, Spring to Close, inlb",11,11,11
+D_150_3_t2_table_2_v150_v200_and_v300_valve_torque_,549,D-150.3,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves for Fixed Stops | Forward Flow | Table 1. V150, V200, and V300 Valve Torque, Spring to Close, inlb","Table 2. V150, V200, and V300 Valve Torque, Air to Close, inlb",11,11,11
+D_150_3_t3_table_3_v150_v200_and_v300_actuator_valv,549,D-150.3,D,"1068 Spring Return Actuator | Used with V150, V200, and V300 Valves for Fixed Stops | Forward Flow | Table 1. V150, V200, and V300 Valve Torque, Spring to Close, inlb","Table 3. V150, V200, and V300 Actuator / Valve Body Shaft Combinations",9,7,9
+D_151_t1_table_1_v500_torque_spring_to_close_inlb,551,D-151,D,"1068 Spring Return Actuators | Used with V500 Valve | Forward Flow | Table 1. V500 Torque, Spring to Close, inlb","Table 1. V500 Torque, Spring to Close, inlb",14,13,14
+D_151_t2_table_2_v500_torque_air_to_close_inlb,551,D-151,D,"1068 Spring Return Actuators | Used with V500 Valve | Forward Flow | Table 1. V500 Torque, Spring to Close, inlb","Table 2. V500 Torque, Air to Close, inlb",14,13,14
+D_151_t3_table_3_v500_actuator_valve_body_shaft_c,551,D-151,D,"1068 Spring Return Actuators | Used with V500 Valve | Forward Flow | Table 1. V500 Torque, Spring to Close, inlb",Table 3. V500 Actuator / Valve Body Shaft Combinations,13,7,13
+D_152_t1,552,D-152,D,,,15,13,15
+D_152_t2_table_2_v500_torque_air_to_close_inlb,552,D-152,D,,"Table 2. V500 Torque, Air to Close, inlb",14,13,14
+D_152_t3_table_3_v500_actuator_valve_body_shaft_c,552,D-152,D,,Table 3. V500 Actuator / Valve Body Shaft Combinations,13,7,13
+D_153_t1_table_1_8590_valve_torque_spring_to_clos,553,D-153,D,"1068 Spring Return Actuators | Used with 8590 Valve | Reverse Flow | Table 1. 8590 Valve Torque, Spring to Close, (inlb)","Table 1. 8590 Valve Torque, Spring to Close, (inlb)",14,19,14
+D_153_t2_table_2_8590_valve_torque_air_to_close_i,553,D-153,D,"1068 Spring Return Actuators | Used with 8590 Valve | Reverse Flow | Table 1. 8590 Valve Torque, Spring to Close, (inlb)","Table 2. 8590 Valve Torque, Air to Close, (inlb)",14,19,14
+D_154_t1,554,D-154,D,1068 Spring Return Actuator,,13,7,13
+D_155_t1_table_1_actuator_torque_lbfin_forward_fl,555,D-155,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with A11 CL600, 8590, and CL600 Control-Disk Valves | Table 1. Actuator Torque, lbfin - Forward Flow","Table 1. Actuator Torque, lbfin - Forward Flow",13,14,0
+D_155_t2_table_2_actuator_torque_lbfin_reverse_fl,555,D-155,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with A11 CL600, 8590, and CL600 Control-Disk Valves | Table 1. Actuator Torque, lbfin - Forward Flow","Table 2. Actuator Torque, lbfin - Reverse Flow",13,14,0
+D_155_t3_table_3_actuator_valve_body_shaft_combin,555,D-155,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with A11 CL600, 8590, and CL600 Control-Disk Valves | Table 1. Actuator Torque, lbfin - Forward Flow",Table 3. Actuator / Valve Body Shaft Combinations,9,4,9
+D_156_t1,556,D-156,D,,,14,8,1
+D_156_t2_table_2_actuator_valve_body_shaft_combin,556,D-156,D,,Table 2. Actuator / Valve Body Shaft Combinations,7,4,7
+D_157_t1_table_1_actuator_torque_lbfin_forward_fl,557,D-157,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Table 1. Actuator Torque, lbfin - Forward Flow","Table 1. Actuator Torque, lbfin - Forward Flow",13,10,0
+D_157_t2_table_2_actuator_torque_lbfin_reverse_fl,557,D-157,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Table 1. Actuator Torque, lbfin - Forward Flow","Table 2. Actuator Torque, lbfin - Reverse Flow",13,10,0
+D_157_t3_table_3_actuator_valve_body_shaft_combin,557,D-157,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with CV500 Valves | Table 1. Actuator Torque, lbfin - Forward Flow",Table 3. Actuator / Valve Body Shaft Combinations,8,4,8
+D_158_t1,558,D-158,D,,,14,6,1
+D_158_t2_table_2_actuator_valve_body_shaft_combin,558,D-158,D,,Table 2. Actuator / Valve Body Shaft Combinations,9,4,9
+D_159_t1_table_1_actuator_torque_lbfin_forward_fl,559,D-159,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valves | Table 1. Actuator Torque, lbfin - Forward Flow","Table 1. Actuator Torque, lbfin - Forward Flow",13,10,0
+D_159_t2_table_2_actuator_torque_lbfin_reverse_fl,559,D-159,D,"2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valves | Table 1. Actuator Torque, lbfin - Forward Flow","Table 2. Actuator Torque, lbfin - Reverse Flow",13,10,0
+D_160_t1,560,D-160,D,2052 Pneumatic | Spring-and-Diaphragm Actuator | Used with V500 Valves,,8,4,8

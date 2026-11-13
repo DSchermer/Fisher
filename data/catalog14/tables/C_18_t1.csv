@@ -1,0 +1,22 @@
+"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Valve Size, NPS",Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Angle of Opening,"Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 2 barg / 29 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 1 4 barg / 58 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 2 barg / 29 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 2 4 barg / 58 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 2 barg / 29 psig 90 psi","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 bar","Maximum Allowable Pressure Drops (ΔP)(1) for Forward Flow Actuator Size, Air to Diaphragm, Maximum Rotation Size 3 4 barg / 58 psig 90 psi"
+2,0,,,46.7,678,,,,,,,,
+2,60,,,46.7,678,,,,,,,,
+2,90,,,14.8,215,,,,,,,,
+3,0,,,,,51.0,740,51.0,740,,,,
+3,60,,,,,51.0,740,51.0,740,,,,
+3,90,,,,,10.1,146,10.1,146,,,,
+4,0,,,,,13.0,189,51.0,740,51.0,740,51.0,740
+4,60,,,,,13.0,189,34.8,740,34.8,505,34.8,505
+4,90,,,,,5.1,74,7.0,146,7.0,101,7.0,101
+6,0,,,,,,,11.5,167,38.7,561,51.0,740
+6,60,,,,,,,11.5,167,28.5,414,28.5,414
+6,90,,,,,,,4.5,66,6.1,88,6.1,88
+8,0,,,,,,,,,5.6,82,31.0,450
+8,60,,,,,,,,,5.6,82,31.0,450
+8,90,,,,,,,,,2.6,38,5.2,75
+10,0,,,,,,,,,,,14.8,215
+10,60,,,,,,,,,,,14.8,215
+10,90,,,,,,,,,,,2.0,29
+12,0,,,,,,,,,,,1.5,22
+12,60,,,,,,,,,,,1.5,22
+12,90,,,,,,,,,,,1.3,19

@@ -1,0 +1,27 @@
+Port Diameter (Inches),"Port Circumference, (Inches)",Port Area (Sq. Inches),"Unbalance Area(1) (Balanced Plug), Sq. Inches"
+3.5,11.0,9.62,
+3.625,11.39,10.32,"0.21(2) (C-seal trim, high-temperature, Class V Shutoff)"
+4,12.57,12.57,
+4.375,13.74,15.03,"0.154 (ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats) 0.25(2) (C-seal trim, high-temperature, Class V Shutoff) 0.51 (CAV4, ED, EDR, ET, ETR, EWD, EWT)"
+4.9375,15.5,19.15,
+5,15.7,19.64,
+5.375,16.89,22.69,"0.63 (ED, ET, EWND, EWNT) 0.206 (CHPD, CHPT, ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats) 0.37 (CHPD-Bore Seal) 0.37(2) (C-seal trim, high-temperature, Class V Shutoff)"
+6,18.85,28.3,
+6.75,21.21,35.78,"3.79 (EWND, EWNT)"
+7,22.0,38.48,"0.30 (ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats) 0.47(2) (C-seal trim, high-temperature, Class V Shutoff) 0.81 (ED, ET, ETR, EWD, EWT)"
+7.75,24.35,47.17,"4.33 (EWND, EWNT)"
+8,25.13,50.24,"0.35 (ET, EWT Class V Shutoff, ET-C, EWT-C — Metal Seats) 0.60(2) (C-seal trim, high-temperature, Class V Shutoff) 0.86 (ED, ET, ETR, EWD, EWT)"
+9.5,29.83,70.85,"1.62 ED-J, ET-J except Cavitrol III 0.57 ET-J Cavitrol III"
+10,31.42,78.5,0.57 (ET and ED Whisper Trim III Level D)
+10.125,31.81,80.5,"1.24 (EWND, EWNT)"
+11.00,34.56,95.0,0.49
+14.75,46.43,170.9,"1.87 (ED-J, ET-J except Cavitrol III)"
+,,,0.66 (ET-J Cavitrol III)
+,,,0.65
+,,,"2.51 (ED-J, ET-J except Cavitrol III)"
+,,,0.89 (ET-J Cavitrol III)
+16.25,51.05,207.5,"0.72 (ET/EWT Whisper Trim III Level A, B, and C)"
+18.25,57.33,261.6,0.81
+19.75,62.05,306.6,"0.87 (ET/EWT Whisper Trim III Level A, B, and C)"
+24,75.40,452.4,0.96
+26,81.68,530.9,"1.02 (ET Whisper Trim III Levels A, B, and C)"

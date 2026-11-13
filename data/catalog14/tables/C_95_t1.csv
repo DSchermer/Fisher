@@ -1,0 +1,20 @@
+"Size 30, 40, 60, 68 Valve Size, NPS 2 3 4 6","Size 30, 40, 60, 68 Angle of Opening 0 80 0 80 0 80 0","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 30 60 psig psi 750 393 750 578 750 250 353","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 30 60 psig bar 52 27 52 40 52 17 24","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 30 80 psig psi 750 393 750 578 750 305 526","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 30 80 psig bar 52 27 52 40 52 21 36","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 30 100 psig psi 750 393 750 578 750 305 698","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 30 100 psig bar 52 27 52 40 52 21 48","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 60 psig psi 750 393 750 578 750 305 750","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 60 psig bar 52 27 52 40 52 21 52","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 80 psig psi - - - 750 305 750","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 80 psig bar - - - 52 21 52","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 100 psig psi - - - 750 305 750","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 100 psig bar - - - 52 21 52","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 120 psig psi - - - 750 305 750","Size 30, 40, 60, 68 Actuator Size, Air to Diaphragm, Maximum Rotation, psig/barg Size 40 120 psig bar - - - 52 21 52"
+,80,95,6.5,126,8.7,158,11,189,13,225,16,225,16,225,16
+8,0,131,9.0,217,15,303,21,390,27,562,39,734,51,750,52
+8,80,38,2.6,51,3.5,63,4.4,76,5.2,101,7.0,127,8.7,152,10
+10,0,,,37,2.5,89,6.2,142,9.8,247,17,353,24,458,32
+10,80,,,16,1.1,20,1.4,24,1.7,32,2.2,41,2.8,49,3.4
+12,0,,,,,,,33,2.3,117,8.0,200,14,283,20
+12,80,,,,,,,22,1.5,29,2.0,36,2.5,44,3.0
+"Valve Size, NPS",Angle of Opening,Size 60,,,,,,Size 68,,,,,,,
+"Valve Size, NPS",Angle of Opening,60 psig,,80 psig,,100 psig,,60 psig,,80 psig,,,,,
+4,0,750,52,750,52,750,52,750,52,750,52,,,,
+4,80,305,21,305,21,305,21,305,21,305,21,,,,
+6,0,750,52,750,52,750,52,750,52,750,52,,,,
+6,80,225,16,225,16,225,16,225,16,225,16,,,,
+8,0,750,52,750,52,750,52,750,52,750,52,,,,
+8,80,152,10,203,14,214,15,214,15,214,15,,,,
+10,0,458,32,524,36,524,36,524,36,524,36,,,,
+10,80,49,3.4,65,4.5,69,4.7,69,4.7,69,4.7,,,,
+12,0,283,20,450,31,600,41,583,40,600,41,,,,
+12,80,44,3.0,58,4.0,73,5.0,70,4.8,75,5.2,,,,

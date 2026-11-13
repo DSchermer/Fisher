@@ -1,0 +1,17 @@
+"AIR TO DIAPHRAGM, PSIG",MAXIMUM ROTATION,"INITIAL COMPRESSION, PSIG",PUSH-DOWN-TO-OPEN (PDTO) TB,PUSH-DOWN-TO-OPEN (PDTO) TD (1) 10 Rotation(2),PUSH-DOWN-TO-OPEN (PDTO) TD (1) 60 Rotation(3),PUSH-DOWN-TO-OPEN (PDTO) TD (1) 75 Rotation(4),PUSH-DOWN-TO-OPEN (PDTO) TD (1) 75 Rotation(5),SPRING PART NUMBER TD (1),ACTUATOR SIZE TD (1)
+0-33,60,9.7,655,848,550,,,10B1525X012,33
+0-33,60,9.2,1570,2130,810,,,1N844027082,40
+0-33,60,11.4,5040,6670,1170,,,1P270227042,60
+,75,9.1,4020,5480,,640,12300,,
+0-33,60,14.7,7020,8990,4060,,,1R676027082,70
+,75,12.2,5840,7610,,3490,14600,,
+0-40,60,9.7,655,848,1031,,,10B1525X012,33
+0-40,60,9.2,1570,2130,2010,,,1N844027082,40
+0-40,60,11.4,5040,6670,4430,,,1P270227042,60
+,75,9.1,4020,5480,,3550,12300,,
+0-40,60,14.7,7020,8990,8520,,,1R676027082,70
+,75,12.2,5840,7610,,7490,14600,,
+0-55,60,9.2,1570,2130,4600,,,1N844027082,40
+0-55,60,14.7,7020,8990,18060,,14600,1R676027082,70
+,75,12.2,5840,7610,,16070,,,
+"1 2. . T T D he a c n t u u m at b o e r r t s o in rq t u h e is a c t o 7 lu 5 m u n s r e e T fl N e c f t o t r h a e ll n 8 e 5 t 3 d 2 i a a p n h d r N ag P m S 3 t o to rq 1 u 2 e 8 o 5 u 6 t 0 p u a t n ( d in u s lb e s T ) S a f t o 1 r 0 N P , S v a 2 l v 8 e 5 t 6 o 0 r ; q a u t e 6 t 0 e n d fo in r g a l t l o e x c c lo e s p e t . NPS 2 8560. 3. The numbers in this column reflect the net diaphragm torque output (inlbs) at 60, valve torque tending to close. 4. The numbers in this column reflect the net diaphragm torque output (inlbs) at 75, valve torque tending to close. 5. The numbers in this column reflect the net spring torque output (inlbs) at 75, valve torque tending to open.",75,,,,,,,,

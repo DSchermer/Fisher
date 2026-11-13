@@ -1,0 +1,7 @@
+Port Diameter (Inches),Seat Radius (Inches),Plug Angle (Degrees),Shutoff Diameter (Inches),Unbalance Area (Inches2) Port,Unbalance Area (Inches2) Shutoff,Unbalance Area (Inches2) % Difference
+0.25,1/4,60,0.317,0.049,0.079,161%
+0.375,1/4,60,0.442,0.110,0.153,139%
+0.5,1/4,60,0.567,0.196,0.252,129%
+0.75,1/4,60,0.817,0.442,0.524,119%
+1,1/4,60,1.067,0.785,0.894,114%
+1.25,1/4,60,1.317,1.227,1.362,111%

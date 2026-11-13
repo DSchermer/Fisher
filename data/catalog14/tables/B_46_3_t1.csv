@@ -1,0 +1,11 @@
+Available Actuator Force,col1,col2,col3
+0-18 Psig to Diaphragm,,,
+"Travel, Inch (mm)",2.17 (55),3.54 (90),"Spring Part Number (Spring Rate, Lb/In.)"
+"Force,Lb (Bench Set, Psig)",468 (3-15),,1P270227042 (860)
+"Force,Lb (Bench Set, Psig)",936 (6-15),,1K162827082 (610)
+"Force,Lb (Bench Set, Psig)",1404 (9-15),936 (6-15),1N937327082 (400)
+"Force,Lb (Bench Set, Psig)",,936 (6-13),1K162727082 (280)
+0-33 Psig to Diaphragm,1404 (9-15),,
+"Travel, Inch (mm)",2.17 (55),3.54 (90),"Spring Part Number (Spring Rate, Lb/In.)"
+"Force,Lb (Bench Set, Psig)",2808 (18-30),1560 (10-30),1P270227042 (860)
+"Force,Lb (Bench Set, Psig)",,2028 (13-27),1K162827082 (610)

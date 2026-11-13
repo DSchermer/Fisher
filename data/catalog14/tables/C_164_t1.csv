@@ -1,0 +1,16 @@
+"Maximum Allowable Pressure Drops (P)(1) for Forward Flow Valve Size, NPS","Maximum Allowable Pressure Drops (P)(1) for Forward Flow Angle of Opening, Degrees","Maximum Allowable Pressure Drops (P)(1) for Forward Flow Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 33 psig","Maximum Allowable Pressure Drops (P)(1) for Forward Flow Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 40 psig","Maximum Allowable Pressure Drops (P)(1) for Forward Flow Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 55 psig"
+,,3,3.3,10.1
+,,90,90,90
+,,1R6760 27082,1R6760 27082,1R6760 27082
+3,0,,,
+3,70,,,
+4,0,,,
+4,70,,,
+6,0,,,
+6,70,,,
+8,0,740,740,740
+8,70,62,65,135
+10,0,740,740,740
+10,70,30,31,65
+12,0,680,740,740
+12,70,19,20,43

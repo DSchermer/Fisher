@@ -1,0 +1,27 @@
+PORT DIAMETER INCHES CL600,NEGATIVE GRADIENT (Kn) (Inches) Flow Down Cages DST 2-Stage,NEGATIVE GRADIENT (Kn) (Inches) Flow Down Cages DST 3-Stage,NEGATIVE GRADIENT (Kn) (Inches) Flow Down Cages DST 4-Stage,NEGATIVE GRADIENT (Kn) (Inches) Flow Down Cages DST 6-Stage
+0.875,Unbalanced,Unbalanced,N/A,N/A
+1.125,Unbalanced,Unbalanced,N/A,N/A
+1.75,3,3,N/A,N/A
+2.188,3,3,N/A,N/A
+2.5,3,3,N/A,N/A
+3.438,3,3,N/A,N/A
+4.375,3,3,N/A,N/A
+5.375,4,4,N/A,N/A
+8,4,4,N/A,N/A
+11,4,4,N/A,N/A
+CL1500,4,,,
+0.875,N/A,Unbalanced,Unbalanced,Unbalanced
+1.25,N/A,Unbalanced,Unbalanced,Unbalanced
+1.5,N/A,3,3,3
+1.875,N/A,3,3,3
+2.875,N/A,3,3,3
+3.625,N/A,4,4,4
+5.375,N/A,4,4,4
+8,N/A,4,4,4
+CL2500,N/A,,,
+0.875,N/A,Unbalanced,Unbalanced,Unbalanced
+1,N/A,Unbalanced,Unbalanced,Unbalanced
+1.5,N/A,Unbalanced,Unbalanced,Unbalanced
+1.875,N/A,3,3,3
+2.875,N/A,3,3,3
+3.625,N/A,4,4,4

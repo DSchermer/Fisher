@@ -1,0 +1,19 @@
+"Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Valve Body Size, NPS 10",Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Liner Material Nitrile,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Disk Style(3) C,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Angle of Opening 0 60,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 30 60 Psig - - -,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 30 80 Psig - - -,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 30 100 Psig - - -,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 40 60 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 40 80 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 40 100 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 40 120 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 60 60 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 60 80 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 60 100 Pig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 68 60 Psig 150 26,Maximum Allowable Pressure Drops (P)(1) for Forward Flow Push-Down-To-Open or Push-Down-To-Close Actuator Size and Cylinder Pressure(2) Size 68 80 Psig 150 26
+,,,90,,,,6.3,8.1,8.1,8.1,8.1,8.1,8.1,8.1,8.1
+,,F,0,,,,150,150,150,150,150,150,150,150,150
+,,,90,,,,13,17,17,17,17,17,17,17,17
+,PTFE,C,0,,,182,220,220,220,220,220,220,220,220,220
+,,,60,,,23,26,26,26,26,26,26,26,26,26
+,,,90,,,5.2,6.3,8.1,8.1,8.1,8.1,8.1,8.1,8.1,8.1
+,PTFE,F,0,,,182,220,220,220,220,220,220,220,220,220
+,,,90,,,11,13,17,17,17,17,17,17,17,17
+12,Nitrile,C,0,,,,,,150,150,150,150,150,150,150
+,,,60,,,,,,26,29,29,29,29,29,29
+,,,90,,,,,,6.1,7.3,7.3,9.2,9.2,9.2,9.2
+12,Nitrile,F,0,,,,,,150,150,150,150,150,150,150
+,,,90,,,,,,13,15,15,19,19,19,19
+12,PTFE,C,0,,,,,218,220,220,220,220,220,220,220
+,,,60,,,,,21,26,29,29,29,29,29,29
+,,,90,,,,,4.9,6.1,7.3,7.3,9.2,9.2,9.2,9.2
+12,PTFE,F,0,,,,,218,220,220,220,220,220,220,220
+,,,90,,,,,10,13,15,15,19,19,19,19

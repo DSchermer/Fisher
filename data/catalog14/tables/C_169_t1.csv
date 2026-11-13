@@ -1,0 +1,16 @@
+"Valve Size, NPS","Angle of Opening, Degrees","Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 33 psig","Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 40 psig","Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 40 psig","Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, Spring Part Number Size 70 55 psig"
+,,10.1,10.1,14.7,10.1
+,,90,90,60,90
+,,1R676027082,1R676027082,1R676027082,1R676027082
+3,0,,,,
+3,70,,,,
+4,0,,,,
+4,70,,,,
+6,0,,,,
+6,70,,,,
+8,0,740,740,740,740
+8,70,94,165,144(2),166
+10,0,633,633,740,633
+10,70,44,78,68(2),79
+12,0,262,262,564,262
+12,70,29,51,45(2),63

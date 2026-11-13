@@ -1,0 +1,23 @@
+"Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port Air to Diaphragm, Psig Bench Set, Psig Travel, Inch","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port Air to Diaphragm, Psig Bench Set, Psig Yoke Boss Size, Inch","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port Air to Diaphragm, Psig Bench Set, Psig Actuator Size","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port 0-18(1) 3-15 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port 0-18(1) 3-12 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port 0-18(1) 3-10 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port 0-33(1) 6-30 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port 0-33(1) 6-26 ΔP, Psi","Maximum Allowable Pressure Drops (ΔP) 0.75 Inch Port 0-33(1) 6-22 ΔP, Psi"
+0.75,2-1/8,"30, 30i",14,431(2),640(3),14,431,848
+0.75,2-1/8,"34, 34i",170,796(2),1109(3),170,796,1422
+0.75,2-13/16,"40, 40i",142,768(2),1081(3),142,768,1394
+0.75,2-13/16,"45, 45i",387,1101,1577,387,1339,2292
+0.75,3-9/16,"50, 50i",330,1044,1521,330,1283,2235
+0.75,3-9/16,"60, 60i",677,1738,2446,677,2092,3507
+1 Inch Port,3-9/16,,,,,,,
+0.75,2-1/8,"30, 30i",,202(2),261(3),,202,437
+0.75,2-1/8,"34, 34i",56,408(2),495(3),56,408,759
+0.75,2-13/16,"40, 40i",40,392(2),479(3),40,392,743
+0.75,2-13/16,"45, 45i",178,579,846,178,713,1248
+0.75,3-9/16,"50, 50i",146,547,815,146,681,1216
+0.75,3-9/16,"60, 60i",341,937,1334,341,1136,1930
+1.125,2-13/16,"40, 40i",40,392,479,40,392,743
+1.125,2-13/16,"45, 45i",178,579,846,178,713,1248
+1.25 Inch Port,2-13/16,,,,,,,
+0.75,2-1/8,"30, 30i",,104(2),178(3),,104,253
+0.75,2-1/8,"34, 34i",10,234(2),347(3),10,234,459
+0.75,2-13/16,"40, 40i",,168(2),280(3),,224,449
+0.75,2-13/16,"45, 45i",88,344,514,88,429,771
+0.75,3-9/16,"50, 50i",67,323,494,67,409,750
+0.75,3-9/16,"60, 60i",192,572,826,192,699,1206

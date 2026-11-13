@@ -1,0 +1,24 @@
+"Valve Size, NPS","Shaft Diameter, Inch",Angle of Opening,"Actuator Size, Air to Diaphragm, Initial Compression, Maximum Rotation, and Spring Part Number",col4,col5
+,,,Size 70,,
+,,,0-33 Psig,0-40 Psig,0-55 Psig
+,,,3.0 Psig,3.3 Psig,10.1 Psig
+,,,90 Maximum Rotation,,
+,,,1R676027082,1R676027082,1R676027082
+3,1 x,0,,,
+,3/4(2),60,,,
+,,90,,,
+3,1,0,,,
+,,60,,,
+,,90,,,
+4,1-1/4,0,1200,1200,1200
+,,60,701,729,1150
+,,90,353,390,1150
+6,1-1/2 x,0,525,535,610
+,1-1/4(2),60,255,265,492
+,,90,41,45,138
+6,1-1/2,0,525,535,750
+,,60,255,265,492
+,,90,41,45,138
+8,1-1/2,0,245,250,350
+,,60,112,117,217
+,,90,44,49,149

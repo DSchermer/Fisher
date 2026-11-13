@@ -1,0 +1,7 @@
+Valve,Actuator,Maximum Disk Rotation,Angles of Rotation at Which Calculations are Required
+9500,All,60,60 for all valve sizes
+9500,All,90,90 for all valve sizes
+V150,All,60,60 for all valve sizes
+V150,All,90,70 for all valve sizes
+V500,All,60,60
+V500,All,90,60 and 90
