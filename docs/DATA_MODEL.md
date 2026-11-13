@@ -449,6 +449,37 @@ Every numeric (and placeholder) cell of the Catalog 14 force (B) and torque (D) 
 | `merged` | INTEGER | 1 = printed once in a cell merged over several rows (or beside a stack of lines) and repeated here |
 | `caption` | TEXT | The line of text just above the table, as printed (often its title) |
 
+## `actuator_torque`
+
+Catalog 14 rotary actuator torque output (1051, 1052, 1061, 1068, 2052), classified from c14_table_value by extract/catalog14_actuator_torque.py. (7,570 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `actuator` | TEXT | 1051, 1052, 1061, 1068 or 2052 |
+| `used_with` | TEXT | Valves the page or table says the values are for, as printed |
+| `flow` | TEXT | forward / reverse where printed |
+| `size` | TEXT | Actuator size as printed |
+| `diaphragm_psig` | TEXT | Air-to-diaphragm range (spring-and-diaphragm actuators) |
+| `supply` | TEXT | Supply pressure (1068 tables) |
+| `spring` | TEXT | Spring part number |
+| `initial_compression_psig` | TEXT | Initial spring compression, psig (1052) |
+| `action` | TEXT | PDTC, PDTO, 'spring to close', 'air to close', 'double acting' |
+| `quantity` | TEXT | TB, TB_SEATING, TB_UNSEATING, TD (at angle_deg), TD_MAX_ROTATION (at max_rotation_deg), TORQUE (at angle_deg), BREAKOUT, SEATING, UNSEATING, TORQUE_AT_SUPPLY, PER_PSIG (1061, per psig at angle pair), MAX_CYLINDER_PSIG, SPLINE_LIMIT |
+| `angle_deg` | REAL | Angle of rotation |
+| `max_rotation_deg` | REAL | Maximum rotation (travel stops) the value applies to |
+| `valve_nps` | TEXT | Valve size, where the table is per valve size |
+| `value` | REAL | Value |
+| `unit` | TEXT | lbf-in, N-m or psig |
+| `value_raw` | TEXT | As printed |
+| `table_title` | TEXT | Table title |
+| `printed_label` | TEXT | Printed page label |
+| `pdf_page` | INTEGER | PDF page |
+| `table_no` | INTEGER | Table position on the page |
+| `row_no` | INTEGER | Row within the table |
+| `column_path` | TEXT | Column header path as printed |
+| `confirmed` | TEXT | Second-reader result (see c14_table_value) |
+| `merged` | INTEGER | 1 = value repeated from a merged cell |
+
 ## `torque_factor`
 
 Catalog 14 torque method factors for every rotary valve (section D), classified from c14_table_value by extract/catalog14_torque_factors.py. (17,962 rows)

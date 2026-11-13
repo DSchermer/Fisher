@@ -16,6 +16,7 @@
     python -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
     python -m fisher actuators-for 152-1-8 --dp 300
     python -m fisher c14-tables --text "port data"
+    python -m fisher rotary-actuator --valve CV500 --nps 4 --dp-shutoff 150 --p1 150 --fl 0.6 --ff 0.94 --pv 0.5 --flow forward
     python -m fisher valve-torque --valve 8532 --nps 6 --dp-shutoff 200 --p1 200 --fluid liquid --fl 0.6 --ff 0.94 --pv 0.5
 
   Unified dataset (data/fisher.db, docs/DATA_MODEL.md):
@@ -29,7 +30,7 @@ import dataclasses
 import json
 import sys
 
-from . import actuators, db, integrate, noise, reference, sizing, torque
+from . import actuators, db, integrate, noise, reference, rotary_actuator, sizing, torque
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -135,6 +136,17 @@ def parser() -> argparse.ArgumentParser:
     for a in ("flow", "pressure-class", "construction", "variant", "b-key", "mast-key"):
         p.add_argument(f"--{a}")
     sub.add_parser("torque-valves", help="rotary valves with typed torque factors")
+    p = sub.add_parser("rotary-actuator", help="valve torque (torque method) and the actuators that cover it")
+    p.add_argument("--valve", required=True)
+    p.add_argument("--nps", required=True)
+    p.add_argument("--dp-shutoff", type=float, required=True)
+    p.add_argument("--p1", type=float, required=True, help="inlet pressure, psig")
+    p.add_argument("--fluid", choices=["liquid", "gas"], default="liquid")
+    for a in ("fl", "ff", "pv", "supply-psig"):
+        p.add_argument(f"--{a}", type=float)
+    for a in ("flow", "pressure-class", "construction", "variant", "actuator", "action", "diaphragm"):
+        p.add_argument(f"--{a}")
+    p.add_argument("--limit", type=int, default=10)
     return ap
 
 
@@ -215,6 +227,19 @@ def run(argv) -> object:
                                           b_key=args.b_key, mast_key=args.mast_key,
                                           relative_strength_pct=args.strength or 100.0, **filters)
         out = [dataclasses.asdict(r) for r in res]
+    elif args.cmd == "rotary-actuator":
+        filters = {k: v for k, v in (("flow", args.flow), ("pressure_class", args.pressure_class),
+                                     ("construction", args.construction), ("variant", args.variant)) if v}
+        res = torque.valve_torque_catalog(args.valve, args.nps, dp_shutoff=args.dp_shutoff, p1_psig=args.p1,
+                                          fluid=args.fluid, fl=args.fl, ff=args.ff, pv_psia=args.pv, **filters)
+        out = []
+        for r in res:
+            picks = rotary_actuator.select(r.breakout_lbf_in, r.dynamic_lbf_in, valve=args.valve,
+                                           actuator=args.actuator, action=args.action, flow=args.flow,
+                                           attenuator=("attenuator" in (args.variant or "").lower()) or None,
+                                           diaphragm_psig=args.diaphragm, supply_psig=args.supply_psig)
+            out.append({"valve_torque": dataclasses.asdict(r),
+                        "actuators": [dataclasses.asdict(c) for c in picks[:args.limit]]})
     elif args.cmd == "steam":
         out = reference.saturated_steam(psia=args.psia, temp_f=args.temp_f)
     else:

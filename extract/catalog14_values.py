@@ -269,9 +269,10 @@ def caption(page, table) -> str:
     top = table.bbox[1]
     if top < 5:
         return ""
-    band = page.crop((table.bbox[0] - 20 if table.bbox[0] > 20 else 0, max(0, top - 24), page.width, top))
+    band = page.crop((0, max(0, top - 48), page.width, top))
     lines = [x.strip() for x in (band.extract_text() or "").splitlines() if x.strip()]
-    return lines[-1] if lines else ""
+    titled = [x for x in lines if re.match(r"table \d", x, re.I)]
+    return titled[-1] if titled else (lines[-1] if lines else "")
 
 
 def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
@@ -302,6 +303,8 @@ def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
             cells = [[r[c] for c in keep] for r in cells]
             recs = []
             cap = caption(page, t)
+            if not re.match(r"table \d", cap, re.I):  # a title printed inside the table's ruled box
+                cap = next((x for r in cells for x in r if re.match(r"table \d+\.", x or "", re.I)), cap)
             for block in side_by_side(cells, flags):
                 part = convert([[r[c] for c in block] for r in cells], flags)
                 base = max((r["row"] for r in recs), default=0)

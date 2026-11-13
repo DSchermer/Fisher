@@ -254,156 +254,156 @@ valve,variant,pressure_class,flow,construction,nps,shaft,factor,angle_deg,qualif
 7600,,,normal,FISHTAIL™ Disk,16,3 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",231,231,Table 1. Torque Characteristics,D-5,369,1,51,C › 60 Degrees,line,1
 7600,,,normal,FISHTAIL™ Disk,16,3 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",354,354,Table 1. Torque Characteristics,D-5,369,1,51,C › 90 Degrees,line,1
 7600,,,normal,FISHTAIL™ Disk,16,3 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",104372,"104,372",Table 1. Torque Characteristics,D-5,369,1,51,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",17.2,17.2,,D-6,370,1,1,A,line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",396,396,,D-6,370,1,1,B,line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",419,419,,D-6,370,1,1,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",794,794,,D-6,370,1,1,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",55762,"55,762",,D-6,370,1,1,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",60.1,60.1,,D-6,370,1,2,A,line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",396,396,,D-6,370,1,2,B,line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",419,419,,D-6,370,1,2,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",794,794,,D-6,370,1,2,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",55762,"55,762",,D-6,370,1,2,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",120,120,,D-6,370,1,3,A,line,0
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",396,396,,D-6,370,1,3,B,line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",419,419,,D-6,370,1,3,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",794,794,,D-6,370,1,3,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",55762,"55,762",,D-6,370,1,3,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",24,24.0,,D-6,370,1,4,A,line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,,D-6,370,1,4,B,line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",309,309,,D-6,370,1,4,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",464,464,,D-6,370,1,4,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",,D-6,370,1,4,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",83.9,83.9,,D-6,370,1,5,A,line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,,D-6,370,1,5,B,line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",309,309,,D-6,370,1,5,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",464,464,,D-6,370,1,5,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",,D-6,370,1,5,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",168,168,,D-6,370,1,6,A,line,0
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,,D-6,370,1,6,B,line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",309,309,,D-6,370,1,6,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",464,464,,D-6,370,1,6,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",,D-6,370,1,6,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",21,21.0,,D-6,370,1,7,A,line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",396,396,,D-6,370,1,7,B,line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",597,597,,D-6,370,1,7,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",1200,1200,,D-6,370,1,7,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",55762,"55,762",,D-6,370,1,7,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",73.5,73.5,,D-6,370,1,8,A,line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",396,396,,D-6,370,1,8,B,line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",597,597,,D-6,370,1,8,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",1200,1200,,D-6,370,1,8,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",55762,"55,762",,D-6,370,1,8,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",147,147,,D-6,370,1,9,A,line,0
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",396,396,,D-6,370,1,9,B,line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",597,597,,D-6,370,1,9,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",1200,1200,,D-6,370,1,9,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",55762,"55,762",,D-6,370,1,9,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",29.3,29.3,,D-6,370,1,10,A,line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,,D-6,370,1,10,B,line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",494,494,,D-6,370,1,10,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",801,801,,D-6,370,1,10,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",,D-6,370,1,10,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",103,103,,D-6,370,1,11,A,line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,,D-6,370,1,11,B,line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",494,494,,D-6,370,1,11,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",801,801,,D-6,370,1,11,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",,D-6,370,1,11,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",205,205,,D-6,370,1,12,A,line,0
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,,D-6,370,1,12,B,line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",494,494,,D-6,370,1,12,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",801,801,,D-6,370,1,12,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",,D-6,370,1,12,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",36.9,36.9,,D-6,370,1,13,A,line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",520,520,,D-6,370,1,13,B,line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",1060,1060,,D-6,370,1,13,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",2310,2310,,D-6,370,1,13,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",104372,"104,372",,D-6,370,1,13,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",129,129,,D-6,370,1,14,A,line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",520,520,,D-6,370,1,14,B,line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",1060,1060,,D-6,370,1,14,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",2310,2310,,D-6,370,1,14,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",104372,"104,372",,D-6,370,1,14,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",258,258,,D-6,370,1,15,A,line,0
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",520,520,,D-6,370,1,15,B,line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",1060,1060,,D-6,370,1,15,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",2310,2310,,D-6,370,1,15,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,3 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",104372,"104,372",,D-6,370,1,15,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",49.4,49.4,,D-6,370,1,16,A,line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",800,800,,D-6,370,1,16,B,line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",932,932,,D-6,370,1,16,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",1560,1560,,D-6,370,1,16,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",228406,"228,406(1)",,D-6,370,1,16,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",173,173,,D-6,370,1,17,A,line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",800,800,,D-6,370,1,17,B,line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",932,932,,D-6,370,1,17,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",1560,1560,,D-6,370,1,17,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",228406,"228,406(1)",,D-6,370,1,17,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",346,346,,D-6,370,1,18,A,line,0
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",800,800,,D-6,370,1,18,B,line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",932,932,,D-6,370,1,18,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",1560,1560,,D-6,370,1,18,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,24,4 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",228406,"228,406(1)",,D-6,370,1,18,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",67.8,67.8,,D-6,370,1,19,A,line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,,D-6,370,1,19,B,line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",2190,2190,,D-6,370,1,19,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",4980,4980,,D-6,370,1,19,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",,D-6,370,1,19,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",237,237,,D-6,370,1,20,A,line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,,D-6,370,1,20,B,line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",2190,2190,,D-6,370,1,20,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",4980,4980,,D-6,370,1,20,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",,D-6,370,1,20,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",474,474,,D-6,370,1,21,A,line,0
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,,D-6,370,1,21,B,line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",2190,2190,,D-6,370,1,21,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",4980,4980,,D-6,370,1,21,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",,D-6,370,1,21,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",87.1,87.1,,D-6,370,1,22,A,line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",960,960,,D-6,370,1,22,B,line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",2060,2060,,D-6,370,1,22,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",3740,3740,,D-6,370,1,22,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",228406,"228,406(1)",,D-6,370,1,22,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",305,305,,D-6,370,1,23,A,line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",960,960,,D-6,370,1,23,B,line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",2060,2060,,D-6,370,1,23,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",3740,3740,,D-6,370,1,23,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",228406,"228,406(1)",,D-6,370,1,23,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",610,610,,D-6,370,1,24,A,line,0
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",960,960,,D-6,370,1,24,B,line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",2060,2060,,D-6,370,1,24,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",3740,3740,,D-6,370,1,24,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",228406,"228,406(1)",,D-6,370,1,24,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",96,96.0,,D-6,370,1,25,A,line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,,D-6,370,1,25,B,line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",3990,3990,,D-6,370,1,25,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",10200,"10,200",,D-6,370,1,25,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",,D-6,370,1,25,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",336,336,,D-6,370,1,26,A,line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,,D-6,370,1,26,B,line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",3990,3990,,D-6,370,1,26,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",10200,"10,200",,D-6,370,1,26,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",,D-6,370,1,26,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",672,672,,D-6,370,1,27,A,line,0
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,,D-6,370,1,27,B,line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",3990,3990,,D-6,370,1,27,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",10200,"10,200",,D-6,370,1,27,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",,D-6,370,1,27,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",123,123,,D-6,370,1,28,A,line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",960,960,,D-6,370,1,28,B,line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",3740,3740,,D-6,370,1,28,C › 60 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",7770,7770,,D-6,370,1,28,C › 90 Degrees,line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",228406,"228,406(1)",,D-6,370,1,28,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",432,432,,D-6,370,1,29,A,line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",960,960,,D-6,370,1,29,B,line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",3740,3740,,D-6,370,1,29,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",7770,7770,,D-6,370,1,29,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",228406,"228,406(1)",,D-6,370,1,29,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",864,864,,D-6,370,1,30,A,line,0
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",960,960,,D-6,370,1,30,B,line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",3740,3740,,D-6,370,1,30,C › 60 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",7770,7770,,D-6,370,1,30,C › 90 Degrees,line,1
-7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",228406,"228,406(1)",,D-6,370,1,30,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",17.2,17.2,Table 1. Torque Characteristics (Continued),D-6,370,1,1,A,line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",396,396,Table 1. Torque Characteristics (Continued),D-6,370,1,1,B,line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",419,419,Table 1. Torque Characteristics (Continued),D-6,370,1,1,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",794,794,Table 1. Torque Characteristics (Continued),D-6,370,1,1,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",55762,"55,762",Table 1. Torque Characteristics (Continued),D-6,370,1,1,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",60.1,60.1,Table 1. Torque Characteristics (Continued),D-6,370,1,2,A,line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",396,396,Table 1. Torque Characteristics (Continued),D-6,370,1,2,B,line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",419,419,Table 1. Torque Characteristics (Continued),D-6,370,1,2,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",794,794,Table 1. Torque Characteristics (Continued),D-6,370,1,2,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",55762,"55,762",Table 1. Torque Characteristics (Continued),D-6,370,1,2,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",120,120,Table 1. Torque Characteristics (Continued),D-6,370,1,3,A,line,0
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",396,396,Table 1. Torque Characteristics (Continued),D-6,370,1,3,B,line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",419,419,Table 1. Torque Characteristics (Continued),D-6,370,1,3,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",794,794,Table 1. Torque Characteristics (Continued),D-6,370,1,3,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",55762,"55,762",Table 1. Torque Characteristics (Continued),D-6,370,1,3,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",24,24.0,Table 1. Torque Characteristics (Continued),D-6,370,1,4,A,line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,4,B,line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",309,309,Table 1. Torque Characteristics (Continued),D-6,370,1,4,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",464,464,Table 1. Torque Characteristics (Continued),D-6,370,1,4,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,4,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",83.9,83.9,Table 1. Torque Characteristics (Continued),D-6,370,1,5,A,line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,5,B,line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",309,309,Table 1. Torque Characteristics (Continued),D-6,370,1,5,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",464,464,Table 1. Torque Characteristics (Continued),D-6,370,1,5,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,5,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",168,168,Table 1. Torque Characteristics (Continued),D-6,370,1,6,A,line,0
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,6,B,line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",309,309,Table 1. Torque Characteristics (Continued),D-6,370,1,6,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",464,464,Table 1. Torque Characteristics (Continued),D-6,370,1,6,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,18,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,6,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",21,21.0,Table 1. Torque Characteristics (Continued),D-6,370,1,7,A,line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",396,396,Table 1. Torque Characteristics (Continued),D-6,370,1,7,B,line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",597,597,Table 1. Torque Characteristics (Continued),D-6,370,1,7,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",1200,1200,Table 1. Torque Characteristics (Continued),D-6,370,1,7,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",55762,"55,762",Table 1. Torque Characteristics (Continued),D-6,370,1,7,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",73.5,73.5,Table 1. Torque Characteristics (Continued),D-6,370,1,8,A,line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",396,396,Table 1. Torque Characteristics (Continued),D-6,370,1,8,B,line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",597,597,Table 1. Torque Characteristics (Continued),D-6,370,1,8,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",1200,1200,Table 1. Torque Characteristics (Continued),D-6,370,1,8,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",55762,"55,762",Table 1. Torque Characteristics (Continued),D-6,370,1,8,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",147,147,Table 1. Torque Characteristics (Continued),D-6,370,1,9,A,line,0
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",396,396,Table 1. Torque Characteristics (Continued),D-6,370,1,9,B,line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",597,597,Table 1. Torque Characteristics (Continued),D-6,370,1,9,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",1200,1200,Table 1. Torque Characteristics (Continued),D-6,370,1,9,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,2-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",55762,"55,762",Table 1. Torque Characteristics (Continued),D-6,370,1,9,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",29.3,29.3,Table 1. Torque Characteristics (Continued),D-6,370,1,10,A,line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,10,B,line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",494,494,Table 1. Torque Characteristics (Continued),D-6,370,1,10,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",801,801,Table 1. Torque Characteristics (Continued),D-6,370,1,10,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,10,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",103,103,Table 1. Torque Characteristics (Continued),D-6,370,1,11,A,line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,11,B,line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",494,494,Table 1. Torque Characteristics (Continued),D-6,370,1,11,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",801,801,Table 1. Torque Characteristics (Continued),D-6,370,1,11,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,11,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",205,205,Table 1. Torque Characteristics (Continued),D-6,370,1,12,A,line,0
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,12,B,line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",494,494,Table 1. Torque Characteristics (Continued),D-6,370,1,12,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",801,801,Table 1. Torque Characteristics (Continued),D-6,370,1,12,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,20,3-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,12,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",36.9,36.9,Table 1. Torque Characteristics (Continued),D-6,370,1,13,A,line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",520,520,Table 1. Torque Characteristics (Continued),D-6,370,1,13,B,line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",1060,1060,Table 1. Torque Characteristics (Continued),D-6,370,1,13,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",2310,2310,Table 1. Torque Characteristics (Continued),D-6,370,1,13,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",104372,"104,372",Table 1. Torque Characteristics (Continued),D-6,370,1,13,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",129,129,Table 1. Torque Characteristics (Continued),D-6,370,1,14,A,line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",520,520,Table 1. Torque Characteristics (Continued),D-6,370,1,14,B,line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",1060,1060,Table 1. Torque Characteristics (Continued),D-6,370,1,14,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",2310,2310,Table 1. Torque Characteristics (Continued),D-6,370,1,14,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",104372,"104,372",Table 1. Torque Characteristics (Continued),D-6,370,1,14,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",258,258,Table 1. Torque Characteristics (Continued),D-6,370,1,15,A,line,0
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",520,520,Table 1. Torque Characteristics (Continued),D-6,370,1,15,B,line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",1060,1060,Table 1. Torque Characteristics (Continued),D-6,370,1,15,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",2310,2310,Table 1. Torque Characteristics (Continued),D-6,370,1,15,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,3 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",104372,"104,372",Table 1. Torque Characteristics (Continued),D-6,370,1,15,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",49.4,49.4,Table 1. Torque Characteristics (Continued),D-6,370,1,16,A,line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",800,800,Table 1. Torque Characteristics (Continued),D-6,370,1,16,B,line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",932,932,Table 1. Torque Characteristics (Continued),D-6,370,1,16,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",1560,1560,Table 1. Torque Characteristics (Continued),D-6,370,1,16,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,16,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",173,173,Table 1. Torque Characteristics (Continued),D-6,370,1,17,A,line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",800,800,Table 1. Torque Characteristics (Continued),D-6,370,1,17,B,line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",932,932,Table 1. Torque Characteristics (Continued),D-6,370,1,17,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",1560,1560,Table 1. Torque Characteristics (Continued),D-6,370,1,17,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,17,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",346,346,Table 1. Torque Characteristics (Continued),D-6,370,1,18,A,line,0
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",800,800,Table 1. Torque Characteristics (Continued),D-6,370,1,18,B,line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",932,932,Table 1. Torque Characteristics (Continued),D-6,370,1,18,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",1560,1560,Table 1. Torque Characteristics (Continued),D-6,370,1,18,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,24,4 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,18,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",67.8,67.8,Table 1. Torque Characteristics (Continued),D-6,370,1,19,A,line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,19,B,line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",2190,2190,Table 1. Torque Characteristics (Continued),D-6,370,1,19,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",4980,4980,Table 1. Torque Characteristics (Continued),D-6,370,1,19,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,19,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",237,237,Table 1. Torque Characteristics (Continued),D-6,370,1,20,A,line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,20,B,line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",2190,2190,Table 1. Torque Characteristics (Continued),D-6,370,1,20,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",4980,4980,Table 1. Torque Characteristics (Continued),D-6,370,1,20,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,20,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",474,474,Table 1. Torque Characteristics (Continued),D-6,370,1,21,A,line,0
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,21,B,line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",2190,2190,Table 1. Torque Characteristics (Continued),D-6,370,1,21,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",4980,4980,Table 1. Torque Characteristics (Continued),D-6,370,1,21,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,21,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",87.1,87.1,Table 1. Torque Characteristics (Continued),D-6,370,1,22,A,line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",960,960,Table 1. Torque Characteristics (Continued),D-6,370,1,22,B,line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",2060,2060,Table 1. Torque Characteristics (Continued),D-6,370,1,22,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",3740,3740,Table 1. Torque Characteristics (Continued),D-6,370,1,22,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,22,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",305,305,Table 1. Torque Characteristics (Continued),D-6,370,1,23,A,line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",960,960,Table 1. Torque Characteristics (Continued),D-6,370,1,23,B,line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",2060,2060,Table 1. Torque Characteristics (Continued),D-6,370,1,23,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",3740,3740,Table 1. Torque Characteristics (Continued),D-6,370,1,23,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,23,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",610,610,Table 1. Torque Characteristics (Continued),D-6,370,1,24,A,line,0
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",960,960,Table 1. Torque Characteristics (Continued),D-6,370,1,24,B,line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",2060,2060,Table 1. Torque Characteristics (Continued),D-6,370,1,24,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",3740,3740,Table 1. Torque Characteristics (Continued),D-6,370,1,24,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,30,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,24,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",96,96.0,Table 1. Torque Characteristics (Continued),D-6,370,1,25,A,line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,25,B,line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",3990,3990,Table 1. Torque Characteristics (Continued),D-6,370,1,25,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",10200,"10,200",Table 1. Torque Characteristics (Continued),D-6,370,1,25,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,25,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",336,336,Table 1. Torque Characteristics (Continued),D-6,370,1,26,A,line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,26,B,line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",3990,3990,Table 1. Torque Characteristics (Continued),D-6,370,1,26,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",10200,"10,200",Table 1. Torque Characteristics (Continued),D-6,370,1,26,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,26,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",672,672,Table 1. Torque Characteristics (Continued),D-6,370,1,27,A,line,0
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",660,660,Table 1. Torque Characteristics (Continued),D-6,370,1,27,B,line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",3990,3990,Table 1. Torque Characteristics (Continued),D-6,370,1,27,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",10200,"10,200",Table 1. Torque Characteristics (Continued),D-6,370,1,27,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,3-1/2 (3-5),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",165738,"165,738",Table 1. Torque Characteristics (Continued),D-6,370,1,27,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",123,123,Table 1. Torque Characteristics (Continued),D-6,370,1,28,A,line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",960,960,Table 1. Torque Characteristics (Continued),D-6,370,1,28,B,line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",3740,3740,Table 1. Torque Characteristics (Continued),D-6,370,1,28,C › 60 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",7770,7770,Table 1. Torque Characteristics (Continued),D-6,370,1,28,C › 90 Degrees,line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""PTFE-lined fiberglass or PTFE-lined 316 stainless steel""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,28,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",432,432,Table 1. Torque Characteristics (Continued),D-6,370,1,29,A,line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",960,960,Table 1. Torque Characteristics (Continued),D-6,370,1,29,B,line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",3740,3740,Table 1. Torque Characteristics (Continued),D-6,370,1,29,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",7770,7770,Table 1. Torque Characteristics (Continued),D-6,370,1,29,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""Graphite-impregnated bronze""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,29,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),A,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",864,864,Table 1. Torque Characteristics (Continued),D-6,370,1,30,A,line,0
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),B,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",960,960,Table 1. Torque Characteristics (Continued),D-6,370,1,30,B,line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,60.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",3740,3740,Table 1. Torque Characteristics (Continued),D-6,370,1,30,C › 60 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),C,90.0,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",7770,7770,Table 1. Torque Characteristics (Continued),D-6,370,1,30,C › 90 Degrees,line,1
+7600,,,normal,FISHTAIL Disk,36,4-1/2 (5-7),MAST,,,,"{""BEARING MATERIAL"": ""R30006 (alloy 6)""}",228406,"228,406(1)",Table 1. Torque Characteristics (Continued),D-6,370,1,30,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,1
 7600,,,normal,Relative Strength (Percent of Maximum Allowable Torque Listed in Table 1),,,STRENGTH,,-19 to 100,,"{""SHAFT MATERIAL"": ""S17400 (17-4PH H1075 stainless steel)""}",100,100,Table 3. Relative Strengths of Shaft Materials,D-6,370,3,1,"TEMPERATURE, F › -19 to 100",line,0
 7600,,,normal,Relative Strength (Percent of Maximum Allowable Torque Listed in Table 1),,,STRENGTH,,101 to 200,,"{""SHAFT MATERIAL"": ""S17400 (17-4PH H1075 stainless steel)""}",57,57,Table 3. Relative Strengths of Shaft Materials,D-6,370,3,1,"TEMPERATURE, F › 101 to 200",line,0
 7600,,,normal,Relative Strength (Percent of Maximum Allowable Torque Listed in Table 1),,,STRENGTH,,201 to 300,,"{""SHAFT MATERIAL"": ""S17400 (17-4PH H1075 stainless steel)""}",52,52,Table 3. Relative Strengths of Shaft Materials,D-6,370,3,1,"TEMPERATURE, F › 201 to 300",line,0
@@ -4184,62 +4184,62 @@ valve,variant,pressure_class,flow,construction,nps,shaft,factor,angle_deg,qualif
 8590,,,reverse,Keyed Shaft,24,2-3/4,MAST,,N05500,,,105279,105279,,D-26.6,400,3,5,"Maximum Allowable Torque, lbfin › N05500",line,0
 8590,,,reverse,Keyed Shaft,24,2-3/4,MAST,,N10276,,,66750,66750,,D-26.6,400,3,5,"Maximum Allowable Torque, lbfin › N10276",line,0
 8590,,,reverse,Keyed Shaft,24,2-3/4,MAST,,S31803,,,105279,105279,,D-26.6,400,3,5,"Maximum Allowable Torque, lbfin › S31803",line,0
-9500,,,normal,,2,1/2,A,,,,,0.05,0.050,,D-28,402,1,1,A,line,0
-9500,,,normal,,2,1/2,B,,Nitrile Liner,,,110,110,,D-28,402,1,1,B › Nitrile Liner,line,0
-9500,,,normal,,2,1/2,B,,PTFE Liner,,,110,110,,D-28,402,1,1,B › PTFE Liner,line,0
-9500,,,normal,,2,1/2,C,60.0,Conventional Disk,,,1.2,1.20,,D-28,402,1,1,C › Conventional Disk › 60,line,0
-9500,,,normal,,2,1/2,C,90.0,Conventional Disk,,,3.83,3.83,,D-28,402,1,1,C › Conventional Disk › 90,line,0
-9500,,,normal,,2,1/2,C,60.0,FISHTAIL™ Disk,,,0.45,0.450,,D-28,402,1,1,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,2,1/2,C,90.0,FISHTAIL™ Disk,,,0.645,0.645,,D-28,402,1,1,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,2,1/2,MAST,,,,,483,483,,D-28,402,1,1,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-9500,,,normal,,3,5/8,A,,,,,0.125,0.125,,D-28,402,1,2,A,line,0
-9500,,,normal,,3,5/8,B,,Nitrile Liner,,,300,300,,D-28,402,1,2,B › Nitrile Liner,line,0
-9500,,,normal,,3,5/8,B,,PTFE Liner,,,215,215,,D-28,402,1,2,B › PTFE Liner,line,0
-9500,,,normal,,3,5/8,C,60.0,Conventional Disk,,,4.05,4.05,,D-28,402,1,2,C › Conventional Disk › 60,line,0
-9500,,,normal,,3,5/8,C,90.0,Conventional Disk,,,12.9,12.9,,D-28,402,1,2,C › Conventional Disk › 90,line,0
-9500,,,normal,,3,5/8,C,60.0,FISHTAIL™ Disk,,,1.41,1.41,,D-28,402,1,2,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,3,5/8,C,90.0,FISHTAIL™ Disk,,,2.19,2.19,,D-28,402,1,2,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,3,5/8,MAST,,,,,943,943,,D-28,402,1,2,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-9500,,,normal,,4,5/8,A,,,,,0.23,0.230,,D-28,402,1,3,A,line,0
-9500,,,normal,,4,5/8,B,,Nitrile Liner,,,700,700,,D-28,402,1,3,B › Nitrile Liner,line,0
-9500,,,normal,,4,5/8,B,,PTFE Liner,,,370,370,,D-28,402,1,3,B › PTFE Liner,line,0
-9500,,,normal,,4,5/8,C,60.0,Conventional Disk,,,9.6,9.60,,D-28,402,1,3,C › Conventional Disk › 60,line,0
-9500,,,normal,,4,5/8,C,90.0,Conventional Disk,,,30.6,30.6,,D-28,402,1,3,C › Conventional Disk › 90,line,0
-9500,,,normal,,4,5/8,C,60.0,FISHTAIL™ Disk,,,5.28,5.28,,D-28,402,1,3,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,4,5/8,C,90.0,FISHTAIL™ Disk,,,9.32,9.32,,D-28,402,1,3,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,4,5/8,MAST,,,,,943,943,,D-28,402,1,3,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-9500,,,normal,,6,3/4,A,,,,,0.6,0.600,,D-28,402,1,4,A,line,0
-9500,,,normal,,6,3/4,B,,Nitrile Liner,,,1000,1000,,D-28,402,1,4,B › Nitrile Liner,line,0
-9500,,,normal,,6,3/4,B,,PTFE Liner,,,730,730,,D-28,402,1,4,B › PTFE Liner,line,0
-9500,,,normal,,6,3/4,C,60.0,Conventional Disk,,,32.3,32.3,,D-28,402,1,4,C › Conventional Disk › 60,line,0
-9500,,,normal,,6,3/4,C,90.0,Conventional Disk,,,104,104,,D-28,402,1,4,C › Conventional Disk › 90,line,0
-9500,,,normal,,6,3/4,C,60.0,FISHTAIL™ Disk,,,18.8,18.8,,D-28,402,1,4,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,6,3/4,C,90.0,FISHTAIL™ Disk,,,38,38.0,,D-28,402,1,4,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,6,3/4,MAST,,,,,1630,1630,,D-28,402,1,4,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-9500,,,normal,,8,1,A,,,,,1.47,1.47,,D-28,402,1,5,A,line,0
-9500,,,normal,,8,1,B,,Nitrile Liner,,,1500,1500,,D-28,402,1,5,B › Nitrile Liner,line,0
-9500,,,normal,,8,1,B,,PTFE Liner,,,1500,1500,,D-28,402,1,5,B › PTFE Liner,line,0
-9500,,,normal,,8,1,C,60.0,Conventional Disk,,,76.5,76.5,,D-28,402,1,5,C › Conventional Disk › 60,line,0
-9500,,,normal,,8,1,C,90.0,Conventional Disk,,,245,245,,D-28,402,1,5,C › Conventional Disk › 90,line,0
-9500,,,normal,,8,1,C,60.0,FISHTAIL™ Disk,,,44.6,44.6,,D-28,402,1,5,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,8,1,C,90.0,FISHTAIL™ Disk,,,89.7,89.7,,D-28,402,1,5,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,8,1,MAST,,,,,3865,3865,,D-28,402,1,5,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-9500,,,normal,,10,1,A,,,,,2.2,2.20,,D-28,402,1,6,A,line,0
-9500,,,normal,,10,1,B,,Nitrile Liner,,,2500,2500,,D-28,402,1,6,B › Nitrile Liner,line,0
-9500,,,normal,,10,1,B,,PTFE Liner,,,2100,2100,,D-28,402,1,6,B › PTFE Liner,line,0
-9500,,,normal,,10,1,C,60.0,Conventional Disk,,,150,150,,D-28,402,1,6,C › Conventional Disk › 60,line,0
-9500,,,normal,,10,1,C,90.0,Conventional Disk,,,480,480,,D-28,402,1,6,C › Conventional Disk › 90,line,0
-9500,,,normal,,10,1,C,60.0,FISHTAIL™ Disk,,,93,93.0,,D-28,402,1,6,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,10,1,C,90.0,FISHTAIL™ Disk,,,230,230,,D-28,402,1,6,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,10,1,MAST,,,,,3865,3865,,D-28,402,1,6,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
-9500,,,normal,,12,1-1/4,A,,,,,4.13,4.13,,D-28,402,1,7,A,line,0
-9500,,,normal,,12,1-1/4,B,,Nitrile Liner,,,4000,4000,,D-28,402,1,7,B › Nitrile Liner,line,0
-9500,,,normal,,12,1-1/4,B,,PTFE Liner,,,3100,3100,,D-28,402,1,7,B › PTFE Liner,line,0
-9500,,,normal,,12,1-1/4,C,60.0,Conventional Disk,,,260,260,,D-28,402,1,7,C › Conventional Disk › 60,line,0
-9500,,,normal,,12,1-1/4,C,90.0,Conventional Disk,,,822,822,,D-28,402,1,7,C › Conventional Disk › 90,line,0
-9500,,,normal,,12,1-1/4,C,60.0,FISHTAIL™ Disk,,,158,158,,D-28,402,1,7,C › FISHTAIL™ Disk › 60,line,0
-9500,,,normal,,12,1-1/4,C,90.0,FISHTAIL™ Disk,,,389,389,,D-28,402,1,7,C › FISHTAIL™ Disk › 90,line,0
-9500,,,normal,,12,1-1/4,MAST,,,,,7550,7550,,D-28,402,1,7,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,2,1/2,A,,,,,0.05,0.050,Table 1. Torque Characteristics,D-28,402,1,1,A,line,0
+9500,,,normal,,2,1/2,B,,Nitrile Liner,,,110,110,Table 1. Torque Characteristics,D-28,402,1,1,B › Nitrile Liner,line,0
+9500,,,normal,,2,1/2,B,,PTFE Liner,,,110,110,Table 1. Torque Characteristics,D-28,402,1,1,B › PTFE Liner,line,0
+9500,,,normal,,2,1/2,C,60.0,Conventional Disk,,,1.2,1.20,Table 1. Torque Characteristics,D-28,402,1,1,C › Conventional Disk › 60,line,0
+9500,,,normal,,2,1/2,C,90.0,Conventional Disk,,,3.83,3.83,Table 1. Torque Characteristics,D-28,402,1,1,C › Conventional Disk › 90,line,0
+9500,,,normal,,2,1/2,C,60.0,FISHTAIL™ Disk,,,0.45,0.450,Table 1. Torque Characteristics,D-28,402,1,1,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,2,1/2,C,90.0,FISHTAIL™ Disk,,,0.645,0.645,Table 1. Torque Characteristics,D-28,402,1,1,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,2,1/2,MAST,,,,,483,483,Table 1. Torque Characteristics,D-28,402,1,1,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,3,5/8,A,,,,,0.125,0.125,Table 1. Torque Characteristics,D-28,402,1,2,A,line,0
+9500,,,normal,,3,5/8,B,,Nitrile Liner,,,300,300,Table 1. Torque Characteristics,D-28,402,1,2,B › Nitrile Liner,line,0
+9500,,,normal,,3,5/8,B,,PTFE Liner,,,215,215,Table 1. Torque Characteristics,D-28,402,1,2,B › PTFE Liner,line,0
+9500,,,normal,,3,5/8,C,60.0,Conventional Disk,,,4.05,4.05,Table 1. Torque Characteristics,D-28,402,1,2,C › Conventional Disk › 60,line,0
+9500,,,normal,,3,5/8,C,90.0,Conventional Disk,,,12.9,12.9,Table 1. Torque Characteristics,D-28,402,1,2,C › Conventional Disk › 90,line,0
+9500,,,normal,,3,5/8,C,60.0,FISHTAIL™ Disk,,,1.41,1.41,Table 1. Torque Characteristics,D-28,402,1,2,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,3,5/8,C,90.0,FISHTAIL™ Disk,,,2.19,2.19,Table 1. Torque Characteristics,D-28,402,1,2,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,3,5/8,MAST,,,,,943,943,Table 1. Torque Characteristics,D-28,402,1,2,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,4,5/8,A,,,,,0.23,0.230,Table 1. Torque Characteristics,D-28,402,1,3,A,line,0
+9500,,,normal,,4,5/8,B,,Nitrile Liner,,,700,700,Table 1. Torque Characteristics,D-28,402,1,3,B › Nitrile Liner,line,0
+9500,,,normal,,4,5/8,B,,PTFE Liner,,,370,370,Table 1. Torque Characteristics,D-28,402,1,3,B › PTFE Liner,line,0
+9500,,,normal,,4,5/8,C,60.0,Conventional Disk,,,9.6,9.60,Table 1. Torque Characteristics,D-28,402,1,3,C › Conventional Disk › 60,line,0
+9500,,,normal,,4,5/8,C,90.0,Conventional Disk,,,30.6,30.6,Table 1. Torque Characteristics,D-28,402,1,3,C › Conventional Disk › 90,line,0
+9500,,,normal,,4,5/8,C,60.0,FISHTAIL™ Disk,,,5.28,5.28,Table 1. Torque Characteristics,D-28,402,1,3,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,4,5/8,C,90.0,FISHTAIL™ Disk,,,9.32,9.32,Table 1. Torque Characteristics,D-28,402,1,3,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,4,5/8,MAST,,,,,943,943,Table 1. Torque Characteristics,D-28,402,1,3,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,6,3/4,A,,,,,0.6,0.600,Table 1. Torque Characteristics,D-28,402,1,4,A,line,0
+9500,,,normal,,6,3/4,B,,Nitrile Liner,,,1000,1000,Table 1. Torque Characteristics,D-28,402,1,4,B › Nitrile Liner,line,0
+9500,,,normal,,6,3/4,B,,PTFE Liner,,,730,730,Table 1. Torque Characteristics,D-28,402,1,4,B › PTFE Liner,line,0
+9500,,,normal,,6,3/4,C,60.0,Conventional Disk,,,32.3,32.3,Table 1. Torque Characteristics,D-28,402,1,4,C › Conventional Disk › 60,line,0
+9500,,,normal,,6,3/4,C,90.0,Conventional Disk,,,104,104,Table 1. Torque Characteristics,D-28,402,1,4,C › Conventional Disk › 90,line,0
+9500,,,normal,,6,3/4,C,60.0,FISHTAIL™ Disk,,,18.8,18.8,Table 1. Torque Characteristics,D-28,402,1,4,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,6,3/4,C,90.0,FISHTAIL™ Disk,,,38,38.0,Table 1. Torque Characteristics,D-28,402,1,4,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,6,3/4,MAST,,,,,1630,1630,Table 1. Torque Characteristics,D-28,402,1,4,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,8,1,A,,,,,1.47,1.47,Table 1. Torque Characteristics,D-28,402,1,5,A,line,0
+9500,,,normal,,8,1,B,,Nitrile Liner,,,1500,1500,Table 1. Torque Characteristics,D-28,402,1,5,B › Nitrile Liner,line,0
+9500,,,normal,,8,1,B,,PTFE Liner,,,1500,1500,Table 1. Torque Characteristics,D-28,402,1,5,B › PTFE Liner,line,0
+9500,,,normal,,8,1,C,60.0,Conventional Disk,,,76.5,76.5,Table 1. Torque Characteristics,D-28,402,1,5,C › Conventional Disk › 60,line,0
+9500,,,normal,,8,1,C,90.0,Conventional Disk,,,245,245,Table 1. Torque Characteristics,D-28,402,1,5,C › Conventional Disk › 90,line,0
+9500,,,normal,,8,1,C,60.0,FISHTAIL™ Disk,,,44.6,44.6,Table 1. Torque Characteristics,D-28,402,1,5,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,8,1,C,90.0,FISHTAIL™ Disk,,,89.7,89.7,Table 1. Torque Characteristics,D-28,402,1,5,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,8,1,MAST,,,,,3865,3865,Table 1. Torque Characteristics,D-28,402,1,5,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,10,1,A,,,,,2.2,2.20,Table 1. Torque Characteristics,D-28,402,1,6,A,line,0
+9500,,,normal,,10,1,B,,Nitrile Liner,,,2500,2500,Table 1. Torque Characteristics,D-28,402,1,6,B › Nitrile Liner,line,0
+9500,,,normal,,10,1,B,,PTFE Liner,,,2100,2100,Table 1. Torque Characteristics,D-28,402,1,6,B › PTFE Liner,line,0
+9500,,,normal,,10,1,C,60.0,Conventional Disk,,,150,150,Table 1. Torque Characteristics,D-28,402,1,6,C › Conventional Disk › 60,line,0
+9500,,,normal,,10,1,C,90.0,Conventional Disk,,,480,480,Table 1. Torque Characteristics,D-28,402,1,6,C › Conventional Disk › 90,line,0
+9500,,,normal,,10,1,C,60.0,FISHTAIL™ Disk,,,93,93.0,Table 1. Torque Characteristics,D-28,402,1,6,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,10,1,C,90.0,FISHTAIL™ Disk,,,230,230,Table 1. Torque Characteristics,D-28,402,1,6,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,10,1,MAST,,,,,3865,3865,Table 1. Torque Characteristics,D-28,402,1,6,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
+9500,,,normal,,12,1-1/4,A,,,,,4.13,4.13,Table 1. Torque Characteristics,D-28,402,1,7,A,line,0
+9500,,,normal,,12,1-1/4,B,,Nitrile Liner,,,4000,4000,Table 1. Torque Characteristics,D-28,402,1,7,B › Nitrile Liner,line,0
+9500,,,normal,,12,1-1/4,B,,PTFE Liner,,,3100,3100,Table 1. Torque Characteristics,D-28,402,1,7,B › PTFE Liner,line,0
+9500,,,normal,,12,1-1/4,C,60.0,Conventional Disk,,,260,260,Table 1. Torque Characteristics,D-28,402,1,7,C › Conventional Disk › 60,line,0
+9500,,,normal,,12,1-1/4,C,90.0,Conventional Disk,,,822,822,Table 1. Torque Characteristics,D-28,402,1,7,C › Conventional Disk › 90,line,0
+9500,,,normal,,12,1-1/4,C,60.0,FISHTAIL™ Disk,,,158,158,Table 1. Torque Characteristics,D-28,402,1,7,C › FISHTAIL™ Disk › 60,line,0
+9500,,,normal,,12,1-1/4,C,90.0,FISHTAIL™ Disk,,,389,389,Table 1. Torque Characteristics,D-28,402,1,7,C › FISHTAIL™ Disk › 90,line,0
+9500,,,normal,,12,1-1/4,MAST,,,,,7550,7550,Table 1. Torque Characteristics,D-28,402,1,7,"MAXIMUM ALLOWABLE TORQUE, LBFINCH",line,0
 9500,,,normal,Relative Strength (Percent of Maximum Allowable Torque Listed in Table 1),,,STRENGTH,,- 19 to 100,,"{""SHAFT MATERIAL"": ""S17400 (17-4PH stainless steel) H1075""}",100,100,Table 3. Relative Strengths of Shaft Materials,D-28,402,3,1,"TEMPERATURE, F › - 19 to 100",line,0
 9500,,,normal,Relative Strength (Percent of Maximum Allowable Torque Listed in Table 1),,,STRENGTH,,101 to 200,,"{""SHAFT MATERIAL"": ""S17400 (17-4PH stainless steel) H1075""}",100,100,Table 3. Relative Strengths of Shaft Materials,D-28,402,3,1,"TEMPERATURE, F › 101 to 200",line,0
 9500,,,normal,Relative Strength (Percent of Maximum Allowable Torque Listed in Table 1),,,STRENGTH,,201 to 300,,"{""SHAFT MATERIAL"": ""S17400 (17-4PH stainless steel) H1075""}",100,100,Table 3. Relative Strengths of Shaft Materials,D-28,402,3,1,"TEMPERATURE, F › 201 to 300",line,0
@@ -16062,97 +16062,97 @@ V150/V200/V300,,,forward,Flow-Ring Construction,20,2-1/2,B,,,,,2600,2600,"Table 
 V150/V200/V300,,,forward,Flow-Ring Construction,20,2-1/2,C,60.0,,,,190,190,"Table 1. Torque Characteristics for Composition Seal, Flat Metal Seal, and Flow-Ring Construction",D-107,493,1,32,C › 60 Degrees,line,0
 V150/V200/V300,,,forward,Flow-Ring Construction,20,2-1/2,C,70.0,,,,1044,1044,"Table 1. Torque Characteristics for Composition Seal, Flat Metal Seal, and Flow-Ring Construction",D-107,493,1,32,C › 70 Degrees,line,0
 V150/V200/V300,,,forward,Flow-Ring Construction,20,2-1/2,MAST,,,,,55762,55762,"Table 1. Torque Characteristics for Composition Seal, Flat Metal Seal, and Flow-Ring Construction",D-107,493,1,32,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,A,,Composition Bearings,,,0.07,0.07,,D-108,494,1,1,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,A,,Metal Bearings,,,0.28,0.28,,D-108,494,1,1,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,B,,Lubricated Service,,,60,60,,D-108,494,1,1,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,B,,Non-Lubricated Service,,,75,75,,D-108,494,1,1,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,C,60.0,,,,0.38,0.38,,D-108,494,1,1,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,C,70.0,,,,0.48,0.48,,D-108,494,1,1,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,MAST,,,,,515,515,,D-108,494,1,1,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,A,,Composition Bearings,,,0.1,0.10,,D-108,494,1,2,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,A,,Metal Bearings,,,0.4,0.40,,D-108,494,1,2,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,B,,Lubricated Service,,,90,90,,D-108,494,1,2,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,B,,Non-Lubricated Service,,,100,100,,D-108,494,1,2,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,C,60.0,,,,1.1,1.10,,D-108,494,1,2,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,C,70.0,,,,1.1,1.10,,D-108,494,1,2,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,MAST,,,,,1225,1225,,D-108,494,1,2,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,A,,Composition Bearings,,,0.26,0.26,,D-108,494,1,3,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,A,,Metal Bearings,,,1.04,1.04,,D-108,494,1,3,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,B,,Lubricated Service,,,125,125,,D-108,494,1,3,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,B,,Non-Lubricated Service,,,140,140,,D-108,494,1,3,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,C,60.0,,,,1.3,1.30,,D-108,494,1,3,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,C,70.0,,,,2.4,2.40,,D-108,494,1,3,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,MAST,,,,,1225,1225,,D-108,494,1,3,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,A,,Composition Bearings,,,0.23,0.23,,D-108,494,1,4,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,A,,Metal Bearings,,,1.19,1.19,,D-108,494,1,4,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,B,,Lubricated Service,,,200,200,,D-108,494,1,4,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,B,,Non-Lubricated Service,,,300,300,,D-108,494,1,4,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,C,60.0,,,,4.89,4.89,,D-108,494,1,4,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,C,70.0,,,,5.67,5.67,,D-108,494,1,4,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,MAST,,,,,2120,2120,,D-108,494,1,4,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,A,,Composition Bearings,,,0.34,0.34,,D-108,494,1,5,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,A,,Metal Bearings,,,1.86,1.86,,D-108,494,1,5,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,B,,Lubricated Service,,,250,250,,D-108,494,1,5,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,B,,Non-Lubricated Service,,,350,350,,D-108,494,1,5,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,C,60.0,,,,7.64,7.64,,D-108,494,1,5,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,C,70.0,,,,12,12.0,,D-108,494,1,5,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,MAST,,,,,2120,2120,,D-108,494,1,5,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,A,,Composition Bearings,,,0.62,0.62,,D-108,494,1,6,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,A,,Metal Bearings,,,4.42,4.42,,D-108,494,1,6,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,B,,Lubricated Service,,,450,450,,D-108,494,1,6,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,B,,Non-Lubricated Service,,,650,650,,D-108,494,1,6,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,C,60.0,,,,21,21.0,,D-108,494,1,6,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,C,70.0,,,,33,33.0,,D-108,494,1,6,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,MAST,,,,,4140,4140,,D-108,494,1,6,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,A,,Composition Bearings,,,2,2.00,,D-108,494,1,7,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,A,,Metal Bearings,,,8.46,8.46,,D-108,494,1,7,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,B,,Lubricated Service,,,900,900,,D-108,494,1,7,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,B,,Non-Lubricated Service,,,1600,1600,,D-108,494,1,7,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,C,60.0,,,,42,42.0,,D-108,494,1,7,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,C,70.0,,,,59,59.0,,D-108,494,1,7,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,MAST,,,,,9820,9820,,D-108,494,1,7,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,A,,Composition Bearings,,,4.6,4.60,,D-108,494,1,8,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,A,,Metal Bearings,,,15.4,15.4,,D-108,494,1,8,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,B,,Lubricated Service,,,1300,1300,,D-108,494,1,8,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,B,,Non-Lubricated Service,,,1900,1900,,D-108,494,1,8,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,C,60.0,,,,100,100,,D-108,494,1,8,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,C,70.0,,,,155,155,,D-108,494,1,8,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,MAST,,,,,9820,9820,,D-108,494,1,8,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,A,,Composition Bearings,,,7.3,7.30,,D-108,494,1,9,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,A,,Metal Bearings,,,28.4,28.4,,D-108,494,1,9,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,B,,Lubricated Service,,,2000,2000,,D-108,494,1,9,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,B,,Non-Lubricated Service,,,2900,2900,,D-108,494,1,9,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,C,60.0,,,,150,150,,D-108,494,1,9,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,C,70.0,,,,188,188,,D-108,494,1,9,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,MAST,,,,,12000,12000,,D-108,494,1,9,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,A,,Composition Bearings,,,36,36,,D-108,494,1,10,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,A,,Metal Bearings,,,68,68,,D-108,494,1,10,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,B,,Lubricated Service,,,2900,2900,,D-108,494,1,10,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,B,,Non-Lubricated Service,,,3200,3200,,D-108,494,1,10,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,C,60.0,,,,75,75,,D-108,494,1,10,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,C,70.0,,,,413,413,,D-108,494,1,10,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,MAST,,,,,23525,23525,,D-108,494,1,10,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,A,,Composition Bearings,,,50,50,,D-108,494,1,11,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,A,,Metal Bearings,,,100,100,,D-108,494,1,11,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,B,,Lubricated Service,,,3900,3900,,D-108,494,1,11,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,B,,Non-Lubricated Service,,,4300,4300,,D-108,494,1,11,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,C,60.0,,,,105,105,,D-108,494,1,11,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,C,70.0,,,,578,578,,D-108,494,1,11,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,MAST,,,,,23525,23525,,D-108,494,1,11,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,A,,Composition Bearings,,,50,50,,D-108,494,1,12,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,A,,Metal Bearings,,,100,100,,D-108,494,1,12,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,B,,Lubricated Service,,,3900,3900,,D-108,494,1,12,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,B,,Non-Lubricated Service,,,4300,4300,,D-108,494,1,12,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,C,60.0,,,,105,105,,D-108,494,1,12,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,C,70.0,,,,578,578,,D-108,494,1,12,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,MAST,,,,,55762,55762,,D-108,494,1,12,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,A,,Composition Bearings,,,112,112,,D-108,494,1,13,A › Composition(1) Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,A,,Metal Bearings,,,245,245,,D-108,494,1,13,A › Metal Bearings,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,B,,Lubricated Service,,,5400,5400,,D-108,494,1,13,B › Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,B,,Non-Lubricated Service,,,6000,6000,,D-108,494,1,13,B › Non-Lubricated Service(2),line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,C,60.0,,,,190,190,,D-108,494,1,13,C › 60 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,C,70.0,,,,1044,1044,,D-108,494,1,13,C › 70 Degrees,line,0
-V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,MAST,,,,,55762,55762,,D-108,494,1,13,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,A,,Composition Bearings,,,0.07,0.07,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,A,,Metal Bearings,,,0.28,0.28,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,B,,Lubricated Service,,,60,60,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,B,,Non-Lubricated Service,,,75,75,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,C,60.0,,,,0.38,0.38,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,C,70.0,,,,0.48,0.48,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1,1/2,MAST,,,,,515,515,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,1,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,A,,Composition Bearings,,,0.1,0.10,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,A,,Metal Bearings,,,0.4,0.40,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,B,,Lubricated Service,,,90,90,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,B,,Non-Lubricated Service,,,100,100,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,C,60.0,,,,1.1,1.10,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,C,70.0,,,,1.1,1.10,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,1-1/2,5/8,MAST,,,,,1225,1225,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,2,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,A,,Composition Bearings,,,0.26,0.26,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,A,,Metal Bearings,,,1.04,1.04,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,B,,Lubricated Service,,,125,125,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,B,,Non-Lubricated Service,,,140,140,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,C,60.0,,,,1.3,1.30,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,C,70.0,,,,2.4,2.40,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,2,5/8,MAST,,,,,1225,1225,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,3,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,A,,Composition Bearings,,,0.23,0.23,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,A,,Metal Bearings,,,1.19,1.19,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,B,,Lubricated Service,,,200,200,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,B,,Non-Lubricated Service,,,300,300,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,C,60.0,,,,4.89,4.89,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,C,70.0,,,,5.67,5.67,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,3,3/4,MAST,,,,,2120,2120,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,4,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,A,,Composition Bearings,,,0.34,0.34,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,A,,Metal Bearings,,,1.86,1.86,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,B,,Lubricated Service,,,250,250,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,B,,Non-Lubricated Service,,,350,350,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,C,60.0,,,,7.64,7.64,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,C,70.0,,,,12,12.0,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,4,3/4,MAST,,,,,2120,2120,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,5,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,A,,Composition Bearings,,,0.62,0.62,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,A,,Metal Bearings,,,4.42,4.42,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,B,,Lubricated Service,,,450,450,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,B,,Non-Lubricated Service,,,650,650,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,C,60.0,,,,21,21.0,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,C,70.0,,,,33,33.0,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,6,1,MAST,,,,,4140,4140,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,6,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,A,,Composition Bearings,,,2,2.00,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,A,,Metal Bearings,,,8.46,8.46,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,B,,Lubricated Service,,,900,900,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,B,,Non-Lubricated Service,,,1600,1600,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,C,60.0,,,,42,42.0,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,C,70.0,,,,59,59.0,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,8,1-1/4,MAST,,,,,9820,9820,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,7,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,A,,Composition Bearings,,,4.6,4.60,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,A,,Metal Bearings,,,15.4,15.4,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,B,,Lubricated Service,,,1300,1300,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,B,,Non-Lubricated Service,,,1900,1900,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,C,60.0,,,,100,100,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,C,70.0,,,,155,155,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,10,1-1/4,MAST,,,,,9820,9820,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,8,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,A,,Composition Bearings,,,7.3,7.30,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,A,,Metal Bearings,,,28.4,28.4,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,B,,Lubricated Service,,,2000,2000,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,B,,Non-Lubricated Service,,,2900,2900,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,C,60.0,,,,150,150,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,C,70.0,,,,188,188,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,12,1-1/2,MAST,,,,,12000,12000,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,9,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,A,,Composition Bearings,,,36,36,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,A,,Metal Bearings,,,68,68,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,B,,Lubricated Service,,,2900,2900,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,B,,Non-Lubricated Service,,,3200,3200,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,C,60.0,,,,75,75,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,C,70.0,,,,413,413,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,14,1-3/4,MAST,,,,,23525,23525,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,10,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,A,,Composition Bearings,,,50,50,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,A,,Metal Bearings,,,100,100,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,B,,Lubricated Service,,,3900,3900,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,B,,Non-Lubricated Service,,,4300,4300,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,C,60.0,,,,105,105,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,C,70.0,,,,578,578,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2,MAST,,,,,23525,23525,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,11,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,A,,Composition Bearings,,,50,50,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,A,,Metal Bearings,,,100,100,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,B,,Lubricated Service,,,3900,3900,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,B,,Non-Lubricated Service,,,4300,4300,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,C,60.0,,,,105,105,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,C,70.0,,,,578,578,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,16,2-1/8,MAST,,,,,55762,55762,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,12,Maximum Allowable Torque (lbfin),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,A,,Composition Bearings,,,112,112,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,A › Composition(1) Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,A,,Metal Bearings,,,245,245,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,A › Metal Bearings,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,B,,Lubricated Service,,,5400,5400,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,B › Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,B,,Non-Lubricated Service,,,6000,6000,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,B › Non-Lubricated Service(2),line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,C,60.0,,,,190,190,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,C › 60 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,C,70.0,,,,1044,1044,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,C › 70 Degrees,line,0
+V150/V200/V300,,,forward,HD (Heavy-Duty) Metal Ball Seal,20,2-1/2,MAST,,,,,55762,55762,Table 2. Torque Characteristics for HD (Heavy-Duty) Metal Ball Seal,D-108,494,1,13,Maximum Allowable Torque (lbfin),line,0
 V150/V200/V300,,,forward,,2,,K,60.0,"COMPOSITION BALL SEALS, FLAT METAL BALL SEALS, AND FLOW-RING CONSTRUCTION",,,0.238,0.238,"Table 3. K Values for Effective Pressure Drops, P",D-108,494,2,1,"COMPOSITION BALL SEALS, FLAT METAL BALL SEALS, AND FLOW-RING CONSTRUCTION › 60 Degrees",line,0
 V150/V200/V300,,,forward,,2,,K,70.0,"COMPOSITION BALL SEALS, FLAT METAL BALL SEALS, AND FLOW-RING CONSTRUCTION",,,0.222,0.222,"Table 3. K Values for Effective Pressure Drops, P",D-108,494,2,1,"COMPOSITION BALL SEALS, FLAT METAL BALL SEALS, AND FLOW-RING CONSTRUCTION › 70 Degrees",line,0
 V150/V200/V300,,,forward,,2,,K,60.0,HD (HEAVY-DUTY) METAL BALL SEALS,,,0.279,0.279,"Table 3. K Values for Effective Pressure Drops, P",D-108,494,2,1,HD (HEAVY-DUTY) METAL BALL SEALS › 60 Degrees,line,0
@@ -16331,24 +16331,24 @@ V150/V200/V300,,,forward,Cavitrol Hex Trim with HD Metal Ball Seal,20,2-1/2,B,,N
 V150/V200/V300,,,forward,Cavitrol Hex Trim with HD Metal Ball Seal,20,2-1/2,C,60.0,,,,190,190,"Table 1. Torque Characteristics for TMC Plus, Flat Metal Seal, and HD Metal Seal",D-108.1,495,1,23,C › 60 Degrees,line,0
 V150/V200/V300,,,forward,Cavitrol Hex Trim with HD Metal Ball Seal,20,2-1/2,C,70.0,,,,1044,1044,"Table 1. Torque Characteristics for TMC Plus, Flat Metal Seal, and HD Metal Seal",D-108.1,495,1,23,C › 70 Degrees,line,0
 V150/V200/V300,,,forward,Cavitrol Hex Trim with HD Metal Ball Seal,20,2-1/2,MAST,,,,,55762,55762,"Table 1. Torque Characteristics for TMC Plus, Flat Metal Seal, and HD Metal Seal",D-108.1,495,1,23,Maximum Allowable Torque (lbfin),line,0
-V150/V200/V300,with Attenuator,,,,4,3/4,A,,,,,0.1,0.10,,D-110,498,1,1,A,line,0
-V150/V200/V300,with Attenuator,,,,4,3/4,B,,,,,380,380,,D-110,498,1,1,B,line,0
-V150/V200/V300,with Attenuator,,,,6,1,A,,,,,1.8,1.80,,D-110,498,1,2,A,line,0
-V150/V200/V300,with Attenuator,,,,6,1,B,,,,,500,500,,D-110,498,1,2,B,line,0
-V150/V200/V300,with Attenuator,,,,8,1-1/4,A,,,,,1.8,1.80,,D-110,498,1,3,A,line,0
-V150/V200/V300,with Attenuator,,,,8,1-1/4,B,,,,,750,750,,D-110,498,1,3,B,line,0
-V150/V200/V300,with Attenuator,,,,10,1-1/4,A,,,,,1.8,1.80,,D-110,498,1,4,A,line,0
-V150/V200/V300,with Attenuator,,,,10,1-1/4,B,,,,,1250,1250,,D-110,498,1,4,B,line,0
-V150/V200/V300,with Attenuator,,,,12,1-1/2,A,,,,,4,4.00,,D-110,498,1,5,A,line,0
-V150/V200/V300,with Attenuator,,,,12,1-1/2,B,,,,,3000,3000,,D-110,498,1,5,B,line,0
-V150/V200/V300,with Attenuator,,,,14,1-3/4,A,,,,,42,42,,D-110,498,1,6,A,line,0
-V150/V200/V300,with Attenuator,,,,14,1-3/4,B,,,,,2400,2400,,D-110,498,1,6,B,line,0
-V150/V200/V300,with Attenuator,,,,16,2,A,,,,,60,60,,D-110,498,1,7,A,line,0
-V150/V200/V300,with Attenuator,,,,16,2,B,,,,,2800,2800,,D-110,498,1,7,B,line,0
-V150/V200/V300,with Attenuator,,,,16,2-1/8,A,,,,,60,60,,D-110,498,1,8,A,line,0
-V150/V200/V300,with Attenuator,,,,16,2-1/8,B,,,,,2800,2800,,D-110,498,1,8,B,line,0
-V150/V200/V300,with Attenuator,,,,20,2-1/2,A,,,,,97,97,,D-110,498,1,9,A,line,0
-V150/V200/V300,with Attenuator,,,,20,2-1/2,B,,,,,5200,5200,,D-110,498,1,9,B,line,0
+V150/V200/V300,with Attenuator,,,,4,3/4,A,,,,,0.1,0.10,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,1,A,line,0
+V150/V200/V300,with Attenuator,,,,4,3/4,B,,,,,380,380,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,1,B,line,0
+V150/V200/V300,with Attenuator,,,,6,1,A,,,,,1.8,1.80,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,2,A,line,0
+V150/V200/V300,with Attenuator,,,,6,1,B,,,,,500,500,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,2,B,line,0
+V150/V200/V300,with Attenuator,,,,8,1-1/4,A,,,,,1.8,1.80,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,3,A,line,0
+V150/V200/V300,with Attenuator,,,,8,1-1/4,B,,,,,750,750,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,3,B,line,0
+V150/V200/V300,with Attenuator,,,,10,1-1/4,A,,,,,1.8,1.80,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,4,A,line,0
+V150/V200/V300,with Attenuator,,,,10,1-1/4,B,,,,,1250,1250,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,4,B,line,0
+V150/V200/V300,with Attenuator,,,,12,1-1/2,A,,,,,4,4.00,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,5,A,line,0
+V150/V200/V300,with Attenuator,,,,12,1-1/2,B,,,,,3000,3000,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,5,B,line,0
+V150/V200/V300,with Attenuator,,,,14,1-3/4,A,,,,,42,42,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,6,A,line,0
+V150/V200/V300,with Attenuator,,,,14,1-3/4,B,,,,,2400,2400,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,6,B,line,0
+V150/V200/V300,with Attenuator,,,,16,2,A,,,,,60,60,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,7,A,line,0
+V150/V200/V300,with Attenuator,,,,16,2,B,,,,,2800,2800,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,7,B,line,0
+V150/V200/V300,with Attenuator,,,,16,2-1/8,A,,,,,60,60,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,8,A,line,0
+V150/V200/V300,with Attenuator,,,,16,2-1/8,B,,,,,2800,2800,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,8,B,line,0
+V150/V200/V300,with Attenuator,,,,20,2-1/2,A,,,,,97,97,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,9,A,line,0
+V150/V200/V300,with Attenuator,,,,20,2-1/2,B,,,,,5200,5200,Table 1. Breakout Torque (T ) Characteristics for Composition(1) (TCM) Seal and Bearing for Attenuated Valves B,D-110,498,1,9,B,line,0
 V150/V200/V300,with Attenuator,,,,4,,K,10.0,,,,0.31,0.31,Table 2. K Factor (T ) for Attenuated Valves,D-110,498,2,1,VALVE ROTATION IN DEGREES › 10,line,0
 V150/V200/V300,with Attenuator,,,,4,,K,20.0,,,,0.34,0.34,Table 2. K Factor (T ) for Attenuated Valves,D-110,498,2,1,VALVE ROTATION IN DEGREES › 20,line,0
 V150/V200/V300,with Attenuator,,,,4,,K,30.0,,,,0.33,0.33,Table 2. K Factor (T ) for Attenuated Valves,D-110,498,2,1,VALVE ROTATION IN DEGREES › 30,line,0
@@ -16492,60 +16492,60 @@ V150/V200/V300,with Attenuator,,,,20,2-1/2,C,70.0,,,,936,936,Table 3. V-Notch Ba
 V150/V200/V300,with Attenuator,,,,20,2-1/2,C,80.0,,,,940,940,Table 3. V-Notch Ball Characteristics (C Factors) for Attenuated Valves,D-110,498,3,8,DEGREE OF ROTATION › 80,line,0
 V150/V200/V300,with Attenuator,,,,20,2-1/2,C,90.0,,,,940,940,Table 3. V-Notch Ball Characteristics (C Factors) for Attenuated Valves,D-110,498,3,8,DEGREE OF ROTATION › 90,line,0
 V150/V200/V300,with Attenuator,,,,20,2-1/2,MAST,,,,,55762,55762,Table 3. V-Notch Ball Characteristics (C Factors) for Attenuated Valves,D-110,498,3,8,Maximum Allowable Torque (lbfin),line,0
-V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,A,,Up to 800 Psid,,,2.4,2.4,,D-116,504,1,1,Up to 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,B,,Up to 800 Psid,,,800,800,,D-116,504,1,1,Up to 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,A,,Over 800 Psid,,,1.4,1.4,,D-116,504,1,1,Over 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,B,,Over 800 Psid,,,1620,1620,,D-116,504,1,1,Over 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,6,2,A,,Up to 800 Psid,,,3.9,3.9,,D-116,504,1,2,Up to 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,6,2,B,,Up to 800 Psid,,,1030,1030,,D-116,504,1,2,Up to 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,6,2,A,,Over 800 Psid,,,2.7,2.7,,D-116,504,1,2,Over 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,6,2,B,,Over 800 Psid,,,1990,1990,,D-116,504,1,2,Over 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,A,,Up to 800 Psid,,,13.5,13.5,,D-116,504,1,3,Up to 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,B,,Up to 800 Psid,,,4100,4100,,D-116,504,1,3,Up to 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,A,,Over 800 Psid,,,6.6,6.6,,D-116,504,1,3,Over 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,B,,Over 800 Psid,,,9620,9620,,D-116,504,1,3,Over 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,A,,Up to 800 Psid,,,20.8,20.8,,D-116,504,1,4,Up to 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,B,,Up to 800 Psid,,,7140,7140,,D-116,504,1,4,Up to 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,A,,Over 800 Psid,,,12.6,12.6,,D-116,504,1,4,Over 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,B,,Over 800 Psid,,,14700,14700,,D-116,504,1,4,Over 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,A,,Up to 800 Psid,,,22.2,22.2,,D-116,504,1,5,Up to 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,B,,Up to 800 Psid,,,10300,10300,,D-116,504,1,5,Up to 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,A,,Over 800 Psid,,,12.9,12.9,,D-116,504,1,5,Over 800 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,B,,Over 800 Psid,,,17800,17800,,D-116,504,1,5,Over 800 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,A,,Up to 400 Psid,,,47.2,47.2,,D-116,504,1,6,Up to 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,B,,Up to 400 Psid,,,12000,12000,,D-116,504,1,6,Up to 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,A,,Over 400 Psid,,,27.8,27.8,,D-116,504,1,6,Over 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,B,,Over 400 Psid,,,19760,19760,,D-116,504,1,6,Over 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,A,,Up to 400 Psid,,,47.2,47.2,,D-116,504,1,7,Up to 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,B,,Up to 400 Psid,,,12000,12000,,D-116,504,1,7,Up to 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,A,,Over 400 Psid,,,27.8,27.8,,D-116,504,1,7,Over 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,B,,Over 400 Psid,,,19760,19760,,D-116,504,1,7,Over 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,A,,Up to 400 Psid,,,87.4,87.4,,D-116,504,1,8,Up to 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,B,,Up to 400 Psid,,,25000,25000,,D-116,504,1,8,Up to 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,A,,Over 400 Psid,,,50,50.0,,D-116,504,1,8,Over 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,B,,Over 400 Psid,,,40000,40000,,D-116,504,1,8,Over 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,A,,Up to 400 Psid,,,112,112,,D-116,504,1,9,Up to 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,B,,Up to 400 Psid,,,33300,33300,,D-116,504,1,9,Up to 400 Psid › B,line,0
-V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,A,,Over 400 Psid,,,63,63.0,,D-116,504,1,9,Over 400 Psid › A,line,0
-V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,B,,Over 400 Psid,,,52900,52900,,D-116,504,1,9,Over 400 Psid › B,line,0
-V250,,,reverse,Flow Ring Construction,4,1-1/4,A,,,,,0.1,0.1,,D-116,504,1,10,A,line,0
-V250,,,reverse,Flow Ring Construction,4,1-1/4,B,,,,,10,10,,D-116,504,1,10,B,line,0
-V250,,,reverse,Flow Ring Construction,6,2,A,,,,,0.2,0.2,,D-116,504,1,11,A,line,0
-V250,,,reverse,Flow Ring Construction,6,2,B,,,,,20,20,,D-116,504,1,11,B,line,0
-V250,,,reverse,Flow Ring Construction,8,2-1/2,A,,,,,0.3,0.3,,D-116,504,1,12,A,line,0
-V250,,,reverse,Flow Ring Construction,8,2-1/2,B,,,,,40,40,,D-116,504,1,12,B,line,0
-V250,,,reverse,Flow Ring Construction,10,2-1/2,A,,,,,0.4,0.4,,D-116,504,1,13,A,line,0
-V250,,,reverse,Flow Ring Construction,10,2-1/2,B,,,,,60,60,,D-116,504,1,13,B,line,0
-V250,,,reverse,Flow Ring Construction,12,2-1/2,A,,,,,0.5,0.5,,D-116,504,1,14,A,line,0
-V250,,,reverse,Flow Ring Construction,12,2-1/2,B,,,,,100,100,,D-116,504,1,14,B,line,0
-V250,,,reverse,Flow Ring Construction,16,2-1/2,A,,,,,0.6,0.6,,D-116,504,1,15,A,line,0
-V250,,,reverse,Flow Ring Construction,16,2-1/2,B,,,,,200,200,,D-116,504,1,15,B,line,0
-V250,,,reverse,Flow Ring Construction,16,3-1/2,A,,,,,0.6,0.6,,D-116,504,1,16,A,line,0
-V250,,,reverse,Flow Ring Construction,16,3-1/2,B,,,,,200,200,,D-116,504,1,16,B,line,0
-V250,,,reverse,Flow Ring Construction,20,2-1/2,A,,,,,0.7,0.7,,D-116,504,1,17,A,line,0
-V250,,,reverse,Flow Ring Construction,20,2-1/2,B,,,,,400,400,,D-116,504,1,17,B,line,0
-V250,,,reverse,Flow Ring Construction,24,3-1/2,A,,,,,0.8,0.8,,D-116,504,1,18,A,line,0
-V250,,,reverse,Flow Ring Construction,24,3-1/2,B,,,,,500,500,,D-116,504,1,18,B,line,0
+V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,A,,Up to 800 Psid,,,2.4,2.4,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,1,Up to 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,B,,Up to 800 Psid,,,800,800,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,1,Up to 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,A,,Over 800 Psid,,,1.4,1.4,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,1,Over 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,4,1-1/4,B,,Over 800 Psid,,,1620,1620,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,1,Over 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,6,2,A,,Up to 800 Psid,,,3.9,3.9,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,2,Up to 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,6,2,B,,Up to 800 Psid,,,1030,1030,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,2,Up to 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,6,2,A,,Over 800 Psid,,,2.7,2.7,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,2,Over 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,6,2,B,,Over 800 Psid,,,1990,1990,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,2,Over 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,A,,Up to 800 Psid,,,13.5,13.5,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,3,Up to 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,B,,Up to 800 Psid,,,4100,4100,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,3,Up to 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,A,,Over 800 Psid,,,6.6,6.6,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,3,Over 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,8,2-1/2,B,,Over 800 Psid,,,9620,9620,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,3,Over 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,A,,Up to 800 Psid,,,20.8,20.8,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,4,Up to 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,B,,Up to 800 Psid,,,7140,7140,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,4,Up to 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,A,,Over 800 Psid,,,12.6,12.6,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,4,Over 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,10,2-1/2,B,,Over 800 Psid,,,14700,14700,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,4,Over 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,A,,Up to 800 Psid,,,22.2,22.2,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,5,Up to 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,B,,Up to 800 Psid,,,10300,10300,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,5,Up to 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,A,,Over 800 Psid,,,12.9,12.9,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,5,Over 800 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,12,2-1/2,B,,Over 800 Psid,,,17800,17800,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,5,Over 800 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,A,,Up to 400 Psid,,,47.2,47.2,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,6,Up to 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,B,,Up to 400 Psid,,,12000,12000,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,6,Up to 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,A,,Over 400 Psid,,,27.8,27.8,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,6,Over 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,2-1/2,B,,Over 400 Psid,,,19760,19760,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,6,Over 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,A,,Up to 400 Psid,,,47.2,47.2,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,7,Up to 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,B,,Up to 400 Psid,,,12000,12000,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,7,Up to 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,A,,Over 400 Psid,,,27.8,27.8,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,7,Over 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,16,3-1/2,B,,Over 400 Psid,,,19760,19760,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,7,Over 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,A,,Up to 400 Psid,,,87.4,87.4,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,8,Up to 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,B,,Up to 400 Psid,,,25000,25000,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,8,Up to 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,A,,Over 400 Psid,,,50,50.0,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,8,Over 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,20,3-1/2,B,,Over 400 Psid,,,40000,40000,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,8,Over 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,A,,Up to 400 Psid,,,112,112,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,9,Up to 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,B,,Up to 400 Psid,,,33300,33300,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,9,Up to 400 Psid › B,line,0
+V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,A,,Over 400 Psid,,,63,63.0,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,9,Over 400 Psid › A,line,0
+V250,,,reverse,Single or Dual Seal Construction,24,3-1/2,B,,Over 400 Psid,,,52900,52900,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,9,Over 400 Psid › B,line,0
+V250,,,reverse,Flow Ring Construction,4,1-1/4,A,,,,,0.1,0.1,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,10,A,line,0
+V250,,,reverse,Flow Ring Construction,4,1-1/4,B,,,,,10,10,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,10,B,line,0
+V250,,,reverse,Flow Ring Construction,6,2,A,,,,,0.2,0.2,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,11,A,line,0
+V250,,,reverse,Flow Ring Construction,6,2,B,,,,,20,20,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,11,B,line,0
+V250,,,reverse,Flow Ring Construction,8,2-1/2,A,,,,,0.3,0.3,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,12,A,line,0
+V250,,,reverse,Flow Ring Construction,8,2-1/2,B,,,,,40,40,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,12,B,line,0
+V250,,,reverse,Flow Ring Construction,10,2-1/2,A,,,,,0.4,0.4,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,13,A,line,0
+V250,,,reverse,Flow Ring Construction,10,2-1/2,B,,,,,60,60,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,13,B,line,0
+V250,,,reverse,Flow Ring Construction,12,2-1/2,A,,,,,0.5,0.5,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,14,A,line,0
+V250,,,reverse,Flow Ring Construction,12,2-1/2,B,,,,,100,100,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,14,B,line,0
+V250,,,reverse,Flow Ring Construction,16,2-1/2,A,,,,,0.6,0.6,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,15,A,line,0
+V250,,,reverse,Flow Ring Construction,16,2-1/2,B,,,,,200,200,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,15,B,line,0
+V250,,,reverse,Flow Ring Construction,16,3-1/2,A,,,,,0.6,0.6,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,16,A,line,0
+V250,,,reverse,Flow Ring Construction,16,3-1/2,B,,,,,200,200,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,16,B,line,0
+V250,,,reverse,Flow Ring Construction,20,2-1/2,A,,,,,0.7,0.7,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,17,A,line,0
+V250,,,reverse,Flow Ring Construction,20,2-1/2,B,,,,,400,400,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,17,B,line,0
+V250,,,reverse,Flow Ring Construction,24,3-1/2,A,,,,,0.8,0.8,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,18,A,line,0
+V250,,,reverse,Flow Ring Construction,24,3-1/2,B,,,,,500,500,"Table 1. Torque Characteristics, A and B Factors",D-116,504,1,18,B,line,0
 V250,,,reverse,"Single Seal, Dual Seal, or Flow Ring Construction",4,1-1/4,C,20.0,,,,3.71,3.71,"Table 2. Torque Characteristics, C Factors",D-116,504,2,1,"Angle of Opening, Degrees › 20",line,0
 V250,,,reverse,"Single Seal, Dual Seal, or Flow Ring Construction",4,1-1/4,C,30.0,,,,5.47,5.47,"Table 2. Torque Characteristics, C Factors",D-116,504,2,1,"Angle of Opening, Degrees › 30",line,0
 V250,,,reverse,"Single Seal, Dual Seal, or Flow Ring Construction",4,1-1/4,C,40.0,,,,6.61,6.61,"Table 2. Torque Characteristics, C Factors",D-116,504,2,1,"Angle of Opening, Degrees › 40",line,0

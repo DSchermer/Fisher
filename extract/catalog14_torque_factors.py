@@ -210,7 +210,8 @@ def main(c14_dir: str) -> None:
         cap = recs[0].get("caption", "")
         if not re.match(r"^(table \d|(cryogenic )?cl\s?\d[\d/]*\s.*(k values|characteristics|torque))", cap, re.I):
             cap = ""  # the line above was a page header, a footnote or the previous table's last row
-        title = titles.get((page, table), "") or cap
+        title = titles.get((page, table), "") or cap or next(
+            (x["group"] for x in recs if re.match(r"table \d", x["group"], re.I)), "")
         if re.search(r"sample", title, re.I) or any("KM value" in r["keys"] for r in recs):
             continue  # sample calculations (D-114)
         if re.search(r"actuator", title, re.I) or any(re.search(r"PUSH-DOWN|ACTUATOR SIZE", r["column"]) for r in recs):
