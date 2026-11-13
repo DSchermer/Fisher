@@ -16,6 +16,7 @@
     python -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
     python -m fisher actuators-for 152-1-8 --dp 300
     python -m fisher c14-tables --text "port data"
+    python -m fisher valve-torque --valve 8532 --nps 6 --dp-shutoff 200 --p1 200 --fluid liquid --fl 0.6 --ff 0.94 --pv 0.5
 
   Unified dataset (data/fisher.db, docs/DATA_MODEL.md):
     python -m fisher sql "SELECT * FROM v_valve_actuator WHERE config_id = '152-1-8' AND max_dp >= 300"
@@ -24,10 +25,11 @@
 from __future__ import annotations
 
 import argparse
+import dataclasses
 import json
 import sys
 
-from . import actuators, db, integrate, noise, reference, sizing
+from . import actuators, db, integrate, noise, reference, sizing, torque
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -122,6 +124,17 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--schedule", required=True)
     p.add_argument("--g", type=float, default=1.0)
     p.add_argument("--style", default="standard", choices=sorted(set(noise.AR_COEFFICIENTS) | noise.CAPPED_TRIMS))
+    p = sub.add_parser("valve-torque", help="Catalog 14 torque method: breakout and dynamic torque for a rotary valve")
+    p.add_argument("--valve", required=True, help="e.g. 8532, A11, V150/V200/V300, Control-Disk (see torque-valves)")
+    p.add_argument("--nps", required=True)
+    p.add_argument("--dp-shutoff", type=float, required=True)
+    p.add_argument("--p1", type=float, required=True, help="inlet pressure, psig")
+    p.add_argument("--fluid", choices=["liquid", "gas"], default="liquid")
+    for a in ("fl", "ff", "pv", "strength"):
+        p.add_argument(f"--{a}", type=float)
+    for a in ("flow", "pressure-class", "construction", "variant", "b-key", "mast-key"):
+        p.add_argument(f"--{a}")
+    sub.add_parser("torque-valves", help="rotary valves with typed torque factors")
     return ap
 
 
@@ -192,6 +205,16 @@ def run(argv) -> object:
     elif args.cmd == "noise":
         out = noise.hydrodynamic_noise(dp=args.dp, p1=args.p1, pv=args.pv, cv=args.cv, km=args.km, nps=args.nps,
                                        schedule=args.schedule, g=args.g, style=args.style).__dict__
+    elif args.cmd == "torque-valves":
+        out = torque.valves()
+    elif args.cmd == "valve-torque":
+        filters = {k: v for k, v in (("flow", args.flow), ("pressure_class", args.pressure_class),
+                                     ("construction", args.construction), ("variant", args.variant)) if v}
+        res = torque.valve_torque_catalog(args.valve, args.nps, dp_shutoff=args.dp_shutoff, p1_psig=args.p1,
+                                          fluid=args.fluid, fl=args.fl, ff=args.ff, pv_psia=args.pv,
+                                          b_key=args.b_key, mast_key=args.mast_key,
+                                          relative_strength_pct=args.strength or 100.0, **filters)
+        out = [dataclasses.asdict(r) for r in res]
     elif args.cmd == "steam":
         out = reference.saturated_steam(psia=args.psia, temp_f=args.temp_f)
     else:

@@ -306,7 +306,33 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("value", "REAL", "Number; NULL for placeholders"),
         ("value_raw", "TEXT", "Cell as printed ('---', 'CF', '207 (3-15)', '1424(1)')"),
         ("footnotes", "TEXT", "Footnote numbers attached to the value"),
-        ("confirmed", "TEXT", "Second reader: 'line' = row's numbers in order on one pdftotext line; 'window' = all within four consecutive lines (vertically centred or merged cells); '' = not found"),
+        ("confirmed", "TEXT", "Second reader: 'line' = row's numbers in order on one pdftotext line; 'window' = all within four consecutive lines (vertically centred or merged cells); 'page' = the row's only numbers are merged-cell values, found on the page but not tied to a line; '' = not found. A repeated merged value carries the result of the row where it is printed"),
+        ("merged", "INTEGER", "1 = printed once in a cell merged over several rows (or beside a stack of lines) and repeated here"),
+        ("caption", "TEXT", "The line of text just above the table, as printed (often its title)"),
+    ]),
+    "torque_factor": ("Catalog 14 torque method factors for every rotary valve (section D), classified from c14_table_value by extract/catalog14_torque_factors.py.", [
+        ("valve", "TEXT", "Valve, from the catalog's table of contents (e.g. 8532, A11, V150/V200/V300, Control-Disk)"),
+        ("variant", "TEXT", "Qualifier from the page heading (e.g. 'with Attenuator', 'Novex Seal', 'Full Bore')"),
+        ("pressure_class", "TEXT", "Pressure class from the table title or page heading"),
+        ("flow", "TEXT", "forward, reverse, normal, 'forward and reverse', or '' where not printed"),
+        ("construction", "TEXT", "Seal / packing / bearing row group as printed"),
+        ("nps", "TEXT", "Valve size as printed (may be a range such as '14-24' for K values)"),
+        ("shaft", "TEXT", "Shaft diameter as printed (keyed / spline variants labelled)"),
+        ("factor", "TEXT", "A, B (TB = A dP shutoff + B); C (TD = C dP eff); K (gas dP eff = K P1 abs); MAST (max allowable shaft torque); STRENGTH (percent of MAST by temperature); E, F, SF, FF (SIS); BREAK, RUN, MARGIN (Z500); VRUN, VETC, VBTO and MAST_* (30,000 operating torques); MULTIPLIER (U valve); other"),
+        ("angle_deg", "REAL", "Angle of rotation for C and K"),
+        ("qualifier", "TEXT", "Rest of the column path: seal material for B, shaft material or bearing for MAST, temperature range for STRENGTH, pressure range for A ..."),
+        ("torque_direction", "TEXT", "For C: 'tends to close' (kappa mark) or 'tends to open' (theta mark) where printed"),
+        ("other_keys", "TEXT", "JSON of any other row keys"),
+        ("value", "REAL", "Value (A dimensionless in-lbf/psi; B, MAST, torques lbf-in)"),
+        ("value_raw", "TEXT", "As printed"),
+        ("table_title", "TEXT", "Table title where printed"),
+        ("printed_label", "TEXT", "Printed page label"),
+        ("pdf_page", "INTEGER", "PDF page"),
+        ("table_no", "INTEGER", "Table position on the page"),
+        ("row_no", "INTEGER", "Row within the table (factors of one printed row share it)"),
+        ("column_path", "TEXT", "Column header path as printed"),
+        ("confirmed", "TEXT", "Second-reader result for the row (see c14_table_value)"),
+        ("merged", "INTEGER", "1 = value repeated from a merged cell"),
     ]),
 }
 
@@ -532,8 +558,13 @@ def build(db_path: str, doc_path: str) -> None:
         prefix = f"{r['printed_label'].replace('-', '_').replace('.', '_')}_t{r['table']}"
         tv.append((c14_ids.get((r["page"], prefix), ""), r["printed_label"], int(r["page"]), r["section"],
                    int(r["table"]), r["heading"], r["group"], int(r["row"]), r["keys"], r["column"], num(r["value"]),
-                   r["value_raw"], r["footnotes"], r["confirmed"]))
+                   r["value_raw"], r["footnotes"], r["confirmed"], int(r["merged"]), r["caption"]))
     ins("c14_table_value", tv)
+    ins("torque_factor", [(r["valve"], r["variant"], r["pressure_class"], r["flow"], r["construction"], r["nps"],
+                           r["shaft"], r["factor"], num(r["angle_deg"]), r["qualifier"], r["torque_direction"],
+                           r["other_keys"], num(r["value"]), r["value_raw"], r["table_title"], r["printed_label"],
+                           int(r["page"]), int(r["table_no"]), int(r["row_no"]), r["column_path"], r["confirmed"],
+                           int(r["merged"])) for r in rows(DATA / "catalog14" / "torque" / "torque_factors.csv")])
 
     for name, (_, sql) in VIEWS.items():
         con.execute(f"CREATE VIEW {name} AS {sql}")
@@ -545,7 +576,8 @@ def build(db_path: str, doc_path: str) -> None:
                  "CREATE INDEX ix_link_config ON valve_actuator_link(config_id)",
                  "CREATE INDEX ix_cell ON reference_cell(table_id)",
                  "CREATE INDEX ix_flag ON catalog_flag(config_id)",
-                 "CREATE INDEX ix_c14_value ON c14_table_value(printed_label, table_no)"):
+                 "CREATE INDEX ix_c14_value ON c14_table_value(printed_label, table_no)",
+                 "CREATE INDEX ix_torque_factor ON torque_factor(valve, nps, factor)"):
         con.execute(stmt)
     con.commit()
     counts = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in SCHEMA}

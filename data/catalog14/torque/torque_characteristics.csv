@@ -65,18 +65,18 @@ valve,nps,shaft_in,shaft_class,bearing,A,B,C_60,C_90,max_torque_lbf_in,printed_l
 7600,24,3,3-5,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,36.9,520.0,1060.0,2310.0,104372.0,D-6
 7600,24,3,3-5,Graphite-impregnated bronze,129.0,520.0,1060.0,2310.0,104372.0,D-6
 7600,24,3,3-5,R30006 (alloy 6),258.0,520.0,1060.0,2310.0,104372.0,D-6
-7600,24,4,5-7,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,49.4,800.0,932.0,1560.0,,D-6
-7600,24,4,5-7,Graphite-impregnated bronze,173.0,800.0,932.0,1560.0,,D-6
-7600,24,4,5-7,R30006 (alloy 6),346.0,800.0,932.0,1560.0,,D-6
+7600,24,4,5-7,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,49.4,800.0,932.0,1560.0,228406.0,D-6
+7600,24,4,5-7,Graphite-impregnated bronze,173.0,800.0,932.0,1560.0,228406.0,D-6
+7600,24,4,5-7,R30006 (alloy 6),346.0,800.0,932.0,1560.0,228406.0,D-6
 7600,30,3-1/2,3-5,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,67.8,660.0,2190.0,4980.0,165738.0,D-6
 7600,30,3-1/2,3-5,Graphite-impregnated bronze,237.0,660.0,2190.0,4980.0,165738.0,D-6
 7600,30,3-1/2,3-5,R30006 (alloy 6),474.0,660.0,2190.0,4980.0,165738.0,D-6
-7600,30,4-1/2,5-7,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,87.1,960.0,2060.0,3740.0,,D-6
-7600,30,4-1/2,5-7,Graphite-impregnated bronze,305.0,960.0,2060.0,3740.0,,D-6
-7600,30,4-1/2,5-7,R30006 (alloy 6),610.0,960.0,2060.0,3740.0,,D-6
+7600,30,4-1/2,5-7,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,87.1,960.0,2060.0,3740.0,228406.0,D-6
+7600,30,4-1/2,5-7,Graphite-impregnated bronze,305.0,960.0,2060.0,3740.0,228406.0,D-6
+7600,30,4-1/2,5-7,R30006 (alloy 6),610.0,960.0,2060.0,3740.0,228406.0,D-6
 7600,36,3-1/2,3-5,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,96.0,660.0,3990.0,10200.0,165738.0,D-6
 7600,36,3-1/2,3-5,Graphite-impregnated bronze,336.0,660.0,3990.0,10200.0,165738.0,D-6
 7600,36,3-1/2,3-5,R30006 (alloy 6),672.0,660.0,3990.0,10200.0,165738.0,D-6
-7600,36,4-1/2,5-7,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,123.0,960.0,3740.0,7770.0,,D-6
-7600,36,4-1/2,5-7,Graphite-impregnated bronze,432.0,960.0,3740.0,7770.0,,D-6
-7600,36,4-1/2,5-7,R30006 (alloy 6),864.0,960.0,3740.0,7770.0,,D-6
+7600,36,4-1/2,5-7,PTFE-lined fiberglass or PTFE-lined 316 stainless steel,123.0,960.0,3740.0,7770.0,228406.0,D-6
+7600,36,4-1/2,5-7,Graphite-impregnated bronze,432.0,960.0,3740.0,7770.0,228406.0,D-6
+7600,36,4-1/2,5-7,R30006 (alloy 6),864.0,960.0,3740.0,7770.0,228406.0,D-6

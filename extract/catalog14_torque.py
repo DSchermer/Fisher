@@ -39,7 +39,7 @@ def main(pdf_path: str, out_dir: str) -> None:
                 rows.append({"valve": "7600", "nps": clean(cells[0]), "shaft_in": shaft, "shaft_class": shaft_class,
                              "bearing": bearing.replace("‐", "-"), "A": num(a), "B": num(clean(cells[4])),
                              "C_60": num(clean(cells[5])), "C_90": num(clean(cells[6])),
-                             "max_torque_lbf_in": num(clean(cells[7])), "printed_label": label})
+                             "max_torque_lbf_in": num(re.sub(r"\(\d\)$", "", clean(cells[7]))), "printed_label": label})
             ex.check("7600 table 1", page, [cells[0], cells[1], cells[3], cells[4], cells[5], cells[6], cells[7]])
     rows_list = rows
     last = ""  # valve size is printed once per group of shafts

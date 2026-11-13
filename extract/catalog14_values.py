@@ -8,6 +8,8 @@ layouts:
   - key columns: the first column, columns whose header names a key (size, shaft, bearing, ...),
     and columns holding text (part numbers, materials); merged key cells are carried down;
   - every other cell is a value, with its full column header path;
+  - a value printed once in a cell merged over several rows is repeated on each row it covers
+    (merged = 1), and checked by the second reader on the row where it is printed;
   - figure grids that pdfplumber reads as tables (no header, no title) are skipped;
   - second reader: a row's values, in order, on one line of poppler's text ("line"), or for layouts that
     centre or merge cells vertically, all present within four consecutive lines ("window").
@@ -63,11 +65,60 @@ def is_valueish(x: str) -> bool:
     return bool(x) and (is_number(x) or bool(DASH.match(x)) or (first_line(x) != x and is_number(first_line(x))))
 
 
-def expand(raw, shade):
-    """split_rows with the shaded flag and source row kept for each expanded row."""
+class Spanned(str):
+    """An empty cell covered by a merged cell to its left (a group header spanning columns)."""
+
+
+def horizontal_spans(table) -> list[list[bool]]:
+    """For each cell: is it covered by a merged cell to its left in the same row?"""
+    ncols = max(len(r.cells) for r in table.rows)
+    col_x0 = [min((r.cells[c][0] for r in table.rows if c < len(r.cells) and r.cells[c]), default=1e9)
+              for c in range(ncols)]
+    out = []
+    for r in table.rows:
+        row, left = [], None
+        for c in range(ncols):
+            cell = r.cells[c] if c < len(r.cells) else None
+            row.append(cell is None and left is not None and left[2] > col_x0[c] + 1)
+            if cell is not None:
+                left = cell
+        out.append(row)
+    return out
+
+
+class Covered(str):
+    """An empty cell covered by a merged cell above it: the value printed above applies here too."""
+
+
+def vertical_spans(table) -> list[list[bool]]:
+    """For each cell: is it covered by a merged cell above it in the same column?"""
+    ncols = max(len(r.cells) for r in table.rows)
+    out, above = [], [None] * ncols
+    for r in table.rows:
+        top = r.bbox[1]
+        row = []
+        for c in range(ncols):
+            cell = r.cells[c] if c < len(r.cells) else None
+            row.append(cell is None and above[c] is not None and above[c][3] > top + 1)
+            if cell is not None:
+                above[c] = cell
+        out.append(row)
+    return out
+
+
+def expand(raw, shade, spans=None, vspans=None):
+    """split_rows with the shaded flag kept for each expanded row; spanned cells marked."""
     rows, flags = [], []
-    for r, s in zip(raw, shade):
+    for i, (r, s) in enumerate(zip(raw, shade)):
         sub = split_rows([r])
+        if vspans:
+            for j in range(len(sub)):
+                sub[j] = [Covered("") if vspans[i][c] and not x else x for c, x in enumerate(sub[j])]
+        for j in range(1, len(sub)):  # a single value beside a stack of lines covers the whole stack
+            sub[j] = [Covered("") if not x and sub[0][c] and not isinstance(sub[0][c], Covered) else x
+                      for c, x in enumerate(sub[j])]
+        if spans:
+            sub[0] = [Spanned("") if spans[i][c] and not x else x for c, x in enumerate(sub[0])]
         rows += sub
         flags += [s] * len(sub)
     return rows, flags
@@ -76,15 +127,24 @@ def expand(raw, shade):
 def key_columns(header: list[list[str]], body: list[list[str]], ncols: int) -> list[int]:
     keys = [0]
     leading = True
+    spread = column_paths(header, ncols, [])  # with group headers spread over every column they span
     for c in range(1, ncols):
+        under_value = bool(re.match(r"^[ABCK](\(\d\))?( ›|$)", spread[c])) or bool(VALUE_HEADER.search(spread[c]))
+        if under_value and leading:
+            leading = False  # e.g. "A › ETFE Seal": a factor column, though "seal" names a key elsewhere
         own = [r[c] for r in header if r[c] and not UNIT_ONLY.match(r[c])]
         head = own[-1] if own else ""  # the column's own label, not the group headers above it
         cells = [r[c] for r in body if r[c]]
         text_cells = [x for x in cells if not is_valueish(x)]
         named_key = bool(KEY_HEADER.search(head)) and not VALUE_HEADER.search(" ".join(r[c] for r in header))
         if cells and len(text_cells) > len(cells) / 2:
+            if not leading and (len(set(text_cells)) == 1 or re.match(r"^[ABCK](\(\d\))? ›", spread[c])):
+                continue  # marks inside a factor's columns (θ / K in the C 75° column, D-12.1, D-18): values
             keys.append(c)  # a text column: materials, part numbers, descriptions
-        elif leading and c == keys[-1] + 1 and (named_key or (KEY_HEADER.search(head)
+            continue
+        if under_value:
+            continue
+        if leading and c == keys[-1] + 1 and (named_key or (KEY_HEADER.search(head)
                                                                and len(cells) < 0.9 * max(len(body), 1))):
             keys.append(c)  # a leading column named like a key (size, class, stem ...), or a sparse merged one
         else:
@@ -108,9 +168,13 @@ def key_label(header: list[list[str]], c: int) -> str:
 
 def column_paths(header: list[list[str]], ncols: int, keys: list[int]) -> list[str]:
     rows = [list(r) for r in header]
-    for r in rows:  # group headers spread right over the empty cells they span (value region only)
+    # Group headers spread right over the empty cells they span (value region only), but not past a
+    # column where a header above starts a new group.
+    for k, r in enumerate(rows):
         for c in range(1, ncols):
-            if not r[c] and r[c - 1] and c not in keys and (c - 1) not in keys:
+            spanned = isinstance(header[k][c], Spanned) or (
+                not any(isinstance(h[c], Spanned) for h in header) and not any(header[j][c] for j in range(k)))
+            if not r[c] and r[c - 1] and c not in keys and (c - 1) not in keys and spanned:
                 r[c] = r[c - 1]
     out = []
     for c in range(ncols):
@@ -132,7 +196,7 @@ def convert(cells: list[list[str]], shaded: list[bool]):
     header_first = [cells[i] for i in range(data_idx[0]) if shaded[i] and sum(1 for x in cells[i] if x) > 1]
     keys = key_columns(header_first, body, ncols)
     key_names = {}
-    records, header, group, current, row_no = [], header_first, "", {}, 0
+    records, header, group, current, row_no, last = [], header_first, "", {}, 0, {}
     paths = column_paths(header, ncols, keys)
     in_header_block = False
     for i, r in enumerate(cells):
@@ -146,6 +210,7 @@ def convert(cells: list[list[str]], shaded: list[bool]):
         if i < data_idx[0]:
             continue
         if shaded[i]:  # a header block restarting below data
+            last = {}
             header = [r] if not in_header_block else header + [r]
             in_header_block = True
             paths = column_paths(header, ncols, keys)
@@ -164,13 +229,20 @@ def convert(cells: list[list[str]], shaded: list[bool]):
             key_names[c] = name
         row_keys = {key_names[c]: current.get(c, "") for c in keys if current.get(c, "")}
         for c in range(ncols):
-            if c in keys or not r[c]:
+            if c in keys:
                 continue
-            value, notes, ok = parse_value(r[c])
-            if not ok and first_line(r[c]) != r[c]:
-                value, notes, ok = parse_value(first_line(r[c]))
+            text, merged = r[c], False
+            if not text and isinstance(text, Covered) and last.get(c):
+                text, merged = last[c], True  # printed once in a cell merged over several rows
+            if not text:
+                continue
+            last[c] = text
+            value, notes, ok = parse_value(text)
+            if not ok and first_line(text) != text:
+                value, notes, ok = parse_value(first_line(text))
             records.append({"row": row_no, "group": group, "keys": row_keys, "column": paths[c],
-                            "value": value, "value_raw": r[c], "footnotes": ",".join(notes), "is_number": ok})
+                            "value": value, "value_raw": text, "footnotes": ",".join(notes), "is_number": ok,
+                            "merged": merged})
     return records
 
 
@@ -185,6 +257,21 @@ def side_by_side(cells: list[list[str]], shaded: list[bool]) -> list[list[int]]:
         if ncols % p == 0 and labels[0] and all(labels[c] == labels[c + p] for c in range(ncols - p)):
             return [list(range(b, b + p)) for b in range(0, ncols, p)]
     return [list(range(ncols))]
+
+
+def norm_tokens(text: str) -> list[str]:
+    """Numbers in text, tokenised the same way for table cells and for the second reader's lines."""
+    return NUM.findall(text.replace(",", "").replace("‐", " ").replace("-", " "))
+
+
+def caption(page, table) -> str:
+    """The line of text just above a table (its title, e.g. 'CL150 K Values for Effective Pressure Drop')."""
+    top = table.bbox[1]
+    if top < 5:
+        return ""
+    band = page.crop((table.bbox[0] - 20 if table.bbox[0] > 20 else 0, max(0, top - 24), page.width, top))
+    lines = [x.strip() for x in (band.extract_text() or "").splitlines() if x.strip()]
+    return lines[-1] if lines else ""
 
 
 def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
@@ -208,12 +295,13 @@ def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
             for row in t.rows:
                 cs = [c for c in row.cells if c]
                 shade.append(bool(cs) and sum(shaded_fraction(c, rects) for c in cs) / len(cs) > 0.5)
-            cells, flags = expand(raw, shade)
+            cells, flags = expand(raw, shade, horizontal_spans(t), vertical_spans(t))
             keep = [c for c in range(len(cells[0])) if any(r[c] for r in cells)] if cells else []
             if not keep:
                 continue
             cells = [[r[c] for c in keep] for r in cells]
             recs = []
+            cap = caption(page, t)
             for block in side_by_side(cells, flags):
                 part = convert([[r[c] for c in block] for r in cells], flags)
                 base = max((r["row"] for r in recs), default=0)
@@ -231,9 +319,21 @@ def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
                 no_values.append({"page": pn, "printed_label": label, "table": ti, "heading": heading,
                                   "first_row": " | ".join(x for x in cells[0] if x)[:200]})
                 continue
+            # A merged cell's value is printed centred over all the rows it covers, possibly far from the
+            # first of them: check it on its own, anywhere on the page, and the rest of its row as usual.
+            merged_cols = {(rec["column"], rec["value_raw"]) for rec in recs if rec["merged"]}
+            page_toks = Counter(norm_tokens(" ".join(lines)))
             by_row: dict[int, list[str]] = {}
+            source_ok: dict[int, bool] = {}
             for rec in recs:
-                toks = NUM.findall(re.sub(r"\(\d+\)", "", rec["value_raw"]).replace(",", "").replace("‐", " ").replace("-", " "))
+                if rec["merged"]:
+                    continue  # printed in the row above; checked there
+                toks = norm_tokens(re.sub(r"\(\d+\)", "", rec["value_raw"]))
+                if (rec["column"], rec["value_raw"]) in merged_cols:
+                    ok = all(page_toks[k] >= n for k, n in Counter(toks).items())
+                    source_ok[rec["row"]] = source_ok.get(rec["row"], True) and ok
+                    by_row.setdefault(rec["row"], [])
+                    continue
                 by_row.setdefault(rec["row"], []).extend(toks)
             # Second reader: "line" = the row's numbers, in order, on one pdftotext line; "window" = in order
             # within up to four consecutive lines (layouts that centre a row's cells vertically).
@@ -246,15 +346,30 @@ def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
                 return all(have[k] >= n for k, n in Counter(seq).items())
             win_ok = {r for r, seq in by_row.items() if r not in line_ok and any(
                 in_order(seq, w) or within(seq, w)
-                for w in (" ".join(lines[i:i + 4]).replace(",", "").split() for i in range(len(lines))))}
+                for w in (norm_tokens(" ".join(lines[i:i + 4])) for i in range(len(lines))))}
+            line_ok -= {r for r, ok in source_ok.items() if not ok}
+            win_ok -= {r for r, ok in source_ok.items() if not ok}
+            # rows whose only numbers are merged-cell values: found on the page, nothing finer
+            page_ok = {r for r, seq in by_row.items() if not seq and source_ok.get(r)}
+            line_ok -= page_ok
+            def label_of(row):
+                return ("line" if row in line_ok else "window" if row in win_ok
+                        else "page" if row in page_ok else "")
+            source_label = {}  # a repeated merged value carries the result of the row where it is printed
+            for rec in recs:
+                key = (rec["column"], rec["value_raw"])
+                if not rec["merged"]:
+                    source_label[key] = label_of(rec["row"])
+                rec["confirmed"] = source_label.get(key, "") if rec["merged"] else label_of(rec["row"])
             for rec in recs:
                 rows.append({"page": pn, "printed_label": label, "section": label[0], "table": ti,
-                             "heading": heading, "group": rec["group"],
+                             "heading": heading, "caption": cap, "group": rec["group"],
                              "keys": json.dumps(rec["keys"], ensure_ascii=False), "column": rec["column"],
                              "value": "" if rec["value"] is None else f"{rec['value']:.12g}",
                              "value_raw": rec["value_raw"], "footnotes": rec["footnotes"],
                              "is_number": int(rec["value"] is not None), "row": rec["row"],
-                             "confirmed": "line" if rec["row"] in line_ok else "window" if rec["row"] in win_ok else ""})
+                             "merged": int(rec["merged"]),
+                             "confirmed": rec["confirmed"]})
             stats["tables"] += 1
     with open(out / "table_values.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
@@ -265,8 +380,10 @@ def main(pdf_path: str, out_dir: str, sections: str = "BD") -> None:
         nums = [r for r in sub if r["is_number"] == 1]
         line = sum(r["confirmed"] == "line" for r in nums)
         win = sum(r["confirmed"] == "window" for r in nums)
+        pg = sum(r["confirmed"] == "page" for r in nums)
         print(f"{s}: {len(nums)} numeric values: {line} confirmed on one line, {win} within 4 lines, "
-              f"{len(nums) - line - win} unconfirmed; {len(sub) - len(nums)} text cells")
+              f"{pg} only found on the page, {len(nums) - line - win - pg} unconfirmed; "
+              f"{len(sub) - len(nums)} text cells")
     with open(out / "table_values_text_only.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["page", "printed_label", "table", "heading", "first_row"])
         w.writeheader()
