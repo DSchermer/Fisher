@@ -214,3 +214,133 @@ def gas_cv(p1: float, p2: float, k: float, xt: float, *, q: float | None = None,
 def cg_from_cv(cv: float, xt: float) -> float:
     """Gas sizing coefficient for Fisher aerodynamic noise prediction: Cg = 40 Cv sqrt(xT) (page 2-13)."""
     return 40 * cv * math.sqrt(xt)
+
+
+# ------------------------------------------------------------------ predicting flow and pressure drop
+
+def predict_liquid_flow(cv: float, p1: float, p2: float, gf: float, *, n1: float = N["N1"]["gpm,psia"],
+                        fp_value: float = 1.0, fl: float | None = None, pv: float | None = None,
+                        ff_value: float | None = None, pc: float | None = None,
+                        nu: float | None = None, d: float | None = None, fd: float = 1.0,
+                        n2: float = N["N2"]["in"], n4: float = N["N4"]["gpm"]) -> "_Flow":
+    """Flow through a valve of known Cv (Predicting Flow Rate, page 2-8).
+
+    qt = N1 Fp Cv sqrt(ΔP/Gf) assuming turbulent flow; ΔP is limited to ΔPmax when FL and Pv are given.
+    With viscosity `nu` (centistokes) and valve size `d`, Rev is computed from qt and q = FR qt
+    (FR from the "flow rate prediction" column of Table 3).
+    """
+    dp = p1 - p2
+    steps: dict = {"dP": dp}
+    if fl is not None and pv is not None:
+        f = ff_value if ff_value is not None else ff(pv, pc)
+        dpm = dp_max_liquid(fl, p1, pv, f)
+        steps.update({"FF": f, "dP_max": dpm, "choked": dpm < dp})
+        dp = min(dp, dpm)
+    qt = n1 * fp_value * cv * math.sqrt(dp / gf)
+    fr = 1.0
+    if nu is not None:
+        if fl is None or d is None:
+            raise ValueError("fl and d are needed with nu")
+        rev = reynolds(qt, nu, fl, cv, d, fd, n4, n2)
+        fr = fr_from_reynolds(rev, "flow")
+        steps["Rev"] = rev
+    steps.update({"q_turbulent": qt, "FR": fr})
+    return _Flow(fr * qt, steps)
+
+
+def predict_liquid_dp(q: float, cv: float, gf: float, *, n1: float = N["N1"]["gpm,psia"],
+                      fp_value: float = 1.0, nu: float | None = None, fl: float | None = None,
+                      d: float | None = None, fd: float = 1.0, n2: float = N["N2"]["in"],
+                      n4: float = N["N4"]["gpm"]) -> "_Flow":
+    """Pressure drop across a valve of known Cv at flow q (Predicting Pressure Drop, page 2-8).
+
+    ΔP = Gf (q / (N1 Fp FR Cv))^2, FR from the "pressure drop prediction" column of Table 3.
+    """
+    fr, steps = 1.0, {}
+    if nu is not None:
+        if fl is None or d is None:
+            raise ValueError("fl and d are needed with nu")
+        rev = reynolds(q, nu, fl, cv, d, fd, n4, n2)
+        fr = fr_from_reynolds(rev, "pressure_drop")
+        steps["Rev"] = rev
+    steps["FR"] = fr
+    return _Flow(gf * (q / (n1 * fp_value * fr * cv)) ** 2, steps)
+
+
+def predict_gas_flow(cv: float, p1: float, p2: float, k: float, xt: float, *, gg: float | None = None,
+                     m: float | None = None, gamma1: float | None = None, t1: float | None = None,
+                     z: float = 1.0, fp_value: float = 1.0, mass: bool = False) -> "_Flow":
+    """Flow through a valve of known Cv: the page 2-13 equations solved for q (scfh) or, with mass=True, w (lb/h)."""
+    unit = gas_cv(p1, p2, k, xt, q=None if mass else 1.0, w=1.0 if mass else None, gg=gg, m=m,
+                  gamma1=gamma1, t1=t1, z=z, fp_value=fp_value)
+    return _Flow(cv / unit.cv, unit.steps)
+
+
+@dataclass
+class _Flow:
+    """A predicted quantity (flow rate or pressure drop) with the intermediate values used."""
+    value: float
+    steps: dict = field(default_factory=dict)
+
+
+# ------------------------------------------------------------------ velocity (page 2-36)
+
+G_FT_S2 = 32.2
+R_UNIVERSAL = 1545.0
+
+
+def sonic_velocity(k: float, molecular_weight: float, t_rankine: float) -> float:
+    """c = sqrt(k g R T), R = 1545 / M; feet per second."""
+    return math.sqrt(k * G_FT_S2 * R_UNIVERSAL / molecular_weight * t_rankine)
+
+
+def mach_inlet(k: float, cg: float, a1: float, c1: float, dp: float, p1: float) -> float:
+    """Mean inlet Mach number.
+
+    M1 = sqrt(5.97/(k+1)) (2/(k+1))^(1/(k-1)) (1/1900)(Cg/A1) sin((3417/C1) sqrt(ΔP/P1) deg),
+    A1 in square inches, C1 = Cg/Cv. The sine argument is in degrees and is capped at 90.
+    """
+    angle = min(3417 / c1 * math.sqrt(dp / p1), 90.0)
+    return (math.sqrt(5.97 / (k + 1)) * (2 / (k + 1)) ** (1 / (k - 1)) / 1900 * cg / a1
+            * math.sin(math.radians(angle)))
+
+
+def mach_outlet(k: float, m1: float, a1: float, a2: float, dp: float, p1: float) -> float:
+    """Mean outlet Mach number.
+
+    M2 = { [ (1/(k-1))^2 + (M1/(1 - ΔP/P1))^2 (A1/A2)^2 (M1^2 + 2/(k-1)) ]^1/2 - 1/(k-1) }^1/2
+    """
+    a = 1 / (k - 1)
+    inner = a ** 2 + (m1 / (1 - dp / p1)) ** 2 * (a1 / a2) ** 2 * (m1 ** 2 + 2 / (k - 1))
+    return math.sqrt(math.sqrt(inner) - a)
+
+
+def steam_velocity(q_lb_h: float, v_ft3_lb: float, area_in2: float) -> float:
+    """Simplified steam velocity V = Q v / (25 A), feet per second."""
+    return q_lb_h * v_ft3_lb / (25 * area_in2)
+
+
+# ------------------------------------------------------------------ liquid-gas mixtures (page 2-30)
+
+def gas_volume_ratio_gas(qg_scfh: float, ql_gpm: float, p1: float, t1_rankine: float) -> float:
+    """Vr for a liquid-gas mixture: Vr = Qg / (284 Ql P1 / T1 + Qg)  (equation 2)."""
+    return qg_scfh / (284 * ql_gpm * p1 / t1_rankine + qg_scfh)
+
+
+def gas_volume_ratio_vapor(vg: float, vl: float, quality: float) -> float:
+    """Vr for a liquid-vapor mixture: Vr = vg / (vg + vl (1 - x)/x)  (equation 3)."""
+    return vg / (vg + vl * (1 - quality) / quality)
+
+
+def mixture_dp_allow(km: float, p1: float, rc: float, pv: float) -> float:
+    """Allowable liquid sizing drop for a mixture: ΔP(allow) = Km (P1 - rc Pv)."""
+    return km * (p1 - rc * pv)
+
+
+def mixture_cv(cvl: float, cg: float, c1: float, fm: float) -> Result:
+    """Cv for a mixture: Cvr = (Cvl + Cvg)(1 + Fm), Cvg = Cg / C1  (equation 1).
+
+    Fm comes from figure 1 on page 2-30 as a function of Vr (see fisher.charts.fm).
+    """
+    cvg = cg / c1
+    return Result((cvl + cvg) * (1 + fm), {"Cvg": cvg, "Fm": fm})

@@ -6,6 +6,9 @@
     python -m fisher select --cv 50 --family ED --min-open 20 --max-open 80
     python -m fisher liquid --q 800 --p1 314.7 --p2 289.7 --gf 0.5 --fp 0.93
     python -m fisher gas --q 6e6 --gg 0.6 --t1 520 --p1 214.7 --p2 64.7 --k 1.31 --xt 0.137
+    python -m fisher liquid-flow --cv 134.6 --p1 389.7 --p2 114.7 --gf 0.93 --fl 0.84 --pv 41.9 --ff 0.90
+    python -m fisher size-valve 309-1-3 --q 6e6 --gg 0.6 --t1 520 --p1 214.7 --p2 64.7 --k 1.31
+    python -m fisher steam --psia 40
 """
 from __future__ import annotations
 
@@ -13,8 +16,9 @@ import argparse
 import json
 import sys
 
-from . import sizing
+from . import reference, sizing
 from .catalog import Catalog
+from .select import size_gas_on_valve, size_liquid_on_valve
 
 
 def summary(c, opening=None) -> dict:
@@ -58,9 +62,23 @@ def main(argv=None) -> int:
         p.add_argument(f"--{a}", type=float, required=True)
     for a in ("q", "w", "gg", "m", "gamma1", "t1", "z", "fp"):
         p.add_argument(f"--{a}", type=float)
+    p = sub.add_parser("liquid-flow")
+    for a in ("cv", "p1", "p2", "gf"):
+        p.add_argument(f"--{a}", type=float, required=True)
+    for a in ("fl", "pv", "ff", "pc", "nu", "d", "fp"):
+        p.add_argument(f"--{a}", type=float)
+    p = sub.add_parser("size-valve", help="size on one catalog configuration (gas if --k is given, else liquid)")
+    p.add_argument("config_id")
+    for a in ("p1", "p2"):
+        p.add_argument(f"--{a}", type=float, required=True)
+    for a in ("k", "q", "w", "gg", "m", "gamma1", "t1", "z", "gf", "pv", "ff", "pc", "fp"):
+        p.add_argument(f"--{a}", type=float)
+    p = sub.add_parser("steam")
+    p.add_argument("--psia", type=float)
+    p.add_argument("--temp-f", type=float)
     args = ap.parse_args(argv)
 
-    cat = Catalog.load() if args.cmd in ("families", "find", "select", "show") else None
+    cat = Catalog.load() if args.cmd in ("families", "find", "select", "show", "size-valve") else None
     if args.cmd == "families":
         out = cat.families()
     elif args.cmd in ("find", "select"):
@@ -80,6 +98,22 @@ def main(argv=None) -> int:
                              fp_value=args.fp or 1.0, fr=args.fr or 1.0, fl=args.fl, pv=args.pv,
                              ff_value=args.ff, pc=args.pc)
         out = {"cv": r.cv, "kv": r.kv, "steps": r.steps}
+    elif args.cmd == "liquid-flow":
+        r = sizing.predict_liquid_flow(args.cv, args.p1, args.p2, args.gf, fl=args.fl, pv=args.pv,
+                                       ff_value=args.ff, pc=args.pc, nu=args.nu, d=args.d,
+                                       fp_value=args.fp or 1.0)
+        out = {"q": r.value, "steps": r.steps}
+    elif args.cmd == "size-valve":
+        c = cat.get(args.config_id)
+        if args.k is not None:
+            r = size_gas_on_valve(c, args.p1, args.p2, args.k, q=args.q, w=args.w, gg=args.gg, m=args.m,
+                                  gamma1=args.gamma1, t1=args.t1, z=args.z or 1.0, fp_value=args.fp or 1.0)
+        else:
+            r = size_liquid_on_valve(c, args.q, args.p1, args.p2, args.gf, pv=args.pv, ff_value=args.ff,
+                                     pc=args.pc, fp_value=args.fp or 1.0)
+        out = r.__dict__
+    elif args.cmd == "steam":
+        out = reference.saturated_steam(psia=args.psia, temp_f=args.temp_f)
     else:
         r = sizing.gas_cv(args.p1, args.p2, args.k, args.xt, q=args.q, w=args.w, gg=args.gg, m=args.m,
                           gamma1=args.gamma1, t1=args.t1, z=args.z or 1.0, fp_value=args.fp or 1.0)
