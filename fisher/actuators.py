@@ -66,6 +66,7 @@ class Rating:
     flow: str
     leakage: str
     balance: str
+    confirmed: bool = True
 
     @property
     def source(self) -> str:
@@ -125,6 +126,7 @@ def ratings() -> list[Rating]:
             actuator_size=_find_key(keys, r"act\w*\s*size"),
             action=action, flow=flow, leakage=f"Class {leak.group(1)}" if leak else "",
             balance="Unbalanced" if "unbalanced" in heading.lower() else "Balanced" if "balanced" in heading.lower() else "",
+            confirmed=r["confirmed"] == "1",
         ))
     return out
 

@@ -33,18 +33,18 @@ config_id,family,nps,method,catalog14_valve,port_in,travel_in,ratings,actuators,
 7-1-4,8532,48,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 48; see the torque method (section D).
 8-1-1,8532,14,rotary,8532,,,99,1052 1061,285.0,C-22 C-23 C-24 C-25 C-26 C-27 C-28 C-29,
 8-1-2,8532,16,rotary,8532,,,87,1052 1061,285.0,C-22 C-23 C-24 C-25 C-26 C-27 C-28 C-29,
-8-1-3,8532,18,rotary,8532,,,144,1052 1061,285.0,C-22 C-24 C-25 C-26 C-27 C-28 C-29,
-8-1-4,8532,20,rotary,8532,,,120,1052 1061,285.0,C-22 C-25 C-27 C-28 C-29,
-8-1-5,8532,24,rotary,8532,,,78,1061,285.0,C-27 C-28 C-29,
+8-1-3,8532,18,rotary,8532,,,135,1052 1061,285.0,C-22 C-24 C-25 C-26 C-27 C-28 C-29,
+8-1-4,8532,20,rotary,8532,,,111,1052 1061,285.0,C-22 C-25 C-27 C-28 C-29,
+8-1-5,8532,24,rotary,8532,,,69,1061,285.0,C-27 C-28 C-29,
 8-1-6,8532,30,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 30; see the torque method (section D).
 8-1-7,8532,36,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 36; see the torque method (section D).
 8-1-8,8532,42,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 42; see the torque method (section D).
 8-1-9,8532,48,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 48; see the torque method (section D).
 9-1-1,8532,14,rotary,8532,,,99,1052 1061,285.0,C-22 C-23 C-24 C-25 C-26 C-27 C-28 C-29,
 9-1-2,8532,16,rotary,8532,,,87,1052 1061,285.0,C-22 C-23 C-24 C-25 C-26 C-27 C-28 C-29,
-9-1-3,8532,18,rotary,8532,,,144,1052 1061,285.0,C-22 C-24 C-25 C-26 C-27 C-28 C-29,
-9-1-4,8532,20,rotary,8532,,,120,1052 1061,285.0,C-22 C-25 C-27 C-28 C-29,
-9-1-5,8532,24,rotary,8532,,,78,1061,285.0,C-27 C-28 C-29,
+9-1-3,8532,18,rotary,8532,,,135,1052 1061,285.0,C-22 C-24 C-25 C-26 C-27 C-28 C-29,
+9-1-4,8532,20,rotary,8532,,,111,1052 1061,285.0,C-22 C-25 C-27 C-28 C-29,
+9-1-5,8532,24,rotary,8532,,,69,1061,285.0,C-27 C-28 C-29,
 9-1-6,8532,30,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 30; see the torque method (section D).
 9-1-7,8532,36,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 36; see the torque method (section D).
 9-1-8,8532,42,rotary,8532,,,0,,,,Catalog 14 section C has no pressure drop table for 8532 NPS 42; see the torque method (section D).

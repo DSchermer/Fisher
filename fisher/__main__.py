@@ -16,6 +16,9 @@
     python -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
     python -m fisher actuators-for 152-1-8 --dp 300
     python -m fisher c14-tables --text "port data"
+
+  Unified dataset (data/fisher.db, docs/DATA_MODEL.md):
+    python -m fisher sql "SELECT * FROM v_valve_actuator WHERE config_id = '152-1-8' AND max_dp >= 300"
     python -m fisher c14-table B_5_t1_table_2_port_data_for_single_port_valves
 """
 from __future__ import annotations
@@ -24,7 +27,7 @@ import argparse
 import json
 import sys
 
-from . import actuators, integrate, noise, reference, sizing
+from . import actuators, db, integrate, noise, reference, sizing
 from .catalog import Catalog
 from .select import size_gas_on_valve, size_liquid_on_valve
 
@@ -101,6 +104,8 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--text", default="")
     p.add_argument("--section", choices=list("ABCD"))
     sub.add_parser("c14-options", help="actuators, valves and ports available in Catalog 14")
+    p = sub.add_parser("sql", help="read-only SQL against the unified dataset")
+    p.add_argument("query")
     p = sub.add_parser("actuators-for", help="Catalog 14 actuators rated for a Catalog 12 valve configuration")
     p.add_argument("config_id")
     p.add_argument("--dp", type=float, default=0.0)
@@ -172,6 +177,8 @@ def run(argv) -> object:
                                              valve_code=args.valve_code).to_dict(args.limit)
         out["valve"] = {"family": c.family, "nps": c.nps, "source": c.source,
                         "title": " | ".join(x for x in (c.page_title, c.table_title, c.section) if x)}
+    elif args.cmd == "sql":
+        out = db.query(args.query)
     elif args.cmd == "c14-options":
         out = actuators.options()
     elif args.cmd == "c14-tables":

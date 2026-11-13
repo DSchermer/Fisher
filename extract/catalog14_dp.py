@@ -70,15 +70,15 @@ def is_title_row(r: list[str]) -> bool:
 
 def build_layout(header: list[list[str]], first_data_row: list[str]) -> dict:
     ncols = len(first_data_row)
-    key_cols = [0]
-    for c in range(1, min(4, ncols)):
-        texts = {r[c] for r in header if r[c]}
-        if len(texts) == 1 and KEY_WORDS.search(next(iter(texts))):
-            key_cols.append(c)
-        else:
-            break
+    # Key columns are every column before the first value column, i.e. the first column whose header
+    # is not a row-key name ("Valve Size", "Angle of Opening", ...). A key column with no header of its
+    # own is part of a merged key cell and takes the key name to its left.
+    def header_texts(c):
+        return [r[c] for r in header if r[c]]
+    vstart = next((c for c in range(1, ncols) if header_texts(c)
+                   and not all(KEY_WORDS.search(t) for t in header_texts(c))), 1)
+    key_cols = list(range(vstart))
     rows = [list(r) for r in header]
-    vstart = max(key_cols) + 1
     # A header row labelled in the key columns ("Air to Cylinder, Psig" | 50 | 60 ...) names its values.
     for r in rows:
         label = " ".join(x for x in r[:vstart] if x)
@@ -106,7 +106,7 @@ def build_layout(header: list[list[str]], first_data_row: list[str]) -> dict:
     key_names = []
     for c in key_cols:
         names = [r[c] for r in header if r[c] and KEY_WORDS.search(r[c])]
-        key_names.append(names[-1] if names else f"key{c}")
+        key_names.append(names[-1] if names else (key_names[-1] if key_names else f"key{c}"))
     return {"ncols": ncols, "key_cols": key_cols, "key_names": key_names, "paths": paths,
             "column_heading": " › ".join(common)}
 
@@ -146,14 +146,17 @@ def convert(cells: list[list[str]], template: dict | None):
         row_no += 1
         if header and any(any(x for x in h[1:]) for h in header):
             layout = build_layout(header, r)
-            current = {c: "" for c in layout["key_cols"]}
+            current = {}
         header = []
         if layout is None:
             return None, None
-        for c in layout["key_cols"]:
-            if r[c]:
-                current[c] = norm(r[c])
-        keys = {layout["key_names"][k]: current.get(c, "") for k, c in enumerate(layout["key_cols"])}
+        # One logical key per name: the cell printed in this row, else the value carried down.
+        for name in dict.fromkeys(layout["key_names"]):
+            cols = [c for c, n in zip(layout["key_cols"], layout["key_names"]) if n == name]
+            here = next((r[c] for c in cols if r[c]), "")
+            if here:
+                current[name] = norm(here)
+        keys = {name: current.get(name, "") for name in dict.fromkeys(layout["key_names"])}
         for c in range(max(layout["key_cols"]) + 1, ncols):
             raw = r[c]
             if not raw:

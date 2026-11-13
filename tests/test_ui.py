@@ -6,7 +6,9 @@ from fisher.ui import call, to_argv
 
 class Api(unittest.TestCase):
     def test_argv(self):
-        self.assertEqual(to_argv("show", {"config_id": "122-1-8"}), ["show", "122-1-8"])
+        self.assertEqual(to_argv("show", {"config_id": "122-1-8"}), ["show", "--", "122-1-8"])
+        self.assertEqual(call("sql", {"query": "-- comment\nSELECT 1 AS one"}), (200, [{"one": 1}]))
+        self.assertEqual(call("sql", {"query": "DELETE FROM source"})[0], 400)  # read-only
         self.assertEqual(to_argv("find", {"family": "ED", "nps": "", "no_restricted": "on"}),
                          ["find", "--family", "ED", "--no-restricted"])
 

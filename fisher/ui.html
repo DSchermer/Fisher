@@ -36,6 +36,7 @@
   input, select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px;
                   background: var(--bg); color: var(--text); width: 140px; }
   input.wide { width: 200px; }
+  input.full { width: min(820px, 80vw); font-family: ui-monospace, Menlo, monospace; font-size: 12.5px; }
   label.req span::after { content: " *"; color: var(--err); }
   button.go { padding: 7px 16px; border: 0; border-radius: 6px; background: var(--accent);
               color: var(--accent-text); font: inherit; font-weight: 600; cursor: pointer; }
@@ -127,6 +128,10 @@ const FORMS = [
             {k: "section", label: "Section", type: "select", options: ["", "A", "B", "C", "D"]}]},
   {id: "c14-table", title: "Catalog 14 table", hint: "One table exactly as printed.",
    fields: [{k: "table_id", label: "Table id", req: 1, wide: 1}]},
+  {group: "Unified dataset"},
+  {id: "sql", title: "Query the dataset", hint: "Read-only SQL against data/fisher.db, the unified Catalog 12 + 14 dataset. Tables and columns are described in docs/DATA_MODEL.md. Start with the views v_valve_actuator and v_cv_curve.",
+   fields: [{k: "query", label: "SQL", req: 1, full: 1,
+             value: "SELECT config_id, family, nps_text, actuator, actuator_size, supply, max_dp, actuator_page FROM v_valve_actuator WHERE config_id = '152-1-8' AND unit = 'psi' AND max_dp >= 300"}]},
   {group: "Reference"},
   {id: "steam", title: "Saturated steam", hint: "Pages 2-33/2-34, interpolated. Give one of the two.",
    fields: [{k: "psia", label: "Pressure (psia)"}, {k: "temp_f", label: "Temperature (°F)"}]},
@@ -224,6 +229,10 @@ function renderResult(id, d) {
     if (d.ratings.length) h += `<h3>Catalog 14 ratings${d.ratings.length > 300 ? " (first 300)" : ""}</h3>` + table(d.ratings.slice(0, 300));
     return h;
   }
+  if (id === "sql") {
+    if (!d.length) return `<p>No rows.</p>`;
+    return `<p>${d.length} row${d.length === 1 ? "" : "s"}${d.length > 500 ? " (showing the first 500)" : ""}</p>` + table(d.slice(0, 500));
+  }
   if (id === "actuator-sliding" || id === "actuator-rotary" || id === "c14-tables") {
     if (!d.length) return `<p>Nothing in the catalog meets that.</p>`;
     return `<p>${d.length} result${d.length === 1 ? "" : "s"}${d.length > 300 ? " (showing the first 300)" : ""}</p>` + table(d.slice(0, 300));
@@ -254,7 +263,7 @@ function field(f) {
   let input;
   if (f.type === "family") input = `<select name="${f.k}" id="${id}"><option value=""></option>${families.map(x => `<option>${esc(x)}</option>`).join("")}</select>`;
   else if (f.type === "select") input = `<select name="${f.k}" id="${id}">${(f.opt ? ["", ...(c14[f.opt] || [])] : f.options).map(o => `<option>${esc(o)}</option>`).join("")}</select>`;
-  else input = `<input name="${f.k}" id="${id}" class="${f.wide ? "wide" : ""}" value="${esc(f.value ?? "")}" ${f.req ? "required" : ""}>`;
+  else input = `<input name="${f.k}" id="${id}" class="${f.full ? "full" : f.wide ? "wide" : ""}" value="${esc(f.value ?? "")}" ${f.req ? "required" : ""}>`;
   return `<label class="${f.req ? "req" : ""}" for="${id}"><span>${esc(f.label)}</span>${input}</label>`;
 }
 function show(id, preset) {

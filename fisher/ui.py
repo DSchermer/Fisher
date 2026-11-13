@@ -12,6 +12,7 @@ import argparse
 import contextlib
 import io
 import json
+import sqlite3
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qsl, urlparse
@@ -20,13 +21,12 @@ from .__main__ import run
 
 PAGE = Path(__file__).with_name("ui.html")
 POSITIONAL = {"show": "config_id", "size-valve": "config_id", "c14-table": "table_id",
-              "actuators-for": "config_id"}  # first argument
+              "actuators-for": "config_id", "sql": "query"}  # first argument
 
 
 def to_argv(command: str, params: dict[str, str]) -> list[str]:
     argv = [command]
-    if command in POSITIONAL:
-        argv.append(params.pop(POSITIONAL[command], ""))
+    positional = params.pop(POSITIONAL[command], "") if command in POSITIONAL else None
     for key, value in params.items():
         if value == "":
             continue
@@ -35,6 +35,8 @@ def to_argv(command: str, params: dict[str, str]) -> list[str]:
             argv.append(flag)
         else:
             argv += [flag, value]
+    if positional is not None:
+        argv += ["--", positional]  # after "--" so a value starting with "-" is not read as an option
     return argv
 
 
@@ -48,7 +50,7 @@ def call(command: str, params: dict[str, str]) -> tuple[int, object]:
         return 400, {"error": msg[-1] if msg else "invalid input"}
     except KeyError as e:
         return 400, {"error": f"not found: {e.args[0] if e.args else ''}"}
-    except (ValueError, IndexError) as e:
+    except (ValueError, IndexError, sqlite3.Error) as e:
         return 400, {"error": str(e)}
 
 

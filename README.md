@@ -2,6 +2,29 @@
 
 Data and tools built from Emerson's **Fisher Catalog 12, ASME/ISA/IEC Valve Sizing** (D103182X012, April 2022 edition) and **Fisher Catalog 14, Actuator Sizing** (D103428X012). Catalog 14 is covered in [its own section below](#catalog-14-actuator-sizing).
 
+## The unified dataset
+
+**`data/fisher.db`** (SQLite) holds both catalogs in one schema. It is built from the same checked files the tools use, and tests check that the two agree. The purpose is a single, contextualized dataset that deterministic engineering tools can rely on:
+
+- **One set of keys and units.** Configurations, sizes (NPS, inches), ports and travels (inches), angles (degrees) and pressure drops (psi unless a `unit` column says otherwise).
+- **Context on every record.** Valve family, characteristic, flow direction, actuator, size, supply, bench set, spring, leakage class, action, balanced or unbalanced construction.
+- **Provenance on every row.** Catalog, PDF page and printed page label. Each extracted value also records whether a second PDF reader confirmed it.
+- **Joined.** `valve_actuator_link` connects Catalog 12 valve configurations to the Catalog 14 actuator ratings that apply. `valve_actuator_coverage` says why a configuration has none.
+- **Errors kept, not hidden.** Catalog mistakes are flagged in `catalog_flag`. Chart-derived values are labelled approximate.
+
+**[`docs/DATA_MODEL.md`](docs/DATA_MODEL.md)** describes every table and column. It is generated from the same schema definition as the database, and a test checks that they match.
+
+```bash
+python3 -m fisher sql "SELECT actuator, actuator_size, supply, max_dp, actuator_page FROM v_valve_actuator WHERE config_id = '152-1-8' AND unit = 'psi' AND max_dp >= 300"
+```
+
+```python
+from fisher import db
+rows = db.query("SELECT * FROM v_cv_curve WHERE family = ? AND nps_text = ?", ("ED", "3"))
+```
+
+Any SQLite client (Python, Excel via ODBC, DBeaver, Power BI) can open the file directly. In the UI, "Query the dataset" runs read-only SQL.
+
 - **Lookups:** find a valve configuration and read its Cv, Kv, XT, FL and Fd at any opening.
 - **Valve selection:** list configurations that reach a required Cv between, say, 20% and 80% open.
 - **Sizing:** the Section 2 ISA/IEC liquid and gas equations as plain functions, plus flow and pressure-drop prediction, velocity, and liquid-gas mixtures.
@@ -166,6 +189,7 @@ python3 -m fisher actuator-rotary --dp 200 --valve V150 --nps 4 --angle 0
 | `data/flags.csv` | Validation warnings |
 | `data/crosscheck.csv` | Second-reader result for every value row |
 | `data/reference/` | Section 2 and 3 reference tables as printed (`tables/`, `index.csv`), saturated steam, leakage classes, chart digitizations |
+| `data/fisher.db` | **The unified dataset** (SQLite); schema and column meanings in `docs/DATA_MODEL.md` |
 | `data/links/` | `catalog12_to_catalog14.csv`: every Catalog 12 configuration with its Catalog 14 match |
 | `data/catalog14/` | Catalog 14: `allowable_dp.csv` (sections A and C, one row per value) with `pages.csv` (page headings), every table as printed (`tables/`, `index.csv`) |
 | `fisher/` | `actuators.py` Catalog 14 actuator selection, `catalog.py` lookups, `sizing.py` equations, `select.py` sizing on a catalog valve, `reference.py` reference data, `noise.py` noise; standard library only |
