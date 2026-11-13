@@ -4,7 +4,7 @@
       A  force to overcome static unbalance     (pages B-2/B-3; Tables 2-2H port/unbalance areas, Table 3 stem area)
       B  seat load                              (Table 4 rules, Table 5 composition-seat factors)
       C  packing friction                       (Tables 6, 6A-6D)
-      D  additional forces                      (e.g. piston ring friction, figures 4/4A: given by the caller)
+      D  additional forces                      (piston_ring_friction: figures 4/4A; cryogenic_seal_ring_friction)
 
 Pressures are psig, areas square inches, lengths inches, forces pounds.
 """
@@ -271,3 +271,32 @@ def valve_forces(*, p1: float, p2: float = 0.0, dp_shutoff: float | None = None,
     opening = (-a + packing_lb + additional_lb) if ptt == "close" else None
     return ValveForces(ptt, a, seat.pounds, packing_lb, additional_lb, closing, opening,
                        {"seat_load": seat.__dict__, "dP": p1 - p2})
+
+
+# ------------------------------------------------------------------ D: additional forces (page B-18)
+
+def piston_ring_friction(port_in: float, dp: float, *, valve: str = "EHD") -> dict:
+    """Piston ring friction (force D) from figure 4 (EHD/HPD graphite rings, page B-18; vector, exact) or
+    figure 4A (TBX/CVX metal rings, page B-18.1; digitized from the image, about +-3%).
+    friction = slope x pressure drop; lines run from the origin."""
+    v = valve.upper()
+    fig = "4A" if v in ("TBX", "CVX") else "4"
+    rows = [r for r in _rows("piston_ring_friction.csv") if r["figure"] == fig and r["port_in"]
+            and abs(float(r["port_in"]) - port_in) < 1e-6]
+    if fig == "4":
+        rows = [r for r in rows if v in r["valves"].replace(" ", "").split(",")] or rows
+    if not rows:
+        raise KeyError(f"no figure {fig} line for a {port_in} in port ({valve})")
+    r = rows[0]
+    return {"force_lb": float(r["slope_lb_per_psi"]) * dp, "slope_lb_per_psi": float(r["slope_lb_per_psi"]),
+            "approximate": r["method"] != "vector",
+            "source": f"Fisher Catalog 14, figure {fig}, page {r['printed_label']} ({r['method']})"}
+
+
+def cryogenic_seal_ring_friction(port_in: float) -> dict:
+    """ET-C / EWT-C and ET / EWT Class VI: UHMWPE/R30003 cryogenic seal ring friction (page B-18):
+    28 lb per lineal inch of port circumference below 8 inch ports, 34 lb/in at 8 inches and above."""
+    per_in = 28.0 if port_in < 8 else 34.0
+    circ = 3.141592653589793 * port_in
+    return {"force_lb": per_in * circ, "lb_per_inch": per_in, "port_circumference_in": circ,
+            "source": "Fisher Catalog 14, page B-18"}

@@ -117,3 +117,14 @@ class DataIntegrity(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Interpolation(unittest.TestCase):
+    def test_pchip_passes_through_points_and_round_trips(self):
+        from fisher import Catalog
+        c = Catalog.load().get("152-1-8")
+        for p, v in c.curve():
+            self.assertAlmostEqual(c.value_at(p, interp="pchip"), v)
+        v = c.value_at(15, interp="pchip")
+        self.assertAlmostEqual(c.opening_for(v, interp="pchip"), 15, places=6)
+        self.assertLess(c.value_at(15, interp="pchip"), c.value_at(15))  # convex curve: linear overestimates

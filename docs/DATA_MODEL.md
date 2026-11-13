@@ -524,7 +524,7 @@ Version and provenance of this build of the dataset. (4 rows)
 
 ## `build_input`
 
-Every intermediate CSV the database was built from, with its SHA-256: if a file under data/ changes without a rebuild, tests fail (tests/test_db.py). (765 rows)
+Every intermediate CSV the database was built from, with its SHA-256: if a file under data/ changes without a rebuild, tests fail (tests/test_db.py). (766 rows)
 
 | Column | Type | Meaning |
 |---|---|---|
@@ -614,6 +614,23 @@ Catalog 14 stem load Tables 2 and 9: per-valve maximum allowable stem loads (ET-
 | `unsupported_length_in` | REAL | Unsupported stem length L, inches |
 | `ld_ratio` | REAL | L/D ratio |
 | `max_stem_load_lb` | REAL | Maximum allowable stem load, lb |
+| `printed_label` | TEXT | Printed page label |
+
+## `piston_ring_friction`
+
+Catalog 14 figures 4 (EHD/HPD graphite rings, vector: exact) and 4A (TBX/CVX metal rings, raster: about +-3%): friction = slope x pressure drop. (30 rows)
+
+| Column | Type | Meaning |
+|---|---|---|
+| `figure` | TEXT | '4' (page B-18) or '4A' (page B-18.1) |
+| `valves` | TEXT | Valves the line applies to |
+| `rings` | TEXT | graphite or metal |
+| `port_in` | REAL | Port diameter, inches |
+| `slope_lb_per_psi` | REAL | Friction per psi of pressure drop |
+| `end_dp_psi` | REAL | Figure 4: pressure drop at the line's printed end point |
+| `end_friction_lb` | REAL | Figure 4: friction at the line's printed end point |
+| `label` | TEXT | Label as printed |
+| `method` | TEXT | 'vector' (exact line coordinates) or 'raster' (digitized image) |
 | `printed_label` | TEXT | Printed page label |
 
 ## `actuator_3025`

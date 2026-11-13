@@ -101,3 +101,27 @@ class ActuatorSelection(unittest.TestCase):
         self.assertEqual((s["force_lb"], s["bench_set"], s["spring_rate_lb_in"], s["printed_label"]),
                          (759, "3-7", "275", "B-33"))
         self.assertTrue(all(h["force_lb"] >= 476 for h in hits))
+
+
+class AdditionalForces(unittest.TestCase):  # page B-18, figures 4 and 4A
+    def test_figure_4_vector(self):
+        from fisher import force
+        r = force.piston_ring_friction(10, 4736, valve="EHD")  # 10-in line ends at the chart top: 1600 lb
+        self.assertAlmostEqual(r["force_lb"], 1610, delta=15)
+        self.assertFalse(r["approximate"])
+        # one printed line carries two ports: 2.875 in (EHD) and 3.625 in (HPD)
+        self.assertEqual(force.piston_ring_friction(2.875, 1000, valve="EHD")["slope_lb_per_psi"],
+                         force.piston_ring_friction(3.625, 1000, valve="HPD")["slope_lb_per_psi"])
+
+    def test_figure_4a_raster(self):
+        from fisher import force
+        r = force.piston_ring_friction(3.44, 4000, valve="TBX")  # chart: about 1100 lb at 4000 psi
+        self.assertAlmostEqual(r["force_lb"], 1100, delta=60)
+        self.assertTrue(r["approximate"])
+        steep = force.piston_ring_friction(19.94, 1000, valve="CVX")["slope_lb_per_psi"]
+        self.assertGreater(steep, force.piston_ring_friction(13.75, 1000, valve="CVX")["slope_lb_per_psi"])
+
+    def test_cryogenic_seal_ring(self):
+        from fisher import force
+        self.assertAlmostEqual(force.cryogenic_seal_ring_friction(4)["force_lb"], 28 * 3.141592653589793 * 4)
+        self.assertEqual(force.cryogenic_seal_ring_friction(8)["lb_per_inch"], 34)

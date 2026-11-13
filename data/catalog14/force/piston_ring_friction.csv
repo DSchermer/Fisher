@@ -1,0 +1,31 @@
+figure,valves,rings,port_in,slope_lb_per_psi,end_dp_psi,end_friction_lb,label,method,printed_label
+4,"EHD, HPD",graphite,7.0,0.23429,6444,1510,7-IN PORT,vector,B-18
+4,EHD,graphite,5.375,0.18356,6469,1187,5.375 IN PORT (EHD OR HPD),vector,B-18
+4,HPD,graphite,5.375,0.18356,6469,1187,5.375 IN PORT (EHD OR HPD),vector,B-18
+4,"EHD, HPD",graphite,4.375,0.14873,6469,962,4.375 IN PORT,vector,B-18
+4,EHD,graphite,3.625,0.10057,6469,651,3.625 IN PORT (EHD),vector,B-18
+4,EHD,graphite,2.875,0.08348,6444,538,2.875 IN PORT (EHD & 3.625 IN PORT (HPD),vector,B-18
+4,HPD,graphite,3.625,0.08348,6444,538,2.875 IN PORT (EHD & 3.625 IN PORT (HPD),vector,B-18
+4,EHD,graphite,2.3125,0.06599,6444,425,2.3125 IN PORT (EHD) & 2.875 IN PORT (HPD),vector,B-18
+4,HPD,graphite,2.875,0.06599,6444,425,2.3125 IN PORT (EHD) & 2.875 IN PORT (HPD),vector,B-18
+4,EHD,graphite,1.875,0.04248,6469,275,1.875 IN PORT (EHD),vector,B-18
+4,HPD,graphite,1.875,0.03181,6444,205,1.875 IN PORT (HPD),vector,B-18
+4,"EHD, HPD",graphite,1.5,0.0201,6469,130,1.5 IN PORT,vector,B-18
+4,"EHD, HPD",graphite,10.0,0.33998,4736,1610,10-IN PORT,vector,B-18
+4A,"TBX, CVX",metal,19.94,3.1295,,,19.94 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,18.25,2.8659,,,18.25 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,16.7,2.635,,,16.7 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,14.75,2.3184,,,14.75 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,13.75,2.1747,,,13.75 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,9.2,0.902,,,9.2 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,11.2,0.8842,,,11.2 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,11.0,0.8667,,,11 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,10.0,0.7905,,,10 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,8.0,0.6318,,,8 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,7.62,0.6022,,,7.62 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,7.0,0.5537,,,7 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,6.25,0.495,,,6.25 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,5.38,0.4269,,,5.38 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,4.7,0.3756,,,4.7 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,4.28,0.3413,,,4.28 IN PORT,raster,B-18.1
+4A,"TBX, CVX",metal,3.44,0.2772,,,3.44 IN PORT,raster,B-18.1

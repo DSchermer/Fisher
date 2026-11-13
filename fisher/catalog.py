@@ -88,6 +88,28 @@ def fallback_sizes(row: dict, attrs: dict) -> list[float]:
     return []
 
 
+def pchip(xs: list[float], ys: list[float], x: float) -> float | None:
+    """Monotone piecewise cubic Hermite interpolation (Fritsch-Carlson): passes through every point and
+    does not overshoot between them, so a rising Cv curve stays rising."""
+    n = len(xs)
+    h = [xs[i + 1] - xs[i] for i in range(n - 1)]
+    d = [(ys[i + 1] - ys[i]) / h[i] if h[i] else 0.0 for i in range(n - 1)]
+    m = [0.0] * n
+    m[0], m[-1] = d[0], d[-1]
+    for i in range(1, n - 1):
+        if d[i - 1] * d[i] <= 0:
+            m[i] = 0.0
+        else:
+            w1, w2 = 2 * h[i] + h[i - 1], h[i] + 2 * h[i - 1]
+            m[i] = (w1 + w2) / (w1 / d[i - 1] + w2 / d[i])
+    for i in range(n - 1):
+        if xs[i] <= x <= xs[i + 1] and h[i]:
+            t = (x - xs[i]) / h[i]
+            return ((2 * t ** 3 - 3 * t ** 2 + 1) * ys[i] + (t ** 3 - 2 * t ** 2 + t) * h[i] * m[i]
+                    + (-2 * t ** 3 + 3 * t ** 2) * ys[i + 1] + (t ** 3 - t ** 2) * h[i] * m[i + 1])
+    return None
+
+
 # ---------------------------------------------------------------- data model
 
 # Valve types whose Catalog 12 tables have no opening axis, so the axis cannot say how they move.
@@ -156,17 +178,23 @@ class Config:
         pts = self.curve(coefficient)
         return pts[-1][1] if pts else None
 
-    def value_at(self, opening: float, coefficient: str = "Cv") -> float | None:
-        """Linear interpolation between catalog points. None outside the listed range."""
+    def value_at(self, opening: float, coefficient: str = "Cv", interp: str = "linear") -> float | None:
+        """Value between catalog points. None outside the listed range.
+
+        interp="linear" (default) or "pchip" (monotone cubic, Fritsch-Carlson). Measured on the catalog's own
+        curves by leaving points out (docs/INTERPOLATION.md), pchip has about half the error of linear on
+        equal-percentage and rotary curves. Which one Fisher uses is not stated (docs/MORNING.md)."""
         pts = self.curve(coefficient)
         if not pts or opening < pts[0][0] or opening > pts[-1][0]:
             return None
+        if interp == "pchip" and len(pts) >= 3:
+            return pchip([p for p, _ in pts], [v for _, v in pts], opening)
         for (p0, v0), (p1, v1) in zip(pts, pts[1:]):
             if p0 <= opening <= p1:
                 return v0 if p1 == p0 else v0 + (v1 - v0) * (opening - p0) / (p1 - p0)
         return pts[-1][1] if opening == pts[-1][0] else None
 
-    def opening_for(self, value: float, coefficient: str = "Cv") -> float | None:
+    def opening_for(self, value: float, coefficient: str = "Cv", interp: str = "linear") -> float | None:
         """Smallest opening at which the interpolated curve reaches `value`. None if never reached."""
         pts = self.curve(coefficient)
         if not pts:
@@ -175,6 +203,15 @@ class Config:
             return pts[0][0]
         for (p0, v0), (p1, v1) in zip(pts, pts[1:]):
             if v0 < value <= v1:
+                if interp == "pchip" and len(pts) >= 3:
+                    lo, hi = p0, p1  # the monotone cubic is increasing on this interval: bisect it
+                    for _ in range(60):
+                        mid = (lo + hi) / 2
+                        if self.value_at(mid, coefficient, "pchip") < value:
+                            lo = mid
+                        else:
+                            hi = mid
+                    return hi
                 return p0 + (p1 - p0) * (value - v0) / (v1 - v0)
         return None
 

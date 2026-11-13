@@ -430,6 +430,18 @@ SCHEMA: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
         ("max_stem_load_lb", "REAL", "Maximum allowable stem load, lb"),
         ("printed_label", "TEXT", "Printed page label"),
     ]),
+    "piston_ring_friction": ("Catalog 14 figures 4 (EHD/HPD graphite rings, vector: exact) and 4A (TBX/CVX metal rings, raster: about +-3%): friction = slope x pressure drop.", [
+        ("figure", "TEXT", "'4' (page B-18) or '4A' (page B-18.1)"),
+        ("valves", "TEXT", "Valves the line applies to"),
+        ("rings", "TEXT", "graphite or metal"),
+        ("port_in", "REAL", "Port diameter, inches"),
+        ("slope_lb_per_psi", "REAL", "Friction per psi of pressure drop"),
+        ("end_dp_psi", "REAL", "Figure 4: pressure drop at the line's printed end point"),
+        ("end_friction_lb", "REAL", "Figure 4: friction at the line's printed end point"),
+        ("label", "TEXT", "Label as printed"),
+        ("method", "TEXT", "'vector' (exact line coordinates) or 'raster' (digitized image)"),
+        ("printed_label", "TEXT", "Printed page label"),
+    ]),
     "actuator_3025": ("Catalog 14 3025 actuator available force (pages B-73 to B-76).", [
         ("size", "TEXT", "P460-200, P462, P900"),
         ("yoke_boss", "TEXT", "Yoke boss as printed"),
@@ -696,6 +708,9 @@ def build(db_path: str, doc_path: str) -> None:
     ins("stem_load_valve", [(int(r["table"]), r["valve"], r["nps"], r["stem"], num(r["stem_in"]),
                              num(r["unsupported_length_in"]), num(r["ld_ratio"]), num(r["max_stem_load_lb"]),
                              r["printed_label"]) for r in rows(fd / "stem_load_valve.csv")])
+    ins("piston_ring_friction", [(r["figure"], r["valves"], r["rings"], num(r["port_in"]), num(r["slope_lb_per_psi"]),
+                                  num(r["end_dp_psi"]), num(r["end_friction_lb"]), r["label"], r["method"],
+                                  r["printed_label"]) for r in rows(fd / "piston_ring_friction.csv")])
     ins("actuator_3025", [(r["size"], r["yoke_boss"], r["action"], r["travel"], num(r["travel_in"]), r["spring_range_bar"],
                            num(r["spring_rate_lb_in"]), num(r["supply_bar"]), num(r["thrust_lb"]), r["printed_label"])
                           for r in rows(fd / "actuator_3025.csv")])
